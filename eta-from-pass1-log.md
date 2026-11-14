@@ -155,8 +155,47 @@ Observed: the base run in the main checkout stalled at 13/39 on `San_Francisco_C
   The watcher that would have started feature extraction after the base run was stopped too.
   Nothing of ours is running.
 
+### 2026-11-14: swati's sweep arrived; step 0 (η landscape) done
+
+- swati pushed `dde4336`: `swati/results_vggt_dev/` with `eta_<η>/<scene>.json` and `per_scene.csv`.
+  It covers **39 dev scenes × η ∈ {1, 10, 100, 1000, 5000}, complete, no NaN**. It is the `inter` arm only
+  (`SKIP_BASELINE_PASS=1`); `Score` = (Acc-mean + Comp-mean)/2. The intervention anchor is recorded per
+  scene (e.g. Dendera → facade). Eric pulled it (`pull.rebase true` rebased our commits on top).
+- Wrote `pass1_signals/eta_landscape.py`, ran
+  `python pass1_signals/eta_landscape.py swati/results_vggt_dev/per_scene.csv --out pass1_out/eta_landscape.csv`.
+
+**Outcomes** (scores compared within a scene only):
+
+| η | median Score | mean regret vs oracle | median regret | wins |
+|---|---|---|---|---|
+| 1 | 0.02814 | 7.6% | 2.9% | 4 |
+| 10 | 0.02685 | 8.1% | 2.7% | 5 |
+| 100 | 0.02809 | 7.4% | 3.1% | 7 |
+| 1000 | 0.02660 | **4.4%** | 1.9% | 7 |
+| 5000 | 0.03234 | 38.9% | **1.4%** | **16** |
+| oracle | 0.02622 | 0 | 0 | |
+
+- **Most scenes are flat.** Median worst/best η ratio is 1.10×; for 13/39 scenes all five η are within 5%.
+- **η = 5000 is bimodal.** It wins most often (16/39) and is best by median regret, but it is
+  catastrophic on a few scenes (Santa Prisca 6.3×, Theater of Petra 3.9×, Kumano Hongu Taisha 3.4×,
+  Disney California Adventure 3.0× worse than the best η), hence the 38.9% mean regret.
+  Against η=1000: 5000 better on 20, worse by >10% on 10, worse by >50% on 5.
+- **Best fixed η = 1000** (in-sample): median Score +5.5% vs η=1; oracle +6.8%.
+- **The decision reduces to "is η=5000 safe for this scene?"** An oracle restricted to {1000, 5000} has
+  mean regret 1.1% (median 0) against 4.4% for fixed 1000. So most of the attainable gain is a
+  **binary prediction**, a much sharper target for Pass-1 signals than regressing η.
+
+**Caveats**
+- One run per (scene, η). The paper averages 5 runs; RANSAC/ICP alignment noise is unknown, so
+  differences of a few percent may be noise (relevant for the flat scenes).
+- No base (no-intervention) arm. Eric's `evaluate.py` base Score is on a different scale
+  (Dendera: 0.449 vs 0.038 here), so it can't serve as the "before" without matching pipelines.
+- "Best fixed η" was chosen on the same scenes it is scored on (optimistic for the baseline).
+
 ### Open questions
 
-- [ ] Where are swati's VGGT sweep results (needed for η\* labels)? Which scenes finished?
+- [x] swati's VGGT sweep results: `swati/results_vggt_dev/` (all 39 dev scenes).
+- [ ] Run-to-run noise of a (scene, η) score: repeat a few to know which differences are real.
+- [ ] A base arm on the same pipeline (`run.py` without `SKIP_BASELINE_PASS`) for "no intervention".
 - [ ] The paper's exact non-architectural vocabulary: asked Evan Zhang; using our own list meanwhile.
 - [ ] Which SCVA version reproduces `anchors.json` (paper's Eq. vs code's cross-view mean; RoPE or not).
