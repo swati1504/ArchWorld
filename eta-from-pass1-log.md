@@ -192,6 +192,53 @@ Observed: the base run in the main checkout stalled at 13/39 on `San_Francisco_C
   (Dendera: 0.449 vs 0.038 here), so it can't serve as the "before" without matching pipelines.
 - "Best fixed η" was chosen on the same scenes it is scored on (optimistic for the baseline).
 
+### 2026-11-15: target definition, evaluation harness, metadata baseline, summary features
+
+**Target (decided with Eric):** keep the full η choice; don't reduce it to "is 5000 safe". η is treated
+as ordinal (log η), selectors are scored by **regret** Score(chosen)/Score(best) − 1 under
+leave-one-scene-out, plus a whole-curve predictor. The 1000-vs-5000 finding is a check, not the target.
+
+**Evaluation harness**: `pass1_signals/selection.py`. Selectors: fixed η, best-fixed (chosen on training
+folds only), oracle, `group:<col>` (best η of the scene's category), `curve-ridge` (ridge on log regret
+at every η, pick the lowest), `logeta-ridge` (ridge on log10 η\*, round to grid). Ridge alpha is chosen by
+closed-form LOO, verified against brute-force refits (max diff 4e-16). No sklearn (not installed);
+numpy only.
+
+Baselines (LOSO, 39 dev scenes):
+
+| selector | mean regret | median regret | max regret | n regret>10% | oracle gain recovered (median Score, from η=1) |
+|---|---|---|---|---|---|
+| η=1 | 7.6% | 2.9% | 59% | 9 | 0 |
+| **best-fixed** (= η=1000 in every fold) | **4.4%** | 1.9% | 22% | 7 | 80% |
+| oracle | 0 | 0 | 0 | 0 | 100% |
+
+Best-fixed out-of-sample equals the in-sample choice, so the earlier in-sample caveat didn't bite.
+**Bar for any selector: mean regret below 4.4%.**
+
+**Metadata baseline**: `pass1_signals/metadata_baseline.py` → `pass1_out/meta_features.csv`.
+- Numeric metadata: no correlation with log10 η\* or with `large_vs_small` (the log ratio of the best
+  large-η Score to the best small-η Score). All |ρ| ≤ 0.27, all p ≥ 0.09 (construction year, n views,
+  and the GT-derived scale/extent/diagonal).
+- Categories: suggestive but tiny groups. SE Asia 5/5 best at η=5000; mosques prefer large η
+  (large_vs_small −0.084, n=4); the single Temple/Shrine and Latin America scenes are hurt badly by 5000.
+- LOSO with metadata-only selectors: **none beats best-fixed on mean regret.** group:region 13.6%,
+  group:arch_type 12.7%, group:anchor 5.8% (lower median 1.1% and 9 wins / 3 losses vs best-fixed, but one
+  90% miss), curve-ridge 9.4%, logeta-ridge 4.5% (≈ best-fixed).
+- Conclusion: metadata doesn't explain η\*. Pass-1 signals have to beat best-fixed (4.4%), not a strong
+  metadata model.
+
+**Summary features**: `pass1_signals/features.py` turns extractor output into one row per scene: anchor
+dominance (SCVA, share, margin), non-arch share, anchor self-attention and cross-view fraction, leakage
+(anchor queries and all queries), attention sinks, sky mass, entropy, top-1, each at layers 4/11/17/23
+plus the mean over layers; and scene-level token fractions, camera spread, depth confidence, and
+whether our recomputed anchor matches the shipped one. 88 features in total.
+- Added `--device cpu` and `--max-views` to `extract_features.py` (smoke tests only).
+- **Smoke test** (CPU, fp32, Dendera, first 3 views, 92 s; output in `pass1_out/features_smoke/`):
+  extractor and feature script run end to end. Values are plausible: facade is in only 1 of the
+  3 views, so its cross-view SCVA is 0; sky gets 22% of attention against 28% of tokens. Layer-23
+  attention is close to uniform (normalised entropy 0.98) — to watch at 50 views. All definitions pick
+  `wall` here, which says nothing about the real anchor check (3 views only).
+
 ### Open questions
 
 - [x] swati's VGGT sweep results: `swati/results_vggt_dev/` (all 39 dev scenes).
