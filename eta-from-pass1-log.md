@@ -481,6 +481,20 @@ blow-ups of 3–6x) are real.
   stable the chosen threshold and the two sides' η are across folds.
 - *Counts as better than best-fixed:* lower mean regret and permutation p < 0.05 (as before).
 
+### 2026-11-15: step 2 result, threshold rule fails (`pass1_signals/threshold_rule.py`)
+
+- Fitted on all 39 (reading only): use η=5000 above `anchor_tok_frac` 0.256 (9 scenes) or above
+  `anchor_view_frac` 0.99 (13 scenes), else η=1000. Same direction as the step-risk finding.
+- **LOSO:** stump on `anchor_tok_frac` mean regret 7.9% (W/L 5/9, perm. p 0.48); on `anchor_view_frac`
+  7.1% (W/L 8/6, p 0.38). Both worse than best-fixed (4.38%), each with one blow-up: Isa Khan Niyazi's
+  tomb (η=5000, regret 108%).
+- **Why:** only ~6 scenes show the failure, so the threshold depends on which of them are in training.
+  When Isa Khan (one of the 6) is held out, its fold's threshold drops and the rule sends it to 5000:
+  holding a bad scene out removes the evidence that would have protected it. A one-feature cut is too
+  brittle for 6 cases; knn-curve k=10 (5 features, averaging 10 neighbours' curves) is not.
+- **Reading:** the step-risk *correlation* stands (it is a property of the data); a simple *rule* built
+  on it does not generalize across folds. Not pursued further on these 39 scenes.
+
 ### Open questions
 
 - [x] swati's VGGT sweep results: `swati/results_vggt_dev/` (all 39 dev scenes).
