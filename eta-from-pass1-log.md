@@ -502,6 +502,46 @@ blow-ups of 3–6x) are real.
 - Wrote [`eta-from-pass1-report.md`](eta-from-pass1-report.md): the storyline version of this log for
   collaborators. New scenes (40 × η ∈ {1000, 5000}, ~14 GPU-hours) postponed by Eric.
 
+### 2026-11-15: plan for held-out GPU runs (branch `eric/anchor-size-heldout`; written before running)
+
+**Hypothesis under test** (found on dev, so it needs new scenes): *if the anchor is tiny, η=5000 is risky.*
+On dev, with the outcome measured as r = Score(η=5000) / Score(η=1000): Spearman(`anchor_tok_frac`,
+log r) = −0.47 (p = 0.003); tiny anchors (< 2% of patches) blow up (r > 1.5) in 4/8 scenes, others 1/31
+(Fisher one-sided p = 0.004). The 2% and 1.5 cut-offs were chosen after looking at dev; they are fixed now.
+
+**Scenes.** The 313 extracted scenes in neither `scenes_dev.txt` nor `scenes_test.txt` (test stays
+untouched for a final evaluation). Screening order: random permutation, numpy seed 0.
+
+**Design: screen cheaply, then run Pass 2 on a stratified set.**
+1. *Screen* (Pass 1, anchor only): SAM 3 masks for the shipped anchor with the repo's
+   `intervention/make_masks.py` (exactly the masks Pass 2 needs), then anchor coverage
+   (`anchor_tok_frac`, same definition as `features.py`) by a CPU script. Stop when 24 tiny scenes are
+   found or 120 scenes are screened.
+2. *Select:* every tiny scene found (up to 24) + the same number of non-tiny scenes, the first ones
+   in the screening order.
+3. *Pass 2:* η = 1000 and 5000 on the selected scenes, via `pass1_signals/seeded_run.py` with seed 0
+   (repeatable scoring; the same seed for both η). Output `pass1_out/heldout_pass2/`.
+
+Power (simulated, Fisher one-sided, α = 0.05) if the effect is weaker than on dev (35% vs 5%):
+8+32 random 55%, 20+20 69%, 24+24 80%. As strong as on dev: ≥ 92% for all.
+
+**Pre-registered tests** on the new scenes:
+- *Primary:* blow-up rate (r > 1.5), tiny vs non-tiny, Fisher exact, one-sided, p < 0.05.
+- *Secondary:* Spearman(`anchor_tok_frac`, log r) < 0, one-sided, over all Pass-2 scenes (sample is
+  stratified, so read the size of ρ with care).
+- Reported regardless: rates with 95% intervals, every scene's r and anchor size.
+
+**Step 0, before the long run (~20 min):** (a) on one dev scene, time anchor-only SAM 3 and check its
+anchor mask equals the full-vocabulary one; (b) check the coverage script reproduces `anchor_tok_frac`
+in `pass1_features.csv` for all 39 dev scenes (CPU).
+
+**Cost estimate:** screening 100–120 scenes at ~1.5 min (to be measured in step 0) ≈ 2.5–3 h; Pass 2
+48 scenes × 2 runs × ~8 min ≈ 13 h. Total ≈ 15–16 h for 24+24 (≈ 13 h for 20+20). GPU alone the whole
+time; check every log for `Intervention token mask: N` with N > 0.
+
+**Noise note:** single seeded run per (scene, η). Scoring noise is up to ~15% per run on hard scenes, so
+a ratio r > 1.5 can occasionally come from luck; the blow-ups on dev were 2–6x.
+
 ### Open questions
 
 - [x] swati's VGGT sweep results: `swati/results_vggt_dev/` (all 39 dev scenes).
