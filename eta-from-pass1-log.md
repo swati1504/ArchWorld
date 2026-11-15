@@ -542,6 +542,23 @@ time; check every log for `Intervention token mask: N` with N > 0.
 **Noise note:** single seeded run per (scene, η). Scoring noise is up to ~15% per run on hard scenes, so
 a ratio r > 1.5 can occasionally come from luck; the blow-ups on dev were 2–6x.
 
+### 2026-11-15: de-noising and confirmation run started (branch `eric/denoise-labels`)
+
+Plan: `denoise-plan.md` (local, git-ignored). Scripts: `pass1_signals/{seeded_run,rescore,clean_analysis,confirm_analysis}.py`
+and `pass1_signals/denoise_pipeline.sh` (detached; progress in `pass1_out/denoise/STATUS.md`).
+`pass1_out/` and `results/` now live on the data disk (`/mnt/disks/archworld-data`), linked.
+
+- **Phase 0, GPU:** seeded in-run scores at η=0 reproduce the noise probe's seed-0 values exactly
+  (Paul Kruger 0.2283, Shuri Castle 0.4861, Dendera 0.0394). **Trim check passed:** a trimmed run (no
+  GLB export, no in-run GT build) saves an `inter_raw.npz` identical array for array to the untrimmed
+  one, in ~1.6 min per run instead of ~5–7.
+- **First rescoring draw:** Paul Kruger 0.2232 (in the expected 0.180–0.239 range), but 428 s per draw:
+  Chamfer 297 s, ICP 102 s, alignment 28 s.
+- **Fix (exact):** KD-trees built unbalanced (`balanced_tree=False, compact_nodes=False`). On Paul Kruger
+  (16.8M GT points, 1.76M predicted) the nearest-neighbour distances are identical, and the queries
+  take 3.3 s instead of 42.6 s (accuracy) and 7.8 s instead of 66 s (completion). ICP (open3d, ~100 s)
+  is left as is. Pipeline stopped and resumed at 22:24 (11 raw files kept, all checked readable).
+
 ### Open questions
 
 - [x] swati's VGGT sweep results: `swati/results_vggt_dev/` (all 39 dev scenes).
