@@ -56,6 +56,7 @@ from run_pass import map_mask_to_patches, PATCH_SIZE, PATCH_START_IDX  # the pas
 from make_masks_full import NON_ARCH
 
 ASSETS = REPO / "intervention" / "assets"
+DEV = "cuda"          # set from --device in main(); "cpu" is for smoke tests only
 
 
 def load_asset(name):
@@ -128,9 +129,11 @@ def entropy_stats(q, k, chunk=128):
 
 
 # ----------------------------------------------------------------------------- per-scene run
-def run_scene(model, scene, root, mask_root, out_dir, dtype, n_entropy, seed=0):
+def run_scene(model, scene, root, mask_root, out_dir, dtype, n_entropy, seed=0, max_views=None):
     t0 = time.time()
     views = load_asset("views.json")[scene]
+    if max_views:
+        views = views[:max_views]          # smoke tests only: changes the scene
     arch = list(load_asset("elements.json")[scene])
     nonarch = [e for e in NON_ARCH if e not in arch]
     shipped_anchor = load_asset("anchors.json").get(scene)
@@ -142,7 +145,7 @@ def run_scene(model, scene, root, mask_root, out_dir, dtype, n_entropy, seed=0):
         raise FileNotFoundError(f"{scene}: {len(missing)} views missing (first {missing[0]})")
     stems = [Path(v).stem for v in views]
 
-    images = load_and_preprocess_images([str(p) for p in image_paths]).to("cuda")[None]
+    images = load_and_preprocess_images([str(p) for p in image_paths]).to(DEV)[None]
     S, Himg, Wimg = images.shape[1], images.shape[-2], images.shape[-1]
     Hp, Wp = Himg // PATCH_SIZE, Wimg // PATCH_SIZE
     P = PATCH_START_IDX + Hp * Wp
@@ -155,17 +158,17 @@ def run_scene(model, scene, root, mask_root, out_dir, dtype, n_entropy, seed=0):
     if never:
         raise FileNotFoundError(f"{scene}: no mask files at all for {never} under {mask_dir}")
 
-    view_of = torch.arange(N, device="cuda") // P
-    special = torch.zeros(N, device="cuda")
+    view_of = torch.arange(N, device=DEV) // P
+    special = torch.zeros(N, device=DEV)
     for i in range(S):
         special[i * P:i * P + PATCH_START_IDX] = 1
 
     def union(names):
-        m = torch.zeros(N, device="cuda")
+        m = torch.zeros(N, device=DEV)
         for e in names:
             idx, _ = token_index(patch_sets[e], P)
             if len(idx):
-                m[torch.as_tensor(idx, device="cuda")] = 1
+                m[torch.as_tensor(idx, device=DEV)] = 1
         return m
 
     arch_u, nonarch_u = union(arch), union(nonarch)
@@ -176,20 +179,20 @@ def run_scene(model, scene, root, mask_root, out_dir, dtype, n_entropy, seed=0):
     per_class = torch.stack([union([e]) for e in nonarch], 1) if nonarch else None
 
     elem_idx = {e: token_index(patch_sets[e], P) for e in arch + nonarch}
-    off = ~torch.eye(S, dtype=torch.bool, device="cuda")
+    off = ~torch.eye(S, dtype=torch.bool, device=DEV)
     elem_gpu = {}                     # per element: query index, query view, key indicator split by view
     for e, (idx, vw) in elem_idx.items():
         if len(idx) == 0:
             continue
-        it = torch.as_tensor(idx, device="cuda")
-        Ve = onehot_view * torch.zeros(N, device="cuda").index_fill_(0, it, 1)[:, None]
-        vw_t = torch.as_tensor(vw, device="cuda")
+        it = torch.as_tensor(idx, device=DEV)
+        Ve = onehot_view * torch.zeros(N, device=DEV).index_fill_(0, it, 1)[:, None]
+        vw_t = torch.as_tensor(vw, device=DEV)
         elem_gpu[e] = (it, vw_t, Ve, torch.bincount(vw_t, minlength=S).float())
 
     rng = np.random.default_rng(seed)
     patch_tokens = np.array([t for t in range(N) if t % P >= PATCH_START_IDX])
     ent_q = np.sort(rng.choice(patch_tokens, size=min(n_entropy, len(patch_tokens)), replace=False))
-    ent_q_t = torch.as_tensor(ent_q, device="cuda")
+    ent_q_t = torch.as_tensor(ent_q, device=DEV)
 
     rec = {"elements": {}, "per_query": {}}
     layers = range(len(model.aggregator.global_blocks))
@@ -212,7 +215,7 @@ def run_scene(model, scene, root, mask_root, out_dir, dtype, n_entropy, seed=0):
             for var, (q, k) in variants.items():
                 for e, (it, vw_t, Ve, n) in elem_gpu.items():
                     m = mass_on(q[:, :, it], k, Ve)                          # (n_e, S)
-                    M = torch.zeros(S, S, device="cuda").index_add_(0, vw_t, m)
+                    M = torch.zeros(S, S, device=DEV).index_add_(0, vw_t, m)
                     pair = (n[:, None] > 0) & (n[None, :] > 0) & off
                     code = (M / (n[:, None] * n[None, :]).clamp_min(1))[pair].sum()
                     r = rec["elements"].setdefault(e, {}).setdefault(var, {})
@@ -237,7 +240,7 @@ def run_scene(model, scene, root, mask_root, out_dir, dtype, n_entropy, seed=0):
     hooks = [model.aggregator.global_blocks[l].attn.register_forward_hook(make_hook(l), with_kwargs=True)
              for l in layers]
     try:
-        with torch.no_grad(), torch.amp.autocast("cuda", dtype=dtype):
+        with torch.no_grad(), torch.amp.autocast(DEV, dtype=dtype, enabled=(DEV == "cuda")):
             tokens_list, ps_idx = model.aggregator(images)
             for h in hooks:
                 h.remove()
@@ -248,7 +251,7 @@ def run_scene(model, scene, root, mask_root, out_dir, dtype, n_entropy, seed=0):
     finally:
         for h in hooks:
             h.remove()
-    peak = torch.cuda.max_memory_allocated() / 1e9
+    peak = torch.cuda.max_memory_allocated() / 1e9 if DEV == "cuda" else float("nan")
 
     # ---- output-based statistics (no ground truth)
     E = extr[0].float().cpu().numpy()                         # (S,3,4) world->cam
@@ -311,6 +314,8 @@ def main():
                          "Default casts weights to bf16, like VGGT_HALF=1.")
     ap.add_argument("--entropy-queries", type=int, default=4096)
     ap.add_argument("--overwrite", action="store_true")
+    ap.add_argument("--device", default="cuda", help="'cpu' only for smoke tests (fp32, slow)")
+    ap.add_argument("--max-views", type=int, help="smoke tests only: use the first N views")
     args = ap.parse_args()
 
     scenes = list(args.scene)
@@ -319,28 +324,35 @@ def main():
     if not scenes:
         ap.error("give --scene and/or --scenes-file")
 
-    dtype = torch.bfloat16 if torch.cuda.get_device_capability()[0] >= 8 else torch.float16
-    model = VGGT.from_pretrained("facebook/VGGT-1B").to("cuda").eval()
-    if not args.full_precision_weights:
+    global DEV
+    DEV = args.device
+    if DEV == "cuda":
+        dtype = torch.bfloat16 if torch.cuda.get_device_capability()[0] >= 8 else torch.float16
+    else:
+        dtype = torch.float32
+    model = VGGT.from_pretrained("facebook/VGGT-1B").to(DEV).eval()
+    if not args.full_precision_weights and DEV == "cuda":
         model = model.to(dtype)
 
     for i, scene in enumerate(scenes, 1):
         if (Path(args.out) / f"{scene}.json").exists() and not args.overwrite:
             print(f"[{i}/{len(scenes)}] {scene}: exists, skipping")
             continue
-        torch.cuda.reset_peak_memory_stats()
+        if DEV == "cuda":
+            torch.cuda.reset_peak_memory_stats()
         try:
-            s = run_scene(model, scene, args.root, args.masks_dir, args.out, dtype, args.entropy_queries)
+            s = run_scene(model, scene, args.root, args.masks_dir, args.out, dtype, args.entropy_queries,
+                          max_views=args.max_views)
         except Exception as exc:
             print(f"[{i}/{len(scenes)}] {scene}: FAILED {type(exc).__name__}: {exc}", flush=True)
-            torch.cuda.empty_cache()
+            DEV == "cuda" and torch.cuda.empty_cache()
             continue
         picks = s["anchor_by_definition"]
         agree = [k for k, v in picks.items() if v == s["shipped_anchor"]]
         print(f"[{i}/{len(scenes)}] {scene}: {s['seconds']}s, peak {s['peak_gpu_gb']} GB, "
               f"shipped anchor '{s['shipped_anchor']}', matched by {agree or 'none'}; picks {picks}",
               flush=True)
-        torch.cuda.empty_cache()
+        DEV == "cuda" and torch.cuda.empty_cache()
 
 
 if __name__ == "__main__":
