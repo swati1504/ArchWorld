@@ -466,6 +466,8 @@ blow-ups of 3–6x) are real.
   vs 18%. **But the margin is small:** 0.18 points of mean regret; W/L 10/6 has sign-test p = 0.45; the
   permutation test shows the features beat *random* neighbours (shuffled median 7.7%), not that the
   selector beats η=1000 decisively. k=5 fails, so the result depends on k (2 values tried).
+- **Check without Disney** (the scene that inspired the hypothesis): `anchor_view_frac` ρ −0.35 (p 0.031),
+  `anchor_tok_frac` ρ −0.36 (p 0.025). Weaker, still holds.
 - **Reading:** the first Pass-1 signal with a pre-registered confirmation: anchor coverage predicts
   large-step failure. As a selector it lets us use η=5000 where it is safe, roughly tying η=1000 on
   mean regret with a better median. Promising, not yet decisive on 39 noisy scenes.
@@ -494,6 +496,11 @@ blow-ups of 3–6x) are real.
   brittle for 6 cases; knn-curve k=10 (5 features, averaging 10 neighbours' curves) is not.
 - **Reading:** the step-risk *correlation* stands (it is a property of the data); a simple *rule* built
   on it does not generalize across folds. Not pursued further on these 39 scenes.
+
+### 2026-11-15: report
+
+- Wrote [`eta-from-pass1-report.md`](eta-from-pass1-report.md): the storyline version of this log for
+  collaborators. New scenes (40 × η ∈ {1000, 5000}, ~14 GPU-hours) postponed by Eric.
 
 ### Open questions
 
