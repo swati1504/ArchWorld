@@ -127,14 +127,16 @@ def loso(selector, F, X, etas):
 def metrics(choice, X, etas, ref):
     R = regret(X)[np.arange(len(X)), choice]
     S = X[np.arange(len(X)), choice]
-    # Per-scene improvement over the reference eta, on a log scale, averaged over scenes,
-    # as a fraction of the oracle's. (A ratio of medians across scenes was too fragile.)
-    L = np.log(X)
-    oracle_gain = (L[:, ref] - L.min(1)).mean()
-    gain = (L[:, ref] - np.log(S)).mean() / oracle_gain if oracle_gain > 0 else np.nan
+    ref_S = X[:, ref]
+    # regret as in swati/proxy_select.py (there as a ratio, 1.00 = perfect; here minus 1),
+    # plus the paper's style (intervention/aggregate.py): % change of the median Score
+    # across scenes against a reference, and the share of scenes improved.
     return {"mean regret": R.mean(), "median regret": np.median(R), "max regret": R.max(),
-            "n regret>10%": int((R > 0.10).sum()), "median Score": np.median(S),
-            "oracle gain recovered": gain, "_R": R}
+            "n regret>10%": int((R > 0.10).sum()),
+            "hit oracle": float((choice == X.argmin(1)).mean()),
+            "median Score": np.median(S),
+            "median vs ref": (np.median(S) - np.median(ref_S)) / np.median(ref_S),
+            "improved vs ref": float((S < ref_S).mean()), "_R": R}
 
 
 def run_all(selectors, F, X, etas, ref=0):
@@ -184,8 +186,9 @@ def main():
             print(f"warning: {missing} scenes have no features")
         cols = args.cols if args.cols is not None else [c for c in F.columns if c != "scene"]
     pd.set_option("display.width", 200)
-    print(f"{len(scenes)} scenes, eta grid {etas}; leave-one-scene-out; "
-          f"oracle gain measured from eta={etas[0]}\n")
+    print(f"{len(scenes)} scenes, eta grid {etas}; leave-one-scene-out.\n"
+          f"regret = Score(chosen)/Score(best eta) - 1. 'ref' = eta={etas[0]} (stand-in for no "
+          f"intervention, which this sweep lacks).\n")
     print(run_all(default_selectors(etas, F, cols, args.group), F, X, etas)
           .to_string(index=False, float_format=lambda v: f"{v:.4f}"))
 
