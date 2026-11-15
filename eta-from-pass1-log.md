@@ -470,6 +470,17 @@ blow-ups of 3–6x) are real.
   large-step failure. As a selector it lets us use η=5000 where it is safe, roughly tying η=1000 on
   mean regret with a better median. Promising, not yet decisive on 39 noisy scenes.
 
+### 2026-11-15: step 2 plan, threshold rule (written before running)
+
+- *Rule ("stump"):* one feature, one threshold. Inside each LOSO fold, for every candidate threshold
+  (midpoints between sorted training values, at least 5 training scenes per side), give each side the
+  η (any of the 5) with the lowest mean regret on that side's training scenes; keep the threshold with
+  the lowest total training regret. The held-out scene gets its side's η.
+- *Features:* `anchor_tok_frac` (primary), `anchor_view_frac` (secondary). No others.
+- *Report:* same metrics and W/L vs best-fixed, permutation p (200 shuffles of the feature), and how
+  stable the chosen threshold and the two sides' η are across folds.
+- *Counts as better than best-fixed:* lower mean regret and permutation p < 0.05 (as before).
+
 ### Open questions
 
 - [x] swati's VGGT sweep results: `swati/results_vggt_dev/` (all 39 dev scenes).
