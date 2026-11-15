@@ -262,6 +262,21 @@ whether our recomputed anchor matches the shipped one. 88 features in total.
   on the grid: selectors output log η; scoring off the grid needs either interpolation in log η
   (risky between 1000 and 5000, where errors jump) or extra sweep runs (e.g. 2000, 3000).
 
+### 2026-11-15: our GPU jobs caused 2 base-run OOMs; first full-size features
+
+- **Incident.** Two base-run scenes in the main checkout were recorded `oom`, and both coincide with our
+  GPU jobs: Santa_Prisca_Church (23:30:55) with the fp32 SAM 3 Dendera test (23:27–23:32), and
+  Basílica_Colegiata…Guanajuato (23:34:34) with the first VGGT feature attempt. Eric reran them; the
+  base run now has 39/39 `ok`. **Lesson: no GPU jobs alongside the base run** (base peaks at ~18.7 GB).
+- **Dendera features at full size** (GPU, bf16 weights, 50 views, 68,700 tokens): 112 s, **peak 21.0 GB**.
+  Dendera already has the maximum token count of all dev scenes (50 views at 518×518), so this is the
+  worst case. Features need the GPU alone (SAM 3 + VGGT doesn't fit).
+- **Anchor check, first scene:** all six SCVA definitions (code/eq/eqx × RoPE on/off) pick `facade`,
+  matching `anchors.json`. Consistent, but it doesn't yet separate the definitions.
+- Started `pass1_out/run_dev_pipeline.sh` at 01:21: masks for all 39 dev scenes, then features for all
+  39, sequentially. Logs in `pass1_out/logs/{pipeline_dev,masks_dev,features_dev}.log`. Expected about
+  3.2 h for masks plus about 75 min for features.
+
 ### Open questions
 
 - [x] swati's VGGT sweep results: `swati/results_vggt_dev/` (all 39 dev scenes).
