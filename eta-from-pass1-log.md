@@ -239,6 +239,20 @@ whether our recomputed anchor matches the shipped one. 88 features in total.
   attention is close to uniform (normalised entropy 0.98) — to watch at 50 views. All definitions pick
   `wall` here, which says nothing about the real anchor check (3 views only).
 
+### 2026-11-15: correction to "oracle gain recovered"; η beyond the grid
+
+- **Correction.** Earlier entries said best-fixed (η=1000) recovers **80%** of the oracle's gain. That
+  was a ratio of *medians across scenes* (0.02814 → 0.02660 vs oracle 0.02622), which is fragile:
+  by the same formula η=10 scores 67% despite worse regret than η=1. `selection.py` now uses the
+  per-scene improvement over η=1 on a log scale, averaged over scenes. By that measure **η=1000
+  recovers 39%** (η=10: 0.7%, η=100: 6.6%, η=5000: −188%). Mean regret (4.4%) is unchanged.
+- Why η=1000 has low regret despite winning only 7/39 scenes: it is within 2% of the best η on 20
+  scenes, within 5% on 29, within 10% on 32; worst 22%.
+- **η is not limited to {1, 10, 100, 1000, 5000}** (Eric). Decision: evaluate on the 5-point grid for
+  now, since that's where labels exist. Continuous η is a later step once a selector beats best-fixed
+  on the grid: selectors output log η; scoring off the grid needs either interpolation in log η
+  (risky between 1000 and 5000, where errors jump) or extra sweep runs (e.g. 2000, 3000).
+
 ### Open questions
 
 - [x] swati's VGGT sweep results: `swati/results_vggt_dev/` (all 39 dev scenes).

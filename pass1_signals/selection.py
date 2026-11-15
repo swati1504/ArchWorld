@@ -127,8 +127,11 @@ def loso(selector, F, X, etas):
 def metrics(choice, X, etas, ref):
     R = regret(X)[np.arange(len(X)), choice]
     S = X[np.arange(len(X)), choice]
-    oracle_med, ref_med = np.median(X.min(1)), np.median(X[:, ref])
-    gain = (ref_med - np.median(S)) / (ref_med - oracle_med) if ref_med != oracle_med else np.nan
+    # Per-scene improvement over the reference eta, on a log scale, averaged over scenes,
+    # as a fraction of the oracle's. (A ratio of medians across scenes was too fragile.)
+    L = np.log(X)
+    oracle_gain = (L[:, ref] - L.min(1)).mean()
+    gain = (L[:, ref] - np.log(S)).mean() / oracle_gain if oracle_gain > 0 else np.nan
     return {"mean regret": R.mean(), "median regret": np.median(R), "max regret": R.max(),
             "n regret>10%": int((R > 0.10).sum()), "median Score": np.median(S),
             "oracle gain recovered": gain, "_R": R}
