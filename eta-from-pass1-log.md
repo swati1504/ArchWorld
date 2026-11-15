@@ -444,6 +444,32 @@ blow-ups of 3–6x) are real.
   if its mean regret is lower **and** the permutation p < 0.05.
 - *Also reported:* number of scenes with regret > 50% (catastrophes avoided or caused).
 
+### 2026-11-15: plan A+B results (`pass1_signals/step_risk.py`, log `pass1_out/logs/step_risk.log`)
+
+- **A, step risk: hypothesis confirmed.** Spearman(`anchor_view_frac`, risk_large) = −0.40 (p = 0.012);
+  Spearman(`anchor_tok_frac`, risk_large) = −0.41 (p = 0.010). The 6 scenes where η=5000 fails worst
+  (Santa Prisca 6.3x, Petra 3.9x, Kumano 3.4x, Disney 3.0x, Isa Khan 2.1x, Azadi 1.25x) have a median
+  anchor of 0.7% of patches in 68% of views; the rest 8.0% in 98%. Small anchors break under big
+  steps. Descriptive (not tested): `nonarch_share_Lmean` +0.40 and `ent_L4` +0.34 with risk_large.
+- **B, selectors on the 5 features (bar: best-fixed, mean regret 4.38%):**
+
+  | selector | mean regret | median | max | regret>50% | W/L vs best-fixed | perm. p |
+  |---|---|---|---|---|---|---|
+  | best-fixed (η=1000) | 4.38% | 1.92% | 21.7% | 0 | – | – |
+  | **knn-curve k=10** | **4.20%** | **1.21%** | 21.7% | 0 | 10/6 | **0.025** |
+  | knn-curve k=5 | 6.78% | 1.67% | 90.6% | 1 | 11/9 | 0.115 |
+  | curve-ridge 5f | 6.54% | 1.67% | 90.6% | 1 | 7/5 | |
+  | logeta-ridge 5f | 4.53% | 3.24% | 21.7% | 0 | 5/8 | |
+
+  knn-curve k=10 meets the pre-set criterion (lower mean regret and permutation p < 0.05). It picks
+  η=5000 on 12 scenes yet causes no blow-up (max regret equal to best-fixed), hits the oracle on 36%
+  vs 18%. **But the margin is small:** 0.18 points of mean regret; W/L 10/6 has sign-test p = 0.45; the
+  permutation test shows the features beat *random* neighbours (shuffled median 7.7%), not that the
+  selector beats η=1000 decisively. k=5 fails, so the result depends on k (2 values tried).
+- **Reading:** the first Pass-1 signal with a pre-registered confirmation: anchor coverage predicts
+  large-step failure. As a selector it lets us use η=5000 where it is safe, roughly tying η=1000 on
+  mean regret with a better median. Promising, not yet decisive on 39 noisy scenes.
+
 ### Open questions
 
 - [x] swati's VGGT sweep results: `swati/results_vggt_dev/` (all 39 dev scenes).
