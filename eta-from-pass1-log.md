@@ -243,9 +243,18 @@ whether our recomputed anchor matches the shipped one. 88 features in total.
 
 - **Correction.** Earlier entries said best-fixed (η=1000) recovers **80%** of the oracle's gain. That
   was a ratio of *medians across scenes* (0.02814 → 0.02660 vs oracle 0.02622), which is fragile:
-  by the same formula η=10 scores 67% despite worse regret than η=1. `selection.py` now uses the
-  per-scene improvement over η=1 on a log scale, averaged over scenes. By that measure **η=1000
-  recovers 39%** (η=10: 0.7%, η=100: 6.6%, η=5000: −188%). Mean regret (4.4%) is unchanged.
+  by the same formula η=10 scores 67% despite worse regret than η=1. A per-scene log version gives
+  39% for η=1000. Neither number is a measure the authors or swati use, so the column was **dropped**.
+- **Metrics now follow the collaborators** (agreed with Eric):
+  - *swati* (`swati/proxy_select.py`): regret = CD(chosen)/CD(best η), median and mean, plus how often
+    the oracle's η is hit. Ours is the same minus 1. **Primary metric.**
+  - *Authors* (`intervention/aggregate.py`): median CD across scenes, before → after, % change, and the
+    share of scenes improved. Reported here against η=1 as a stand-in reference, since the sweep has
+    no no-intervention arm.
+
+  Baselines in the new format (LOSO): η=1000 / best-fixed: mean regret 4.4%, hits the oracle on 18%,
+  median Score −5.5% vs η=1, improves 69% of scenes. Oracle: −6.8%, improves 90% (η=1 is itself
+  best on 4 scenes).
 - Why η=1000 has low regret despite winning only 7/39 scenes: it is within 2% of the best η on 20
   scenes, within 5% on 29, within 10% on 32; worst 22%.
 - **η is not limited to {1, 10, 100, 1000, 5000}** (Eric). Decision: evaluate on the 5-point grid for
