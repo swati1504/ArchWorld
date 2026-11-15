@@ -11,6 +11,8 @@ NumPy right before the alignment, and repeats only the scoring. No repository fi
 Differences from the in-run scoring, none of which changes the score:
   - the ground truth and its KD-tree are built once per scene and reused for every eta and draw;
   - no GLB export;
+  - KD-trees are built unbalanced (balanced_tree=False, compact_nodes=False): identical nearest-neighbour
+    distances (checked on Paul_Kruger_Church), queries ~10x faster on these clouds;
   - predictions are read from inter_raw.npz, where depth and confidence are stored as fp16.
 Also recorded per draw (alignment fit quality): open3d fitness and inlier RMSE of the coarse
 (RANSAC) alignment and after ICP, at the ICP threshold.
@@ -86,7 +88,7 @@ class Scene:
         self.gt_points, self.gt_samples = res
         self.gt_samples.sort(key=lambda x: x["image_path"])
         from scipy.spatial import cKDTree
-        self.gt_tree = cKDTree(self.gt_points)
+        self.gt_tree = cKDTree(self.gt_points, balanced_tree=False, compact_nodes=False)  # same distances, ~10x faster queries here
         self.use_masked = bool(self.vmasks) or any(
             isinstance(s, dict) and s.get("validity_mask") is not None for s in self.gt_samples)
         self.build_s = time.time() - t0
@@ -139,7 +141,7 @@ def score_once(sc, pred, seed):
     t["icp_s"] = time.time() - t0
     t0 = time.time()
     d_acc, _ = sc.gt_tree.query(aligned, workers=-1)               # eval_utils.accuracy, cached tree
-    d_comp, _ = cKDTree(aligned).query(sc.gt_points, workers=-1)   # eval_utils.completion
+    d_comp, _ = cKDTree(aligned, balanced_tree=False, compact_nodes=False).query(sc.gt_points, workers=-1)   # eval_utils.completion
     acc, comp = float(np.mean(d_acc)), float(np.mean(d_comp))
     t["chamfer_s"] = time.time() - t0
     return {"status": "ok", "Acc-mean": acc, "Acc-med": float(np.median(d_acc)),
