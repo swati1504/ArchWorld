@@ -35,10 +35,10 @@ for f, lab in [("PHASE0_GPU_DONE", "phase 0 GPU"), ("scheme.json", "phase 0 gate
 print(f"- phase 3 (confirmation list): {'done' if E is not None else 'not yet'}")
 for f, lab in [("PHASE4B_DONE", "phase 4b (new-scene raw)"), ("clean_labels.csv", "phase 5 (new-scene labels)"), ("confirmation.log", "phase 6")]:
     print(f"- {lab}: {'done' if os.path.exists(f'{H}/{f}') else 'not yet'}")
-print(f"\n- dev raw predictions: {n(D + '/raw/output_*/*/inter_raw.npz')} / {len(dev) * 6}")
+print(f"\n- dev raw predictions: {n(D + '/raw/output_*/*/inter_raw32.npz')} / {len(dev) * 6}")
 print(f"- dev labels: {n(D + '/labels/*/eta*.json')} / {len(dev) * 6}")
 if held:
-    print(f"- new scenes: {len(held)}; features: {n(H + '/features/*.json')}; raw: {n(H + '/raw/output_*/*/inter_raw.npz')}"
+    print(f"- new scenes: {len(held)}; features: {n(H + '/features/*.json')}; raw: {n(H + '/raw/output_*/*/inter_raw32.npz')}"
           f"{' / ' + str(len(held) * len(E)) if E else ''}; labels: {n(H + '/labels/*/eta*.json')}")
 if os.path.exists(f"{D}/scheme.json"):
     s = json.load(open(f"{D}/scheme.json"))
@@ -75,7 +75,7 @@ gpu_loop() {
       --masks-dir pass1_out/masks --scene Dendera --eta 0 --out $D/trimcheck --work-dir $D/work >> $D/logs/phase0_trim.log 2>&1
     python - <<EOF >> $D/events.log 2>&1
 import numpy as np
-a = np.load("$D/raw/output_0/Dendera/inter_raw.npz"); b = np.load("$D/trimcheck/output_0/Dendera/inter_raw.npz")
+a = np.load("$D/raw/output_0/Dendera/inter_raw32.npz"); b = np.load("$D/trimcheck/output_0/Dendera/inter_raw32.npz")
 same = all(np.array_equal(a[k], b[k]) for k in a.files)
 open("$D/TRIM_OK" if same else "$D/TRIM_BAD", "w").write("")
 print("trim check:", "identical arrays -> trimmed runs" if same else "DIFFERENT -> untrimmed runs")
@@ -96,7 +96,7 @@ EOF
       missing=$(python -c "
 import os
 dev=[l.strip() for l in open('scenes_dev.txt') if l.strip()]
-m=[f'{s}@{e}' for s in dev for e in (0,1,10,100,1000,5000) if not os.path.exists(f'$D/raw/output_{e}/{s}/inter_raw.npz')]
+m=[f'{s}@{e}' for s in dev for e in (0,1,10,100,1000,5000) if not os.path.exists(f'$D/raw/output_{e}/{s}/inter_raw32.npz')]
 print(' '.join(m))")
       [ -z "$missing" ] && break
       ev "phase 1: missing after attempt $attempt: $missing"
@@ -155,7 +155,7 @@ label_pending() {  # $1 raw root, $2 labels dir, $3 scenes file, $4 etas (space-
   while read -r s; do
     [ -z "$s" ] && continue
     for e in $4; do
-      if [ -f "$1/output_$e/$s/inter_raw.npz" ] && [ ! -f "$2/$s/eta$e.json" ]; then
+      if [ -f "$1/output_$e/$s/inter_raw32.npz" ] && [ ! -f "$2/$s/eta$e.json" ]; then
         mkdir -p "$2/$s"; att=$(( $(cat "$2/$s/.attempts" 2>/dev/null || echo 0) + 1 ))
         if [ $att -gt 3 ]; then
           [ -f "$2/$s/.gave_up" ] || { touch "$2/$s/.gave_up"; ev "rescoring $s: gave up after 3 crashed attempts"; }

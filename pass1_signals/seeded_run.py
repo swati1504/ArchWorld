@@ -15,7 +15,7 @@ Options (before the `--`):
                         SKIP_EVAL=1 and SAVE_RAW_TENSORS=1: the prediction GLB export, the in-run
                         ground-truth build (only scoring uses it), and the patch montage after
                         the first run of each scene in this process. The attention plot is kept.
-  --skip-existing-raw   skip a (scene, eta) whose work dir already has inter_raw.npz
+  --skip-existing-raw   skip a (scene, eta) whose work dir already has inter_raw32.npz
                         (run.py itself only skips when an eval_metrics file exists)
 
     python pass1_signals/seeded_run.py --seed 0 -- --model vggt --root data \
@@ -58,11 +58,32 @@ def main():
             return module
         real_main = module.main
 
+        # Full-precision copy of the prediction. The pass's own inter_raw.npz stores depth and confidence
+        # as fp16, which rounds confidences in (1, ~1.0005] to 1.0; the scoring keeps a pixel only if its
+        # confidence exceeds ~1.00001, so fp16 silently drops low-confidence pixels on rescoring. The
+        # prediction GLB export receives the exact tensors right after inter_raw.npz is written, so the
+        # copy is taken there.
+        real_glb = module.save_prediction_glb
+
+        def glb_with_raw32(images, image_paths, depth_map, depth_conf, extrinsics, intrinsics, output_glb,
+                           *a2, **k2):
+            if module.os.environ.get("SAVE_RAW_TENSORS", "").strip() == "1" and Path(output_glb).name == "pred_inter.glb":
+                np.savez_compressed(
+                    str(Path(output_glb).parent / "inter_raw32.npz"),
+                    depth_map=depth_map.detach().cpu().float().numpy(),
+                    depth_conf=depth_conf.detach().cpu().float().numpy(),
+                    extrinsics=extrinsics.detach().cpu().float().numpy(),
+                    intrinsics=intrinsics.detach().cpu().float().numpy())
+                print("  [seeded_run] saved inter_raw32.npz (fp32 depth/conf)", flush=True)
+            if trim:
+                print("  [seeded_run --trim] prediction GLB export skipped", flush=True)
+                return None
+            return real_glb(images, image_paths, depth_map, depth_conf, extrinsics, intrinsics, output_glb, *a2, **k2)
+
+        module.save_prediction_glb = glb_with_raw32
+
         if trim:
             real_vis = module.visualize_intervention_patches
-
-            def no_glb(*a2, **k2):
-                print("  [seeded_run --trim] prediction GLB export skipped", flush=True)
 
             def no_gt(*a2, **k2):
                 print("  [seeded_run --trim] in-run GT build skipped (scoring is done separately)", flush=True)
@@ -76,14 +97,13 @@ def main():
                 montage_done.add(scene)
                 return real_vis(*a2, **k2)
 
-            module.save_prediction_glb = no_glb
             module.generate_gt_by_unproject = no_gt
             module.visualize_intervention_patches = vis_once
 
         def seeded_main(*a2, **k2):
             work_dir = k2.get("work_dir")
-            if skip_raw and work_dir is not None and (Path(work_dir) / "inter_raw.npz").exists():
-                print(f"[seeded_run] {k2.get('scene_name')}: inter_raw.npz exists, skipping", flush=True)
+            if skip_raw and work_dir is not None and (Path(work_dir) / "inter_raw32.npz").exists():
+                print(f"[seeded_run] {k2.get('scene_name')}: inter_raw32.npz exists, skipping", flush=True)
                 return k2.get("model")
             np.random.seed(seed)
             random.seed(seed)

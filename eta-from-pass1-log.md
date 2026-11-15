@@ -559,6 +559,15 @@ and `pass1_signals/denoise_pipeline.sh` (detached; progress in `pass1_out/denois
   take 3.3 s instead of 42.6 s (accuracy) and 7.8 s instead of 66 s (completion). ICP (open3d, ~100 s)
   is left as is. Pipeline stopped and resumed at 22:24 (11 raw files kept, all checked readable).
 
+- **Bug found and fixed: fp16 raw files.** Shuri Castle's rescored draws came out 0.88–0.91 against 0.486
+  in-run (accuracy 0.037 vs 0.183, completion 1.79 vs 0.79): the rescored cloud was missing many points.
+  Cause: the pass's `inter_raw.npz` stores depth confidence as fp16, which rounds every confidence in
+  (1, ~1.0005] to exactly 1.0, and the scoring keeps a pixel only if its confidence exceeds ~1.00001.
+  So low-confidence pixels vanish on rescoring (Shuri has many; Paul Kruger few, so its draws had
+  looked plausible). Fix: `seeded_run.py` saves `inter_raw32.npz` (fp32 depth, confidence and cameras)
+  from the exact tensors the pass hands to its GLB export; the rescorer and the driver use only that
+  file. All raw files, draws and the trim check were deleted and Phase 0 restarted at 22:44.
+
 ### Open questions
 
 - [x] swati's VGGT sweep results: `swati/results_vggt_dev/` (all 39 dev scenes).

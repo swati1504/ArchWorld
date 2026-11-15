@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-"""Score saved VGGT predictions (inter_raw.npz) exactly as the pass scores them, with a chosen seed.
+"""Score saved VGGT predictions (inter_raw32.npz, written by seeded_run.py) exactly as the pass scores them, with a chosen seed.
 
 The pass (intervention/models/vggt/run_pass.py) scores a prediction by aligning it to the ground
 truth (random correspondence subsampling + RANSAC, from NumPy's global generator, then ICP) and
@@ -13,7 +13,8 @@ Differences from the in-run scoring, none of which changes the score:
   - no GLB export;
   - KD-trees are built unbalanced (balanced_tree=False, compact_nodes=False): identical nearest-neighbour
     distances (checked on Paul_Kruger_Church), queries ~10x faster on these clouds;
-  - predictions are read from inter_raw.npz, where depth and confidence are stored as fp16.
+  - predictions are read from inter_raw32.npz (fp32), not the pass's inter_raw.npz: its fp16 confidences
+    round values in (1, ~1.0005] to 1.0, and the scoring's confidence filter (> ~1.00001) then drops those pixels.
 Also recorded per draw (alignment fit quality): open3d fitness and inlier RMSE of the coarse
 (RANSAC) alignment and after ICP, at the ICP threshold.
 
@@ -166,7 +167,7 @@ class Draws:
             return json.loads(p.read_text())
         rp = self.rp or _pass()
         self.rp = rp
-        npz = self.raw_root / f"output_{eta}" / self.scene / "inter_raw.npz"
+        npz = self.raw_root / f"output_{eta}" / self.scene / "inter_raw32.npz"
         if eta not in self._pred:
             self._pred[eta] = load_pred(npz)
         pred, digest = self._pred[eta]
@@ -226,7 +227,7 @@ def cmd_label(args):
     n_bad = 0
     for eta in args.etas:
         out = out_dir / f"eta{eta}.json"
-        if out.exists() or not (dr.raw_root / f"output_{eta}" / args.scene / "inter_raw.npz").exists():
+        if out.exists() or not (dr.raw_root / f"output_{eta}" / args.scene / "inter_raw32.npz").exists():
             continue
         try:
             lab, used = label_one(dr, eta, scheme)
@@ -265,7 +266,7 @@ def cmd_draws(args):
             dr.get(eta, s)
     if args.repeat_seed is not None:               # determinism check: score a seed again, no cache
         eta = args.etas[0]
-        pred, _ = dr._pred.get(eta) or load_pred(dr.raw_root / f"output_{eta}" / args.scene / "inter_raw.npz")
+        pred, _ = dr._pred.get(eta) or load_pred(dr.raw_root / f"output_{eta}" / args.scene / "inter_raw32.npz")
         d = score_once(dr.sc or Scene(dr.rp or _pass(), args.scene,
                                       dr.raw_root / f"output_{eta}" / args.scene), pred, args.repeat_seed)
         (dr.dir / f"eta{eta}_s{args.repeat_seed}_repeat.json").write_text(json.dumps(d, indent=1))
