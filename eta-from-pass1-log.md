@@ -400,10 +400,27 @@ sixth grid point: `pass1_out/labels_with_eta0.csv`.
   views, tower 91 in 2, facade 397 in 2); SCVA ~1e-4 vs ~2e-5, so the 5x ratio is between noise-level
   numbers. Likely their masks found the tower in a few more views.
 
+- **Seeds 1–3, trimmed to 2 scenes at Eric's request** (Dendera/Aguinaldo dropped mid-round; ~9 min per
+  run). Five untouched (η=0) scores per scene, differing only in the scoring draw:
+
+  | | Eric | seed 0 | seed 1 | seed 2 | seed 3 | range | sd/mean | swati η=1…5000 |
+  |---|---|---|---|---|---|---|---|---|
+  | Shuri_Castle | 0.512 | 0.486 | 0.660 | 0.671 | 0.537 | 0.49–0.67 (38%) | 15% | 0.595–0.751 (2/5 inside) |
+  | Paul_Kruger_Church | 0.180 | 0.228 | 0.239 | 0.210 | 0.213 | 0.18–0.24 (33%) | 10% | 0.192–0.227 (5/5 inside) |
+
+  On Shuri the bad draws double Comp-med (~0.54 → ~1.0): the alignment occasionally lands clearly
+  wrong, not slightly off. Paul_Kruger: every ArchAttend score is inside the untouched spread, so its
+  "best η" is indistinguishable from luck. Shuri: swati's mean (0.679) is ~1.2 sd above the untouched
+  mean (0.573); at most weak evidence that ArchAttend hurts there, not the 16–47% it first looked like.
+- **Conclusion:** the noise is not small. On these two hard scenes one scoring draw moves CD by 10–15%
+  (sd), far above the ~1.7% median best-vs-runner-up η gap. Cause: unseeded alignment only (seeded runs
+  are bit-identical). These two were picked for large gaps, so they overstate the typical scene;
+  Dendera's two draws differed by 2%.
+
 ### Open questions
 
 - [x] swati's VGGT sweep results: `swati/results_vggt_dev/` (all 39 dev scenes).
-- [ ] Run-to-run noise of a (scene, η) score: η=1 vs η=0 suggests ~1.4% median; repeat η=0 on a few scenes to separate nondeterminism from a real η=1 effect.
+- [x] Run-to-run noise: all from unseeded alignment (seeded runs bit-identical); sd 10–15% on two hard scenes, ~2% on Dendera. Typical size over all scenes still unknown.
 - [x] A base arm on the same pipeline: Eric's η=0 run (commit 75f52b1).
 - [ ] The paper's exact non-architectural vocabulary: asked Evan Zhang; using our own list meanwhile.
 - [x] Which SCVA version reproduces `anchors.json`: the code definition (34/39; 4 of 5 misses are near-ties), RoPE irrelevant.
