@@ -387,6 +387,19 @@ sixth grid point: `pass1_out/labels_with_eta0.csv`.
   between two untouched runs. Shuri_Castle 0.486 (Eric's η=0 0.512, ~5%); swati's five ArchAttend runs
   are 0.595–0.751, all worse than both untouched runs. Noise or real harm: to be settled by seeds 1–3.
 
+- **Seed-0 repeat (rounds 1 and 2): bit-identical.** Same Score to the last digit on all 4 scenes and
+  byte-identical `pred_inter.glb`. Given a seed the whole pipeline, GPU forward included, is
+  deterministic; all run-to-run noise comes from the unseeded random draws in scoring. A fixed seed
+  removes it.
+- **Two untouched (η=0) runs per scene, differing only in the draw** (ours seed 0 vs Eric's run):
+  Dendera 0.0394 vs 0.0386 (2%), Shuri_Castle 0.486 vs 0.512 (5%), Aguinaldo_Shrine 0.0460 vs 0.0520
+  (13%), Paul_Kruger_Church 0.228 vs 0.180 (27%). On Paul_Kruger all five of swati's η scores
+  (0.192–0.227) lie between the two untouched runs. Shuri_Castle is the exception (swati 0.595–0.751,
+  worse than both). Seeds 1–3 to give a proper spread.
+- Disney anchor mismatch explained: SAM 3 finds almost no architecture there (arch 83 patches in 3/50
+  views, tower 91 in 2, facade 397 in 2); SCVA ~1e-4 vs ~2e-5, so the 5x ratio is between noise-level
+  numbers. Likely their masks found the tower in a few more views.
+
 ### Open questions
 
 - [x] swati's VGGT sweep results: `swati/results_vggt_dev/` (all 39 dev scenes).
