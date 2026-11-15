@@ -568,6 +568,19 @@ and `pass1_signals/denoise_pipeline.sh` (detached; progress in `pass1_out/denois
   from the exact tensors the pass hands to its GLB export; the rescorer and the driver use only that
   file. All raw files, draws and the trim check were deleted and Phase 0 restarted at 22:44.
 
+- **Phase 0 redo (fp32), validated exactly.** Seeded rescoring reproduces the in-run scores to the last
+  digit (Paul Kruger 0.22828, Shuri Castle 0.48608, Dendera 0.03937), the alignment uses the same number of
+  correspondences (247,321 / 113,973 / 216,451), and Shuri's seeds 1–3 reproduce the noise probe's full
+  runs (0.6598, 0.6707, 0.5371). Trim check passed again on the fp32 copies.
+- **Gate: pass. Scheme A** (2–3 draws): only 1 failed draw among 24 (Shuri seed 4, 0.896), too few for
+  scheme F. Eight draws per scene: Paul Kruger 0.194–0.240 (label noise 4.9%), Shuri Castle 0.486–0.896
+  (12.3%), Dendera 0.0378–0.0394 (1.0%). Noise floor used = the largest, 12.3% → tie band 24.6%.
+  Median draw 122 s. Phase 2 started 23:58.
+- **Open issue (rule as written, flagged before any clean label exists):** a 24.6% tie band taken from
+  the noisiest scene applies to every scene, so on quiet scenes (Dendera's own noise is 1%) most η would
+  count as tied, and the E rule ("best on ≥ 5 scenes, ties count") could stop discriminating. Left to
+  Eric; the plan as written applies if no change is made before phase 3.
+
 ### Open questions
 
 - [x] swati's VGGT sweep results: `swati/results_vggt_dev/` (all 39 dev scenes).
