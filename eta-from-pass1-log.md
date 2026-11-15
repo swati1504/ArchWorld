@@ -363,6 +363,30 @@ sixth grid point: `pass1_out/labels_with_eta0.csv`.
   sky/vegetation reconstruct worse, and the attention signal does not obviously add to just counting
   those pixels. Directionally consistent with the paper, not evidence for an attention mechanism.
 
+### 2026-11-15: where does the noise come from? (code reading; probe started)
+
+- **Code reading.** Scoring aligns the prediction to the ground truth before measuring Chamfer
+  distance: random subsampling of correspondences (`np.random.choice`), then RANSAC Umeyama
+  (`eval_utils.umeyama_ransac`, `seed=None`, so NumPy's global generator), then ICP (open3d). The VGGT
+  pass never seeds NumPy (`evaluate.py` does, `np.random.seed(42)`, but `run.py` does not import it), and
+  `run.py` runs all scenes in one process, so a scene's draw also depends on the scenes before it. The
+  authors know: `intervention/aggregate.py` says baseline runs "differ only by the noise of the unseeded
+  RANSAC" and therefore averages *before* over the sweep, while *after* is the best of the 5 runs per
+  scene, which favours a lucky draw. (Not yet quantified; needs the probe's noise size.)
+- **swati's setup (from Eric):** NVIDIA L4 24 GB on GCP g2-standard-8 (8 vCPU, 32 GB RAM), VGGT-1B fp32,
+  50 views, `SKIP_BASELINE_PASS=1`. Same GPU, precision and settings as Eric's η=0 run and the probe, so
+  hardware/precision does not explain differences. Only the CPU count differs (ours 4); ICP and KD-tree
+  run on CPU, unlikely to matter at this size.
+- **Probe** (`pass1_out/noise_probe/run_probe.sh`): η=0 on Dendera, Shuri_Castle, Aguinaldo_Shrine,
+  Paul_Kruger_Church (the last three have the largest |η=1 − η=0| gaps: 29%, 20%, 14%), 5 rounds:
+  seed 0 twice (is the pipeline deterministic given a seed?), seeds 1–3 (spread from alignment).
+  Seeding via `pass1_signals/seeded_run.py`: wraps the pass's `main` at the moment `run.py` imports it
+  (the pass reads its env config at import, so it must not be imported earlier) and calls
+  `np.random.seed / random.seed / torch.manual_seed` before each scene. No repository code changed.
+- **First numbers (round 1, seed 0):** Dendera 0.0394 (Eric's η=0 0.0386; swati η=1 0.0382): ~2%
+  between two untouched runs. Shuri_Castle 0.486 (Eric's η=0 0.512, ~5%); swati's five ArchAttend runs
+  are 0.595–0.751, all worse than both untouched runs. Noise or real harm: to be settled by seeds 1–3.
+
 ### Open questions
 
 - [x] swati's VGGT sweep results: `swati/results_vggt_dev/` (all 39 dev scenes).
