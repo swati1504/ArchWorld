@@ -277,6 +277,33 @@ whether our recomputed anchor matches the shipped one. 88 features in total.
   39, sequentially. Logs in `pass1_out/logs/{pipeline_dev,masks_dev,features_dev}.log`. Expected about
   3.2 h for masks plus about 75 min for features.
 
+### 2026-11-15: early batch; anchor check on 6 scenes
+
+- Restarted the pipeline in two stages so the check could start early (Eric's request): batch 1 =
+  `scenes_dev.txt` lines 2–6, then the remaining 33 (`pass1_out/scenes_{batch1,rest}.txt`). On the
+  restart, a `pkill -f` pattern matched its own command line and killed the driver script but not
+  the mask process, which I stopped by PID; all 4,968 recent mask files were checked readable.
+- Masks ran faster than estimated: about 1.5–3.5 min per scene. Batch 1 features: 98–161 s per scene,
+  peak 20.8–21.0 GB.
+- **Anchor check, 6 scenes (Dendera + batch 1):**
+
+  | scene | shipped | code | eq | eqx |
+  |---|---|---|---|---|
+  | Basilique … (Ouidah) | arch | arch | belfry | belfry |
+  | Dendera | facade | facade | facade | facade |
+  | Hassan_Tower | pillar | pillar | pillar | pillar |
+  | Kumano_Hongu_Taisha | gate | gate | gate | gate |
+  | Paul_Kruger_Church | window | window | belfry | belfry |
+  | Red_House_Theater | window | window | facade | facade |
+
+  **code definition: 6/6 matches** (with and without RoPE); **paper's Eq. (eq, eqx): 3/6.** RoPE on/off
+  never changed the pick. Where they disagree, Eq. picks a large element (belfry, facade): it sums over
+  all patch pairs, so it grows with element size squared. Example, Paul_Kruger_Church: window has 2,182
+  patches in 43 views (code 0.0269, eq 65); belfry has 7,494 patches in 16 views (code 0.0056, eq 1,269).
+- **Interpretation:** the shipped anchors were produced with the code definition (cross-view pairs,
+  mean per view pair), not the paper's Eq. 1–2, and our pipeline (masks, token mapping, attention,
+  SCVA) reproduces them so far. To confirm on all 39.
+
 ### Open questions
 
 - [x] swati's VGGT sweep results: `swati/results_vggt_dev/` (all 39 dev scenes).
