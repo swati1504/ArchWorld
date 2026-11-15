@@ -417,6 +417,33 @@ sixth grid point: `pass1_out/labels_with_eta0.csv`.
   are bit-identical). These two were picked for large gaps, so they overstate the typical scene;
   Dendera's two draws differed by 2%.
 
+### 2026-11-15: noise parked; plan A+B written before running (step-risk and curve pooling)
+
+**Noise thread paused, not solved.** Rescoring needs swati's `inter_raw.npz` (her sweep set
+`SAVE_RAW_TENSORS=1`; not uploaded) and costs ~2.5–6 CPU-min per draw here. Parked by Eric's decision.
+Working assumption from now on: per-scene differences of a few % are unreadable; large ones (η=5000
+blow-ups of 3–6x) are real.
+
+**Plan, fixed before looking at results.** Labels: swati's sweep, η ∈ {1, 10, 100, 1000, 5000}
+(η=0 excluded: the choice is among intervention step sizes). Bar: best-fixed (η=1000 in every fold).
+
+- *Features, chosen by hypothesis (5):* `anchor_view_frac`, `anchor_tok_frac` (anchor coverage: the
+  Disney hypothesis, tiny anchor + big step = wreckage), `a_share_Lmean` (anchor dominance),
+  `nonarch_share_Lmean` (attention on non-architecture), `ent_L4` (early attention spread).
+  Honesty note: `ent_L4` and `nonarch_share` were already seen to correlate with log10 best η in the
+  first test; the anchor-coverage features were not examined then.
+- *A, step risk:* `risk_large = log(Score(5000) / min Score over η ≤ 1000)`. Prediction: negative
+  Spearman with `anchor_view_frac` and `anchor_tok_frac`. Reported with the plain p-value (2 tests).
+- *B, smooth target:* `large_vs_small` as before.
+- *Selectors (LOSO, same harness):* `knn-curve k=5` and `k=10`: average the training regret curves of
+  the k nearest scenes (standardized features, fit on training rows), pick the η with the lowest
+  average. Averaging pools noise (B), and a neighbour's blow-up raises that η's average (A).
+  Plus `curve-ridge` and `logeta-ridge` restricted to the 5 features.
+- *Control:* permutation test, 200 shuffles of the feature rows across scenes, rerun `knn-curve`;
+  p = share of shuffles with mean regret ≤ the real one. A selector counts as beating best-fixed only
+  if its mean regret is lower **and** the permutation p < 0.05.
+- *Also reported:* number of scenes with regret > 50% (catastrophes avoided or caused).
+
 ### Open questions
 
 - [x] swati's VGGT sweep results: `swati/results_vggt_dev/` (all 39 dev scenes).
