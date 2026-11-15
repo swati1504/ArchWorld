@@ -304,10 +304,35 @@ whether our recomputed anchor matches the shipped one. 88 features in total.
   mean per view pair), not the paper's Eq. 1–2, and our pipeline (masks, token mapping, attention,
   SCVA) reproduces them so far. To confirm on all 39.
 
+### 2026-11-15: all 39 dev scenes; anchor check; first Pass-1 selector test (negative)
+
+- Pipeline finished: masks and features for all 39 dev scenes, no failures. Features for the last 33
+  scenes took about 70 min. `features.py` built `pass1_out/pass1_features.csv` (39 scenes x 88 features).
+- **Anchor check, 39 scenes:** code definition **34/39**, paper's Eq. (eq and eqx) **17/39**; RoPE never
+  changes the pick. Of the 5 code mismatches, 4 are near-ties (the shipped anchor's SCVA is 85-99% of our
+  top pick: Hermesvilla 0.99, Stadhuis Gouda 0.92, Baguio 0.91, San Francisco Mexico City 0.85), so a
+  bf16 or mask difference can flip them. Disney is a real miss (shipped tower = 0.2x arch). Conclusion:
+  the shipped anchors come from the code definition, and our pipeline reproduces Pass 1.
+- **Correlations (`pass1_signals/pass1_selectors.py`, log `pass1_out/logs/pass1_selectors.log`):**
+  strongest is early-layer attention entropy, layer 4. Scenes with more diffuse attention there prefer
+  smaller eta: `anc_ent_L4` rho = -0.49 with log10 best eta (p = 0.001), `ent_L4` -0.47 (p = 0.003).
+  Next: `nonarch_share` (share of SCVA on non-architectural elements) at L4/L17/L23, rho about -0.35 to
+  -0.40: more attention on sky/trees, smaller eta. **None survives multiple-testing correction** over 88
+  features (best BH q = 0.11).
+- **LOSO selectors vs best-fixed (eta=1000, mean regret 4.38%):** none beats it. Best are
+  logeta-ridge top1 (4.36%, W/L 7/9), curve-ridge top10 (4.41%), logeta-ridge Lmean+scene (4.39%,
+  W/L 9/11). These are ties: they mostly fall back to choosing 1000. Curve-ridge with many features is
+  worse (7-20%) because it sometimes predicts 5000 on a scene where 5000 is catastrophic.
+- **Reading:** with 39 scenes, one noisy run per (scene, eta), and a best-fixed that is already within
+  4.4% of the oracle on average, Pass-1 summary features give at most a weak signal (early entropy,
+  non-arch share), not yet a usable selector. The oracle headroom is small on average (median Score
+  -6.8% vs eta=1 for oracle, -5.5% for eta=1000) and concentrated in a few scenes.
+- Not done: the leakage-vs-base-error test needs a base arm on the same pipeline (open question).
+
 ### Open questions
 
 - [x] swati's VGGT sweep results: `swati/results_vggt_dev/` (all 39 dev scenes).
 - [ ] Run-to-run noise of a (scene, η) score: repeat a few to know which differences are real.
 - [ ] A base arm on the same pipeline (`run.py` without `SKIP_BASELINE_PASS`) for "no intervention".
 - [ ] The paper's exact non-architectural vocabulary: asked Evan Zhang; using our own list meanwhile.
-- [ ] Which SCVA version reproduces `anchors.json` (paper's Eq. vs code's cross-view mean; RoPE or not).
+- [x] Which SCVA version reproduces `anchors.json`: the code definition (34/39; 4 of 5 misses are near-ties), RoPE irrelevant.
