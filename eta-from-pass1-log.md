@@ -329,10 +329,44 @@ whether our recomputed anchor matches the shipped one. 88 features in total.
   -6.8% vs eta=1 for oracle, -5.5% for eta=1000) and concentrated in a few scenes.
 - Not done: the leakage-vs-base-error test needs a base arm on the same pipeline (open question).
 
+### 2026-11-15: η=0 base on the same pipeline (Eric's run); gain, noise floor, leakage
+
+Eric reran untouched VGGT through `run.py` at η=0 (fp32; `eric/vggt_base_eta0_dev_results.csv`, commit
+75f52b1). Same scale as swati's sweep (Dendera CD 0.0386 at η=0 vs 0.0382 at η=1). Analysis:
+`pass1_signals/eta0_analysis.py`, log `pass1_out/logs/eta0_analysis.log`; combined labels with η=0 as a
+sixth grid point: `pass1_out/labels_with_eta0.csv`.
+
+- **ArchAttend vs no intervention, per scene (CD relative to η=0):**
+
+  | η | median | mean | scenes better | Wilcoxon p |
+  |---|---|---|---|---|
+  | 1 | −0.17% | +0.73% | 20/39 | 0.82 |
+  | 10 | +0.01% | +0.63% | 19/39 | 0.91 |
+  | 100 | −0.52% | +0.43% | 22/39 | 0.65 |
+  | 1000 | **−1.23%** | **−1.64%** | **27/39** | **0.046** |
+  | 5000 | +0.09% | +31.3% | 19/39 | 0.42 |
+  | oracle η | −2.98% | | 35/39 | |
+
+  Only η=1000 helps, and only modestly. The oracle's −3% is partly selection on noise (next point).
+- **Noise floor.** η=1 should barely move VGGT, yet |CD(η=1)/CD(η=0) − 1| has median 1.37%, 75th
+  percentile 7.6%, max 29%. Either the pipeline is not deterministic run to run or η=1 matters more
+  than expected; either way that is the size of differences we cannot trust from one run. Gap between
+  a scene's best and runner-up η: median 1.71%, and in 17/39 scenes it is below 1.37%. **For about half
+  the scenes the "best η" label is within noise.**
+- **LOSO with η=0 allowed:** best-fixed is still η=1000 (mean regret 5.3%; median Score −1.4% vs η=0,
+  better on 69% of scenes). Oracle −2.8%. So the whole headroom a selector could capture over η=1000
+  is about 1.4% median CD, comparable to the noise floor.
+- **Paper's leakage claim** (more attention leaking to non-architecture → larger base error): the
+  leakage ratios themselves are weak (rho +0.07 to +0.28, all p > 0.08). Sky attention is clearer
+  (`all_sky_*` rho +0.33 to +0.41, p 0.01–0.04), but the plain share of non-architectural pixels is
+  stronger still (`nonarch_tok_frac` rho +0.47, p 0.003; `sky_tok_frac` +0.39). So scenes with much
+  sky/vegetation reconstruct worse, and the attention signal does not obviously add to just counting
+  those pixels. Directionally consistent with the paper, not evidence for an attention mechanism.
+
 ### Open questions
 
 - [x] swati's VGGT sweep results: `swati/results_vggt_dev/` (all 39 dev scenes).
-- [ ] Run-to-run noise of a (scene, η) score: repeat a few to know which differences are real.
-- [ ] A base arm on the same pipeline (`run.py` without `SKIP_BASELINE_PASS`) for "no intervention".
+- [ ] Run-to-run noise of a (scene, η) score: η=1 vs η=0 suggests ~1.4% median; repeat η=0 on a few scenes to separate nondeterminism from a real η=1 effect.
+- [x] A base arm on the same pipeline: Eric's η=0 run (commit 75f52b1).
 - [ ] The paper's exact non-architectural vocabulary: asked Evan Zhang; using our own list meanwhile.
 - [x] Which SCVA version reproduces `anchors.json`: the code definition (34/39; 4 of 5 misses are near-ties), RoPE irrelevant.
