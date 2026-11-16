@@ -1,0 +1,10 @@
+{
+  "paired_landmarks": 36,
+  "expected_landmarks": 36,
+  "complete_cohort": true,
+  "mean_difference": -0.6224070615122497,
+  "median_difference": -0.04327081474448885,
+  "wins": 23,
+  "ties": 0,
+  "losses": 13
+}
