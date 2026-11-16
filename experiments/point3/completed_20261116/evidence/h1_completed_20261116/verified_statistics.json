@@ -1,0 +1,49 @@
+{
+  "status": "complete",
+  "calibration_landmarks": 18,
+  "confirmation_landmarks": 36,
+  "completed_conditions": 198,
+  "failures": 0,
+  "selected_scalar": "scalar_eta1000",
+  "selected_layer_rule": "layer_alpha0.02",
+  "calibration_means": {
+    "layer_alpha0.01": 11.527233144427433,
+    "layer_alpha0.02": 10.262456147253678,
+    "scalar_eta100": 10.849762145186306,
+    "scalar_eta1000": 9.689405855142855
+  },
+  "metric": "extent-normalized Chamfer distance; equal landmark weights",
+  "confirmation_metrics": {
+    "baseline": {
+      "mean": 13.924255003986703,
+      "median": 7.352335239091023
+    },
+    "scalar": {
+      "mean": 14.763027090109869,
+      "median": 6.848672144790398
+    },
+    "structured": {
+      "mean": 14.14062002859762,
+      "median": 6.577174197450995
+    }
+  },
+  "structured_minus_scalar": {
+    "mean_difference": -0.6224070615122497,
+    "median_difference": -0.04327081474448885,
+    "wins": 23,
+    "ties": 0,
+    "losses": 13
+  },
+  "structured_minus_baseline": {
+    "mean_difference": 0.21636502461091725,
+    "median_difference": -0.029649546862844267,
+    "wins": 21,
+    "ties": 0,
+    "losses": 15
+  },
+  "all_54_view_count": 2622,
+  "confirmation_view_count": 1776,
+  "study_source_sha256": "145b9848b597eff8b9c94a336585d65c8854a3d4897f48c4b833828e75d2aeb0",
+  "plan_sha256": "fc2a3e2522c1fd8208da419857fc15d92f1530a39a0639cd16ad22380e1059e6",
+  "inference": "Descriptive single-seed internal confirmation; no significance or equivalence claim."
+}

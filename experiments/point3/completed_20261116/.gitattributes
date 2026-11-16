@@ -1,0 +1,11 @@
+# Snapshot hashes are computed over the original downloaded bytes.
+evidence/** -text whitespace=cr-at-eol
+figures/** -text
+*.pdf -text
+*.tex text eol=lf
+*.bib text eol=lf
+README.md text eol=lf
+# Preserve the upstream ACM template exactly, including its whitespace.
+acmart.* -text -whitespace linguist-vendored
+ACM-Reference-Format.bst -text -whitespace linguist-vendored
+LICENSE.acmart -text

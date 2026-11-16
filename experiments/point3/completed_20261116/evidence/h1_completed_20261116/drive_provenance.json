@@ -1,0 +1,143 @@
+{
+  "hypothesis": "H1",
+  "retrieved_at_utc": "2026-11-16 20:06:31 UTC",
+  "completed_at_utc": "2026-11-16T20:02:32Z",
+  "source_folder": "https://drive.google.com/drive/folders/1vWqP-mweR0-SJ3TUh1KA6Y9Ngs1wcp-U",
+  "files": [
+    {
+      "file": "run_summary.json",
+      "id": "1yvvimEGTkDUh15-JwryYdGOYQUEcWJap",
+      "title": "summary.json",
+      "url": "https://drive.google.com/file/d/1yvvimEGTkDUh15-JwryYdGOYQUEcWJap/view",
+      "modified_time": "2026-11-16T20:02:32.592Z",
+      "mime_type": "application/json",
+      "sha256": "770d363384b4c93b5c984bc96d52dc50fc08bb5ccc0b633fa8d46117fbd555f7"
+    },
+    {
+      "file": "run_session_1_0.json",
+      "id": "1cbJaaNq1HWaBOb2zvb9x-Vh75tKdRSwA",
+      "title": "session_1_0.json",
+      "url": "https://drive.google.com/file/d/1cbJaaNq1HWaBOb2zvb9x-Vh75tKdRSwA/view",
+      "modified_time": "2026-11-16T20:02:32.281Z",
+      "mime_type": "application/json",
+      "sha256": "6ca3759dad9d3905426ff8dc55e719c60629ef8fe763b0a8a09ab978624c17fe"
+    },
+    {
+      "file": "run_results.csv",
+      "id": "1cLvRKIgi8spJzulSdK7YRDN_7ZTCF1Yz",
+      "title": "results.csv",
+      "url": "https://drive.google.com/file/d/1cLvRKIgi8spJzulSdK7YRDN_7ZTCF1Yz/view",
+      "modified_time": "2026-11-16T20:02:29.337Z",
+      "mime_type": "text/csv",
+      "sha256": "3211d6ae4823e0df4976dae148a401fc56841328a3d9f2826a5f80ac3e0d9db9"
+    },
+    {
+      "file": "run_failures.csv",
+      "id": "1DjX7mUGsZnFMoYs-lxbIIE52fET9DXYG",
+      "title": "failures.csv",
+      "url": "https://drive.google.com/file/d/1DjX7mUGsZnFMoYs-lxbIIE52fET9DXYG/view",
+      "modified_time": "2026-11-16T20:02:29.324Z",
+      "mime_type": "text/csv",
+      "sha256": "7daafc5c95562cdae74d879167cdcbd6ebcc53264c98f28e151c799779b60eb5"
+    },
+    {
+      "file": "run_strength_diagnostics.csv",
+      "id": "1HOpUp98rWN08tdHOjMiTblHU1oQVNxKU",
+      "title": "strength_diagnostics.csv",
+      "url": "https://drive.google.com/file/d/1HOpUp98rWN08tdHOjMiTblHU1oQVNxKU/view",
+      "modified_time": "2026-11-16T20:02:29.262Z",
+      "mime_type": "text/csv",
+      "sha256": "0bb755057611f5ca45c9c98282b5f706f91e841c6f294fe3a491ba725ce03a06"
+    },
+    {
+      "file": "run_calibration_scores.json",
+      "id": "1vp3JWLNdhWTtlLgO_lLtc_OsffjVWFot",
+      "title": "calibration_scores.json",
+      "url": "https://drive.google.com/file/d/1vp3JWLNdhWTtlLgO_lLtc_OsffjVWFot/view",
+      "modified_time": "2026-11-16T18:55:05.675Z",
+      "mime_type": "application/json",
+      "sha256": "cf285bb9d3abcc4853157044f39c50675b4f351f4df5b140b4259a3292e1fa70"
+    },
+    {
+      "file": "run_selection.json",
+      "id": "1puX_eZrQPkqfITKOBR0wsIv0ocIARO1N",
+      "title": "selection.json",
+      "url": "https://drive.google.com/file/d/1puX_eZrQPkqfITKOBR0wsIv0ocIARO1N/view",
+      "modified_time": "2026-11-16T18:55:05.642Z",
+      "mime_type": "application/json",
+      "sha256": "168d0b84240f6803819f3dcaa03785ce9d72029bc175186f867f6b731186a783"
+    },
+    {
+      "file": "run_cache_buffer_validation.json",
+      "id": "1uIvhWYwXVenRhECZhlWqxFh5TnfUibpd",
+      "title": "cache_buffer_validation.json",
+      "url": "https://drive.google.com/file/d/1uIvhWYwXVenRhECZhlWqxFh5TnfUibpd/view",
+      "modified_time": "2026-11-16T18:46:37.409Z",
+      "mime_type": "application/json",
+      "sha256": "e9621d24fde55d877ef7a056eb7668a0cc33d741464808e7e83b20ef02c887f3"
+    },
+    {
+      "file": "run_evaluation_packages.json",
+      "id": "1bCju2nNiVWc7m_H3yQ1XlJi77EiTXoZG",
+      "title": "evaluation_packages.json",
+      "url": "https://drive.google.com/file/d/1bCju2nNiVWc7m_H3yQ1XlJi77EiTXoZG/view",
+      "modified_time": "2026-11-16T18:46:37.362Z",
+      "mime_type": "application/json",
+      "sha256": "8681d9acd41d7576aa0670677fcb421aa33c4913385f469110047e7a60cc78c3"
+    },
+    {
+      "file": "run_gpu_setup.json",
+      "id": "1hhd_T9vJrZy-APZb_csMdovm686E3h8L",
+      "title": "gpu_setup.json",
+      "url": "https://drive.google.com/file/d/1hhd_T9vJrZy-APZb_csMdovm686E3h8L/view",
+      "modified_time": "2026-11-16T18:45:27.532Z",
+      "mime_type": "application/json",
+      "sha256": "3e049be3cdbb8feaf178b3558a1a0d44aa3a767a22bdea784fcf6dff2fafe475"
+    },
+    {
+      "file": "run_execution_environment.json",
+      "id": "1tuMQRIfW4cGze7KO4Cn7OXihG_81a1Oj",
+      "title": "execution_environment.json",
+      "url": "https://drive.google.com/file/d/1tuMQRIfW4cGze7KO4Cn7OXihG_81a1Oj/view",
+      "modified_time": "2026-11-15T21:44:09.797Z",
+      "mime_type": "application/json",
+      "sha256": "531d5cfa48919ea493274fb8f6f05fa01d49959b32eabef15f2112e78a80d7f4"
+    },
+    {
+      "file": "run_study.json",
+      "id": "1JVexHzK3vv8EyJstVOfXkUYCqlYY0gqp",
+      "title": "study.json",
+      "url": "https://drive.google.com/file/d/1JVexHzK3vv8EyJstVOfXkUYCqlYY0gqp/view",
+      "modified_time": "2026-11-15T21:44:08.235Z",
+      "mime_type": "application/json",
+      "sha256": "31e43e62145cd6914b3285c2cde8b1e38b68d5ace8cc1bc0fef2d8bd092009bd"
+    },
+    {
+      "file": "report_summary.json",
+      "id": "1afxgCVLkb-edrohD_Bmxm1kKz4E8RlUY",
+      "title": "summary.json",
+      "url": "https://drive.google.com/file/d/1afxgCVLkb-edrohD_Bmxm1kKz4E8RlUY/view",
+      "modified_time": "2026-11-16T20:02:32.286Z",
+      "mime_type": "application/json",
+      "sha256": "caa999a6a5a90da1c0541dddb3dd7d28161d47d872bc143577dd135b439d470d"
+    },
+    {
+      "file": "report_REPORT.md",
+      "id": "1khDQOvhqdOD9he_r7a31-LK7AmDaztFi",
+      "title": "REPORT.md",
+      "url": "https://drive.google.com/file/d/1khDQOvhqdOD9he_r7a31-LK7AmDaztFi/view",
+      "modified_time": "2026-11-16T20:02:29.337Z",
+      "mime_type": "text/markdown",
+      "sha256": "ce0beed9b988dd7966f7b78eeeba7440f13a8e2820d1c4b2176eb4ffa10851dc"
+    },
+    {
+      "file": "report_paired_results.csv",
+      "id": "1PxHR4xUtiRmzt3x5ULXxShkKJFV6Ks0b",
+      "title": "paired_results.csv",
+      "url": "https://drive.google.com/file/d/1PxHR4xUtiRmzt3x5ULXxShkKJFV6Ks0b/view",
+      "modified_time": "2026-11-16T20:02:29.295Z",
+      "mime_type": "text/csv",
+      "sha256": "e5ac8225ca3c20b6659b3f3394f1e0975d3d22d359288a5bd442130a87cb00c1"
+    }
+  ]
+}
