@@ -1889,6 +1889,10 @@ def main(scene_name=None, work_dir=None, model=None):
                     print(f"  Base eval: failed ({metrics})")
             elif SKIP_EVAL:
                 print("  Skipping base evaluation (SKIP_EVAL=1)")
+            # The baseline token pyramid is no longer used after its heads run.
+            # Release it before the intervention; assignment below would otherwise
+            # retain the entire pyramid until the second aggregator call returns.
+            del aggregated_tokens_list
             # Free Pass 1 outputs; keep images on GPU for fast second pass.
             del depth_map, depth_conf, extrinsics, intrinsics
             if device == "cuda":
@@ -2161,6 +2165,19 @@ def main(scene_name=None, work_dir=None, model=None):
                     loss_valid_mask = union.clone()
 
         print(f"Pass 2: with intervention (layers {first_intervention_layer}–{last_intervention_layer}, α={alpha_eff}, loss={_loss_type})...")
+        step_controller = None
+        strength_path = os.environ.get("STRUCTURED_STRENGTH_CONFIG", "").strip()
+        if strength_path:
+            from intervention.strength import StrengthConfig, StrengthController
+            if alpha_eff is not None or _max_steps != 1 or _loss_type != "arch_attn" or _use_sum:
+                raise ValueError("Point-3 runs must keep the reference one-step attention objective")
+            if per_layer_intervention or TOP_K_ELEMENTS != 1:
+                raise ValueError("Point-3 strength comparison requires one fixed anchor")
+            if n_intervention == 0:
+                raise ValueError("Zero intervention tokens: refusing a meaningless point-3 run")
+            step_controller = StrengthController(
+                StrengthConfig.load(strength_path), num_images, intervention_tag,
+                first_intervention_layer, last_intervention_layer, eta=_step_size)
         intervention = VGGTAttentionIntervention(
             model,
             arch_mask=None,
@@ -2177,6 +2194,7 @@ def main(scene_name=None, work_dir=None, model=None):
             attn_improve_thresh=_attn_thresh,
             loss_type=_loss_type,
             group_token_masks=group_token_masks,
+            step_controller=step_controller,
         )
         if PROBE and torch.cuda.is_available():
             torch.cuda.synchronize(); torch.cuda.reset_peak_memory_stats(); _probe_ti = time.perf_counter()
@@ -2187,6 +2205,8 @@ def main(scene_name=None, work_dir=None, model=None):
             pose_enc = model.camera_head(aggregated_tokens_list)[-1]
             extrinsics, intrinsics = pose_encoding_to_extri_intri(pose_enc, images.shape[-2:])
         intervention.remove_intervention()
+        if step_controller is not None:
+            step_controller.save(work_dir / "strength_trace.json")
         if PROBE and torch.cuda.is_available():
             torch.cuda.synchronize(); _probe_inter_gb = torch.cuda.max_memory_allocated() / 1e9; _probe_inter_s = time.perf_counter() - _probe_ti
             _bg = round(_probe_base_gb, 3) if "_probe_base_gb" in locals() else None

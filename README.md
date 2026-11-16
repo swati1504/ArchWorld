@@ -20,6 +20,14 @@
 
 This repository has two parts: `eval/` benchmarks a model on ArchWorld, and `intervention/` runs ArchAttend on top of it. See the [project page](https://cornell-vailab.github.io/ArchWorld/) for the method and results.
 
+The team extension for project point 3 is documented in
+[Mask preparation and three hypothesis notebooks](experiments/point3/shared54/HYPOTHESIS_NOTEBOOKS.md).
+It tests intervention strength per layer, per view, and per architectural anchor
+on the same 54 landmarks, using all eligible views up to 50 per landmark. One
+preparation notebook supplies reusable masks; three independent, resumable GPU
+notebooks perform calibration and confirmation. Each runtime must pass the
+reference and memory checks before bulk execution.
+
 ## Setup
 
 ```bash
