@@ -38,12 +38,37 @@ from threshold_rule import sel_stump                                            
 
 MIN_WINS = 5
 MAX_E = 4
+# Ties (amendment of 2026-11-16, made before any clean label existed): each scene's tie band is twice its
+# own label noise, estimated from its own draws; label noise = LABEL_FACTOR x pooled within-label draw sd
+# (a label is the mean of 2 or the median of 3 draws), clipped to [NOISE_MIN, phase-0 noise floor].
+NOISE_MIN = 0.01
+LABEL_FACTOR = 0.7
 TOP_PER_TARGET = 3
 N_BOOT = 1000
 SELECTOR_TARGETS = ("T_best", "T_slope", "T_regret")   # signals for the selectors come from these
 
 
 # ----------------------------------------------------------------------------- shared helpers
+def scene_noise(labels_csv, scenes, cap):
+    """Per-scene label noise from the scene's own draws (pooled within-label relative sd x LABEL_FACTOR).
+
+    Labels without a draw_scores column (e.g. a dry run on single-run labels) fall back to the cap."""
+    df = pd.read_csv(labels_csv)
+    out = {}
+    for s in scenes:
+        g = df[df.scene == s]
+        ss, dof = 0.0, 0
+        for v in (g["draw_scores"] if "draw_scores" in g else []):
+            d = np.array([float(x) for x in str(v).split() if x not in ("nan",)])
+            d = d[np.isfinite(d)]
+            if len(d) >= 2:
+                r = (d - d.mean()) / d.mean()
+                ss, dof = ss + float((r ** 2).sum()), dof + len(d) - 1
+        sd = np.sqrt(ss / dof) if dof else np.nan
+        out[s] = float(np.clip(LABEL_FACTOR * sd, NOISE_MIN, cap)) if np.isfinite(sd) else float(cap)
+    return np.array([out[s] for s in scenes])
+
+
 def tied_best(row, tie):
     """Indices tied with the row's minimum (ratio < 1 + tie)."""
     return np.where(row / row.min() < 1 + tie)[0]
@@ -56,10 +81,12 @@ def bh(p):
 
 
 def targets(XE, etasE, s0, tie):
-    """Targets per scene on E+ (columns of XE are the eta values in etasE, all > 0); s0 = score at eta 0."""
+    """Targets per scene on E+ (columns of XE are the eta values in etasE, all > 0); s0 = score at eta 0.
+    tie: one tie band per row (or a scalar)."""
     etasE = np.asarray(etasE); le = np.log10(etasE)
+    tie = np.broadcast_to(np.asarray(tie, float), (len(XE),))
     T = {}
-    T["T_best"] = np.array([np.median(le[tied_best(r, tie)]) for r in XE])
+    T["T_best"] = np.array([np.median(le[tied_best(r, t)]) for r, t in zip(XE, tie)])
     n = len(etasE)
     if n >= 2:
         small, large = np.arange(n // 2), np.arange(n - n // 2, n)
@@ -102,7 +129,7 @@ def top_signals(F, T, cols, k=TOP_PER_TARGET, which=None):
 
 def selector_signals(F, XE, etasE, tie, cols, rows=None):
     rows = np.arange(len(XE)) if rows is None else np.asarray(rows)
-    T = targets(XE[rows], etasE, None, tie)
+    T = targets(XE[rows], etasE, None, np.broadcast_to(np.asarray(tie, float), (len(XE),))[rows])
     Fr = F.iloc[rows].reset_index(drop=True)
     tops = top_signals(Fr, T, cols, which=SELECTOR_TARGETS)
     return sorted({s for v in tops.values() for s, _ in v})
@@ -140,18 +167,22 @@ def main():
     pd.set_option("display.width", 220)
     ff = lambda v: f"{v:.4f}"
 
-    noise = json.loads(Path(args.scheme).read_text()).get("noise_floor") or 0.0
-    tie = 2 * noise
+    cap = json.loads(Path(args.scheme).read_text()).get("noise_floor") or 0.0
     scenes, etas_all, Xall = load_curves(args.labels)
     assert etas_all[0] == 0, "labels must include eta=0"
     s0, X, etas = Xall[:, 0], Xall[:, 1:], etas_all[1:]
+    noise = scene_noise(args.labels, scenes, cap)
+    tie = 2 * noise
     F = pd.DataFrame({"scene": scenes}).merge(pd.read_csv(args.features), on="scene", how="left")
     cols = [c for c in F.columns if c != "scene" and pd.api.types.is_numeric_dtype(F[c]) and F[c].nunique() > 1]
-    print(f"{len(scenes)} scenes with all of eta {etas_all}; noise floor {noise:.2%}, tie band {tie:.2%}\n")
+    print(f"{len(scenes)} scenes with all of eta {etas_all}; per-scene tie band = 2 x own label noise, "
+          f"noise clipped to [{NOISE_MIN:.0%}, {cap:.1%}]")
+    print(f"tie band across scenes: median {np.median(tie):.1%}, range {tie.min():.1%}-{tie.max():.1%}; "
+          f"at the cap: {(noise >= cap - 1e-12).sum()}, at the minimum: {(noise <= NOISE_MIN + 1e-12).sum()}\n")
 
     # ---- 3.1 landscape
     print("== 3.1 what the clean labels say")
-    ties = [tied_best(r, tie) for r in X]
+    ties = [tied_best(r, t) for r, t in zip(X, tie)]
     wins = np.zeros(len(etas), int)
     for t in ties:
         wins[t] += 1
@@ -248,7 +279,8 @@ def main():
     if spec is not None:
         selector.update(kind=spec[0], k=spec[1], signals=selector_signals(F, XE, E_plus, tie, cols))
     lst = {"written": time.strftime("%Y-%m-%d %H:%M:%S"), "n_dev_scenes": len(scenes), "E": E,
-           "noise_floor": noise, "tie_band": tie,
+           "tie_rule": "per-scene: 2 x own label noise", "noise_cap": cap, "noise_min": NOISE_MIN,
+           "label_factor": LABEL_FACTOR, "dev_tie_band_median": float(np.median(tie)),
            "targets": {t: [{"signal": s, "rho_dev": r, "sign": int(np.sign(r))} for s, r in v] for t, v in tops.items()},
            "selector": selector, "dev_loso_mean_regret": {r["selector"]: r["mean regret"] for r in res}}
     print("== 3.6 confirmation list")

@@ -22,7 +22,8 @@ from scipy.stats import spearmanr
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from selection import load_curves, regret, sel_curve_ridge        # noqa: E402
 from step_risk import sel_knn_curve                                # noqa: E402
-from clean_analysis import targets                                 # noqa: E402
+import clean_analysis as ca                                         # noqa: E402
+from clean_analysis import targets, scene_noise                    # noqa: E402
 
 
 def curves_at(path, E):
@@ -49,13 +50,17 @@ def main():
     args = ap.parse_args()
     pd.set_option("display.width", 220)
     L = json.loads(Path(args.list).read_text())
-    E, tie = L["E"], L["tie_band"]
+    E = L["E"]
     Ep = [e for e in E if e != 0]
 
     scenes, XE0 = curves_at(args.labels, E)
     s0, XE = XE0[:, E.index(0)], XE0[:, [E.index(e) for e in Ep]]
     F = pd.DataFrame({"scene": scenes}).merge(pd.read_csv(args.features), on="scene", how="left")
+    # same tie rule as on dev: each new scene's band = 2 x its own label noise, same clipping
+    ca.NOISE_MIN, ca.LABEL_FACTOR = L["noise_min"], L["label_factor"]
+    tie = 2 * scene_noise(args.labels, scenes, L["noise_cap"])
     T = targets(XE, Ep, s0, tie)
+    print(f"tie band on new scenes: median {np.median(tie):.1%} (dev median {L['dev_tie_band_median']:.1%})")
     print(f"{len(scenes)} new scenes; E = {E}; list written {L['written']} from {L['n_dev_scenes']} dev scenes\n")
 
     rows = []

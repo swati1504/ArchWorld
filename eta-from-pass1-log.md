@@ -581,6 +581,12 @@ and `pass1_signals/denoise_pipeline.sh` (detached; progress in `pass1_out/denois
   count as tied, and the E rule ("best on ≥ 5 scenes, ties count") could stop discriminating. Left to
   Eric; the plan as written applies if no change is made before phase 3.
 
+- **Amendment 1 (2026-11-16, accepted by Eric; no clean label existed yet): per-scene tie bands.** Each
+  scene's tie band = 2 × its own label noise (0.7 × pooled within-label draw spread, clipped to
+  [1%, 12.3%]), instead of 2 × 12.3% for every scene. Implemented in `clean_analysis.py` and
+  `confirm_analysis.py` (new scenes get their own bands with the same settings). Dry run on synthetic
+  draws: bands 2.0–23.4%, median 9.7%.
+
 ### Open questions
 
 - [x] swati's VGGT sweep results: `swati/results_vggt_dev/` (all 39 dev scenes).
