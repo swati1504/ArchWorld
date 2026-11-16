@@ -1,3 +1,5 @@
+**AdaptiveAttend milestone:** [Completed H1/H2 results, report, and reproduction instructions](experiments/point3/completed_20261116/README.md).
+
 <p align="center">
   <img src="https://cornell-vailab.github.io/ArchWorld/static/images/teaser.png" width="100%" alt="A sample scene from each of ArchWorld's eight geographic regions">
 </p>

@@ -1,0 +1,95 @@
+{
+  "retrieved_date": "2026-11-16",
+  "run_folder": "https://drive.google.com/drive/folders/1-pwpiTPz-cWqRt295M9MmvkZ127w6EH1",
+  "report_folder": "https://drive.google.com/drive/folders/1IN0wHbDjp52sAw9MpO8LhvEinlMsaLSL",
+  "files": [
+    {
+      "file": "run_summary.json",
+      "id": "1GO-5fyX-P3KB64S8cUT0djiCfhU9HbJ0",
+      "url": "https://drive.google.com/file/d/1GO-5fyX-P3KB64S8cUT0djiCfhU9HbJ0/view?usp=drivesdk",
+      "mime": "application/json",
+      "modified": "2026-11-16T16:06:57.712Z",
+      "sha256": "b4ff586e6c43c0ef4e0807bb7e471a9e566e176ed529f3cdac1a5bf9ba76a157"
+    },
+    {
+      "file": "run_failures.csv",
+      "id": "1HcXqU_QtAXBAGaG4xdUeQzwD9Ry8FmiQ",
+      "url": "https://drive.google.com/file/d/1HcXqU_QtAXBAGaG4xdUeQzwD9Ry8FmiQ/view?usp=drivesdk",
+      "mime": "text/csv",
+      "modified": "2026-11-16T16:06:55.895Z",
+      "sha256": "7daafc5c95562cdae74d879167cdcbd6ebcc53264c98f28e151c799779b60eb5"
+    },
+    {
+      "file": "run_results.csv",
+      "id": "1Qes1zt7HN_xOs_mpKih1IK5Nh1Zz1SBg",
+      "url": "https://drive.google.com/file/d/1Qes1zt7HN_xOs_mpKih1IK5Nh1Zz1SBg/view?usp=drivesdk",
+      "mime": "text/csv",
+      "modified": "2026-11-16T16:06:55.822Z",
+      "sha256": "b81e7929951ec444012b0892d2b16a8080b820c46f0a7a86c98835edf0eaaf35"
+    },
+    {
+      "file": "run_strength_diagnostics.csv",
+      "id": "1SNNBPkyhyRpqt8ZU7WWO12XXEL1UAoVI",
+      "url": "https://drive.google.com/file/d/1SNNBPkyhyRpqt8ZU7WWO12XXEL1UAoVI/view?usp=drivesdk",
+      "mime": "text/csv",
+      "modified": "2026-11-16T16:06:55.730Z",
+      "sha256": "f925df72bae9d6d82ced56a668a12dab7b4602a5006afce461fd6d36b7438460"
+    },
+    {
+      "file": "run_selection.json",
+      "id": "1qPaj_qzWZ6bzfFwO6ZyS3_vE4wH7BN4E",
+      "url": "https://drive.google.com/file/d/1qPaj_qzWZ6bzfFwO6ZyS3_vE4wH7BN4E/view?usp=drivesdk",
+      "mime": "application/json",
+      "modified": "2026-11-16T14:14:45.858Z",
+      "sha256": "3cacf0dc75e1bf02c35699b16e8a5088ccaa3656c396607d2351707441b2747d"
+    },
+    {
+      "file": "run_calibration_scores.json",
+      "id": "1MpZ2KtPJFNVcK8rPy6OrQgIdTphGIIs1",
+      "url": "https://drive.google.com/file/d/1MpZ2KtPJFNVcK8rPy6OrQgIdTphGIIs1/view?usp=drivesdk",
+      "mime": "application/json",
+      "modified": "2026-11-16T14:14:45.801Z",
+      "sha256": "13948f84456c2ff587ea04e46ad00aeb9187b3d89b08a491ff7705ea028d927a"
+    },
+    {
+      "file": "run_execution_environment.json",
+      "id": "1VuN_dd4G_ZiBrsvzESr8BwRrLlMpoYDo",
+      "url": "https://drive.google.com/file/d/1VuN_dd4G_ZiBrsvzESr8BwRrLlMpoYDo/view?usp=drivesdk",
+      "mime": "application/json",
+      "modified": "2026-11-15T21:46:46.157Z",
+      "sha256": "531d5cfa48919ea493274fb8f6f05fa01d49959b32eabef15f2112e78a80d7f4"
+    },
+    {
+      "file": "run_study.json",
+      "id": "1SQgCjOf7eKmWuYcD4x3lH4YHlxvE-mB_",
+      "url": "https://drive.google.com/file/d/1SQgCjOf7eKmWuYcD4x3lH4YHlxvE-mB_/view?usp=drivesdk",
+      "mime": "application/json",
+      "modified": "2026-11-15T21:46:44.561Z",
+      "sha256": "aaf6d2e4b4267c9f1cf175db8f4630c2ed3338f09d2209c92db33e69b9eb56cd"
+    },
+    {
+      "file": "report_summary.json",
+      "id": "1Fj6CtdTwSwSU6RUFYuf2QW3PgTFJB04A",
+      "url": "https://drive.google.com/file/d/1Fj6CtdTwSwSU6RUFYuf2QW3PgTFJB04A/view?usp=drivesdk",
+      "mime": "application/json",
+      "modified": "2026-11-16T16:06:57.746Z",
+      "sha256": "f78b201d7851ddfaf3bb03ce398b4eb7d41dfd0cfec8029c2c59ebbe690496a0"
+    },
+    {
+      "file": "report_paired_results.csv",
+      "id": "1b4QAg-njVhcM74sQCvIrZ2VkHvk15Nkx",
+      "url": "https://drive.google.com/file/d/1b4QAg-njVhcM74sQCvIrZ2VkHvk15Nkx/view?usp=drivesdk",
+      "mime": "text/csv",
+      "modified": "2026-11-16T16:06:55.863Z",
+      "sha256": "6405d7182b1cc151351c02e6c4dc127c8b53236e503d5d6ef6859b8768ea266b"
+    },
+    {
+      "file": "report_REPORT.md",
+      "id": "1Ezmdwp7NtEORsskzffL8TK9TVsGjgfy1",
+      "url": "https://drive.google.com/file/d/1Ezmdwp7NtEORsskzffL8TK9TVsGjgfy1/view?usp=drivesdk",
+      "mime": "text/markdown",
+      "modified": "2026-11-16T16:06:55.822Z",
+      "sha256": "790852cb621977549fcdfde6d449f3b74c7b064925e0fd237a54aa7e746c1aa9"
+    }
+  ]
+}

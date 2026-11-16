@@ -1,0 +1,46 @@
+{
+  "status": "complete",
+  "calibration_landmarks": 18,
+  "confirmation_landmarks": 36,
+  "completed_conditions": 198,
+  "failures": 0,
+  "selected_scalar": "scalar_eta1000",
+  "selected_view_rule": "view_eta100",
+  "calibration_means": {
+    "scalar_eta100": 10.849762145186306,
+    "scalar_eta1000": 9.689405855142855,
+    "view_eta100": 9.965512623995235,
+    "view_eta1000": 10.69762342181258
+  },
+  "metric": "extent-normalized Chamfer distance; equal landmark weights",
+  "confirmation_metrics": {
+    "baseline": {
+      "mean": 13.924255003986703,
+      "median": 7.352335239091023
+    },
+    "scalar": {
+      "mean": 14.763027090109869,
+      "median": 6.848672144790398
+    },
+    "structured": {
+      "mean": 14.76697094296075,
+      "median": 6.99406971180888
+    }
+  },
+  "structured_minus_scalar": {
+    "mean_difference": 0.003943852850879824,
+    "median_difference": 0.0517673207405156,
+    "wins": 13,
+    "ties": 0,
+    "losses": 23
+  },
+  "structured_minus_baseline": {
+    "mean_difference": 0.8427159389740467,
+    "median_difference": -0.0058648603568387525
+  },
+  "all_54_view_count": 2622,
+  "confirmation_view_count": 1776,
+  "study_source_sha256": "145b9848b597eff8b9c94a336585d65c8854a3d4897f48c4b833828e75d2aeb0",
+  "plan_sha256": "a1463ba782c5ae4688bd58106672d0e2dcc70f5d789414c9ce62b8192589b9ec",
+  "inference": "Descriptive single-seed internal confirmation; no significance or equivalence claim."
+}
