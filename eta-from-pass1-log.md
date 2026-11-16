@@ -587,6 +587,14 @@ and `pass1_signals/denoise_pipeline.sh` (detached; progress in `pass1_out/denois
   `confirm_analysis.py` (new scenes get their own bands with the same settings). Dry run on synthetic
   draws: bands 2.0–23.4%, median 9.7%.
 
+- **Amendment 2 (2026-11-16, accepted by Eric; no clean label existed yet): shared wins for E.** Each
+  scene gives one win, split equally among its tied best η, instead of a full win to every tied η.
+  Reason: with full wins, values that tie often (rarely clearly worse) collect wins from every
+  "η doesn't matter" scene, and η=5000 (often clearly best or clearly worst) is dropped from E even
+  where it clearly wins; in a dry run on synthetic draws it came last (25 vs 33) with full wins and
+  second (7.8 vs 9.7) with shared wins. Equal shared wins are broken toward the smaller η. The report
+  shows full wins, shared wins and single-best counts side by side.
+
 ### Open questions
 
 - [x] swati's VGGT sweep results: `swati/results_vggt_dev/` (all 39 dev scenes).

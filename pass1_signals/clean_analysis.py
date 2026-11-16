@@ -183,12 +183,16 @@ def main():
     # ---- 3.1 landscape
     print("== 3.1 what the clean labels say")
     ties = [tied_best(r, t) for r, t in zip(X, tie)]
-    wins = np.zeros(len(etas), int)
+    wins = np.zeros(len(etas), int)          # full win for every tied best eta (reported only)
+    fwins = np.zeros(len(etas))              # amendment 2: one win per scene, shared among its tied best
     for t in ties:
         wins[t] += 1
+        fwins[t] += 1.0 / len(t)
     R = regret(X)
-    print(pd.DataFrame({"eta": etas, "wins (ties count for each)": wins, "mean regret": R.mean(0),
-                        "median regret": np.median(R, 0)}).to_string(index=False, float_format=ff))
+    print(pd.DataFrame({"eta": etas, "wins (shared among ties)": fwins, "wins (full for each tie)": wins,
+                        "single best": [sum(len(t) == 1 and t[0] == j for t in ties) for j in range(len(etas))],
+                        "mean regret": R.mean(0), "median regret": np.median(R, 0)})
+          .to_string(index=False, float_format=ff))
     flat = sum(len(t) == len(etas) for t in ties)
     print(f"scenes where every eta > 0 is tied (eta does not matter): {flat}/{len(scenes)}")
     print(f"scenes with a single clear best eta: {sum(len(t) == 1 for t in ties)}/{len(scenes)}\n")
@@ -228,13 +232,15 @@ def main():
 
     # ---- 3.2 eta set E
     jbf = int(np.argmin(R.mean(0)))
-    keep = [j for j in range(len(etas)) if wins[j] >= MIN_WINS or j == jbf]
+    # amendment 2 (2026-11-16, before any clean label existed): wins shared among tied best values
+    keep = [j for j in range(len(etas)) if fwins[j] >= MIN_WINS or j == jbf]
     if len(keep) > MAX_E - 1:
-        keep = sorted(keep, key=lambda j: (j != jbf, -wins[j]))[:MAX_E - 1]
+        keep = sorted(keep, key=lambda j: (j != jbf, -fwins[j]))[:MAX_E - 1]
     keep = sorted(keep)
     E_plus = [etas[j] for j in keep]
     E = [0] + E_plus
-    print(f"== 3.2 eta set E = {E} (best-fixed eta = {etas[jbf]}; wins {dict(zip(etas, wins.tolist()))})\n")
+    print(f"== 3.2 eta set E = {E} (best-fixed eta = {etas[jbf]}; shared wins "
+          f"{ {e: round(float(w), 2) for e, w in zip(etas, fwins)} })\n")
 
     # ---- 3.3 targets on E
     XE = X[:, keep]
