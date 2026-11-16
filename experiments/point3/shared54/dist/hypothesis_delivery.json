@@ -1,0 +1,41 @@
+{
+  "source_zip": "point3_shared54_source_83796943ffaf.zip",
+  "source_sha256": "83796943ffafa29f96a5fee1f4e58887a8b66b3da04515ebbd1375769ac4b446",
+  "budget": {
+    "H1": {
+      "hypothesis": "H1",
+      "calibration_jobs": 90,
+      "confirmation_jobs_upper_bound": 108,
+      "total_upper_bound": 198,
+      "reference_checks_extra": true,
+      "independent_full54_notebooks": 702,
+      "shared_full54_sweep": 378
+    },
+    "H2": {
+      "hypothesis": "H2",
+      "calibration_jobs": 90,
+      "confirmation_jobs_upper_bound": 108,
+      "total_upper_bound": 198,
+      "reference_checks_extra": true,
+      "independent_full54_notebooks": 702,
+      "shared_full54_sweep": 378
+    },
+    "H3": {
+      "hypothesis": "H3",
+      "calibration_jobs": 54,
+      "confirmation_jobs_upper_bound": 108,
+      "total_upper_bound": 162,
+      "reference_checks_extra": true,
+      "independent_full54_notebooks": 702,
+      "shared_full54_sweep": 378
+    }
+  },
+  "notebooks": [
+    "Point3_00_Prepare_Masks_UpTo50.ipynb",
+    "Point3_H1_Run_54.ipynb",
+    "Point3_H2_Run_54.ipynb",
+    "Point3_H3_Run_54.ipynb"
+  ],
+  "folder_name": "Point3_Hypothesis54",
+  "independent_jobs_upper_bound": 558
+}

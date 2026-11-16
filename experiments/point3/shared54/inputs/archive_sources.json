@@ -1,0 +1,3806 @@
+{
+  "1621_execution_memorial_at_the_Old_Town_Square": {
+    "type": "file",
+    "oid": "5e6d261d55096d200cacbbf90f02a53e908a7dc4",
+    "size": 1259915790,
+    "lfs": {
+      "oid": "665979d5108ae8024e5abe154b8c5cc286c8801fa98afae7f04edd5e70716ce7",
+      "size": 1259915790,
+      "pointerSize": 135
+    },
+    "xetHash": "b84a5cbdc5f56badad66c67ecef04c49ddb0409eafe75ea2cd248030cab6e681",
+    "path": "data/1621_execution_memorial_at_the_Old_Town_Square.tar.gz"
+  },
+  "35_East_Wacker": {
+    "type": "file",
+    "oid": "c3dbaf62e0c83f2074ccf6de20ae7a4352104c91",
+    "size": 182998272,
+    "lfs": {
+      "oid": "a952d3711ed67e7b0319330ce9ce36ed58b76a7c6d107115e197b291a01ded00",
+      "size": 182998272,
+      "pointerSize": 134
+    },
+    "xetHash": "2ed6279245298c7d51b16b41dbddab25ef128a9783188fe2469323f712226f31",
+    "path": "data/35_East_Wacker.tar.gz"
+  },
+  "7_West_54th_Street": {
+    "type": "file",
+    "oid": "f90f75d9a22eb4088589584dab3e8fefbf8e5758",
+    "size": 181671887,
+    "lfs": {
+      "oid": "317c0fdc61bc19918736c36578c751aa16cf360755fc4f8bad7d0cbf7070e6d4",
+      "size": 181671887,
+      "pointerSize": 134
+    },
+    "xetHash": "e19d4bfef3ce284115985b8618114e748689ca74f8a993a7413272bf786174e9",
+    "path": "data/7_West_54th_Street.tar.gz"
+  },
+  "Abucay_Church": {
+    "type": "file",
+    "oid": "79725307f00d7821b3cad8ef1459de341b7cd4f8",
+    "size": 160711004,
+    "lfs": {
+      "oid": "15f952e59818c5f039d7fa9e1063d147fa1783cdedd88f32edb260512943ef19",
+      "size": 160711004,
+      "pointerSize": 134
+    },
+    "xetHash": "22b0060dd75d65e9ce12e826371731cab83c12cf0dd487764dd6d876283e19a1",
+    "path": "data/Abucay_Church.tar.gz"
+  },
+  "Aguada_Lighthouse": {
+    "type": "file",
+    "oid": "a82fc25cd3c6d2170d51faf2410bd386262af13e",
+    "size": 108594407,
+    "lfs": {
+      "oid": "feca08809b4d9c979d1d300c9eadfc557200d331daf7f9d85e216f6eb3dcfa25",
+      "size": 108594407,
+      "pointerSize": 134
+    },
+    "xetHash": "23d35648f86eb0102dfb46155c167f56b51a4e92836aa99d3390ddbe65c2bc48",
+    "path": "data/Aguada_Lighthouse.tar.gz"
+  },
+  "Airavatesvara_Temple": {
+    "type": "file",
+    "oid": "ae958276b8c563e796a90f769aa306965f540b1d",
+    "size": 373312955,
+    "lfs": {
+      "oid": "f19cf5c6a0b737fa7d884284ef761316552a810b963ab59d671286453fd75ddd",
+      "size": 373312955,
+      "pointerSize": 134
+    },
+    "xetHash": "01a76f16733221fc0ffb9a63a503d83649fdb7a4468bb1e070a96b3f9240801b",
+    "path": "data/Airavatesvara_Temple.tar.gz"
+  },
+  "Akdamar_Church": {
+    "type": "file",
+    "oid": "7bf4790a630182acd727240a2c240cdefd3dccb1",
+    "size": 143020161,
+    "lfs": {
+      "oid": "e8215d03a2361224d6bc6ebb722f212e68b7f5a72dc4d87f07337fa593854713",
+      "size": 143020161,
+      "pointerSize": 134
+    },
+    "xetHash": "60f7218322cade8c802c2b52aa6895f387b3d49541a23f5055b8e951b4fd2c71",
+    "path": "data/Akdamar_Church.tar.gz"
+  },
+  "Al-Azhar_Mosque": {
+    "type": "file",
+    "oid": "2afa8debb6617cd95dce76c5024a138fa23c9f9a",
+    "size": 71510386,
+    "lfs": {
+      "oid": "032dceea498f1b88751b7e126ff1f12be5eeb354491615efb2c23ec423f8c29a",
+      "size": 71510386,
+      "pointerSize": 133
+    },
+    "xetHash": "df374a6ba0620149eb8bb7558c18e58a0c2746a2c21b539a24c4a591dd890efe",
+    "path": "data/Al-Azhar_Mosque.tar.gz"
+  },
+  "Al-Qibli_Chapel": {
+    "type": "file",
+    "oid": "27913601c4ee5edf02375c588e9a9e769dd104d5",
+    "size": 330075317,
+    "lfs": {
+      "oid": "54c228f55e7782ce8b6e26d06c40001c75b8ad5cd7a7933d396f2a55a1760f2f",
+      "size": 330075317,
+      "pointerSize": 134
+    },
+    "xetHash": "74e0daf0f03f47404492c0c2ce8fa21e20417e487d7c8fb9b529dc7a0f83dc58",
+    "path": "data/Al-Qibli_Chapel.tar.gz"
+  },
+  "Al-Rifa'i_Mosque": {
+    "type": "file",
+    "oid": "284378a64def6d7730921c3866f0c02caa301a33",
+    "size": 286314051,
+    "lfs": {
+      "oid": "ee9ec2a167e72b115f21fedecd78b793058b5de9514e907b0230eccd38cedc19",
+      "size": 286314051,
+      "pointerSize": 134
+    },
+    "xetHash": "380bcfe6db1b2a4bc35d5ef475f34cee4ef2e8486db9f93a7ca31a9a0ef49440",
+    "path": "data/Al-Rifa'i_Mosque.tar.gz"
+  },
+  "Ali_Qapu": {
+    "type": "file",
+    "oid": "cab47fc662dd48bf7c76fdc527bc678a02b2b91b",
+    "size": 401428772,
+    "lfs": {
+      "oid": "e3d096aafb45b087321a3454371cdb73c819e0f20f90bda74099e93dfa98923d",
+      "size": 401428772,
+      "pointerSize": 134
+    },
+    "xetHash": "20dd5f17290bdeeed2f499039cd877d72c265d026042500ad07fdd970da25bc9",
+    "path": "data/Ali_Qapu.tar.gz"
+  },
+  "Angkor_Wat": {
+    "type": "file",
+    "oid": "43c6a4e65a49206cef6bcda801baec21763ee98a",
+    "size": 108260794,
+    "lfs": {
+      "oid": "d63dff9aec6e22fe27213ef0ee7322f00bf7169554e2ba287d45eddd723e840d",
+      "size": 108260794,
+      "pointerSize": 134
+    },
+    "xetHash": "df08ba152730b5baf47d6c69d16292f5dc12ff439d19df7779e1a8d1acf62317",
+    "path": "data/Angkor_Wat.tar.gz"
+  },
+  "Antigua_Basílica_de_Nuestra_Señora_de_Guadalupe": {
+    "type": "file",
+    "oid": "659053f45ae9174f85713d3e1d779ace63926843",
+    "size": 168595829,
+    "lfs": {
+      "oid": "7ead1e504433febac7c64c2063ac74a3b98815c23020c0693833a9ce1267507d",
+      "size": 168595829,
+      "pointerSize": 134
+    },
+    "xetHash": "4f29f4d48cd451a7820e1cf97a10a7b79e523f0298c4dbc57de0f28dc093a49e",
+    "path": "data/Antigua_Basílica_de_Nuestra_Señora_de_Guadalupe.tar.gz"
+  },
+  "Anıtkabir": {
+    "type": "file",
+    "oid": "212028be79ca3b85694de8b627cfbd619e4949e1",
+    "size": 223355389,
+    "lfs": {
+      "oid": "b5a76f97a27244d3a3d10f2365b79713e9371575304523f24f0bb28f5ba38861",
+      "size": 223355389,
+      "pointerSize": 134
+    },
+    "xetHash": "ad37acc23cb63d95a2c2e68efda33d9c4587296b154018482f841142ed1a140c",
+    "path": "data/Anıtkabir.tar.gz"
+  },
+  "Apadana_of_Persepolis": {
+    "type": "file",
+    "oid": "bde22d35e4a1e93d443d60bb0e6c9e020898427c",
+    "size": 186397880,
+    "lfs": {
+      "oid": "8b0b7c0900ff6ec8d46af991c51c6cce4e2de7ebbf386c8591e87f0a58f9c33c",
+      "size": 186397880,
+      "pointerSize": 134
+    },
+    "xetHash": "b99dcf4d4ffba9c2e60ed51cda0f2e8d92fa51c11589a5655e2d231081adeb3f",
+    "path": "data/Apadana_of_Persepolis.tar.gz"
+  },
+  "Arch_of_Trajan_(Timgad)": {
+    "type": "file",
+    "oid": "baf7bfb6a5abbfd0fa194d3c5234336fb8338209",
+    "size": 97312873,
+    "lfs": {
+      "oid": "f6b4987fd37f36575675f182d207394f0a6d6acb1402d89e3b9a11e8b93adaed",
+      "size": 97312873,
+      "pointerSize": 133
+    },
+    "xetHash": "f48b6e3545491262cf5b26255840fe995de962d30a2a74713826d50788408df2",
+    "path": "data/Arch_of_Trajan_(Timgad).tar.gz"
+  },
+  "Arch_of_Triumph_(Pyongyang)": {
+    "type": "file",
+    "oid": "b0981f52e67033ff7caa262f9258c99d44b764da",
+    "size": 86189183,
+    "lfs": {
+      "oid": "271b59aae68fa25fc5d6d8d35bb2fb368714040f07ef56d80c8d3adb6c1ed7a5",
+      "size": 86189183,
+      "pointerSize": 133
+    },
+    "xetHash": "f4ab550905aa840ba5f3ce1b29cabdafc727d491f4e9e391db56b6a1d7dea242",
+    "path": "data/Arch_of_Triumph_(Pyongyang).tar.gz"
+  },
+  "Archiepiscopal_Palace_of_Lima": {
+    "type": "file",
+    "oid": "52fe5313e980fbaaaa0b15c6c6adb950d329a9bf",
+    "size": 157868608,
+    "lfs": {
+      "oid": "2389b5785a44ea93c28099021ab1da00452ebdc2f513dcce291dffc6a1a8deed",
+      "size": 157868608,
+      "pointerSize": 134
+    },
+    "xetHash": "8d8b55e5297eee67bb193f35451d56661a89a4389fdc9cf72c3a414e6f6d5eca",
+    "path": "data/Archiepiscopal_Palace_of_Lima.tar.gz"
+  },
+  "Atlante-Tollan-Xicocotitlan": {
+    "type": "file",
+    "oid": "909a55c69be1feb5b79a4f0cc255cd389c7777e4",
+    "size": 159218975,
+    "lfs": {
+      "oid": "6f706a4bc9c7bf32ec675a02ef0130863430aacf6126dc39d66601b17297e686",
+      "size": 159218975,
+      "pointerSize": 134
+    },
+    "xetHash": "bae1a2573c898851e10ea4d49bc826a6ae993076dfe1c6237dcfa3f89aa98621",
+    "path": "data/Atlante-Tollan-Xicocotitlan.tar.gz"
+  },
+  "Azadi_Tower": {
+    "type": "file",
+    "oid": "987e155a90453c0acd49d482e137db64db875cf0",
+    "size": 392220155,
+    "lfs": {
+      "oid": "5b0f811dea42ba35af10329568a610d01c6da6409363a7ee7d57d578a09fa7a7",
+      "size": 392220155,
+      "pointerSize": 134
+    },
+    "xetHash": "b27a83e94adae5b82d1fed0983200a3bf2390a7fc30004636e3b09ef54e647df",
+    "path": "data/Azadi_Tower.tar.gz"
+  },
+  "Baclayon_Church": {
+    "type": "file",
+    "oid": "7dd88a61a248f1e6ac9c803e9851badefb3352a3",
+    "size": 89873108,
+    "lfs": {
+      "oid": "5c0c650a7ba5f8e400021b6775ef61ee3620d3f2e317b7bf75c56fdb81c585bc",
+      "size": 89873108,
+      "pointerSize": 133
+    },
+    "xetHash": "936d5f324702104e13c172d6444d86e92740ba2d9d28b03ff2c4e15664756d08",
+    "path": "data/Baclayon_Church.tar.gz"
+  },
+  "Badami_Cave_Temples": {
+    "type": "file",
+    "oid": "b30eb398433153dcbc367e409eca5bd1a040c09a",
+    "size": 497396639,
+    "lfs": {
+      "oid": "99306928f5a5294f2c8b11ab843f95ca3d90cb1e47e9eddb9afacb2023f2ef76",
+      "size": 497396639,
+      "pointerSize": 134
+    },
+    "xetHash": "ab0e8ba2640d698cf409c2dff88413f779e30ca5c03cae6043ce1451cba17abb",
+    "path": "data/Badami_Cave_Temples.tar.gz"
+  },
+  "Badshahi_Mosque": {
+    "type": "file",
+    "oid": "1d35fd68861d7599a099550744c9fe3fbf184063",
+    "size": 475722782,
+    "lfs": {
+      "oid": "b06e152446f8ca2a1c6f90e047a6ba3772bbeeaaa5f14ae7c9ee0ecf03fcbeed",
+      "size": 475722782,
+      "pointerSize": 134
+    },
+    "xetHash": "a87e198f1167d90cddf305af5815b904f81d695699f53425dba46c08efd6761d",
+    "path": "data/Badshahi_Mosque.tar.gz"
+  },
+  "Baguio_Cathedral": {
+    "type": "file",
+    "oid": "ec5f92182dd07b3b1b9e75af80aa238b3eb735bc",
+    "size": 112088870,
+    "lfs": {
+      "oid": "2d1c4d06fb438fecea3e2b316b0643414c83a89f76092d3c6b2ec9d1ab849d7d",
+      "size": 112088870,
+      "pointerSize": 134
+    },
+    "xetHash": "bdd9cf9e48720fa68437ecaad9dd5c4edb1abd9886db73d6bf5619d920227804",
+    "path": "data/Baguio_Cathedral.tar.gz"
+  },
+  "Balboa_Park,_San_Diego,_California": {
+    "type": "file",
+    "oid": "0e2a3f321fc4b986a64be9935f2abf2e039a6153",
+    "size": 81396243,
+    "lfs": {
+      "oid": "c9e6cc17c9c6f6e1ea9a2e73812f80039cbb1f7abe80ccf761a44ec0c8bd8cf8",
+      "size": 81396243,
+      "pointerSize": 133
+    },
+    "xetHash": "4890598a841f652de532e71c477481df2026098116088b82529c8a8f1b4c4c0e",
+    "path": "data/Balboa_Park,_San_Diego,_California.tar.gz"
+  },
+  "Bangka_Lungshan_Temple": {
+    "type": "file",
+    "oid": "d5e1ee21756b707752656dd8b32f2e6b2a992300",
+    "size": 198111749,
+    "lfs": {
+      "oid": "d32aaeb23055e99cbdddc13f159a5a4eba883d4df56286bba4a21e2b0853fc33",
+      "size": 198111749,
+      "pointerSize": 134
+    },
+    "xetHash": "84266fff6b6c6ee924dccacfba0c61ca658e912e96fbadd6f5733ca98f48bb4a",
+    "path": "data/Bangka_Lungshan_Temple.tar.gz"
+  },
+  "Basilica_Minore_of_the_Infant_Jesus_and_Immaculate_Conception_of_Batangas_City": {
+    "type": "file",
+    "oid": "5739bf686f1cc141af0d0caa361ce7f9297530c9",
+    "size": 154930248,
+    "lfs": {
+      "oid": "981bc2bef7d857af024bb56afd1c923192a0ef77e5644f0eb4da12c75349e0b5",
+      "size": 154930248,
+      "pointerSize": 134
+    },
+    "xetHash": "479972298e66f3dc3ec7800ecf4f77620254f21029f0bfb9ce9e3d6ddd427525",
+    "path": "data/Basilica_Minore_of_the_Infant_Jesus_and_Immaculate_Conception_of_Batangas_City.tar.gz"
+  },
+  "Basilica_of_Our_Lady_of_Aparecida": {
+    "type": "file",
+    "oid": "121b17ae7922e1bc65f67709c49e92ade3f3cffe",
+    "size": 110042371,
+    "lfs": {
+      "oid": "8b720209e6d13a4c81a004017b712cb148c6a28752a06279f885529628bd80fa",
+      "size": 110042371,
+      "pointerSize": 134
+    },
+    "xetHash": "9e5fcd4bd5ace267b1e33cc749337e1d15e642f95f9d10368906c5eddefed3cf",
+    "path": "data/Basilica_of_Our_Lady_of_Aparecida.tar.gz"
+  },
+  "Basilique_de_l'Immaculée_Conception_(Ouidah)": {
+    "type": "file",
+    "oid": "9a9413ebd1d892910c5613efeb935d50e74ebe27",
+    "size": 318564142,
+    "lfs": {
+      "oid": "427d35852a83c00f7282b23cf809f5bd1710da5fb7272e3bead45dccfc0a0a33",
+      "size": 318564142,
+      "pointerSize": 134
+    },
+    "xetHash": "f384655030fad634f511f8c9a50e023b58c89dda0bfddd48648d741d713eef0a",
+    "path": "data/Basilique_de_l'Immaculée_Conception_(Ouidah).tar.gz"
+  },
+  "Basílica_de_Ocotlán": {
+    "type": "file",
+    "oid": "e04721ce022473d90bfa4d16adeec5ac1a5ea4ee",
+    "size": 117574838,
+    "lfs": {
+      "oid": "6a44febdd0e866b99ac5a26c7c81cff52bf1c9ac233bd9acf94c6f996c30ebb1",
+      "size": 117574838,
+      "pointerSize": 134
+    },
+    "xetHash": "86ce1dc9b45bf4d86c912543fefeca62fec967d60603b5131d21c02baf1ac562",
+    "path": "data/Basílica_de_Ocotlán.tar.gz"
+  },
+  "Basílica_de_San_Francisco,_La_Paz": {
+    "type": "file",
+    "oid": "7ae5363445b1716554f76bcc60d342dba42be8df",
+    "size": 258270009,
+    "lfs": {
+      "oid": "093913c7ea0faa04440c731537dc2f1d5e00ce254a23914c4777fbf57a2ab366",
+      "size": 258270009,
+      "pointerSize": 134
+    },
+    "xetHash": "da03f35715c2ae1388803d175f0a4bc8c87b73f04b0e1562cda8f3cd4d256058",
+    "path": "data/Basílica_de_San_Francisco,_La_Paz.tar.gz"
+  },
+  "Basílica_de_San_Juan_de_los_Lagos": {
+    "type": "file",
+    "oid": "4d42446cfcf6aac8b270cd7610e72d345bf2e6e2",
+    "size": 127868348,
+    "lfs": {
+      "oid": "827a23ab6443894cf80a117c68f8d3a91f5224711f08b6ec02310bfd640e7f07",
+      "size": 127868348,
+      "pointerSize": 134
+    },
+    "xetHash": "5d3d818527f158839f7e16f5fd4f14b55550e36cce98a9b6bb1a5c648ab36e36",
+    "path": "data/Basílica_de_San_Juan_de_los_Lagos.tar.gz"
+  },
+  "Basílica_del_Voto_Nacional": {
+    "type": "file",
+    "oid": "dc1401185aa907377b40fb91fda66f5640211309",
+    "size": 407602931,
+    "lfs": {
+      "oid": "386f0970bd6edaf577e432b98401b721760d30e026cf3e1c14e515a14d7c596a",
+      "size": 407602931,
+      "pointerSize": 134
+    },
+    "xetHash": "c3fcb3e0f27cf46904d3d6e1971ffd8e6f2af1c9dfbe3d0560b390bb9b8b85cb",
+    "path": "data/Basílica_del_Voto_Nacional.tar.gz"
+  },
+  "Bell_Tower_(Tower_of_London)": {
+    "type": "file",
+    "oid": "17bcb12860d16b112cc64679a55e2bfc03947217",
+    "size": 1092836875,
+    "lfs": {
+      "oid": "9b6709975bc848b9dcd2b2d54d8e3bc7b96cb1d144829205e6dcdeb1a5879448",
+      "size": 1092836875,
+      "pointerSize": 135
+    },
+    "xetHash": "fca0dc03da95069655cefa71f00114d225af5aaa96a3eed4879fca750c0ba921",
+    "path": "data/Bell_Tower_(Tower_of_London).tar.gz"
+  },
+  "Bell_tower_of_Vank_Cathedral": {
+    "type": "file",
+    "oid": "0a8eab0f17f126e127bfb5a8d9cf3577264b1cd4",
+    "size": 105686668,
+    "lfs": {
+      "oid": "c1476d9590d050e3e5d493b8d87da23a03f213aec42da02f603be23cb7465fb1",
+      "size": 105686668,
+      "pointerSize": 134
+    },
+    "xetHash": "e91bf20d38a338facb654060348a8e35715f42d57f7ea825172e1cae0cbb3e2e",
+    "path": "data/Bell_tower_of_Vank_Cathedral.tar.gz"
+  },
+  "Bellagio_Hotel_&_Casino": {
+    "type": "file",
+    "oid": "117626ac6b84447452219e066ec556c132f8f9ad",
+    "size": 345250638,
+    "lfs": {
+      "oid": "00111ff38446524e3b712f7c0180debaf12976763174f8c4316ffb702c77ff55",
+      "size": 345250638,
+      "pointerSize": 134
+    },
+    "xetHash": "103ffcc45b3f93a12cf45d8314dabb07f8d03abb8f06b22ab99f81b1359fd079",
+    "path": "data/Bellagio_Hotel_&_Casino.tar.gz"
+  },
+  "Binondo_Church": {
+    "type": "file",
+    "oid": "6fb7583eaa9494fe0cd207f40c9758c99b10437b",
+    "size": 282848717,
+    "lfs": {
+      "oid": "ab8386b5298b879a31ddc7dc522017c478cd8521d0fb1f5aa1099ab3414b2cdc",
+      "size": 282848717,
+      "pointerSize": 134
+    },
+    "xetHash": "6a89d832196f1da0a0dd0a50ca56ff35d10fb31a21930079574b62ff72b07321",
+    "path": "data/Binondo_Church.tar.gz"
+  },
+  "Bridge_of_San_Martín,_Toledo": {
+    "type": "file",
+    "oid": "7769cc01159c6615f8093f2dbd1e5f9bfd81cf88",
+    "size": 199410197,
+    "lfs": {
+      "oid": "41e32fd9f320cd3177cc6623cd38c25cbab286d56cd7d57c2608f2602dff9c2c",
+      "size": 199410197,
+      "pointerSize": 134
+    },
+    "xetHash": "a37ad73f9f1d3bec6f20674077ee337d268681772cdc7b351934ec71a9561c8d",
+    "path": "data/Bridge_of_San_Martín,_Toledo.tar.gz"
+  },
+  "British_Columbia_Parliament_Buildings": {
+    "type": "file",
+    "oid": "e16cc9adfb9ea7aa8cdb9e465d17d178f3ce94b8",
+    "size": 164240197,
+    "lfs": {
+      "oid": "9a81e2a07eed57eebd5a3731cd1d3d0b09e63a6f51cca72eb7558959b552fd29",
+      "size": 164240197,
+      "pointerSize": 134
+    },
+    "xetHash": "6e328a6c271809674f27afd83130ee057f02f0553a4c2e54f5cfc0790eb7d8f6",
+    "path": "data/British_Columbia_Parliament_Buildings.tar.gz"
+  },
+  "Calamba_Church": {
+    "type": "file",
+    "oid": "817670796334bfa5e8d93db85b3b671688f67c80",
+    "size": 151138864,
+    "lfs": {
+      "oid": "b73ffe94f46ad30c3506e0d91bfc4fbd3603f3bc1c48cac9fee5b5bc26f44b90",
+      "size": 151138864,
+      "pointerSize": 134
+    },
+    "xetHash": "4adde8ced38d65debdf4c3ad93a6ef620eb74ddd28a16b504f902e3b853a81fc",
+    "path": "data/Calamba_Church.tar.gz"
+  },
+  "Caloocan_Cathedral": {
+    "type": "file",
+    "oid": "b90aef7c41012505dda61e74ab567eadb1e4449c",
+    "size": 270130992,
+    "lfs": {
+      "oid": "078aca368746d19117209aa3609f747c237ef9a2ea37b9f1dc5887ac488df13c",
+      "size": 270130992,
+      "pointerSize": 134
+    },
+    "xetHash": "f31ca897799fdbda4b9a28a086c478d07330223e5dd8f2ece2c81fc84832eb68",
+    "path": "data/Caloocan_Cathedral.tar.gz"
+  },
+  "Capernaum_byzantine_synagogue": {
+    "type": "file",
+    "oid": "203aa682cab3b7acd9a33776b0f85202da916d98",
+    "size": 177992532,
+    "lfs": {
+      "oid": "27819c51993a1bc46d676e7141cc936ae3ac09879b27ff35a191b435c259eb4e",
+      "size": 177992532,
+      "pointerSize": 134
+    },
+    "xetHash": "b4e46c0cb0cd5a40e6560b35b9b89fd4dcb9c626dfee98bf6de4a86851dea610",
+    "path": "data/Capernaum_byzantine_synagogue.tar.gz"
+  },
+  "Capitoline_temple_in_Dougga": {
+    "type": "file",
+    "oid": "a0322b6511c499fa3f9043942cad19db126478a8",
+    "size": 289710086,
+    "lfs": {
+      "oid": "57969b86ccefeccbeea2ca717df3336a39c4351af95352f4fd7761d8a2c92564",
+      "size": 289710086,
+      "pointerSize": 134
+    },
+    "xetHash": "acf5140ddc72054c13fe53e7368a77b6b4e7962c8301b1a0554834ac647049bb",
+    "path": "data/Capitoline_temple_in_Dougga.tar.gz"
+  },
+  "Carriedo_Fountain": {
+    "type": "file",
+    "oid": "2eefdbd9a495376d5f0e7e9867a4ae6add171675",
+    "size": 128792938,
+    "lfs": {
+      "oid": "8b8ea2102d4f1b6e262a624741e4cba295af6181fc386128757001b97783c2ab",
+      "size": 128792938,
+      "pointerSize": 134
+    },
+    "xetHash": "b873f8592c4c43c1d081776c93cc757f0627450e313fe74126fb5eedb81515cd",
+    "path": "data/Carriedo_Fountain.tar.gz"
+  },
+  "Catedral_San_Sebastián,_Cochabamba": {
+    "type": "file",
+    "oid": "e9b830573a9bbfc082ccb51e7cd910c0ae872823",
+    "size": 3004908767,
+    "lfs": {
+      "oid": "802763b200c54760052202f80068ccc48f3b34cf5207cbfeb8885861730bdf8a",
+      "size": 3004908767,
+      "pointerSize": 135
+    },
+    "xetHash": "521b8afacd143448a609edca360291e8f3da2ca6c94b202455ed9312d6422abe",
+    "path": "data/Catedral_San_Sebastián,_Cochabamba.tar.gz"
+  },
+  "Catedral_de_Havana": {
+    "type": "file",
+    "oid": "c662c53b54735321ddc11dd2fe6f31fa9ecf195a",
+    "size": 219874761,
+    "lfs": {
+      "oid": "cf7d153ad2205a217e02d090fd5de6536b9a0f18e863f5133ac1e04176872f99",
+      "size": 219874761,
+      "pointerSize": 134
+    },
+    "xetHash": "74d89ef7704b7eb023c047e5c72edc857d3c30cc569ba2b2db2192ac39166a08",
+    "path": "data/Catedral_de_Havana.tar.gz"
+  },
+  "Catedral_de_Panamá_Viejo": {
+    "type": "file",
+    "oid": "82c00c56fd5eccf5aee2f152d7f7f431ad6d4b52",
+    "size": 192871245,
+    "lfs": {
+      "oid": "1194061f8bc00d9b9a0a92baaa0d4987a8f135662bb5ebae7d05b9f09ec7c74f",
+      "size": 192871245,
+      "pointerSize": 134
+    },
+    "xetHash": "c9c69caa5356f7b19f2cecd6937a78031b23cd64e478c183bfaadbe54cb47d57",
+    "path": "data/Catedral_de_Panamá_Viejo.tar.gz"
+  },
+  "Cathedral-Basilica_of_Mary,_Queen_of_the_World": {
+    "type": "file",
+    "oid": "fa0a2c4bc5a42857eb4aa3d7c3321290f3d4f051",
+    "size": 235926755,
+    "lfs": {
+      "oid": "d22bbc6766fcf5d57979955827b5439ffa027244f039f3a38a8baffa9dcb5631",
+      "size": 235926755,
+      "pointerSize": 134
+    },
+    "xetHash": "b3974184caecd9bd1a84c9aac59a4894046db9ea75e165e0c1ce8011f847d98b",
+    "path": "data/Cathedral-Basilica_of_Mary,_Queen_of_the_World.tar.gz"
+  },
+  "Cathedral_of_Guadalajara,_Mexico": {
+    "type": "file",
+    "oid": "3fd6166463b161bd183712f0ab4a5ff4f784ff7d",
+    "size": 221208420,
+    "lfs": {
+      "oid": "71ffe2f1c01a42145a4add32f857fb3b768c7dd47fd83d8efab858984f51dd27",
+      "size": 221208420,
+      "pointerSize": 134
+    },
+    "xetHash": "cd8f649eb57671d1af9583efb0c0974f4443814dfb773b7e19b65f10684a0bc1",
+    "path": "data/Cathedral_of_Guadalajara,_Mexico.tar.gz"
+  },
+  "Cathedral_of_Lima": {
+    "type": "file",
+    "oid": "fb5e8e3cfff2e74a7b96953e0250b2f4fdadf00b",
+    "size": 146083954,
+    "lfs": {
+      "oid": "f3f76a5af26d0a8067e2876bf1beecf81e6d1e100da99f4d9b7953c7a7e744a3",
+      "size": 146083954,
+      "pointerSize": 134
+    },
+    "xetHash": "8039a539935af1c5d0279a5fde7f308c3ff432622dbb247631f43721618265d2",
+    "path": "data/Cathedral_of_Lima.tar.gz"
+  },
+  "Cathedral_of_Palma_de_Mallorca": {
+    "type": "file",
+    "oid": "b0b777eb477805e7bda433b5fd42ccd1bb35e308",
+    "size": 625583860,
+    "lfs": {
+      "oid": "1abaefcee00ebb35521f3e2db8c75be50eab1457581bd8d9b8a5c421cad1cb02",
+      "size": 625583860,
+      "pointerSize": 134
+    },
+    "xetHash": "3c2248029aebc8a594cb7fca90f06ce95dfd961febea2995757a05cc71c6503b",
+    "path": "data/Cathedral_of_Palma_de_Mallorca.tar.gz"
+  },
+  "Cathedral_of_Saint_Paul_in_Macau": {
+    "type": "file",
+    "oid": "abb2418dba4d5784b61c2aa6ea79e4f887d085fa",
+    "size": 484509443,
+    "lfs": {
+      "oid": "64f6a24ee02d041839955c0d0d6d543841047cecc67c94eaeeb64336436a7569",
+      "size": 484509443,
+      "pointerSize": 134
+    },
+    "xetHash": "b2ea618ab80cc654f46606369d1c6e4e66f47856913856332ed03dd76ac4060d",
+    "path": "data/Cathedral_of_Saint_Paul_in_Macau.tar.gz"
+  },
+  "Cathedral_of_Saint_Wenceslaus_(Olomouc)": {
+    "type": "file",
+    "oid": "46888e528967add7771004721e07d9b01bc6127a",
+    "size": 206730865,
+    "lfs": {
+      "oid": "7a3945fc1e98274beb9d89302f05b5345765126f0506ace6a51567550109a9a7",
+      "size": 206730865,
+      "pointerSize": 134
+    },
+    "xetHash": "c2034ac1943719a1a3dfef0bf186e0aea4ab38450fad09407f39c20a43027508",
+    "path": "data/Cathedral_of_Saint_Wenceslaus_(Olomouc).tar.gz"
+  },
+  "Cavinti_Church": {
+    "type": "file",
+    "oid": "ad7e9a2e6f9d16469660917d07a162a8640ee69d",
+    "size": 309484188,
+    "lfs": {
+      "oid": "09e2c709fd113624a6f06edb73b9349708aa6e611bebcee2b621f3ff34d65e6c",
+      "size": 309484188,
+      "pointerSize": 134
+    },
+    "xetHash": "609824930663e3bee3981c3441bcadd34f7ccd03dd64d38b8d809ffabb5abdf9",
+    "path": "data/Cavinti_Church.tar.gz"
+  },
+  "Centre_Block": {
+    "type": "file",
+    "oid": "95f3f522c864b9e8b1b3d9c119f0e927d7d14e7e",
+    "size": 196883798,
+    "lfs": {
+      "oid": "4fa505c0c15120965b1ce642e4862e4eb06c92c1cb83b026f458304f508a6f2a",
+      "size": 196883798,
+      "pointerSize": 134
+    },
+    "xetHash": "a4e72ac12e344995d24772d0708b6b01e9e8c0cb2d73f126e4ce888574ee8ef2",
+    "path": "data/Centre_Block.tar.gz"
+  },
+  "Charminar": {
+    "type": "file",
+    "oid": "e839b685089d5bd225b4961db0f4b32fae312f0b",
+    "size": 994676712,
+    "lfs": {
+      "oid": "1cbcc90cfdf03655388398ffc8ee6362222db28e1e7deab430c3d9deac054977",
+      "size": 994676712,
+      "pointerSize": 134
+    },
+    "xetHash": "3e6bd0adf5a36671b8797103503fdc813f7930e02a3290850e6c3edb7ffc77c7",
+    "path": "data/Charminar.tar.gz"
+  },
+  "Chennakesava_Temple,_Belur": {
+    "type": "file",
+    "oid": "7f60d74c8352f4eeb37c9e5ed8c98447b0d8c7e5",
+    "size": 1185748297,
+    "lfs": {
+      "oid": "4db0ed7022b353bc89427a64b0362006cb256f35343afdfeccec0ff6e3e74e07",
+      "size": 1185748297,
+      "pointerSize": 135
+    },
+    "xetHash": "613d9c31d505c57f7f901e3f19d682bed243d56178973ad38f6c2e40b6ff3baa",
+    "path": "data/Chennakesava_Temple,_Belur.tar.gz"
+  },
+  "Chicago_Board_of_Trade_Building": {
+    "type": "file",
+    "oid": "f101fa073f726f71d5e00437b31d5822a449380a",
+    "size": 173876989,
+    "lfs": {
+      "oid": "e51f1822c7c1968e9d95575fd2caaf8891c17354fba167c48b64f116e782de4f",
+      "size": 173876989,
+      "pointerSize": 134
+    },
+    "xetHash": "40cdec828eeb1034500af0fa3e6c8dde24412eb23c66c9c872449c6e4ef654f8",
+    "path": "data/Chicago_Board_of_Trade_Building.tar.gz"
+  },
+  "Chicago_Theatre": {
+    "type": "file",
+    "oid": "9a42dc63ac13b5bf32ba251619305f0f815e3190",
+    "size": 293313432,
+    "lfs": {
+      "oid": "547a40e1f73aa120aeaffc6e6601f509265d57ff449b7888b4a0274bd15bda3d",
+      "size": 293313432,
+      "pointerSize": 134
+    },
+    "xetHash": "cbedb942c5ee9b7bb39a4ce6b2498d704892534291a7b98167465ab73fe23e84",
+    "path": "data/Chicago_Theatre.tar.gz"
+  },
+  "Chichén_Itzá": {
+    "type": "file",
+    "oid": "ba7004629130a86c597ac4e0cf032a3999d810a6",
+    "size": 1050837444,
+    "lfs": {
+      "oid": "e9ea69d9ffe3fa194d807b27928f2d64db148103453cff92eebe653ba56da613",
+      "size": 1050837444,
+      "pointerSize": 135
+    },
+    "xetHash": "ceda3da9565ea98e82704f25cd10dc7a741f8c23de813525815d4525f0c626b7",
+    "path": "data/Chichén_Itzá.tar.gz"
+  },
+  "Choto_Sona_Mosque": {
+    "type": "file",
+    "oid": "a46b5c368e3edb115a9608587f1aed3c14c9daad",
+    "size": 212062892,
+    "lfs": {
+      "oid": "4ae073773fd0dcced8314fb90ea87b11aae71e1a0b371514263249ba34e1d315",
+      "size": 212062892,
+      "pointerSize": 134
+    },
+    "xetHash": "132f3051cb59e62115b2b1580efaf1f02cdef2557cff00ba8b9549f23630ac71",
+    "path": "data/Choto_Sona_Mosque.tar.gz"
+  },
+  "Church_of_Nagcarlang_historical_marker": {
+    "type": "file",
+    "oid": "68172c9870d91baee7440e9aecf6da8c1f822e01",
+    "size": 296803917,
+    "lfs": {
+      "oid": "30a6bac1f41775f540fe8032a8d91b510e9a1db6b05c723fb96215ebf3c0f9a5",
+      "size": 296803917,
+      "pointerSize": 134
+    },
+    "xetHash": "49b24202153e43919bd92d86e079f710757fb10d0cd12f52b1e303a59b235e41",
+    "path": "data/Church_of_Nagcarlang_historical_marker.tar.gz"
+  },
+  "Church_of_Pila_historical_marker": {
+    "type": "file",
+    "oid": "3023f4570b3eb7bb219cdd6c87c058d689709f0b",
+    "size": 187749752,
+    "lfs": {
+      "oid": "26fcf637233038bb2ed919b885c46b4a401040b38244c868d1149a01d9cfc1fc",
+      "size": 187749752,
+      "pointerSize": 134
+    },
+    "xetHash": "980ede2cc13f3093ffc8de06a4e7c20c27b998d875b3ce8890c9b5aeda608d44",
+    "path": "data/Church_of_Pila_historical_marker.tar.gz"
+  },
+  "Church_of_St._Anne_in_Vilnius": {
+    "type": "file",
+    "oid": "ad4786a78a271feba4bf1f2107f3f92f7f6349e4",
+    "size": 263810106,
+    "lfs": {
+      "oid": "52f49d440c3f6c86693e69510dcd71e73370c8a1dcd6ede468dde8c5cbe93bce",
+      "size": 263810106,
+      "pointerSize": 134
+    },
+    "xetHash": "47009f245be62d94fdd21e41d04e95f89ab754ad0660f959129373aaefa67adb",
+    "path": "data/Church_of_St._Anne_in_Vilnius.tar.gz"
+  },
+  "Church_of_the_Holy_Mother_of_God,_Bjni": {
+    "type": "file",
+    "oid": "c1fc5365a016638467192e11b7a6d1e648fbb779",
+    "size": 359943740,
+    "lfs": {
+      "oid": "138819ef7faf6cecab8721d84a89d16665594951371346e25785528e3b98b95c",
+      "size": 359943740,
+      "pointerSize": 134
+    },
+    "xetHash": "66440063f460f2d5812192ca137e97b9004de95f3429de9410ed3cd6ae5577e2",
+    "path": "data/Church_of_the_Holy_Mother_of_God,_Bjni.tar.gz"
+  },
+  "Church_of_the_Nativity_(Bethlehem)": {
+    "type": "file",
+    "oid": "375de3effd845d42143fe41b7992a6ebf74ee077",
+    "size": 169645502,
+    "lfs": {
+      "oid": "d831ad5284af7253d4b6572af0a15098673da30c1f8b01595944bb54846b8ccd",
+      "size": 169645502,
+      "pointerSize": 134
+    },
+    "xetHash": "5be06bf08e8091408cd74b6ee9480e59bcb49a2f67305d2fd65aa7f2b5aedd77",
+    "path": "data/Church_of_the_Nativity_(Bethlehem).tar.gz"
+  },
+  "Château_Frontenac": {
+    "type": "file",
+    "oid": "9ce68bebfca5daec684323eea74f6214f06c1a9a",
+    "size": 520490075,
+    "lfs": {
+      "oid": "5c3a29c23af1b0202751323e4c16f8f714f6d546c3e5dbeb2f14db8032470c20",
+      "size": 520490075,
+      "pointerSize": 134
+    },
+    "xetHash": "aaf7c48c9e523852b646e1fd98f2afbb1093bded2bd71f80136f0cd0d0fa1a1d",
+    "path": "data/Château_Frontenac.tar.gz"
+  },
+  "Clock_Tower,_Hong_Kong": {
+    "type": "file",
+    "oid": "edda08836538bb7840ae46de2e7cc113c7033f2c",
+    "size": 324341826,
+    "lfs": {
+      "oid": "cc6c8eb34a07f470e0738c29295cd9bf3e862ede8c5b7e97f38d71051f15f8d7",
+      "size": 324341826,
+      "pointerSize": 134
+    },
+    "xetHash": "f94361c99b128a923c4a95322d18601fe955b330191ed5860804e3b44ae6e8da",
+    "path": "data/Clock_Tower,_Hong_Kong.tar.gz"
+  },
+  "Colossi_of_Memnon": {
+    "type": "file",
+    "oid": "93e05a843b4de4f7656785b829b11611897d0348",
+    "size": 313566447,
+    "lfs": {
+      "oid": "63afff71fcef45c555aeb84d4cdb010855d83b510e59a63bf645e1746d7202bf",
+      "size": 313566447,
+      "pointerSize": 134
+    },
+    "xetHash": "9b52e5b351e8c1a400ddeb390362ae7066b6057010e859c543846214c6e25751",
+    "path": "data/Colossi_of_Memnon.tar.gz"
+  },
+  "Compañía_de_Jesus_(Cusco)": {
+    "type": "file",
+    "oid": "6271d1206afcaeb5a2bb90826c35692605a85d86",
+    "size": 183962487,
+    "lfs": {
+      "oid": "ba54b93171f7811552aa6b62c61b4bf626613d4df99210b5b1f0d37106785d4c",
+      "size": 183962487,
+      "pointerSize": 134
+    },
+    "xetHash": "9835b2e30af1ec2ab3f6f792fea5f7c7989ef54759c465603731a89351ed8324",
+    "path": "data/Compañía_de_Jesus_(Cusco).tar.gz"
+  },
+  "Concepcion_Church_(Malabon)": {
+    "type": "file",
+    "oid": "ec32368955c4019b79703c77d42a0336f55a5f5c",
+    "size": 129218409,
+    "lfs": {
+      "oid": "4fe6436301aadde1d24bc6f6005231e7f20fa9123e4d0e272c9757a61e9ef2e1",
+      "size": 129218409,
+      "pointerSize": 134
+    },
+    "xetHash": "8873437126e6242d7527fd910103ad2f3acbcfadec66caa9619a82439748179e",
+    "path": "data/Concepcion_Church_(Malabon).tar.gz"
+  },
+  "Convento_e_Igreja_de_Santo_Antônio_e_Capela_da_Ordem_Terceira_(São_Francisco_do_Conde)": {
+    "type": "file",
+    "oid": "6ee19ac39f2684d97e70f0785825de5154d56560",
+    "size": 139329666,
+    "lfs": {
+      "oid": "9dd0f969ed1de5a3e71ec341e937a7ea0422601dfe726facc7136a0fc728147d",
+      "size": 139329666,
+      "pointerSize": 134
+    },
+    "xetHash": "5edf79009af699376a46883f1b3d712ffd0e1b71dd444438204652a7c90fcd8c",
+    "path": "data/Convento_e_Igreja_de_Santo_Antônio_e_Capela_da_Ordem_Terceira_(São_Francisco_do_Conde).tar.gz"
+  },
+  "Coventry_Cathedral_Ruins": {
+    "type": "file",
+    "oid": "8e5fa189d03236fa43a9208d9bb6fb8b7d91c5ee",
+    "size": 100717298,
+    "lfs": {
+      "oid": "3778c535ed7c18334d0c4c1737d03ce6057707b3181bc5ff78869b6b839063b3",
+      "size": 100717298,
+      "pointerSize": 134
+    },
+    "xetHash": "fb29080f5885b87cd760a4cf4afe355ee016197972be860949fbe73ae884bf99",
+    "path": "data/Coventry_Cathedral_Ruins.tar.gz"
+  },
+  "Cristo_Redentor_(Rio_de_Janeiro)": {
+    "type": "file",
+    "oid": "029908a11f2c6ce3bb4c41170777951a579685ac",
+    "size": 113498711,
+    "lfs": {
+      "oid": "e25605b0243fa62b7309554eb7d431bc98bbb82a7ca8c9d5af5b617a4648db62",
+      "size": 113498711,
+      "pointerSize": 134
+    },
+    "xetHash": "381674f204d239ba9e06dc963486cff37dd04c378c730307423336c5cfc183bb",
+    "path": "data/Cristo_Redentor_(Rio_de_Janeiro).tar.gz"
+  },
+  "Degutale_Temple,_Patan": {
+    "type": "file",
+    "oid": "30b57eb35b3a60b9cb375775ffa524bddc0f0bbf",
+    "size": 161375297,
+    "lfs": {
+      "oid": "b8d8da61d7b027f8780f15150bfb47d4bd181300c3c8c7e33c4ef21984da579e",
+      "size": 161375297,
+      "pointerSize": 134
+    },
+    "xetHash": "eab501c9b6e5ca7b30d306dde59b598bf7fa30cd47a4d87c45bb2b1e20d888c8",
+    "path": "data/Degutale_Temple,_Patan.tar.gz"
+  },
+  "Descent_of_the_Ganges": {
+    "type": "file",
+    "oid": "bf159a0a14995ce36132eb90c1510b186bd2870e",
+    "size": 940598927,
+    "lfs": {
+      "oid": "16a3fec2940cb92bd5f6bd8b3f7e2bb9bcb4e7aa3905f63439fa218aafba1462",
+      "size": 940598927,
+      "pointerSize": 134
+    },
+    "xetHash": "8e0d8200f860d67b1c8fcb4e2d537b1ef30726f448fa48df7fcd73ad7802ade0",
+    "path": "data/Descent_of_the_Ganges.tar.gz"
+  },
+  "Dolmabahçe_Palace": {
+    "type": "file",
+    "oid": "9d188a1d202bdf487634018960b9fb0158f89112",
+    "size": 161479145,
+    "lfs": {
+      "oid": "740f3e13c17ff5a9aa952ebc8ef7079f4edcac5d3252ad8b1ea21f576d2eaded",
+      "size": 161479145,
+      "pointerSize": 134
+    },
+    "xetHash": "9e693cffddbc2ad569c4f98c0076137a03afd3778f29c2b27055d5d84da95151",
+    "path": "data/Dolmabahçe_Palace.tar.gz"
+  },
+  "Dome_of_the_Rock": {
+    "type": "file",
+    "oid": "4554cd80190114f8df2f81a48d763818d2b09eaa",
+    "size": 975954912,
+    "lfs": {
+      "oid": "790a98088bc13d7197df3e1a7fbd024c9bb541985a15353e360bb0aa0d8680f9",
+      "size": 975954912,
+      "pointerSize": 134
+    },
+    "xetHash": "fae6477eeed2a4e975eec8b5ba1a75377d1566b8d448d7d5f72a3d6dcddf9c2c",
+    "path": "data/Dome_of_the_Rock.tar.gz"
+  },
+  "Dormition_Cathedral,_Kharkiv": {
+    "type": "file",
+    "oid": "89d9f00788630109df2c19e6d3b14f6d58d41eec",
+    "size": 121642211,
+    "lfs": {
+      "oid": "69697884b7b964f36ca8f0081091b256c0a9b123b0c19700c9944111c2346c3e",
+      "size": 121642211,
+      "pointerSize": 134
+    },
+    "xetHash": "aa54ae59bbbd177eb8cf39f54d9807331ce6e9e9d7efce0daa106d823c5aa2a7",
+    "path": "data/Dormition_Cathedral,_Kharkiv.tar.gz"
+  },
+  "Dragon_and_Tiger_Pagodas": {
+    "type": "file",
+    "oid": "0cae46bcdb0b209c56bbb023ef012a9c1e3f0265",
+    "size": 170393337,
+    "lfs": {
+      "oid": "22318914c339022e7cc4e45ef30919f4f4fb96200693558de260bc1fe71f90f1",
+      "size": 170393337,
+      "pointerSize": 134
+    },
+    "xetHash": "8f8a5e875bb0d184c8c0cdf112aa728eb240598b7d23f0f40c2431ba37f3aec3",
+    "path": "data/Dragon_and_Tiger_Pagodas.tar.gz"
+  },
+  "Edifício_Altino_Arantes": {
+    "type": "file",
+    "oid": "ce610e9a18ca4250dbc986f775ca065f5f025cb6",
+    "size": 99862026,
+    "lfs": {
+      "oid": "507385a00a461346ab1bc303ee4f81d7055e64d694196a87c5067a947ce90540",
+      "size": 99862026,
+      "pointerSize": 133
+    },
+    "xetHash": "b4e9e00a4b031c247ac85ebba72a6cc6e7023395d3b6feb29169f449bd136e01",
+    "path": "data/Edifício_Altino_Arantes.tar.gz"
+  },
+  "Egyptian_Museum_(Cairo)": {
+    "type": "file",
+    "oid": "ef98424d8bf16227e104b6b53742857084c8d393",
+    "size": 593970817,
+    "lfs": {
+      "oid": "cea1baf029e8f56faf24c491c7a26c857f48cba2eae506093b954ca054c50a17",
+      "size": 593970817,
+      "pointerSize": 134
+    },
+    "xetHash": "c6e7108d72e6c2f11579ff91d0ec61961eeeed73eb83c3d42776546b98f50c3b",
+    "path": "data/Egyptian_Museum_(Cairo).tar.gz"
+  },
+  "Elizabeth_Tower": {
+    "type": "file",
+    "oid": "e322e23a28c19931fad25d5bfa998c4b47110e40",
+    "size": 1080272614,
+    "lfs": {
+      "oid": "fe6968bda4081e0ad8575e42cbc0852d90288a8ee1984807035f4dda3b2f1852",
+      "size": 1080272614,
+      "pointerSize": 135
+    },
+    "xetHash": "900af6ef4f926cf55006a230e8a57c7032c2e51f34b92b828f9ec5722974c86f",
+    "path": "data/Elizabeth_Tower.tar.gz"
+  },
+  "Ferdowsi_Mausoleum": {
+    "type": "file",
+    "oid": "53680feb12ac2710baef0677b40eda9f52e54751",
+    "size": 246055856,
+    "lfs": {
+      "oid": "3747d72f27e65ccd5514a2fa048cb137b4885dbbf515d614adc8319ca5f1e224",
+      "size": 246055856,
+      "pointerSize": 134
+    },
+    "xetHash": "ccfe828c8e2664488ffa11cbfd7a51b899bc130dc951d63d48b04e06c50ae599",
+    "path": "data/Ferdowsi_Mausoleum.tar.gz"
+  },
+  "Flagler_Memorial_Presbyterian_Church": {
+    "type": "file",
+    "oid": "67f84291d7bc87f12665bff8c2ad9f09863ba40d",
+    "size": 142296520,
+    "lfs": {
+      "oid": "93a2d6cfadbb8c751c837cfbc30416ef89afc6bb1c90221eec70187c882d421a",
+      "size": 142296520,
+      "pointerSize": 134
+    },
+    "xetHash": "5f894a528a10737c2929178680cfe1b6b78fd0abd1ba10db6df0cbb252456f80",
+    "path": "data/Flagler_Memorial_Presbyterian_Church.tar.gz"
+  },
+  "Forth_Bridge": {
+    "type": "file",
+    "oid": "69a0dc3d555bdc380af9d351e76154a5dae03ffa",
+    "size": 129214612,
+    "lfs": {
+      "oid": "0babcf71324961eb370fa24df44f864afd6f1aa242ab28a32a082d1860c1e422",
+      "size": 129214612,
+      "pointerSize": 134
+    },
+    "xetHash": "4c41e5e09fda5ac70418c7a752df5662fca7d4e2a37c2a5608013bd5650425c7",
+    "path": "data/Forth_Bridge.tar.gz"
+  },
+  "Gaddi_Baithak,_Kathmandu": {
+    "type": "file",
+    "oid": "81ebc44996201c30caa31de560758f979ace7c4a",
+    "size": 140973893,
+    "lfs": {
+      "oid": "4369dc27cbcbdd715a39fc6c5b589254699b7dd8cae088f8d12bd54800d79f2d",
+      "size": 140973893,
+      "pointerSize": 134
+    },
+    "xetHash": "5dddb1232b5224dc4fb2f7fe42daf7ca37b6d92086c258a148c3678b7d829302",
+    "path": "data/Gaddi_Baithak,_Kathmandu.tar.gz"
+  },
+  "Gangneung_Fire_Station": {
+    "type": "file",
+    "oid": "3ffe0bfd3aaa77c28beb608f48a45a4a2350f666",
+    "size": 205814984,
+    "lfs": {
+      "oid": "5d619de5ba2447cea18d56431eb645db3085ca43dd09d410665ba88e49ec4ff7",
+      "size": 205814984,
+      "pointerSize": 134
+    },
+    "xetHash": "49dbda266170219d79e4bf5686596c30639fd9a1c8cf9c3688a84cd0a6cd7855",
+    "path": "data/Gangneung_Fire_Station.tar.gz"
+  },
+  "Gangō-ji": {
+    "type": "file",
+    "oid": "80d2e7b2cddd6ae1330986a5c3dd1b7b9f7acc8e",
+    "size": 263918022,
+    "lfs": {
+      "oid": "21567a0e9d11207bc3086d78265eed8719c1020eb6f3b3c60e43b9dd3c9884f8",
+      "size": 263918022,
+      "pointerSize": 134
+    },
+    "xetHash": "73ad964cfa35dc372c35f03c269e36cfff64e882a79e6bf6d13ff198f46ae7ad",
+    "path": "data/Gangō-ji.tar.gz"
+  },
+  "Gargar_Saint_Hovhannes_church": {
+    "type": "file",
+    "oid": "18d281f7ce96775918d9585a00793a8c36a14cc5",
+    "size": 297261652,
+    "lfs": {
+      "oid": "79a890a5f40903a0917267ddace4c60036950d1aa7083a06dbdbb2b70bca48ce",
+      "size": 297261652,
+      "pointerSize": 134
+    },
+    "xetHash": "758f4a695ce61d03e6fc2697fd8e05d50c5f8b607ab1df0418087e62351b9be8",
+    "path": "data/Gargar_Saint_Hovhannes_church.tar.gz"
+  },
+  "Giant_Wild_Goose_Pagoda": {
+    "type": "file",
+    "oid": "963d41b231a14885d800e75feaeb3559813546a6",
+    "size": 380074044,
+    "lfs": {
+      "oid": "d3b2c035b9e6f94cf3954c3cb63283ebc54f68209368c9fc05263a01cec936c3",
+      "size": 380074044,
+      "pointerSize": 134
+    },
+    "xetHash": "df5fb446e375686f4be9e34e45296e78f6256f48e576afd51a0848a08c8d7280",
+    "path": "data/Giant_Wild_Goose_Pagoda.tar.gz"
+  },
+  "Glendalough_round_tower": {
+    "type": "file",
+    "oid": "992fec4185aa03100b9a00f32632f74c919ba291",
+    "size": 89393937,
+    "lfs": {
+      "oid": "3ee63c9a52279bb5dbb1adae0a576eade217a323070b47ebf6ba4f837a791250",
+      "size": 89393937,
+      "pointerSize": 133
+    },
+    "xetHash": "8ecf8715ed05a2d6f98fad35fa0556e4ea7872ea06387efcb184be9efe058e1b",
+    "path": "data/Glendalough_round_tower.tar.gz"
+  },
+  "Gol_Gumbaz": {
+    "type": "file",
+    "oid": "48f7fcef8fa2993ee51ae1a04fd06b5c8b63beb5",
+    "size": 333789225,
+    "lfs": {
+      "oid": "0a049b4683c83273203eacb6e098adf1fab56044c227feed10c65f5d582edf85",
+      "size": 333789225,
+      "pointerSize": 134
+    },
+    "xetHash": "11f3a05c9edf4c597c26b03ea88f288f9c53873ebe125bdbad193055d4f9e078",
+    "path": "data/Gol_Gumbaz.tar.gz"
+  },
+  "Golestan_Palace": {
+    "type": "file",
+    "oid": "b444ba8034e2b9994c55ea58d11c639ef3b30817",
+    "size": 207506226,
+    "lfs": {
+      "oid": "443f7e27918d89927d92e329fbe4db7b8f3ccb4fb4ec6105f98190a0e8e9cf25",
+      "size": 207506226,
+      "pointerSize": 134
+    },
+    "xetHash": "23be8a478465699ae511385328eb73c207134829c3c5e11da23738d22b630317",
+    "path": "data/Golestan_Palace.tar.gz"
+  },
+  "Government_Palace,_Lima": {
+    "type": "file",
+    "oid": "42991c799a8d49bca4aacc0a0b58732cdaa7a8db",
+    "size": 134184501,
+    "lfs": {
+      "oid": "af475e718135054ef37c6f12e32574dc13fe24bbd5590ddbc39ea7952df4aa16",
+      "size": 134184501,
+      "pointerSize": 134
+    },
+    "xetHash": "e5e20599d475be7d7bd15f8452b0d1646e3c195bb16bf8525fe4c8b5d8e1c8a5",
+    "path": "data/Government_Palace,_Lima.tar.gz"
+  },
+  "Grand_Palace,_Bangkok": {
+    "type": "file",
+    "oid": "daa000c4a0bb25a3a44fa7111da630dd4537cf06",
+    "size": 87845413,
+    "lfs": {
+      "oid": "80cc17b609015935696fdcd2dede65078a685e686e26779b1c111dbd531c37c4",
+      "size": 87845413,
+      "pointerSize": 133
+    },
+    "xetHash": "406c157bbcd49c9bbb4d3a33f7d865166c1b6bf980ff47ff3ebccc53df287ba3",
+    "path": "data/Grand_Palace,_Bangkok.tar.gz"
+  },
+  "Graslei": {
+    "type": "file",
+    "oid": "ca2f3248f0ebad83f4eb6333c0716991d837bf5b",
+    "size": 303394765,
+    "lfs": {
+      "oid": "5f1ef8618b74e526d732ee52b4f2202e4c9e559101c49e285ae94e3dc6aac0b6",
+      "size": 303394765,
+      "pointerSize": 134
+    },
+    "xetHash": "b5109a454f7e25beb2c47f9dd71e2211db32250a5c6eb5cebb8db73f9ba9c5f9",
+    "path": "data/Graslei.tar.gz"
+  },
+  "Gravensteen_(Ghent)": {
+    "type": "file",
+    "oid": "0139592c09a67c9d6dcb9181aa2f62a117cc0678",
+    "size": 349961923,
+    "lfs": {
+      "oid": "1622114a96575ed2073fb54e10fe81708dfc879fb8d7c22502895baeb72633e7",
+      "size": 349961923,
+      "pointerSize": 134
+    },
+    "xetHash": "9f1fb61cf1615d708976d6d4c8406696a803ea4f2c2c85977423ea267e35b5f9",
+    "path": "data/Gravensteen_(Ghent).tar.gz"
+  },
+  "Great_Mosque_of_Kairouan": {
+    "type": "file",
+    "oid": "1b2ba95be1044858c5a8a7b53c8091d9f06718a6",
+    "size": 426449629,
+    "lfs": {
+      "oid": "503e2660a5ce7a97fe5e6165d74fef5180f511cbd3a8a120dd49c2a7048e8800",
+      "size": 426449629,
+      "pointerSize": 134
+    },
+    "xetHash": "f5956e3a018ce2f04404822c9ba55023eedde9c30e4cc6aceda7f0bda92cd54a",
+    "path": "data/Great_Mosque_of_Kairouan.tar.gz"
+  },
+  "Great_Mosque_of_Sfax": {
+    "type": "file",
+    "oid": "5049f361fcd6fa3d4e3f013d2ce862eb92292410",
+    "size": 158415715,
+    "lfs": {
+      "oid": "427d38d33609364a88fc014d59a622e83beda4c88d6cf66a448fbbf79fd6cfac",
+      "size": 158415715,
+      "pointerSize": 134
+    },
+    "xetHash": "5ce1ff5edb095746f3109a5bd5752691b91ac3d559b7aa4f013dfbc892f47ec7",
+    "path": "data/Great_Mosque_of_Sfax.tar.gz"
+  },
+  "Great_Mosque_of_Sousse": {
+    "type": "file",
+    "oid": "9310ef575d8f925e395843f09a19bb806a1a728b",
+    "size": 157378605,
+    "lfs": {
+      "oid": "36744cd8cbe3574c9e597f98795882790ef09f305288111d7ae52ca2ec99f11e",
+      "size": 157378605,
+      "pointerSize": 134
+    },
+    "xetHash": "6f7b01aa8d432a1568b2e36e0c755ced4e2263765502421ca1979cc73d00d9da",
+    "path": "data/Great_Mosque_of_Sousse.tar.gz"
+  },
+  "Great_Mosque_of_Testour": {
+    "type": "file",
+    "oid": "e24b9344b879d9ec9748398170073b51cffbde8f",
+    "size": 115235268,
+    "lfs": {
+      "oid": "71f8f174c305698880d16c5332087f908cdd4b176794853330bd9ce3acaa727f",
+      "size": 115235268,
+      "pointerSize": 134
+    },
+    "xetHash": "30bbe8a82989bad9b6cf79ab00effadacd2418db822656b140fab3ca1f3299ad",
+    "path": "data/Great_Mosque_of_Testour.tar.gz"
+  },
+  "Great_Sphinx_of_Giza": {
+    "type": "file",
+    "oid": "d548c9d6ab9958fb00051defe4c998029fa9db86",
+    "size": 1051363875,
+    "lfs": {
+      "oid": "f0fb6dcc17d0f0b55c0ca48a96e5a431012f2deea00101cdbe9b54b8b1d5c03e",
+      "size": 1051363875,
+      "pointerSize": 135
+    },
+    "xetHash": "3c013efe8f1451f68d6bca7a0878363be83189b0ee67b7bcd453006361c4f739",
+    "path": "data/Great_Sphinx_of_Giza.tar.gz"
+  },
+  "Guanyin_of_the_South_Sea_of_Sanya": {
+    "type": "file",
+    "oid": "65a899c5ae61534fd0a5d54d6dde1fc97f7fde03",
+    "size": 96335129,
+    "lfs": {
+      "oid": "77fc219cf56dedbc33996b716edb3cc364fdfe525bfc70a521fc1fd8aa9e59e2",
+      "size": 96335129,
+      "pointerSize": 133
+    },
+    "xetHash": "b7a7c5bcf0005e21c02896309a00f26eef613b34373aaf430dd52c0a4e75d035",
+    "path": "data/Guanyin_of_the_South_Sea_of_Sanya.tar.gz"
+  },
+  "Hai_Bà_Trưng_Temple_(Mê_Linh)": {
+    "type": "file",
+    "oid": "96350afd8a45e0387f50a04f0214fad24f8739c0",
+    "size": 163729474,
+    "lfs": {
+      "oid": "3a34d19e41da5212031db5601c7b86732d5f454d039da47ed7523dee3f9d7e9f",
+      "size": 163729474,
+      "pointerSize": 134
+    },
+    "xetHash": "e696f3b8dedfbfb9f1346a0f4a44a9883046f5efbcc0b1915b9d9b46ee4bc3a8",
+    "path": "data/Hai_Bà_Trưng_Temple_(Mê_Linh).tar.gz"
+  },
+  "Hassan_Tower": {
+    "type": "file",
+    "oid": "2e1ca68c08690dd1874cf20b19e386387deeac7f",
+    "size": 213648616,
+    "lfs": {
+      "oid": "5cd5304670f925fb2904ef1def11b9864b1b46300f735588121f5bcef033e6a5",
+      "size": 213648616,
+      "pointerSize": 134
+    },
+    "xetHash": "9a35284d1ecf2e44bca78dc46c890d5aff8fbbfd5f18d61ff3e3c0a1e7264506",
+    "path": "data/Hassan_Tower.tar.gz"
+  },
+  "Hawa_Mahal": {
+    "type": "file",
+    "oid": "630925da34fedd2cb49205f100b3e72f85841150",
+    "size": 1042423447,
+    "lfs": {
+      "oid": "c7543631dd06c80df1166da700905d24e18613eb0126489fe2d17b788a5d680e",
+      "size": 1042423447,
+      "pointerSize": 135
+    },
+    "xetHash": "e4bdf0da75fab2427534cd990a5b0efd346a055f22f1110a4b6a3b5d509e374d",
+    "path": "data/Hawa_Mahal.tar.gz"
+  },
+  "Heian-jingū": {
+    "type": "file",
+    "oid": "ee9b6849feb38b97a155013acf0134391c4f545e",
+    "size": 112674062,
+    "lfs": {
+      "oid": "d08be9aabd6e922b1292ea314fe838b0798f3a12b21f68c747904b1d069a1684",
+      "size": 112674062,
+      "pointerSize": 134
+    },
+    "xetHash": "ec6bc55339ffbc4261a13c5329f2d3c481ff7218c1434556498758d8b7959c5a",
+    "path": "data/Heian-jingū.tar.gz"
+  },
+  "Heinrichsturm_(Ponts_Couverts,_Strasbourg)": {
+    "type": "file",
+    "oid": "0780ddf7669cc51ecc0cbdd8322f9dc44a016fdb",
+    "size": 210526740,
+    "lfs": {
+      "oid": "d59e09d3bdd973f8b2234f9eaeb414f1a026ba3d05b4d67fce437ad017419b9d",
+      "size": 210526740,
+      "pointerSize": 134
+    },
+    "xetHash": "15095ca04dcce33a75449cb20b688c93f02be73c7a844f279d8d1f5ac682944e",
+    "path": "data/Heinrichsturm_(Ponts_Couverts,_Strasbourg).tar.gz"
+  },
+  "Hemiciclo_a_Juárez": {
+    "type": "file",
+    "oid": "c43eb3755acb95228c75171db6aebf81caa98df5",
+    "size": 132332868,
+    "lfs": {
+      "oid": "8b8d07b3e2e300656f4dec6970a97908713b05e78c2f44f9ad487ca71e4b4e94",
+      "size": 132332868,
+      "pointerSize": 134
+    },
+    "xetHash": "9095311884544c2564d5ceb7f47388ed2e522a5af47b0b679e611d214e38f148",
+    "path": "data/Hemiciclo_a_Juárez.tar.gz"
+  },
+  "Herald_Square": {
+    "type": "file",
+    "oid": "0a21fb25e6a878198a4579dc006e495298e4c8fd",
+    "size": 344945702,
+    "lfs": {
+      "oid": "d2974ec1226773f542b2feac365529385996b84b9639f2f4c298cb6dfad6d61f",
+      "size": 344945702,
+      "pointerSize": 134
+    },
+    "xetHash": "899cdefd8c0dc677d682574cdaa17bd167303da6ccb9abb83d6c9f6cf7dddeae",
+    "path": "data/Herald_Square.tar.gz"
+  },
+  "Hiroshima_Castle": {
+    "type": "file",
+    "oid": "e7cae12ae2fb553d1e97b1505f933a9134c2c9bd",
+    "size": 100984890,
+    "lfs": {
+      "oid": "edaec90ab0d41858263559e2c97e3b74c4246a681ac388121b4ac35528f9e108",
+      "size": 100984890,
+      "pointerSize": 134
+    },
+    "xetHash": "3634c21b7dddf126158209f19258c3f0366ccd88655053722615b37195b1f028",
+    "path": "data/Hiroshima_Castle.tar.gz"
+  },
+  "Ho_Chi_Minh_Mausoleum": {
+    "type": "file",
+    "oid": "79075b7c05fe657b8a2ab3b4185ec83e03229d9d",
+    "size": 95415374,
+    "lfs": {
+      "oid": "19658e08408141198da3789c5ba30192bf16e89090ba77f21413ada5a7ef4f8a",
+      "size": 95415374,
+      "pointerSize": 133
+    },
+    "xetHash": "b30fbc874698a11d99848c703ee9b73803e948f881da5a5705f273cd39fef9a0",
+    "path": "data/Ho_Chi_Minh_Mausoleum.tar.gz"
+  },
+  "Hundertwasserhaus_Wien": {
+    "type": "file",
+    "oid": "38763f511782d8b6bcf011d7dd2c722a28cd672f",
+    "size": 216039605,
+    "lfs": {
+      "oid": "aaca338dcb215de521d2c782ae8367354aa49b21c871da5638b99a3c17451914",
+      "size": 216039605,
+      "pointerSize": 134
+    },
+    "xetHash": "7242f3ba038999955910c0227084a37d0b434f482ca4a65f0c5c249f9b6a7a20",
+    "path": "data/Hundertwasserhaus_Wien.tar.gz"
+  },
+  "Hurva_Synagogue": {
+    "type": "file",
+    "oid": "ece0766fd474269e9e9ff09daebc4b81065b8aef",
+    "size": 219882585,
+    "lfs": {
+      "oid": "2f01accf0b192aaf4761c2328711c4e47ff1552d53677422531bfbfa251121c8",
+      "size": 219882585,
+      "pointerSize": 134
+    },
+    "xetHash": "b07a13f051bd681884d00b9602278006623b3aa86a20353e77a81ea42b94cab1",
+    "path": "data/Hurva_Synagogue.tar.gz"
+  },
+  "Ibrahim_Rouza": {
+    "type": "file",
+    "oid": "9c43744dc017c0dc6061bbce06730b12542b01f0",
+    "size": 227813091,
+    "lfs": {
+      "oid": "cb96427de360f4428c589917179663909bde095cefe7284fd25d9675592e1f7d",
+      "size": 227813091,
+      "pointerSize": 134
+    },
+    "xetHash": "0483d7fc8d73a76c0525e845b9fa846a3c3b891648c6801fbed993fc8c901844",
+    "path": "data/Ibrahim_Rouza.tar.gz"
+  },
+  "Iglesia_de_la_Compañía_de_Jesús,_Cochabamba": {
+    "type": "file",
+    "oid": "a21016c3118b37d6710763acc91a5005e6c26650",
+    "size": 406696802,
+    "lfs": {
+      "oid": "7377d339327e3b7554b0e3789d8083a6cffb1e79ee4939125dde4c768dc11599",
+      "size": 406696802,
+      "pointerSize": 134
+    },
+    "xetHash": "7fb2bf4f96930d2a110e3b4d8c2289053bd423b359a76c78cd60850cb357f44b",
+    "path": "data/Iglesia_de_la_Compañía_de_Jesús,_Cochabamba.tar.gz"
+  },
+  "Iglesia_de_la_Recoleta,_Cochabamba": {
+    "type": "file",
+    "oid": "f55c47c78c7a52bebfe956b8cf4ff002c00bb057",
+    "size": 221272925,
+    "lfs": {
+      "oid": "ccda2f07a323c01e79c3aa0810a19cd2d0315f92ab9a695b6d23f608dce48b12",
+      "size": 221272925,
+      "pointerSize": 134
+    },
+    "xetHash": "f610f52c0d7d1959c4c44e3469f16ae60f8fb981b26a83173ff8464df9a4d160",
+    "path": "data/Iglesia_de_la_Recoleta,_Cochabamba.tar.gz"
+  },
+  "Iglesia_y_Convento_de_Santa_Teresa,_Cochabamba": {
+    "type": "file",
+    "oid": "c7baacc7b9953abad7e9e5167b6f2b3df03295d3",
+    "size": 482094671,
+    "lfs": {
+      "oid": "b5fa3999063a2192570acd373ff489d73db81b1ae036f2f6011aed1ba5fb81a2",
+      "size": 482094671,
+      "pointerSize": 134
+    },
+    "xetHash": "95d7db304a5ad0962dd9341ff70ce73a29473403699103f470a997bbce557186",
+    "path": "data/Iglesia_y_Convento_de_Santa_Teresa,_Cochabamba.tar.gz"
+  },
+  "Igreja_da_Ordem_Terceira_do_Carmo,_Salvador_(Bahia)": {
+    "type": "file",
+    "oid": "1918580b9cdfe70f11656c06909aa42115138324",
+    "size": 192553150,
+    "lfs": {
+      "oid": "5338ae417f4cb57c61aaccb85294cb1d54642e613b6b59144ccd796bb03dd32a",
+      "size": 192553150,
+      "pointerSize": 134
+    },
+    "xetHash": "a70948655931dd9b7540d13e4c93b16f96a588771f3a927ef7a8ab42d5df8831",
+    "path": "data/Igreja_da_Ordem_Terceira_do_Carmo,_Salvador_(Bahia).tar.gz"
+  },
+  "Igreja_de_Santa_Rita_(Paraty)": {
+    "type": "file",
+    "oid": "c64816e73beb1de611753b2011623124d325e487",
+    "size": 97214114,
+    "lfs": {
+      "oid": "77c1254a2b68a308b28adeb3029badf662399ce2d621df4022ce652f89979ad7",
+      "size": 97214114,
+      "pointerSize": 133
+    },
+    "xetHash": "3f38e80f246074ef57fbd7ef52ac2a3a1c12e74783089e44f18ef1f27bd43c92",
+    "path": "data/Igreja_de_Santa_Rita_(Paraty).tar.gz"
+  },
+  "Igreja_de_São_Francisco_de_Assis_(Belo_Horizonte)": {
+    "type": "file",
+    "oid": "3d0cc034ba74db5e02d528a178400a62814cd97a",
+    "size": 163131693,
+    "lfs": {
+      "oid": "bf53120620ccd05870a41e4ef0b7fae2ff339af245a2fb7197119407f54b3c64",
+      "size": 163131693,
+      "pointerSize": 134
+    },
+    "xetHash": "9556bea6fec4bff863a8727186bef71e4a6718934761e08f267cac8361cd8227",
+    "path": "data/Igreja_de_São_Francisco_de_Assis_(Belo_Horizonte).tar.gz"
+  },
+  "Igreja_de_São_Francisco_de_Assis_(Ouro_Preto)": {
+    "type": "file",
+    "oid": "0a7bc70b751910e959b8293aed6cb3f1591d0922",
+    "size": 180999136,
+    "lfs": {
+      "oid": "808166f9ac291fd1c4c9de0106aca7ade351f43252c1c9fc9d2b684733688d3c",
+      "size": 180999136,
+      "pointerSize": 134
+    },
+    "xetHash": "273f8a5656a0923cef21d10ca31f50f7ff73ddd5f75be28ecd77cd6f59235e1b",
+    "path": "data/Igreja_de_São_Francisco_de_Assis_(Ouro_Preto).tar.gz"
+  },
+  "Imamzadeh_Hilal_ibn_Ali": {
+    "type": "file",
+    "oid": "507bff81801b5df73adf2b3c4c884c4c5988be5c",
+    "size": 143451887,
+    "lfs": {
+      "oid": "dbcb9278d2671eef9b5a59be6b7daa5e585b5aed5ab68bb2f9577b886c512138",
+      "size": 143451887,
+      "pointerSize": 134
+    },
+    "xetHash": "a2d5373cb58e8ad041f827b05a2a3f04d5b87e84c01eb139611648edae2dd086",
+    "path": "data/Imamzadeh_Hilal_ibn_Ali.tar.gz"
+  },
+  "Immaculate_Conception_Parish_Church_of_Bauan": {
+    "type": "file",
+    "oid": "ae1c818ef63dafdd79ce11e55fef0d96b53c0f01",
+    "size": 225065227,
+    "lfs": {
+      "oid": "c5a165a22db764e4b0dbde2ad8a627c67917f213b164d3513eba4d83fa9907c3",
+      "size": 225065227,
+      "pointerSize": 134
+    },
+    "xetHash": "6508a3591505a82676ab07d01547fe10e927416245c314b4fb0aeb1e344d0474",
+    "path": "data/Immaculate_Conception_Parish_Church_of_Bauan.tar.gz"
+  },
+  "Immaculate_Conception_Parish_Church_of_Los_Baños": {
+    "type": "file",
+    "oid": "cc5e729da8c70e56babd00a69ff329af4907b67b",
+    "size": 111149539,
+    "lfs": {
+      "oid": "6abb7f48b291c96c60696cce3c178f0e2f2706e078a99f1ab780331475284166",
+      "size": 111149539,
+      "pointerSize": 134
+    },
+    "xetHash": "190fc35b828151664c73a55c80fa0019a460cdac0aa8edb6c3f33a55e1a4a01a",
+    "path": "data/Immaculate_Conception_Parish_Church_of_Los_Baños.tar.gz"
+  },
+  "India_Gate": {
+    "type": "file",
+    "oid": "ebfa89e6c870a8e5c1a8c099a8114e1d3656e0f8",
+    "size": 969533253,
+    "lfs": {
+      "oid": "976c5455581df95c285d96f451d1b670067181620d3161d2559886e2e107f525",
+      "size": 969533253,
+      "pointerSize": 134
+    },
+    "xetHash": "b6f53ca6ec2f54d019f388e26889de114b1844989d83c5847d62f8004faa38e7",
+    "path": "data/India_Gate.tar.gz"
+  },
+  "International_Commerce_Centre": {
+    "type": "file",
+    "oid": "fe1034ad0ab17bfd29bde66093b07bdee2f9da0a",
+    "size": 72215368,
+    "lfs": {
+      "oid": "cb3909c6a76a1b34062cd9da9612b5fd11dd338449e1ccae795dd5ad0aa56ac6",
+      "size": 72215368,
+      "pointerSize": 133
+    },
+    "xetHash": "5e24b7977e7f96fb3059e969db838e3f3a4d7ff9789fa7e927eefe49d6df0eed",
+    "path": "data/International_Commerce_Centre.tar.gz"
+  },
+  "Iolani_Palace": {
+    "type": "file",
+    "oid": "e8f8a6288715631119a00163b229eb299999bfa1",
+    "size": 156564088,
+    "lfs": {
+      "oid": "4f2238332e4ddd98cc110cae3a4568ffef3549e7348460a1d511df346e033915",
+      "size": 156564088,
+      "pointerSize": 134
+    },
+    "xetHash": "7084ff1a4ed0963617a9eeba17057d8803a2ff4d54e2626a53a9083418889cfc",
+    "path": "data/Iolani_Palace.tar.gz"
+  },
+  "Iron_pillar": {
+    "type": "file",
+    "oid": "c1d0b992371aba911d84016556b4ea18486f9fb8",
+    "size": 182941823,
+    "lfs": {
+      "oid": "57ccea97256b43b16d678c60c3917ca5a4b5c3d639074dd7741f79736acad724",
+      "size": 182941823,
+      "pointerSize": 134
+    },
+    "xetHash": "e86a5b9930b51ea3d4e3bc575c18d5f20c4312a5663610fd4a0053061f8134aa",
+    "path": "data/Iron_pillar.tar.gz"
+  },
+  "Isa_Khan_Niyazi's_tomb": {
+    "type": "file",
+    "oid": "e67201437fcf443b6c841ee7a2fd231da0105867",
+    "size": 645006287,
+    "lfs": {
+      "oid": "ab2cf357611bb2e085362e7aacc5029648029d92a68c298e0f4961180e893f36",
+      "size": 645006287,
+      "pointerSize": 134
+    },
+    "xetHash": "016ba6ef4fac4e6e16dd961fbfa5504b0be02678d0272e3b7be073d32322e390",
+    "path": "data/Isa_Khan_Niyazi's_tomb.tar.gz"
+  },
+  "Itmad-Ud-Daulah's_Tomb": {
+    "type": "file",
+    "oid": "5b4e8470ddd2bae36f2c0a80242a82d5c013ade4",
+    "size": 596174268,
+    "lfs": {
+      "oid": "6565ab5fbdcf7f962602726d8d24bef80d379bc2cfcb77d7deb6c7a6e12a76b7",
+      "size": 596174268,
+      "pointerSize": 134
+    },
+    "xetHash": "95be9e0ad18aade39a19ff210d1b564fdc033ac98efb9d60c6caf3aa9045be7f",
+    "path": "data/Itmad-Ud-Daulah's_Tomb.tar.gz"
+  },
+  "Jahangiri_Mahal_(Agra_Fort)": {
+    "type": "file",
+    "oid": "4a06bd61638255bbd40c3acf19e4be9e993fc068",
+    "size": 265030084,
+    "lfs": {
+      "oid": "a72f7163d910e5f85a55d7073007588ed6e5aa8da5c5e3befee38118ddb6d710",
+      "size": 265030084,
+      "pointerSize": 134
+    },
+    "xetHash": "7eac9f4096fb746a4346c7ce94f6791ceeb2389056070fb870abcd0f0b604163",
+    "path": "data/Jahangiri_Mahal_(Agra_Fort).tar.gz"
+  },
+  "Jal_Mahal": {
+    "type": "file",
+    "oid": "510dbde356216094d82e17018f5a796962af8ce5",
+    "size": 114193870,
+    "lfs": {
+      "oid": "648c31022684770936c66bc4f7f95c338f6206a6c810becf39ce5a9abc83c342",
+      "size": 114193870,
+      "pointerSize": 134
+    },
+    "xetHash": "8d1293600d55081baa7a8bbddbff73e64743d92f9310794d1d2926322c87e5f7",
+    "path": "data/Jal_Mahal.tar.gz"
+  },
+  "Jama_Masjid,_Delhi": {
+    "type": "file",
+    "oid": "313e6159ed68f072ba719f74b00f19d2e9770e07",
+    "size": 694434593,
+    "lfs": {
+      "oid": "7f2d0ce1b288d77cc7bbaccd2a298e14bfa1e9161a8a9090d070ecc06bbf221f",
+      "size": 694434593,
+      "pointerSize": 134
+    },
+    "xetHash": "fa49f813c270e4d30bffef0d4e18768a3c5e524f9b0ff544a20e319d6d9b974d",
+    "path": "data/Jama_Masjid,_Delhi.tar.gz"
+  },
+  "Jama_Masjid_(Ahmedabad)": {
+    "type": "file",
+    "oid": "02c2a3b2c9e27b77adef86ad8f8fc692ca5921e0",
+    "size": 116548530,
+    "lfs": {
+      "oid": "92e7c84d0dd0cc9941ba1d0bcc4f1163f35727fc285c0574822e30f5fd587f5f",
+      "size": 116548530,
+      "pointerSize": 134
+    },
+    "xetHash": "e860248fac5d2d53cfe01bcb513b9a24fce055cbcfedf7966d4abbd288679b63",
+    "path": "data/Jama_Masjid_(Ahmedabad).tar.gz"
+  },
+  "Jesuit_church,_Lviv": {
+    "type": "file",
+    "oid": "c047f08ff680def970b40f4897c1e6efb6aa3816",
+    "size": 184019706,
+    "lfs": {
+      "oid": "78cb2ac7a55be00e7c9979aebbd92f78eff35c875855d5c51fb15da3514d884b",
+      "size": 184019706,
+      "pointerSize": 134
+    },
+    "xetHash": "7e5f1e50e83befb8e293c7eb857f653419c27633be7a786911a6d141b6a75a5b",
+    "path": "data/Jesuit_church,_Lviv.tar.gz"
+  },
+  "Junghwajeon": {
+    "type": "file",
+    "oid": "f87d143064686e76b72b36bcd760669e5b07d54d",
+    "size": 102942279,
+    "lfs": {
+      "oid": "ba47d4ed0e097a5d136f43d021fe57c77c2a7fc01dc368687179a61acae3996b",
+      "size": 102942279,
+      "pointerSize": 134
+    },
+    "xetHash": "b7366419c1078714da867d72e4cb90301a2b3ef09288c1bd97c12e5caaaeb964",
+    "path": "data/Junghwajeon.tar.gz"
+  },
+  "Ka'ba-ye_Zartosht": {
+    "type": "file",
+    "oid": "190887bf65f32311ca91d94568d671d4815efbb0",
+    "size": 154663264,
+    "lfs": {
+      "oid": "bc2534ec25339c3f40da850f19ab68746b892a38dda163c86d28a80608919171",
+      "size": 154663264,
+      "pointerSize": 134
+    },
+    "xetHash": "a856b8341e82542ead13da727d4e4a0b3ca303486c7ae7653e67efc10862fa0d",
+    "path": "data/Ka'ba-ye_Zartosht.tar.gz"
+  },
+  "Kamakura_Daibutsu": {
+    "type": "file",
+    "oid": "14c39e746af5e6143d6e66044d71558a6fc46c97",
+    "size": 224691000,
+    "lfs": {
+      "oid": "6c25c050a109f9f15c4a0102ae1951056ec8fc2dae04682b20fdd46578ad4028",
+      "size": 224691000,
+      "pointerSize": 134
+    },
+    "xetHash": "23de7f0f0bf13528b11a5b0bead5522eb6ba1d99fa57ba8a591daa4a6b7a22ec",
+    "path": "data/Kamakura_Daibutsu.tar.gz"
+  },
+  "Kaminarimon": {
+    "type": "file",
+    "oid": "6949db9a5251f4d94c3c871f4ba8f10ef9ce4dd4",
+    "size": 260196914,
+    "lfs": {
+      "oid": "fdef1865ee06b2c3b5b5f678823ffad4aa3d6722f0cc4a10059cb89af13bb368",
+      "size": 260196914,
+      "pointerSize": 134
+    },
+    "xetHash": "757851cb9fe5d3989c1b2ea9c611f8af34a7e9b7906864510a0928c0fd0ea46e",
+    "path": "data/Kaminarimon.tar.gz"
+  },
+  "Kanda-Myojin": {
+    "type": "file",
+    "oid": "1b6e0bb2a13908fda946bb147f5fa6292f1d3428",
+    "size": 89994948,
+    "lfs": {
+      "oid": "ef237e5f98cd7800ccb2013639410da9d9c4fcc726079ac389a3a5f7ae661e5e",
+      "size": 89994948,
+      "pointerSize": 133
+    },
+    "xetHash": "37591f336242a14cd7bca109972a1e53a6229a00351bd6fcfdc918599699c3ef",
+    "path": "data/Kanda-Myojin.tar.gz"
+  },
+  "Kanteibyou_(Yokohama)": {
+    "type": "file",
+    "oid": "9c960fa4181b72a4154ea09fa1ff1cd86358cb33",
+    "size": 230947380,
+    "lfs": {
+      "oid": "496046304c0d005ce0eb98c50cbf0c011e551fcb87d21e0b43bca44a6d230eec",
+      "size": 230947380,
+      "pointerSize": 134
+    },
+    "xetHash": "2f7bffe04eab4dc5ce2884d0cc6cb7c577d2efc65e67c227eefdc9f22eb826ef",
+    "path": "data/Kanteibyou_(Yokohama).tar.gz"
+  },
+  "Karim_Khan_Citadel": {
+    "type": "file",
+    "oid": "4abd3072688527005b97c77fa262a3b42115eb38",
+    "size": 241515206,
+    "lfs": {
+      "oid": "3c83b351378de1c4c7934fc9d05bc936e108f4585b9e4dbb8d1a1aa97c40cf7e",
+      "size": 241515206,
+      "pointerSize": 134
+    },
+    "xetHash": "62d84d6979100d26bd58ed807e64d20d0a86a78f702be21ecc279432696e4526",
+    "path": "data/Karim_Khan_Citadel.tar.gz"
+  },
+  "Katoghike_Church,_Yerevan": {
+    "type": "file",
+    "oid": "c1d182239de3b59b7d235d7e803be49442c2d331",
+    "size": 190498635,
+    "lfs": {
+      "oid": "a83b3cf1046049d5a3766e7bebce3a45b3521cebb74b7a86a4f30247791921ea",
+      "size": 190498635,
+      "pointerSize": 134
+    },
+    "xetHash": "7624409750efd292895273512d05a0ae825d5513df097564b24cd24ab78d68a0",
+    "path": "data/Katoghike_Church,_Yerevan.tar.gz"
+  },
+  "Khan_Mohammad_Mridha_Mosque": {
+    "type": "file",
+    "oid": "e79d8eeb3759f2a498fbbb39060ccca7ae98c4ca",
+    "size": 183059511,
+    "lfs": {
+      "oid": "8f65bd6d4f0abde777e1da23d848d29b7a3d2fe69dca7e1e73fdc512ca23e19c",
+      "size": 183059511,
+      "pointerSize": 134
+    },
+    "xetHash": "fa83b69388cd594d2dd3b7ea7b95c2aea45967512160846b0924f799933c2eab",
+    "path": "data/Khan_Mohammad_Mridha_Mosque.tar.gz"
+  },
+  "Khaplu_Palace,_Ghangche": {
+    "type": "file",
+    "oid": "b8567d683005d59b7d27d7d5ff120d3fb1df7b49",
+    "size": 130245667,
+    "lfs": {
+      "oid": "0bb96b047ac942679307aeb87c2b82dc9c746778ae0b2c21a04f61a1b4527e5f",
+      "size": 130245667,
+      "pointerSize": 134
+    },
+    "xetHash": "4a045c4ce9df95628d38b2345810277fb8f36fbdb74986ec2310d5ed9536d93e",
+    "path": "data/Khaplu_Palace,_Ghangche.tar.gz"
+  },
+  "Kim_Il-sung_Square": {
+    "type": "file",
+    "oid": "7fa32c52d2986b8a2b7f2c4a364da352a023fd49",
+    "size": 119367201,
+    "lfs": {
+      "oid": "bdf77445a8a68c7a50044c495029666e951cbd2be9e6e05c23a80648a3571042",
+      "size": 119367201,
+      "pointerSize": 134
+    },
+    "xetHash": "fa32dec1a0f0459225c848f79215428243c77fecd137b3cf62924007b33ea51b",
+    "path": "data/Kim_Il-sung_Square.tar.gz"
+  },
+  "Kinkaku-ji": {
+    "type": "file",
+    "oid": "9e33425e82e06b32f5da3a13abc0790e3092666a",
+    "size": 253844061,
+    "lfs": {
+      "oid": "292c3d8e5d7821b44d5ca9165ad9fad469a343184bb05f68a2ad19672526d2fe",
+      "size": 253844061,
+      "pointerSize": 134
+    },
+    "xetHash": "1d96e40db5bc31884535f0f21c84a27589f1f3994e1a46527716701b2aef8b27",
+    "path": "data/Kinkaku-ji.tar.gz"
+  },
+  "Kiosk_of_Trajan_in_Philae": {
+    "type": "file",
+    "oid": "6fa6d2a7525069d2cadd6260e9bd3c73c27e5a37",
+    "size": 210294834,
+    "lfs": {
+      "oid": "47b7bc7d188ed3a2da4e9eb9fb51824f1427231c8c470feaabc6a87c22c23705",
+      "size": 210294834,
+      "pointerSize": 134
+    },
+    "xetHash": "aacfa0605fafc33f3598e2443d95898a35072ff1ccca00e138d4c46f2dd5d560",
+    "path": "data/Kiosk_of_Trajan_in_Philae.tar.gz"
+  },
+  "Koutoubia_Mosque": {
+    "type": "file",
+    "oid": "0427122a465653ad269655fd437c3bc92e4e3c6b",
+    "size": 98093614,
+    "lfs": {
+      "oid": "83d9dd25c525873220d2bdfc6a107f345a64ac7e9448212ccf8c1a24de975031",
+      "size": 98093614,
+      "pointerSize": 133
+    },
+    "xetHash": "7410ff89d3b7e9299370236e6a7e9394204c1b8e56a9473ac0a8d277bc83fc5d",
+    "path": "data/Koutoubia_Mosque.tar.gz"
+  },
+  "Kōtoku-in": {
+    "type": "file",
+    "oid": "3245febf0dff9d86a8b0606362e2c21418c66151",
+    "size": 224022652,
+    "lfs": {
+      "oid": "d22ccddefd0651222bb9850facd24f7dae3276bbc7bf283063c1954a42be2e61",
+      "size": 224022652,
+      "pointerSize": 134
+    },
+    "xetHash": "7454df43a5ff331267607b3fc42984407d72f69947e263e30c39f11239bff8e9",
+    "path": "data/Kōtoku-in.tar.gz"
+  },
+  "Liberty_Square_(Taipei)": {
+    "type": "file",
+    "oid": "b00e345bf8d2ee31620374f83b139b9e31eb01c7",
+    "size": 196833685,
+    "lfs": {
+      "oid": "548c14405285bc0ac758c6b9e41c4f84aba6a012f4e37d54f108611df417b347",
+      "size": 196833685,
+      "pointerSize": 134
+    },
+    "xetHash": "6aab35f8b0903de80427d6b0ab1152be70bc9d8f8bdbe06a34ac3f3b5f228198",
+    "path": "data/Liberty_Square_(Taipei).tar.gz"
+  },
+  "Libyco-Punic_Mausoleum": {
+    "type": "file",
+    "oid": "a3e6747d715a8ba594790790f924fb0a77d56840",
+    "size": 240622066,
+    "lfs": {
+      "oid": "f7239b826497bd141397d2313fb384c73184f6fa8d1127ee5bb041054a27051b",
+      "size": 240622066,
+      "pointerSize": 134
+    },
+    "xetHash": "8e89a5336b75dd41c6a239c054bceaf5438245156d6ac9e90a0d8b79fd2583f4",
+    "path": "data/Libyco-Punic_Mausoleum.tar.gz"
+  },
+  "Lipa_Cathedral": {
+    "type": "file",
+    "oid": "da892a785bd6a071b170d6cb3235595d73996f0d",
+    "size": 183746360,
+    "lfs": {
+      "oid": "718a82dee432786fb71ea3a801cdcb1cd57000af8ac8f451c05d81267300db42",
+      "size": 183746360,
+      "pointerSize": 134
+    },
+    "xetHash": "4c99961bd85dac3cb700fb8592b2280e8dd67587fd7fb3eab6daa68c95f16b0c",
+    "path": "data/Lipa_Cathedral.tar.gz"
+  },
+  "Little_Temple_of_Abu_Simbel": {
+    "type": "file",
+    "oid": "e7a4e16e12dec8ff45a1c9c81ad8e414c4981128",
+    "size": 1140992492,
+    "lfs": {
+      "oid": "40d3c1605671828fc127a4e0908f7dc6ce207ac6f8503dce16f3115b47b20daa",
+      "size": 1140992492,
+      "pointerSize": 135
+    },
+    "xetHash": "ba517a8eae43c31978015a9169d54469524509ae2248c484a29b3aa287076a8c",
+    "path": "data/Little_Temple_of_Abu_Simbel.tar.gz"
+  },
+  "Lotus_Mahal_(Hampi)": {
+    "type": "file",
+    "oid": "029485c03abfc60643cfcc98682e33566d26c4b5",
+    "size": 277410226,
+    "lfs": {
+      "oid": "583d4ac87a91803da68712a6af7a21e1ed068c81eda2e20e136ec1a8f773afa0",
+      "size": 277410226,
+      "pointerSize": 134
+    },
+    "xetHash": "d0ea08f1425071733e7d6c689c815e8f7e6cc4f8cebcb66606be5ea31b678c63",
+    "path": "data/Lotus_Mahal_(Hampi).tar.gz"
+  },
+  "Macy's_Herald_Square": {
+    "type": "file",
+    "oid": "33cd6cee9a61d7ebb6c679f8703d5cbc57c6c0d5",
+    "size": 289996135,
+    "lfs": {
+      "oid": "5e3531f553589b34eac103eab234ea47d55c6bc1c5a004977555e163fd97a010",
+      "size": 289996135,
+      "pointerSize": 134
+    },
+    "xetHash": "68742cc30466227a060ed06c3d29fc8b676411b19927484a6195489b14eb0b78",
+    "path": "data/Macy's_Herald_Square.tar.gz"
+  },
+  "Mahabodhi_Temple": {
+    "type": "file",
+    "oid": "fa9866ee59bb642ec77be5ef635a518f8bf05347",
+    "size": 178209358,
+    "lfs": {
+      "oid": "077b1c9922f4bbd8e2d8c2600318fb1d4eb3a0ddc637ac03326614b20d633082",
+      "size": 178209358,
+      "pointerSize": 134
+    },
+    "xetHash": "9451fcf271d48f2bce2ea0d87f3bc003fa924d8280ef249819f59e5d28aa7dea",
+    "path": "data/Mahabodhi_Temple.tar.gz"
+  },
+  "Malate_Church": {
+    "type": "file",
+    "oid": "999db8d63727316d78f42374f2d250d95a3681d8",
+    "size": 226211150,
+    "lfs": {
+      "oid": "e33a44a128032c9e8400c120d44224800b3d45f5850def7236c110a3b8e76ee5",
+      "size": 226211150,
+      "pointerSize": 134
+    },
+    "xetHash": "9efd84b6b76f653840f24ea333cbbabee6f594e0a3225509f019779f69011069",
+    "path": "data/Malate_Church.tar.gz"
+  },
+  "Malolos_Cathedral": {
+    "type": "file",
+    "oid": "4665d7d0e072fa6c9cdbdcbeb9755bec38e457c2",
+    "size": 223823877,
+    "lfs": {
+      "oid": "bfd806f381a3f49236b8fec53c5e4cc78518aab6c15481b01fd65046127391d2",
+      "size": 223823877,
+      "pointerSize": 134
+    },
+    "xetHash": "c1121efb70e05f6198f34374286adc3acadb7c5d40f521901a3e60ea869e9d85",
+    "path": "data/Malolos_Cathedral.tar.gz"
+  },
+  "Manaoag_Church": {
+    "type": "file",
+    "oid": "5e4ed67161b7dc49da01bc35da6c75c3be06ad59",
+    "size": 260079771,
+    "lfs": {
+      "oid": "c18a2ae09de6abd4d7d92ccc1aecd91cf6aa1a46177259722727b3f3e7508644",
+      "size": 260079771,
+      "pointerSize": 134
+    },
+    "xetHash": "bd3c7060588f74bca94d9c068381ed7e2b01965af23d732d0716eddd906f2afa",
+    "path": "data/Manaoag_Church.tar.gz"
+  },
+  "Manhattan_Municipal_Building": {
+    "type": "file",
+    "oid": "3958c4319a3ca60c9d8a2783c925dccd034044a1",
+    "size": 192013197,
+    "lfs": {
+      "oid": "c31da183bc8c12ec4c418b40cf541a74b0589d457bd0e9d0c983cdda3afe1518",
+      "size": 192013197,
+      "pointerSize": 134
+    },
+    "xetHash": "ecafcebd5e3855cc5f1ce78805956b985e8e03e0efba9c0ae3aebb1e671bbaa5",
+    "path": "data/Manhattan_Municipal_Building.tar.gz"
+  },
+  "Manila_Cathedral": {
+    "type": "file",
+    "oid": "820c93cf82d7db718e3b0deabc6e4ddeacbd14c6",
+    "size": 591161372,
+    "lfs": {
+      "oid": "7961e881d3ad22a9ad78fcd61fe37e4271ffc4c49d000f2ac915ba52715a90a7",
+      "size": 591161372,
+      "pointerSize": 134
+    },
+    "xetHash": "6643409c2f61a8bd919f67dc556cdc1ee471f89e4acca3b56fbb51e6c5e866fe",
+    "path": "data/Manila_Cathedral.tar.gz"
+  },
+  "Manila_Central_Post_Office": {
+    "type": "file",
+    "oid": "4aacc0cc6327613f2c9e86f6818e1650de6a47e9",
+    "size": 127245636,
+    "lfs": {
+      "oid": "e71f8dad41e15ed3369c1cb9ddd7c5af2d6271062cec1204a99646ca8e023221",
+      "size": 127245636,
+      "pointerSize": 134
+    },
+    "xetHash": "6bf18545da538ff45a1bfaccf0dfb1b356842de971032e8bacd77049cef3cd9b",
+    "path": "data/Manila_Central_Post_Office.tar.gz"
+  },
+  "Manila_Metropolitan_Theater": {
+    "type": "file",
+    "oid": "1eacf74f2cdd07359e11879c022c2356a2855d1d",
+    "size": 198825090,
+    "lfs": {
+      "oid": "40b69bc53dc0bef2542b7bfbd1f95cbfbcdb7b88cd5716020cf66fcaa637794a",
+      "size": 198825090,
+      "pointerSize": 134
+    },
+    "xetHash": "9d7ada4edc33ab3d424bc0cbfc612247497fafd0dd6691d478af7b2cdb3df4b6",
+    "path": "data/Manila_Metropolitan_Theater.tar.gz"
+  },
+  "Mansudae_Grand_Monument": {
+    "type": "file",
+    "oid": "38e55e22e1a5adab6ebdd6c5c639a295f8205105",
+    "size": 80874157,
+    "lfs": {
+      "oid": "b3d178cbb8b7ef4567862905b1787c4a332fa7d27910afdae6ed13bff3c53ae2",
+      "size": 80874157,
+      "pointerSize": 133
+    },
+    "xetHash": "8f750ab8baf674a54f2c14f9aa52695291cc04475c854c0c293a47f18e46c822",
+    "path": "data/Mansudae_Grand_Monument.tar.gz"
+  },
+  "Mao_Zedong_youth_art_sculpture": {
+    "type": "file",
+    "oid": "5942619630cf0b726cf7d2c7f8835297e18ddee6",
+    "size": 150447351,
+    "lfs": {
+      "oid": "3034c01732c69843d4f096ba2c9322548310e3390a9e0edbd83a9210891c156e",
+      "size": 150447351,
+      "pointerSize": 134
+    },
+    "xetHash": "40e67fd44e105cdb917bf87ea0af9322757ecc4b6af068caf73f1663327413ba",
+    "path": "data/Mao_Zedong_youth_art_sculpture.tar.gz"
+  },
+  "Marcelo_H._del_Pilar_Shrine": {
+    "type": "file",
+    "oid": "c7ed7281459d9d34ccfa7d3dfa86a3395217e673",
+    "size": 99531285,
+    "lfs": {
+      "oid": "086e6f59fcd425244dc2766b30f67bc323b3b19b5b5a6a6d4d3ad39102e0ed7e",
+      "size": 99531285,
+      "pointerSize": 133
+    },
+    "xetHash": "37edea0bab0ea4134f2923d19759065e060ce595c3a3c967c71882012e9e471f",
+    "path": "data/Marcelo_H._del_Pilar_Shrine.tar.gz"
+  },
+  "Marine_Corps_War_Memorial": {
+    "type": "file",
+    "oid": "42062fefe016ba0ed3f5558db015f5e6b4e1be13",
+    "size": 72730807,
+    "lfs": {
+      "oid": "394cd95c9c472756f92ca3d2a10610414734d6c1139eccce1f2ea7f3d3bd21d0",
+      "size": 72730807,
+      "pointerSize": 133
+    },
+    "xetHash": "a1427a23dfa2c0152fb4ac0d49ef9d00999242e9645ad070eabceeeaf5c97b2c",
+    "path": "data/Marine_Corps_War_Memorial.tar.gz"
+  },
+  "Matenadaran": {
+    "type": "file",
+    "oid": "5015931f6748298739c3f4c7cbb3478b3bfb1495",
+    "size": 689855936,
+    "lfs": {
+      "oid": "522c954fb6feb56a52a37365154e2ede56557055e89b19a57ea4882069facf77",
+      "size": 689855936,
+      "pointerSize": 134
+    },
+    "xetHash": "d4926cc2b753915a1006159c3afe8e9ab6453346b4b40feecd83432a7622a936",
+    "path": "data/Matenadaran.tar.gz"
+  },
+  "Matsumoto_Castle": {
+    "type": "file",
+    "oid": "21bc2f2f9be260b4ccdb0596aec3658291374c6c",
+    "size": 312176297,
+    "lfs": {
+      "oid": "c4651acdc308f900271ace57eb29f7422170527de9a186d910b452c8ebdfdd39",
+      "size": 312176297,
+      "pointerSize": 134
+    },
+    "xetHash": "652373874fd3d5d3049797e179606023b95a21f8452d2498aba4af57a51e03df",
+    "path": "data/Matsumoto_Castle.tar.gz"
+  },
+  "Maya_Devi_Temple,_Lumbini": {
+    "type": "file",
+    "oid": "964b926e779343043da27f1a10d04f6386154d9b",
+    "size": 83509751,
+    "lfs": {
+      "oid": "604451d4302b85c88fc8c7a7bb7fb96c8083561a14a208b11dae6d2fbb488d54",
+      "size": 83509751,
+      "pointerSize": 133
+    },
+    "xetHash": "78bcd1c3a57bc79814fba62627be70a0f712f1a7456fe3cebeddc1ad7cafb140",
+    "path": "data/Maya_Devi_Temple,_Lumbini.tar.gz"
+  },
+  "Mecca_Masjid,_Hyderabad,_India": {
+    "type": "file",
+    "oid": "1280887a7bb6fc886878a8c36c4620987fd40467",
+    "size": 142301819,
+    "lfs": {
+      "oid": "5d5414128f7e271585a858ed3721ad6d95b0d0f8f2f20269a75c792c0315abaf",
+      "size": 142301819,
+      "pointerSize": 134
+    },
+    "xetHash": "f282fe92d607cc7333db985982be829973a6ee903afa13ccb2cfb0a68fca71c0",
+    "path": "data/Mecca_Masjid,_Hyderabad,_India.tar.gz"
+  },
+  "Medinet_Habu": {
+    "type": "file",
+    "oid": "474a525ffe8b525a5f4abf3eb0c6406062d0e483",
+    "size": 1247473773,
+    "lfs": {
+      "oid": "80b1a2a05d847fac1a1d7edcc39750d02fcef2c7c25c24c75e4ba22ae7b6283a",
+      "size": 1247473773,
+      "pointerSize": 135
+    },
+    "xetHash": "e07dda0c0f190930bc454a2161788bfae69f83303bfae35c396384fbf7406696",
+    "path": "data/Medinet_Habu.tar.gz"
+  },
+  "Merchandise_Mart": {
+    "type": "file",
+    "oid": "82e2fc928557ebb9804ca4b69af7972243493a0c",
+    "size": 165887343,
+    "lfs": {
+      "oid": "d975368376cf8c8ae9ef60398814ea6d9919711ee4e7d7a7b8749527fe5ef1a0",
+      "size": 165887343,
+      "pointerSize": 134
+    },
+    "xetHash": "0e5a1d385f9e6c3dabef1b873280d6fd3f2f654b0dc87e032ca383a70456b8e4",
+    "path": "data/Merchandise_Mart.tar.gz"
+  },
+  "Metropolitan_Cathedral_of_Mexico_City": {
+    "type": "file",
+    "oid": "ea4c451142c35a6e89cad93baf8edcadab6845ee",
+    "size": 571696274,
+    "lfs": {
+      "oid": "02a8c600b48f47589c07a25ce23713b11ee32295fadd3c2679eafbab85892d72",
+      "size": 571696274,
+      "pointerSize": 134
+    },
+    "xetHash": "df6c7add4265fec2d19cb9407f6be56998df2401aa2ecdf348f47d160b1048fb",
+    "path": "data/Metropolitan_Cathedral_of_Mexico_City.tar.gz"
+  },
+  "Montreal_City_Hall": {
+    "type": "file",
+    "oid": "5dcdfebcc560a26e3067b3dd2bfc819fcc4d749b",
+    "size": 335035857,
+    "lfs": {
+      "oid": "20b78bbc52bcb1003c63a523ac7c6ca3ed88eb212ea3c7e062d5013cf4a66ce5",
+      "size": 335035857,
+      "pointerSize": 134
+    },
+    "xetHash": "cec3950a327a2c58ba0439344a15e946cfd3b78b22565d853267ce5eabb0994e",
+    "path": "data/Montreal_City_Hall.tar.gz"
+  },
+  "Monument_to_Nicholas_I_of_Russia,_Saint_Petersburg": {
+    "type": "file",
+    "oid": "0bfe87f2cf8578aebf5281b0e8d2c18fe5989ca6",
+    "size": 183011096,
+    "lfs": {
+      "oid": "689223b802681f63f61018a3dc64627230e0a558e71fb7263d554388cbd3590c",
+      "size": 183011096,
+      "pointerSize": 134
+    },
+    "xetHash": "8701b52805a73a59e6dd829b8bfeb6a1d1268997b0564789b9ed72e3e155ff49",
+    "path": "data/Monument_to_Nicholas_I_of_Russia,_Saint_Petersburg.tar.gz"
+  },
+  "Monumento_a_la_Independencia_(México)": {
+    "type": "file",
+    "oid": "66421f1d68682a57c693fca61cbd3b3f2649527e",
+    "size": 85599814,
+    "lfs": {
+      "oid": "e7aa33eecbaf48a60d10058181fe549127ca581b7abd26a3b908082432ab0433",
+      "size": 85599814,
+      "pointerSize": 133
+    },
+    "xetHash": "87b90fa1315d0ec19f578dc90b632fa1efae9ba4e3fc32790fa05713584f1b01",
+    "path": "data/Monumento_a_la_Independencia_(México).tar.gz"
+  },
+  "Mortuary_Temple_of_Hatshepsut": {
+    "type": "file",
+    "oid": "f9f41e7fecf5beba79c6a7197c9dc73a0f0405fb",
+    "size": 104713614,
+    "lfs": {
+      "oid": "7d8fb0258bcc1189e53a3f2e5f41b7dcd4122d96617fe49a9926d058d40e3a2f",
+      "size": 104713614,
+      "pointerSize": 134
+    },
+    "xetHash": "471597bf63691cc049955fe8fdf7a8a4e9beb6656f98548779ccea18ce964080",
+    "path": "data/Mortuary_Temple_of_Hatshepsut.tar.gz"
+  },
+  "Mosque_of_Ibn_Tulun": {
+    "type": "file",
+    "oid": "f34d30b8dc596c5ee1ca40672bd72bad610f9ae2",
+    "size": 190212685,
+    "lfs": {
+      "oid": "7d753b70aa39b6aab581d1aa20ceed84fe81a2f18d3b12764c5e24d08f6bb415",
+      "size": 190212685,
+      "pointerSize": 134
+    },
+    "xetHash": "f4b1476c3eab77859cb6061853732c79426faa578b97c4a155f58728b4a2199d",
+    "path": "data/Mosque_of_Ibn_Tulun.tar.gz"
+  },
+  "Most_Legií": {
+    "type": "file",
+    "oid": "f88731dd358ca45568b51e38a98fad63be4b2b12",
+    "size": 95376697,
+    "lfs": {
+      "oid": "8e78f4d50d727d377c677657d2da3bec55080e0ec671d7c77159b8e63f5ad528",
+      "size": 95376697,
+      "pointerSize": 133
+    },
+    "xetHash": "4df423c8267afc552a0981167b9204c054b40de9eb9df4c91ea397677914d358",
+    "path": "data/Most_Legií.tar.gz"
+  },
+  "Mother_Armenia_Monument": {
+    "type": "file",
+    "oid": "598f238f806ce9fea42d3fb1bc792d1c45768a05",
+    "size": 102790776,
+    "lfs": {
+      "oid": "3a82418d1f7b2e98f7e0e98f00427428893775ba294b843653bcc56f6bfda273",
+      "size": 102790776,
+      "pointerSize": 134
+    },
+    "xetHash": "e69694edcdd18f9f7324ea7ae6639ab1044008597b774591203b5fe7bd3c61b7",
+    "path": "data/Mother_Armenia_Monument.tar.gz"
+  },
+  "Mount_Rushmore": {
+    "type": "file",
+    "oid": "52083f1feaee69a3fc12f63d942b50f7aad0a0a1",
+    "size": 445308065,
+    "lfs": {
+      "oid": "b2ebc96a2a074ae51e9c3cca733145d11c0f7e1a3e36cf893559eb907eb8d5a6",
+      "size": 445308065,
+      "pointerSize": 134
+    },
+    "xetHash": "2be3487b3005be2b920893990b575087fcde0fd63411be5a59c4011e5459fdee",
+    "path": "data/Mount_Rushmore.tar.gz"
+  },
+  "Muhammad_Ali_Mosque": {
+    "type": "file",
+    "oid": "9d8c77d7b75d226ce330524817268d375232e46c",
+    "size": 576660318,
+    "lfs": {
+      "oid": "2cd1090eb0c54b382d04afd4c0b9d83c16a893ef74eca8a58d0595ca75e9c618",
+      "size": 576660318,
+      "pointerSize": 134
+    },
+    "xetHash": "56560f503344ea7b2b466f811786abbe5f76b8241f193458a5e804afe2df5644",
+    "path": "data/Muhammad_Ali_Mosque.tar.gz"
+  },
+  "Municipal_Theater_of_Tunis": {
+    "type": "file",
+    "oid": "8eb66b2e8820071d38bc8dd78c849b41f2df9069",
+    "size": 245953322,
+    "lfs": {
+      "oid": "89c2551224ab3fd438704f5f3f5744fb1e3bd551e234a2f3eb8f423ae12299a6",
+      "size": 245953322,
+      "pointerSize": 134
+    },
+    "xetHash": "3220252205c10fd836680a056fcf6ad357e6c6e40fe938209138c3b4e39b3ed3",
+    "path": "data/Municipal_Theater_of_Tunis.tar.gz"
+  },
+  "Murdeshwar_Shiva_Statue": {
+    "type": "file",
+    "oid": "d33a13d927a8558b5d8e4e311ac611f387d10b2a",
+    "size": 74945375,
+    "lfs": {
+      "oid": "025a3ecfd0c4bad537929894e58f6c25d66324920e6474070e24f82c6157313b",
+      "size": 74945375,
+      "pointerSize": 133
+    },
+    "xetHash": "d550b5ed00c6b64445ca2f3ad039ede404325d8e0e904affb552f4f5c47ead00",
+    "path": "data/Murdeshwar_Shiva_Statue.tar.gz"
+  },
+  "Museo_del_Templo_Mayor": {
+    "type": "file",
+    "oid": "6a7e0f0b69034edd8b9666f9d4d12d318a553f56",
+    "size": 269314160,
+    "lfs": {
+      "oid": "7bebde9740a0068b6546f33cfc367979c3371b6eabf685ad3e11f4f4dbe99402",
+      "size": 269314160,
+      "pointerSize": 134
+    },
+    "xetHash": "f20903d545891ff47b5caddef1a975355b890eef41c337dbf33079d5b3332e36",
+    "path": "data/Museo_del_Templo_Mayor.tar.gz"
+  },
+  "Museu_da_Inconfidência": {
+    "type": "file",
+    "oid": "001ef4f7da3fe56eba2c4b3cd4bfe2284322e995",
+    "size": 123192656,
+    "lfs": {
+      "oid": "8a7b6abb52d5999fe87b15eb470316f0b9a77d6347714e584a8a6c7e3d17a0a8",
+      "size": 123192656,
+      "pointerSize": 134
+    },
+    "xetHash": "5ed314bf50a183af66e4f0ced853e8f393503ee58bf6f1a221c9125302e7dc6a",
+    "path": "data/Museu_da_Inconfidência.tar.gz"
+  },
+  "Nagcarlan_Church": {
+    "type": "file",
+    "oid": "07361b1e7db46f74f758b808301afff2784b8ee9",
+    "size": 298576278,
+    "lfs": {
+      "oid": "2da669ecdea5c1506fd84e7f3533d0492f46194802e1e0395ad1fb86bf4fe1a1",
+      "size": 298576278,
+      "pointerSize": 134
+    },
+    "xetHash": "a37e9d9128e107f1be3027e7e5a5caf7d8581854a198101355f1dba404419053",
+    "path": "data/Nagcarlan_Church.tar.gz"
+  },
+  "Nasir-ol-Molk_Mosque": {
+    "type": "file",
+    "oid": "4067e4e24323210a8ee99eebe858c84e4e67e219",
+    "size": 160981177,
+    "lfs": {
+      "oid": "be811cc474d8140b89161128fdb274079c8f4eec71eb63d5672102c70de0f89f",
+      "size": 160981177,
+      "pointerSize": 134
+    },
+    "xetHash": "085bdd30593ca6d6044a903978f4bb173f4ec053403523a399eac148dca20da5",
+    "path": "data/Nasir-ol-Molk_Mosque.tar.gz"
+  },
+  "National_Palace_(Mexico)": {
+    "type": "file",
+    "oid": "06bd5af5a2dd6fca754e74ffae73649937e1c831",
+    "size": 122449481,
+    "lfs": {
+      "oid": "0e0e0aa30e12d47f0137d6a113d0ce2fd169f5182dc4025ea4fc8c2f9894b108",
+      "size": 122449481,
+      "pointerSize": 134
+    },
+    "xetHash": "bcd8676025dd12f855bbc4c280d8aeda0d56da187c055488bd245911e11267e9",
+    "path": "data/National_Palace_(Mexico).tar.gz"
+  },
+  "National_Shrine_of_St._Anne_(Hagonoy,_Bulacan)": {
+    "type": "file",
+    "oid": "e910328549965a400e1170ee328ca61b91af8dde",
+    "size": 138561523,
+    "lfs": {
+      "oid": "62b27e32cbae1888525b81aac01a731ebdf77ea99948230b2d7cc1f8cbb538a4",
+      "size": 138561523,
+      "pointerSize": 134
+    },
+    "xetHash": "890a73cdb5da2866bc04c469a01dc9654a856578ac7a08c2e98cd7171396b5dc",
+    "path": "data/National_Shrine_of_St._Anne_(Hagonoy,_Bulacan).tar.gz"
+  },
+  "New_Mosque_(Istanbul)": {
+    "type": "file",
+    "oid": "1521f61e56a8ca2721483078c0ceb97f43ada796",
+    "size": 99489091,
+    "lfs": {
+      "oid": "d2b252e1960b47fe7ca9fd99ad6e5e5582ce9a68f5b177975a24fd04bdfa98b2",
+      "size": 99489091,
+      "pointerSize": 133
+    },
+    "xetHash": "c4f1e3113b8cd37d69c6adfb81cd5cb148d029a766e07daa1f6e0db9afd0da01",
+    "path": "data/New_Mosque_(Istanbul).tar.gz"
+  },
+  "New_York_Public_Library_Main_Branch": {
+    "type": "file",
+    "oid": "4c43d6de4f2abe0e30d33c770164ccf5a85f4c0e",
+    "size": 211370662,
+    "lfs": {
+      "oid": "dd3e00aaa8b384f0143f30fd713734cb113151f5db3ebbcb2795433384779b41",
+      "size": 211370662,
+      "pointerSize": 134
+    },
+    "xetHash": "ea1fc244adc8c4caae15efaac7e1f0c5bdf10435ee53ab213795703b79e1596b",
+    "path": "data/New_York_Public_Library_Main_Branch.tar.gz"
+  },
+  "Nishi_Hongwanji": {
+    "type": "file",
+    "oid": "2c3921e7ed489be030b23fdeb6cc5211b62355b6",
+    "size": 277413266,
+    "lfs": {
+      "oid": "892915f720b1bb4dc05dab1225773a57c3bcbfda93c95a786969d48ae33da7a9",
+      "size": 277413266,
+      "pointerSize": 134
+    },
+    "xetHash": "7bc913f0622e1441a0bf5cd499c35bc9c75cc7af1d94b31418eec4e38aef2b9d",
+    "path": "data/Nishi_Hongwanji.tar.gz"
+  },
+  "Notre-Dame-de-Bon-Secours_Chapel": {
+    "type": "file",
+    "oid": "99aa3094c11941993bd02c526d7da74f01cc8d24",
+    "size": 140283729,
+    "lfs": {
+      "oid": "1dcd7eeb07933834f66f0beeb43aabb7685a5159a7342bfc5f1f022597d312c9",
+      "size": 140283729,
+      "pointerSize": 134
+    },
+    "xetHash": "e21ffb104c95b0c3c013924eb08d0bc17812a42dd2f6355db11168659d7a16de",
+    "path": "data/Notre-Dame-de-Bon-Secours_Chapel.tar.gz"
+  },
+  "Nuestra_Señora_de_la_Merced_Parish_Church_(Bahay_Pare,_Candaba,_Pampanga)": {
+    "type": "file",
+    "oid": "4dd24315d7485fcf7c6ae9637e614f5386141084",
+    "size": 279038288,
+    "lfs": {
+      "oid": "81d1dda46f8b2f5ea40fa17f67f4863fe925f266241dd126e25336cf8a0554ab",
+      "size": 279038288,
+      "pointerSize": 134
+    },
+    "xetHash": "8e4d27d75bdb41d95fd03265c1336c0e1f04f43c91285c4e9de1d2bf2ecf6404",
+    "path": "data/Nuestra_Señora_de_la_Merced_Parish_Church_(Bahay_Pare,_Candaba,_Pampanga).tar.gz"
+  },
+  "Odesa_City_Hall": {
+    "type": "file",
+    "oid": "a93de423a257be2e11dff1b2f671e52d966817ca",
+    "size": 105486130,
+    "lfs": {
+      "oid": "d26e9d04624ba5963cabf0d517b53cffde00e4f13976e2b4a013d6fbaa851abf",
+      "size": 105486130,
+      "pointerSize": 134
+    },
+    "xetHash": "ef82d75957cc5e764f873bdd4fed6d66f33a7373e19ab41c91a0c5c602c20ced",
+    "path": "data/Odesa_City_Hall.tar.gz"
+  },
+  "Odzun_Church": {
+    "type": "file",
+    "oid": "43bced391bf0d32d23a90c6faf1af18b8cef3566",
+    "size": 703358118,
+    "lfs": {
+      "oid": "2cc305ae48d01b459c92474d21ae89178f27844230a6359634dff72a59d85aab",
+      "size": 703358118,
+      "pointerSize": 134
+    },
+    "xetHash": "c1efc70aba82cea6ae493f574cfa118119794ad298662c6be0b42450c2880e3c",
+    "path": "data/Odzun_Church.tar.gz"
+  },
+  "Old_Legislative_Building_historical_marker": {
+    "type": "file",
+    "oid": "af22734afd02ee8b1cefcd6b50fcdf5a64f4fcf2",
+    "size": 150936387,
+    "lfs": {
+      "oid": "a36a2cd4b9d2829912a035fefc865092347ff985dfb643f2ab7633299f3bb344",
+      "size": 150936387,
+      "pointerSize": 134
+    },
+    "xetHash": "65843d830cc8908e6fdee8b5447cf1c3c28fa30454fee00374ba7260b5f4e44a",
+    "path": "data/Old_Legislative_Building_historical_marker.tar.gz"
+  },
+  "Old_State_House,_Boston": {
+    "type": "file",
+    "oid": "5adc9d9346a24ea843c838f78cd2aad02fd08528",
+    "size": 162523558,
+    "lfs": {
+      "oid": "76822431e8e1ef3bff3ef00ce2fd8ea448589ee826bd48b4db5c2685848b8dba",
+      "size": 162523558,
+      "pointerSize": 134
+    },
+    "xetHash": "7cf1a0430c2401424ae51cd459efa8d4beffe42aed3629a4affbb2d02287cac3",
+    "path": "data/Old_State_House,_Boston.tar.gz"
+  },
+  "Olumo_Rock": {
+    "type": "file",
+    "oid": "9906b5e91493392d2a7ab3ccd13dc345001f14c2",
+    "size": 148232842,
+    "lfs": {
+      "oid": "a8341aaf8de530b8aef0f1751769b95549425a4b2b9f0a927336eb2b592109ed",
+      "size": 148232842,
+      "pointerSize": 134
+    },
+    "xetHash": "b21fce206fd41c1db53653e68a90804b4e1afddd8fe29223d5046087c9728b23",
+    "path": "data/Olumo_Rock.tar.gz"
+  },
+  "Opera_house_of_Yerevan": {
+    "type": "file",
+    "oid": "a9256e0547b24e0b3eb3e57a166778d1f7526914",
+    "size": 210404826,
+    "lfs": {
+      "oid": "37c7e31e4bcdb63cb71e9868490bcbf37af7d08e04581025d71f84c270e0f11b",
+      "size": 210404826,
+      "pointerSize": 134
+    },
+    "xetHash": "76d545015217453e24932722ce62a5d8b38a5e23b17cc3e10372750e4b7d51ab",
+    "path": "data/Opera_house_of_Yerevan.tar.gz"
+  },
+  "Osaka_Castle_Keep_Tower": {
+    "type": "file",
+    "oid": "3f204767660645a5422e9760641a212341e2f00a",
+    "size": 254796064,
+    "lfs": {
+      "oid": "6971eaa6233b9f035bf368fd8893339c79a3bf7cafe3c27df946708c5f544c20",
+      "size": 254796064,
+      "pointerSize": 134
+    },
+    "xetHash": "ea69f200e6fa3efaecad2a3e7ea073948936df00468d4e575185394133b4bb92",
+    "path": "data/Osaka_Castle_Keep_Tower.tar.gz"
+  },
+  "Oshakan_Saint_Mashtots": {
+    "type": "file",
+    "oid": "5dbf92a47ea2bde9e6526c479b98eb1a8185c51e",
+    "size": 199536910,
+    "lfs": {
+      "oid": "27ede0d5e00367fd8ee71833e05f263774a3e6612cf35ee6e83a036e4948d2e9",
+      "size": 199536910,
+      "pointerSize": 134
+    },
+    "xetHash": "583bdb6517b22cde7cc95f7d0bba915d05c1337b378fb9b9b9e99b45e06ed616",
+    "path": "data/Oshakan_Saint_Mashtots.tar.gz"
+  },
+  "Padmanabhaswamy_Temple": {
+    "type": "file",
+    "oid": "35a69334f350bb85656af7803fb353513abd46b8",
+    "size": 73898606,
+    "lfs": {
+      "oid": "1b1715a8b158d4f57a907930196e379c192e210bfe7b699838a297c95c119269",
+      "size": 73898606,
+      "pointerSize": 133
+    },
+    "xetHash": "d26746db375b3bd44d5de7ab5792ac3dfaf713c38d7ff9b3b373c97d08adef8b",
+    "path": "data/Padmanabhaswamy_Temple.tar.gz"
+  },
+  "Palace_of_Westminster": {
+    "type": "file",
+    "oid": "956e382f95b028fc5612893eb85c7541976322de",
+    "size": 2290434961,
+    "lfs": {
+      "oid": "2a45d5425c70611738c049a8d825116d041bfe28fa43f9d424f7e840d8686189",
+      "size": 2290434961,
+      "pointerSize": 135
+    },
+    "xetHash": "6269d11706b8167397608d9cf259ab804e524cdde07f1aaeed996812ae1b815c",
+    "path": "data/Palace_of_Westminster.tar.gz"
+  },
+  "Palacio_Legislativo,_Uruguay": {
+    "type": "file",
+    "oid": "e8b1e59d7f1ac84e5aa4893b211d32c404e772ec",
+    "size": 291677277,
+    "lfs": {
+      "oid": "22909e8e103431739589ba393e93472550423ddf753ad04937f10fd3b41f6410",
+      "size": 291677277,
+      "pointerSize": 134
+    },
+    "xetHash": "9b286104071e5368aa341628f121c287ab64eb1da52d6fd5946bf388ab81b824",
+    "path": "data/Palacio_Legislativo,_Uruguay.tar.gz"
+  },
+  "Palacio_de_Bellas_Artes": {
+    "type": "file",
+    "oid": "1f105316778469330d3b70323f4cd3bee39f3131",
+    "size": 1017923743,
+    "lfs": {
+      "oid": "f268856c23d0640a2b37ddaa1552829987dd6513ae882338dd47f20ffe35b9e2",
+      "size": 1017923743,
+      "pointerSize": 135
+    },
+    "xetHash": "f26402bf7c1fbec639abceae3e368234408d695bf325e77acbdd6fb32e595752",
+    "path": "data/Palacio_de_Bellas_Artes.tar.gz"
+  },
+  "Palacio_de_Comunicaciones": {
+    "type": "file",
+    "oid": "f9525ac936679ce1133b58bebb3ed73ee6f54963",
+    "size": 631312694,
+    "lfs": {
+      "oid": "c46e00b2e29b355624ef7473baf710c2f2406cee440695cd2ca93697126a3659",
+      "size": 631312694,
+      "pointerSize": 134
+    },
+    "xetHash": "3f14af02cf5fd5eb8b74089f553cb49be505de68db3ecce87c24968cf598a4ee",
+    "path": "data/Palacio_de_Comunicaciones.tar.gz"
+  },
+  "Palácio_Nereu_Ramos": {
+    "type": "file",
+    "oid": "a9a2a5124098fbf590aa6ab6f82ad0e705bf7402",
+    "size": 153589684,
+    "lfs": {
+      "oid": "54908587bf2476603bc5383856c6835f0ca2947c77319a12b32ef16e0c44c3fc",
+      "size": 153589684,
+      "pointerSize": 134
+    },
+    "xetHash": "3e4be9987d4f50f4abf7984bdcca378fe0c748b27912046c1f252e699f309327",
+    "path": "data/Palácio_Nereu_Ramos.tar.gz"
+  },
+  "Pancha_Rathas": {
+    "type": "file",
+    "oid": "d0c845e7cf2e9f8a719b0bbd1a175db6e7ad12d3",
+    "size": 314101205,
+    "lfs": {
+      "oid": "81372513f5a31fa9b978777abb27ae137e8ca9c94100f8762f6b5cffbedf674d",
+      "size": 314101205,
+      "pointerSize": 134
+    },
+    "xetHash": "1605efc3d8d4dbd56b30c0c9327774376e072c500e8dd1d2b285832d413d8e36",
+    "path": "data/Pancha_Rathas.tar.gz"
+  },
+  "Paoay_Church": {
+    "type": "file",
+    "oid": "d5af8bbf2796065a5b566025719b4ec8365a0fe5",
+    "size": 165706653,
+    "lfs": {
+      "oid": "7caffd56ea2caf3beeb17d4606002137afdce41156ebf7a78d4d787ad06d8fc0",
+      "size": 165706653,
+      "pointerSize": 134
+    },
+    "xetHash": "050804a0ca1f6a03ef1f59780e5e054f280bc0a9059c7588c280242c120bdf88",
+    "path": "data/Paoay_Church.tar.gz"
+  },
+  "Paris_-_Eiffel_Tower,_Paris_Las_Vegas": {
+    "type": "file",
+    "oid": "c31ac13ac4128c46cc662a429078a9ffd05ad76d",
+    "size": 186857069,
+    "lfs": {
+      "oid": "09f33a1610664c5f843b3043ab6c5235915fe6faa3bc1ea1f0a9a2ee69cfcc9d",
+      "size": 186857069,
+      "pointerSize": 134
+    },
+    "xetHash": "3da59287c0646f6722dfc454331392984d8a020bb372376e3ebbe23902fd395e",
+    "path": "data/Paris_-_Eiffel_Tower,_Paris_Las_Vegas.tar.gz"
+  },
+  "Patan_Durbar_Square": {
+    "type": "file",
+    "oid": "5b6b5ff99407b5ffd3ede999baafe6e8f837734c",
+    "size": 461675545,
+    "lfs": {
+      "oid": "c5b774953ebd7acd8034cfc7392fdf23335427057c7d91f8978cf2b1df69e377",
+      "size": 461675545,
+      "pointerSize": 134
+    },
+    "xetHash": "7f492028f4e472e30e73e0b9275965bd4d8f5d33ca8d4860a43c0f6af455f03a",
+    "path": "data/Patan_Durbar_Square.tar.gz"
+  },
+  "Paul_Kruger_Church": {
+    "type": "file",
+    "oid": "18dbbe87168e882b6cfddc82e4c27709ad578d24",
+    "size": 130378985,
+    "lfs": {
+      "oid": "de8601fee4b3051c631e0b728a87b90752cfdda9597090ab2ff15f66ac44b58b",
+      "size": 130378985,
+      "pointerSize": 134
+    },
+    "xetHash": "289bb0dc977f3f81b60841c6649c3fdf49cc0643e66e9e74caaf2b43451e5014",
+    "path": "data/Paul_Kruger_Church.tar.gz"
+  },
+  "Petronas_Towers": {
+    "type": "file",
+    "oid": "b60438f3e561ed0dd26b9d5e9ed6e2045eb4c5b6",
+    "size": 172220072,
+    "lfs": {
+      "oid": "fd12566a7711236ad126635c5ac6e57aed4b1e210dbf84636cb5b6b1f026b6ef",
+      "size": 172220072,
+      "pointerSize": 134
+    },
+    "xetHash": "4fcaa7bc6e9ae7b0de39ba8fb9cd23c7921c14398d8d93dd7a19f513fc55a8a8",
+    "path": "data/Petronas_Towers.tar.gz"
+  },
+  "Pila_Church": {
+    "type": "file",
+    "oid": "d9977def76cf77847e5f9713efa4e0707cce88df",
+    "size": 188185800,
+    "lfs": {
+      "oid": "10162f2dc59b9f3eab26c35612ab3ab996a952369fb0c396b7bdbb75d9a48046",
+      "size": 188185800,
+      "pointerSize": 134
+    },
+    "xetHash": "6a9f565cf1a33d1f656f3ee0284ff827c9666ff8b90729eb196dc24128d7d590",
+    "path": "data/Pila_Church.tar.gz"
+  },
+  "Place_Jacques-Cartier": {
+    "type": "file",
+    "oid": "e29a2d5fe2e98349272964255d9796d087911bb3",
+    "size": 72676797,
+    "lfs": {
+      "oid": "4f36a7558ed04583698a3fc014c4f2bf6ec522d8d429e094f4df1b1571709ec4",
+      "size": 72676797,
+      "pointerSize": 133
+    },
+    "xetHash": "7359f21d70b4cab417beb52f467a7fb66da2d51bae24d44acb1ba95b56318336",
+    "path": "data/Place_Jacques-Cartier.tar.gz"
+  },
+  "Plaza_Mayor,_Segovia": {
+    "type": "file",
+    "oid": "aad2976aca525efe719883d03e244709d905fe02",
+    "size": 241612109,
+    "lfs": {
+      "oid": "c0e7ed0b338ebe0a12a99115db127eb43a2b80d0a98b84abfea155451083d2a9",
+      "size": 241612109,
+      "pointerSize": 134
+    },
+    "xetHash": "dc8c22d0ec67850e6e192d67350e6bf32aedba42ebb3bcea3032602a28fb5680",
+    "path": "data/Plaza_Mayor,_Segovia.tar.gz"
+  },
+  "Ponte_dell'Accademia_(Venice)": {
+    "type": "file",
+    "oid": "475dd7e3b9d7b172eb9ee7b5a8d8cb69814cbf02",
+    "size": 266731183,
+    "lfs": {
+      "oid": "4de40cddbe47b3ab3e4fa162532b9fdfb04fb07c0f88868ff14d359707f70a3a",
+      "size": 266731183,
+      "pointerSize": 134
+    },
+    "xetHash": "37736ac31236e24e6eeca22e563e2d896f5f2c3541f480d585e0f17e17d1b113",
+    "path": "data/Ponte_dell'Accademia_(Venice).tar.gz"
+  },
+  "Portland_Head_Lighthouse": {
+    "type": "file",
+    "oid": "d1d175918009644739fd636d953f67a465a41802",
+    "size": 106439435,
+    "lfs": {
+      "oid": "8c3d15fb6df9fdfb83fdc3dab02b63e71a568fbcbc6c979eef27caaa7e7e9815",
+      "size": 106439435,
+      "pointerSize": 134
+    },
+    "xetHash": "a4399fa5b9f6f91ec680322224d27a801edf5325e9e8dccef564903a8ae64099",
+    "path": "data/Portland_Head_Lighthouse.tar.gz"
+  },
+  "Prambanan": {
+    "type": "file",
+    "oid": "8752a3205e429a75250b9728f98da38b7fff6a1a",
+    "size": 163201507,
+    "lfs": {
+      "oid": "80e4d92d0ecb9ecef455ddf00bd36bbd6f0f2e3ce9409f7b324f4293106a7d6a",
+      "size": 163201507,
+      "pointerSize": 134
+    },
+    "xetHash": "fb0ffc2c64efa5d6aad72b2a6e3b104a65d531e916cb8e1d28d05bd789606bc0",
+    "path": "data/Prambanan.tar.gz"
+  },
+  "Praça_da_Figueira": {
+    "type": "file",
+    "oid": "2c6311673ea44e84fb3abcaed011439de4f89efb",
+    "size": 180544818,
+    "lfs": {
+      "oid": "7f03c73886f4150c0844c80a10706382610b34ea58d9211654f92563bb4e983a",
+      "size": 180544818,
+      "pointerSize": 134
+    },
+    "xetHash": "f64f1b1f92753ee21b1ea3b2010c4f271d57fd997f1ae220bfd1f5032f013e81",
+    "path": "data/Praça_da_Figueira.tar.gz"
+  },
+  "Primate_Cathedral_of_Bogota": {
+    "type": "file",
+    "oid": "e5c74ecee07dd5b2dd22b5c3458d3ef52549f399",
+    "size": 217290186,
+    "lfs": {
+      "oid": "134da35c0e55cf8a3c95c095b6d6622e9366bfbc1e3d6bea43742638a39868c9",
+      "size": 217290186,
+      "pointerSize": 134
+    },
+    "xetHash": "f910030ec968cdb498c5928ba10ba1f5be94ff57902e5fa65a54ba454b8355f5",
+    "path": "data/Primate_Cathedral_of_Bogota.tar.gz"
+  },
+  "Pyatnytska_Church_(Chernihiv)": {
+    "type": "file",
+    "oid": "26c6e048e6d49010d2c3bd0324a78fd2c14a6640",
+    "size": 184988085,
+    "lfs": {
+      "oid": "cca2f808627784f27f8e4a46077bfcd2d72666fbd23a2c5b6bd97cacbc0be747",
+      "size": 184988085,
+      "pointerSize": 134
+    },
+    "xetHash": "cc465cc028adc0a9a1651c714ac6f17c2c40afdb840b5fff174e75833b178580",
+    "path": "data/Pyatnytska_Church_(Chernihiv).tar.gz"
+  },
+  "Quiapo_Church": {
+    "type": "file",
+    "oid": "023ca287b8d083ff8f90be3844bac083534832b0",
+    "size": 132682100,
+    "lfs": {
+      "oid": "bb7f30c165c7e58f6cbe1f2086fb87de20b2be17eda6375ec5acc0f0913f37ee",
+      "size": 132682100,
+      "pointerSize": 134
+    },
+    "xetHash": "98a24b6c45ec8dac6e17f36c659c2f881227380412cd4008313f38c311b79f69",
+    "path": "data/Quiapo_Church.tar.gz"
+  },
+  "Rasmancha,_Bishnupur": {
+    "type": "file",
+    "oid": "ba1381025a2e815bff9067645475445d26e8e984",
+    "size": 162032267,
+    "lfs": {
+      "oid": "f91e73ced6f842701a54f2d9d8ff3d9403c9f4befba0b5e7742321fcd6493147",
+      "size": 162032267,
+      "pointerSize": 134
+    },
+    "xetHash": "e91703d46a0cc2f3d9acd6bd5fe0add2f5a045d06cae193901057e774090bb2e",
+    "path": "data/Rasmancha,_Bishnupur.tar.gz"
+  },
+  "Red_House_Theater": {
+    "type": "file",
+    "oid": "887b4a8fb07e5c6265cef06eca2b767be5aced9d",
+    "size": 208949386,
+    "lfs": {
+      "oid": "6714c02da0a2d20ecab46ef4ecf654f396146214b8d788063c34bf9ed90fc683",
+      "size": 208949386,
+      "pointerSize": 134
+    },
+    "xetHash": "86322cc6db2e6d322ab4b5d5be99086bdea8eff6cf2ea61e67a3f1fe34cdd1e8",
+    "path": "data/Red_House_Theater.tar.gz"
+  },
+  "Reichstag_(building)": {
+    "type": "file",
+    "oid": "dbe437c4f2dfa3efb38bc11962d73258615330d4",
+    "size": 1507759053,
+    "lfs": {
+      "oid": "901037c55975088548dea3a0c857f439d9b662ac3faf9693fc5c7c801f739702",
+      "size": 1507759053,
+      "pointerSize": 135
+    },
+    "xetHash": "6c533230dda1e741b4335d6e5a04e03f14832c85a210c38894294a8517905b76",
+    "path": "data/Reichstag_(building).tar.gz"
+  },
+  "Rostov_Kremlin._Bell_Tower": {
+    "type": "file",
+    "oid": "e14577f2379b8d21c2cf25358d8088753266b3eb",
+    "size": 148237069,
+    "lfs": {
+      "oid": "bcffcdbf56209f383eb0c2aa5fbfbcd21b9b01b05ad587ea85d4f57ed50821a4",
+      "size": 148237069,
+      "pointerSize": 134
+    },
+    "xetHash": "493f2a11246284293652cde7ed8db1f668615015c1534bf9032d6f064d2fd8cb",
+    "path": "data/Rostov_Kremlin._Bell_Tower.tar.gz"
+  },
+  "Royal_Palace,_Stockholm": {
+    "type": "file",
+    "oid": "7a39ba24503d956996d0e96c9c1f61271183d961",
+    "size": 216577520,
+    "lfs": {
+      "oid": "af9b5eeda24112034169e0ccddfab1b801d373ca2035615c70b706b584995e25",
+      "size": 216577520,
+      "pointerSize": 134
+    },
+    "xetHash": "94830d0eb96a6c0048a6d55229499263b6da0efc3fbd39092ce88adab3c92d6d",
+    "path": "data/Royal_Palace,_Stockholm.tar.gz"
+  },
+  "Saint-Martin,_Colmar": {
+    "type": "file",
+    "oid": "13de776db96b4c0aaf165d8b935dee0d0a57d111",
+    "size": 256440585,
+    "lfs": {
+      "oid": "6ff9ab316463356a350429fb173e621485ee92a43149de14563ce56affae8242",
+      "size": 256440585,
+      "pointerSize": 134
+    },
+    "xetHash": "bb422f63131174ae3043e27325d25b51a3028f38557a4ff52ab10c497845f7a5",
+    "path": "data/Saint-Martin,_Colmar.tar.gz"
+  },
+  "Saint_Andrew_church_in_Kraków": {
+    "type": "file",
+    "oid": "a1f7127a44773f01ba94a52b7501846e0fcf1436",
+    "size": 162200983,
+    "lfs": {
+      "oid": "aa754d49d00860c8509beae4fbcf3882330ccce01814c0ad77d264ea86bbce65",
+      "size": 162200983,
+      "pointerSize": 134
+    },
+    "xetHash": "98e8afe856fdb22824cee0abc94885073d8a8b7c361d734d3711b923dd1d5736",
+    "path": "data/Saint_Andrew_church_in_Kraków.tar.gz"
+  },
+  "Saint_Astvatsatsin_Kamsarakan_Church,_Talin": {
+    "type": "file",
+    "oid": "56fd3f86b9b40db4bd72de3eb6f4915dcf695876",
+    "size": 130297605,
+    "lfs": {
+      "oid": "e13906910df2ab2f184671209bc284c5b098c77362655f507f6d1e551a2698df",
+      "size": 130297605,
+      "pointerSize": 134
+    },
+    "xetHash": "cf76311fee526f079423b529c069dcfefa4faa218ddc95f90277c70532824abf",
+    "path": "data/Saint_Astvatsatsin_Kamsarakan_Church,_Talin.tar.gz"
+  },
+  "Saint_Demetrius_Church_(Vladimir)": {
+    "type": "file",
+    "oid": "1f470b70b45be9dde26c7c26930860d239423a9d",
+    "size": 263696529,
+    "lfs": {
+      "oid": "6cc036385bc874b6833b305d4eecfedcb6279e7c4018519e98ab7df843f6847c",
+      "size": 263696529,
+      "pointerSize": 134
+    },
+    "xetHash": "914c57b732a6969ce9dd1f370f4b0493ec945fb4f7092ec468a6ada356cb4d7c",
+    "path": "data/Saint_Demetrius_Church_(Vladimir).tar.gz"
+  },
+  "Saint_George_Church_in_Coptic_Cairo": {
+    "type": "file",
+    "oid": "ea0eeba5911d5491023337fc064d348dcd6eceda",
+    "size": 278345289,
+    "lfs": {
+      "oid": "a15fb58694ed3d751f75fcc6de945b576e8292cc61644f41ecd4a3a61fc4a33e",
+      "size": 278345289,
+      "pointerSize": 134
+    },
+    "xetHash": "9ea282cc6fe49a1341481e7b2fe938a36bead2cb74f44b9d4ca4ec17a955e783",
+    "path": "data/Saint_George_Church_in_Coptic_Cairo.tar.gz"
+  },
+  "Saint_George_church_(Sopotnica)": {
+    "type": "file",
+    "oid": "9c54ba0fd9c5e629f78d351c176b33f8fa94a81a",
+    "size": 125828315,
+    "lfs": {
+      "oid": "1fb21052dd1338ca4c506f6478842fd63a6e443cdb264698cd54b9300c9708a0",
+      "size": 125828315,
+      "pointerSize": 134
+    },
+    "xetHash": "22e5f75962e88c1c425b69fa61924e81d1fd2d408baf9bb74d799003954796cd",
+    "path": "data/Saint_George_church_(Sopotnica).tar.gz"
+  },
+  "Saint_Gregory_Church,_Sisian": {
+    "type": "file",
+    "oid": "a72c4f1331ae1421dcf12f435fc79ffcd3439b33",
+    "size": 248672935,
+    "lfs": {
+      "oid": "59aea09382e9e4c2a9575c7870932fa36dc8db14ab4468e987db295b0e2a423c",
+      "size": 248672935,
+      "pointerSize": 134
+    },
+    "xetHash": "897e4d31807519e3f05c3af2575652524d960203384b791334008eec4b2a9269",
+    "path": "data/Saint_Gregory_Church,_Sisian.tar.gz"
+  },
+  "Saint_Holy_Mother_church_of_Yeghvard": {
+    "type": "file",
+    "oid": "5aa94f9df76d49499cfc2c680b9c22fb1d6a6dd8",
+    "size": 793356809,
+    "lfs": {
+      "oid": "61247734ca2d9b4d0abaac8f727878ba2f6bb1f4ed0c780079a65040ac1a8916",
+      "size": 793356809,
+      "pointerSize": 134
+    },
+    "xetHash": "ccb22ba7d8e7fe01419f07a580b57aaf86ad42ebcd11752849e042b337fac9ea",
+    "path": "data/Saint_Holy_Mother_church_of_Yeghvard.tar.gz"
+  },
+  "Saint_Karapet_of_Janjrlu": {
+    "type": "file",
+    "oid": "e780168235354d8885848a8f0b055a320d706179",
+    "size": 236892303,
+    "lfs": {
+      "oid": "da155b41ebd28a927bcfcf0fe032b3cabcd96ee11619e00891ab2403af241409",
+      "size": 236892303,
+      "pointerSize": 134
+    },
+    "xetHash": "b6f200ad0ebe8aa4714ce59a5a1909e010399251a592ed0c08a4c7b0bd29aafc",
+    "path": "data/Saint_Karapet_of_Janjrlu.tar.gz"
+  },
+  "Saint_Lawrence_Deacon_&_Martyr_Parish_Church_of_Balagtas": {
+    "type": "file",
+    "oid": "632714c79027cd13c347901f1414ffeb86b50748",
+    "size": 187352194,
+    "lfs": {
+      "oid": "a4d1b8b4bc45543b77187ed53062489f4cb50f2053e5908280c8c185ac015154",
+      "size": 187352194,
+      "pointerSize": 134
+    },
+    "xetHash": "0739e9748fbb94ad70c7b2d8a57743c29527a0809102b25e1f414c17bbbad8ca",
+    "path": "data/Saint_Lawrence_Deacon_&_Martyr_Parish_Church_of_Balagtas.tar.gz"
+  },
+  "Saint_Lawrence_church,_Zhovkva": {
+    "type": "file",
+    "oid": "33f850b8af3f6ac3db24d53f479d5fbb240fb4f0",
+    "size": 137292384,
+    "lfs": {
+      "oid": "b14fc7067439d12cb99f0bb64d6182195e93671f6072bff5510682cd936fa936",
+      "size": 137292384,
+      "pointerSize": 134
+    },
+    "xetHash": "4479b26153f57b32a868fcc06d01a6a4928949c88bf1ed6dccd8e4f2d1434b66",
+    "path": "data/Saint_Lawrence_church,_Zhovkva.tar.gz"
+  },
+  "Saint_Louis_Cathedral,_New_Orleans": {
+    "type": "file",
+    "oid": "85fd1c63fd941d6e1b7d91f34a27acf6711667a4",
+    "size": 132167661,
+    "lfs": {
+      "oid": "2c5db5a0f5343257067c65b69afe43c525faabcb9a7233390e6d62ac71f5a149",
+      "size": 132167661,
+      "pointerSize": 134
+    },
+    "xetHash": "0413b23dfd67e52d55194045be20f9f69e067cd31d7bab59676aef979845a62f",
+    "path": "data/Saint_Louis_Cathedral,_New_Orleans.tar.gz"
+  },
+  "Saint_Michael_the_Archangel_Parish_Church_in_San_Miguel,_Bulacan": {
+    "type": "file",
+    "oid": "53e65f1eb28f0964a978c57b6028f8ff3fa05a42",
+    "size": 118253928,
+    "lfs": {
+      "oid": "b4531a410b74340a748235edf2a2c1a3448355fce6adc078634b4c113742144e",
+      "size": 118253928,
+      "pointerSize": 134
+    },
+    "xetHash": "48a3b62b7b4e08b63b0f83270e2ab5e6f6f586ca6955d3f88a72780ca4deeed6",
+    "path": "data/Saint_Michael_the_Archangel_Parish_Church_in_San_Miguel,_Bulacan.tar.gz"
+  },
+  "Saint_Nicholas_of_Tolentino_Temple_and_Convent_of_Actopan": {
+    "type": "file",
+    "oid": "7977173a9c75c808f77d1f22ad3975ad496c59e3",
+    "size": 277264688,
+    "lfs": {
+      "oid": "6518fcdc41b2c6d78dfa68dfc1aecd96758d179a1f8a113c5bada2e753e98461",
+      "size": 277264688,
+      "pointerSize": 134
+    },
+    "xetHash": "486c07244ef2ee77299e261a2353a0f723e978fd230ac7dc535782491623b846",
+    "path": "data/Saint_Nicholas_of_Tolentino_Temple_and_Convent_of_Actopan.tar.gz"
+  },
+  "Saint_Sophia_Cathedral_in_Novgorod": {
+    "type": "file",
+    "oid": "b685d24d37d7ab11d4d8031412291b686eba45eb",
+    "size": 198623034,
+    "lfs": {
+      "oid": "c4b7504db28a940dae45b91503264a0d5bf3a785585e375f5eed1cc433a375c4",
+      "size": 198623034,
+      "pointerSize": 134
+    },
+    "xetHash": "98bafea168ebd88ff66813690f8f756eb8827bed5c2c818e054706a71c4a5a4f",
+    "path": "data/Saint_Sophia_Cathedral_in_Novgorod.tar.gz"
+  },
+  "Salim_Chishti_Tomb_(Fatehpur_Sikri)": {
+    "type": "file",
+    "oid": "a92515c0ee0f4b9931470b73406424dd12dcec2f",
+    "size": 162371974,
+    "lfs": {
+      "oid": "d0f1af44e56aef71bc9716e0c4c77b0a9ac5d14b26d7629d96af3beb9bcc452c",
+      "size": 162371974,
+      "pointerSize": 134
+    },
+    "xetHash": "062497d5bc593ae11de794b418d874d54947224e950b5fb7a94ed0c2b8120d1f",
+    "path": "data/Salim_Chishti_Tomb_(Fatehpur_Sikri).tar.gz"
+  },
+  "San_Francisco_Church,_Mexico_City": {
+    "type": "file",
+    "oid": "91d6920532f1295058eeb8818ef76eab45730bd6",
+    "size": 343296986,
+    "lfs": {
+      "oid": "277c81ef7fb825ac5e20121002d4ece735c1270e62f96e7fb4319657f0ce63ad",
+      "size": 343296986,
+      "pointerSize": 134
+    },
+    "xetHash": "7cfa84da17b79f1005c5ce159b950a65c3db9ac8099de690ce9a6aa23a100b3b",
+    "path": "data/San_Francisco_Church,_Mexico_City.tar.gz"
+  },
+  "San_Francisco_City_Hall": {
+    "type": "file",
+    "oid": "1b1b2b81b895c85fde2bdafd8d740aec9af15be7",
+    "size": 126411286,
+    "lfs": {
+      "oid": "0a2e45f5cc3681e7a747974bfce0c6eb9c66f08c9bd675be276817e8e0133ee0",
+      "size": 126411286,
+      "pointerSize": 134
+    },
+    "xetHash": "0d07c74ded3271d171f9e1f09c8719e9e72d4af1e2c85fdb5a26e542a959a973",
+    "path": "data/San_Francisco_City_Hall.tar.gz"
+  },
+  "San_Lorenzo_(Genoa)": {
+    "type": "file",
+    "oid": "869428d71f7938d95235b9a39b92bf3732445d4d",
+    "size": 505768700,
+    "lfs": {
+      "oid": "f98b868ac7162aba8be1647fca3ef897ec3528b8589af046aea4602313f7e6c6",
+      "size": 505768700,
+      "pointerSize": 134
+    },
+    "xetHash": "c4d80d083153d81ec3535a9888136f126a9662e66c714c0004146b6596948297",
+    "path": "data/San_Lorenzo_(Genoa).tar.gz"
+  },
+  "Sanahin_Monastery_(bell_tower)": {
+    "type": "file",
+    "oid": "e0067884865d8d5fb975d9fd56c26bfb79b2748a",
+    "size": 200372095,
+    "lfs": {
+      "oid": "63d761d6e64cf0cefc6a874d94b3657a751ecb1dab1e8d91bd69ad8e96361ca6",
+      "size": 200372095,
+      "pointerSize": 134
+    },
+    "xetHash": "f1573f53458b7b9339504a57334c0fe1243385dca5dd1c69b54659030d178a91",
+    "path": "data/Sanahin_Monastery_(bell_tower).tar.gz"
+  },
+  "Santa_Catalina_de_Alexandria_Parish_Church_(Porac,_Pampanga)": {
+    "type": "file",
+    "oid": "309557b5f1db35f8099f6b54efb5f0c298c03e46",
+    "size": 208387711,
+    "lfs": {
+      "oid": "a0517dfdbbadcbbbf3ca16d2e13d077f3d4b2a9b2f82e2744638f34852005a36",
+      "size": 208387711,
+      "pointerSize": 134
+    },
+    "xetHash": "a445533d293fed06d816d57795d6b3a2ebff3ed6aa6eeda28cdfad3cad970509",
+    "path": "data/Santa_Catalina_de_Alexandria_Parish_Church_(Porac,_Pampanga).tar.gz"
+  },
+  "Santa_Prisca_Church_(Taxco_de_Alarcón)": {
+    "type": "file",
+    "oid": "808c11d04023c09f4717004650f0bc07668e82ad",
+    "size": 127091896,
+    "lfs": {
+      "oid": "01de0c9ee70af9f888f48e43d5e42806f5164f89a05d0a135b51e86998848de8",
+      "size": 127091896,
+      "pointerSize": 134
+    },
+    "xetHash": "f468d75e1af71257e7230c92c194a2f3b22d790244c71843be2a7b2286098772",
+    "path": "data/Santa_Prisca_Church_(Taxco_de_Alarcón).tar.gz"
+  },
+  "Santo_Niño_Church_in_Bustos,_Bulacan": {
+    "type": "file",
+    "oid": "1552b8a0a2d18f6273b5cb576811812f9a401f67",
+    "size": 249406693,
+    "lfs": {
+      "oid": "d92c3576a64e577db894d1eaf2ea5e9375c2738a8b67059ec787f0c04ba107c4",
+      "size": 249406693,
+      "pointerSize": 134
+    },
+    "xetHash": "ea3374137f78629c3c8e91f4cb4daac084d70572801dde2687e98f49ce7efa5f",
+    "path": "data/Santo_Niño_Church_in_Bustos,_Bulacan.tar.gz"
+  },
+  "Santuario_del_Santo_Cristo": {
+    "type": "file",
+    "oid": "33be407fccd185daa66243865f89b3f6956aa949",
+    "size": 244168217,
+    "lfs": {
+      "oid": "3a9c22eb4bcbd9be8159a650dfbdfb987a20443c1f6d10ce3989baea36704e60",
+      "size": 244168217,
+      "pointerSize": 134
+    },
+    "xetHash": "fb0f22b75f6e3ed38fd88cab4d49336e0f04f487c65eeb4b53243d09fe7e022d",
+    "path": "data/Santuario_del_Santo_Cristo.tar.gz"
+  },
+  "Santuário_do_Bom_Jesus_de_Matosinhos": {
+    "type": "file",
+    "oid": "a048781929800ff120790ccc1dd7a1e60174c7c3",
+    "size": 299006624,
+    "lfs": {
+      "oid": "a8e6227a7b107f29d9779e28da2b189ffa91490ed4af0fabb7b832b126f6346d",
+      "size": 299006624,
+      "pointerSize": 134
+    },
+    "xetHash": "a6452efbce8a1f1b776c0b908bd418a001205fa572e82da8a133d407d25b98c3",
+    "path": "data/Santuário_do_Bom_Jesus_de_Matosinhos.tar.gz"
+  },
+  "Sat_Gambuj_Mosque": {
+    "type": "file",
+    "oid": "1c1005fb64e81cec27ca13f60fb9c4a2ae3b518b",
+    "size": 346427813,
+    "lfs": {
+      "oid": "691917c6b61ca3ec8f79bff53c34869adc4af9407b7f5e3225a2ba42b888abd0",
+      "size": 346427813,
+      "pointerSize": 134
+    },
+    "xetHash": "7bd8dfab55f5c55ff6c4c84d61f90386ee3f50342da9191cb35ffefcf109249f",
+    "path": "data/Sat_Gambuj_Mosque.tar.gz"
+  },
+  "Schlosskapelle_Hubertusburg": {
+    "type": "file",
+    "oid": "91aa604e2d7d99cf66f31a382748261fb2cc2223",
+    "size": 102255358,
+    "lfs": {
+      "oid": "c96ec43faed3fe55b96153fdf6acfb7a44c0b98b77dce35329256e591414b495",
+      "size": 102255358,
+      "pointerSize": 134
+    },
+    "xetHash": "7c01c7841a109a0d120530a73bc7a696a690d807a67f15a22ea9392ddf148a20",
+    "path": "data/Schlosskapelle_Hubertusburg.tar.gz"
+  },
+  "Seitenkyū": {
+    "type": "file",
+    "oid": "c4eb0250acf222be0b417b28d1ae761005c30f5c",
+    "size": 68511840,
+    "lfs": {
+      "oid": "297293e90d823447ae05d20fa89af6afaed693178210ca70885ba74892b8b08f",
+      "size": 68511840,
+      "pointerSize": 133
+    },
+    "xetHash": "7f5879a602c2a9b51ae05235c7dc12a448666ea445b593ccc95a35d94cf758c0",
+    "path": "data/Seitenkyū.tar.gz"
+  },
+  "Shish_Gumbad": {
+    "type": "file",
+    "oid": "4fe2ffb21d3585a774fdd4287c67a2cd06e36ee0",
+    "size": 190488148,
+    "lfs": {
+      "oid": "0346b237759784796d9b6e517662a9cda1932d00c65519547a62d8ec869cc6d1",
+      "size": 190488148,
+      "pointerSize": 134
+    },
+    "xetHash": "70502f5362935e9efe6bb76b5cb19bf329916520898400332619fe224ddb08a3",
+    "path": "data/Shish_Gumbad.tar.gz"
+  },
+  "Shuri_Castle": {
+    "type": "file",
+    "oid": "8978d51c930e102acc6ebb83ed453f43ba5883ed",
+    "size": 126732090,
+    "lfs": {
+      "oid": "0467f5f5c1fb4a1634c6f2312de928ba07f117f23916e0c320a0db13dc9a2658",
+      "size": 126732090,
+      "pointerSize": 134
+    },
+    "xetHash": "25f40ebc3e0d7a08494a3b8990c9e5fd84a9c46c3685d74ab6fd28c077f478a8",
+    "path": "data/Shuri_Castle.tar.gz"
+  },
+  "Sixty_Dome_Mosque": {
+    "type": "file",
+    "oid": "ff3912357b44d640dd4e60a17c9db69ffe8937a1",
+    "size": 134181249,
+    "lfs": {
+      "oid": "65a9e470ee96f73bc9c936c8b1bb816d5b13d60d1078e939e0fbc5dfe0ced67f",
+      "size": 134181249,
+      "pointerSize": 134
+    },
+    "xetHash": "223d085e8b322ce58c5ca6c77a70d5a7b982b5dbe1f1645222adfd1d1ddcd6ae",
+    "path": "data/Sixty_Dome_Mosque.tar.gz"
+  },
+  "Sleeping_Beauty_Castle_at_Disneyland": {
+    "type": "file",
+    "oid": "8ceb693bba0fa69866841a1d1e4ea36bb85e2668",
+    "size": 105027431,
+    "lfs": {
+      "oid": "f250f9200ac4adb9009c6784e8ccfbbb485ab128827c9824194990b934ff3ea2",
+      "size": 105027431,
+      "pointerSize": 134
+    },
+    "xetHash": "fa4b5dbb34aa7cad78545c0e87af734d3024aacd9ece5a0aef659086d00e2b5e",
+    "path": "data/Sleeping_Beauty_Castle_at_Disneyland.tar.gz"
+  },
+  "Slovak_National_Theatre_(old_building)": {
+    "type": "file",
+    "oid": "9f2e3cdc314dab44b4492faa4a05612d1d9c2b94",
+    "size": 134852190,
+    "lfs": {
+      "oid": "f386b4bd6918bb59536f4a7fff105bf215da2f6267f4c8c1b504293f5cf9a4bb",
+      "size": 134852190,
+      "pointerSize": 134
+    },
+    "xetHash": "58729601d97dd67ce58991b20493b0cea7089c4fe6b0b1b8733a1072ed3337a3",
+    "path": "data/Slovak_National_Theatre_(old_building).tar.gz"
+  },
+  "Soltaniyeh_Dome": {
+    "type": "file",
+    "oid": "bfe2be13f762ce083bd1bbab3be57e4a2c5d000d",
+    "size": 262993086,
+    "lfs": {
+      "oid": "d41f4e6c3eb16784cf37aa6a9ce48833659aaccacf76e77dc2de4305df922b94",
+      "size": 262993086,
+      "pointerSize": 134
+    },
+    "xetHash": "80c82ecdb6180fe8df1bef45fe9436a57c2cf8f11ab26a6500d3b095a63f4d4b",
+    "path": "data/Soltaniyeh_Dome.tar.gz"
+  },
+  "St._Hripsime_church,_Vagharshapat": {
+    "type": "file",
+    "oid": "8174fc7e71128edbc7b6e17564b02e5d98acb8ec",
+    "size": 486768927,
+    "lfs": {
+      "oid": "44295e6c34ba23c538f51cdeffa543b406484f7e4c18503e8158ca90851305f2",
+      "size": 486768927,
+      "pointerSize": 134
+    },
+    "xetHash": "db33a01210b624730bf3fc0dea7798f580fc9879a66e635efee6ed7bf2173bb4",
+    "path": "data/St._Hripsime_church,_Vagharshapat.tar.gz"
+  },
+  "St._James_United_Church_(Montreal)": {
+    "type": "file",
+    "oid": "a3495055557bc2727725dd726d5d6bf9e7106e7a",
+    "size": 174896366,
+    "lfs": {
+      "oid": "d25f7aeca9faef46fe67a67701f18d25be5c218b128ec0c3f9092babae84d594",
+      "size": 174896366,
+      "pointerSize": 134
+    },
+    "xetHash": "a7de39d374c6407c3b546f5d0b3d7d304e88ace9c28709de050bdd3cdb74e1b9",
+    "path": "data/St._James_United_Church_(Montreal).tar.gz"
+  },
+  "St._John_of_Mastara": {
+    "type": "file",
+    "oid": "da64abb406eaf5cbd3dbd7372467e1d40236ceb8",
+    "size": 379768998,
+    "lfs": {
+      "oid": "6ddc9b9d5c5adf0f72b28b77e07315620268162e616f5e5a5866e66d2e5fc06c",
+      "size": 379768998,
+      "pointerSize": 134
+    },
+    "xetHash": "012672b629f6a6e2674df6988a9f3820034faa3c22fd9873d0a1c219e135c3f2",
+    "path": "data/St._John_of_Mastara.tar.gz"
+  },
+  "St._Theodosius_Russian_Orthodox_Cathedral": {
+    "type": "file",
+    "oid": "d9fd156fc0e0571a373b8cf840b510471e4f30c1",
+    "size": 147125038,
+    "lfs": {
+      "oid": "40f6de27688c1c1e6843f6c2e3056849336d8637202a70ba6c1eafa06c96855f",
+      "size": 147125038,
+      "pointerSize": 134
+    },
+    "xetHash": "e7118e4d2a19d4848480237fa2bb1018ae3761e061c66019a96c3fc99c88720f",
+    "path": "data/St._Theodosius_Russian_Orthodox_Cathedral.tar.gz"
+  },
+  "Stadhuis_(Gouda)": {
+    "type": "file",
+    "oid": "8ef0f7b70690c99bbe14abede6cd21c8709f1184",
+    "size": 251870329,
+    "lfs": {
+      "oid": "8fcb2d72c2a6af702435ad3f0a471ebd87e40441a278efe7fbda5f1601572d4c",
+      "size": 251870329,
+      "pointerSize": 134
+    },
+    "xetHash": "cf70c53242949d103d807fadf61bc84f651987f7c73193a045e0062b0aec39e7",
+    "path": "data/Stadhuis_(Gouda).tar.gz"
+  },
+  "Statue_of_John_of_Nepomuk_on_Charles_Bridge": {
+    "type": "file",
+    "oid": "87d59b8f5951e535af1ef3667b0bb9e7552d2c3e",
+    "size": 119721491,
+    "lfs": {
+      "oid": "7f235c90b234472bda3499e9b6fe29c39668cd4566d316e1e50a103b3528dbf3",
+      "size": 119721491,
+      "pointerSize": 134
+    },
+    "xetHash": "b7d1bc9875eabfc1996b298ac62acd0fa33e349ae579edc65cb41786adaf5432",
+    "path": "data/Statue_of_John_of_Nepomuk_on_Charles_Bridge.tar.gz"
+  },
+  "Statue_of_Saint_Wenceslaus_on_the_Cloak_Bridge_in_Český_Krumlov": {
+    "type": "file",
+    "oid": "7ca80040fa56f640ba688da457fededaa94de6e4",
+    "size": 120771678,
+    "lfs": {
+      "oid": "f0d25f8eea32561a42d57c68891242dcaa18b9bb8cc232bfecb4b6e7c66ccfe9",
+      "size": 120771678,
+      "pointerSize": 134
+    },
+    "xetHash": "9aafa22c93c45d3fe4f093bacfdf3c43d6d1ce65eb225e554a3a5efa10b59fd7",
+    "path": "data/Statue_of_Saint_Wenceslaus_on_the_Cloak_Bridge_in_Český_Krumlov.tar.gz"
+  },
+  "Surb_Karapet_Church,_Noravank_monastery": {
+    "type": "file",
+    "oid": "01044a56efab1c1f41aab054dd4ad6fecc17d460",
+    "size": 171081926,
+    "lfs": {
+      "oid": "d1c1bd29a3cdd4e474cbd8ab0d6058a0428e9240dabd4cfede5708af8b8523dd",
+      "size": 171081926,
+      "pointerSize": 134
+    },
+    "xetHash": "452707c04586c102fe54ef881fe5c34fd0366c0cff887657b42a1069f1019859",
+    "path": "data/Surb_Karapet_Church,_Noravank_monastery.tar.gz"
+  },
+  "Surb_Zoravor_Astvatsatsin_Church": {
+    "type": "file",
+    "oid": "376baf35673ba58b9c61af88f7580b7683c07b0e",
+    "size": 206331493,
+    "lfs": {
+      "oid": "294f0da6ebe55e89c61268b1434402a93039c1c435b5c52b34e0176e685523cb",
+      "size": 206331493,
+      "pointerSize": 134
+    },
+    "xetHash": "3fbee98b58c53856a34af71e15f2663950af237377a825847f053a01dff87618",
+    "path": "data/Surb_Zoravor_Astvatsatsin_Church.tar.gz"
+  },
+  "Svetitskhoveli": {
+    "type": "file",
+    "oid": "a02bd371fbc56c21d6044c3f1f59f0e57f61b5b2",
+    "size": 199454525,
+    "lfs": {
+      "oid": "6f8f58b69e1dc21083ccbeb8c722469c7bb6f3721b8e4b28e8d3a8d37542f4fc",
+      "size": 199454525,
+      "pointerSize": 134
+    },
+    "xetHash": "71c07d3ae8ed425997bcdd2a191fc6c820b8a71e65aa7e0613d4d903550fd20e",
+    "path": "data/Svetitskhoveli.tar.gz"
+  },
+  "Sé_Cathedral_(Goa)": {
+    "type": "file",
+    "oid": "92cc367d1d89732afd754081c2daba15fa8213ed",
+    "size": 100147130,
+    "lfs": {
+      "oid": "71ff91798b00c2800e25dc9c7ecfc490e2b64af0de9499fdcc8372e90c79a841",
+      "size": 100147130,
+      "pointerSize": 134
+    },
+    "xetHash": "77944df543fdb86c1226aee2db70ebeacb344549b19277d966ddc63eb49fd3d1",
+    "path": "data/Sé_Cathedral_(Goa).tar.gz"
+  },
+  "Taal_Basilica": {
+    "type": "file",
+    "oid": "cb7e146cffae33ae8896b40272d0c833e78b0d37",
+    "size": 179636488,
+    "lfs": {
+      "oid": "8616fd601f27ecb6b5bb35792a86a874502de44913cb9589fa011bb54524fd10",
+      "size": 179636488,
+      "pointerSize": 134
+    },
+    "xetHash": "37b487f703c6fe3cdf2743e5e288f664a1698de77745274e916d308804ea7535",
+    "path": "data/Taal_Basilica.tar.gz"
+  },
+  "Taipei_101": {
+    "type": "file",
+    "oid": "c224da65edae3960d06f4a501f9d00ce35f23b6a",
+    "size": 426640821,
+    "lfs": {
+      "oid": "4b5897d6cd5a1221c27cf824ba872504a4e5c35814470e63d11492729c357144",
+      "size": 426640821,
+      "pointerSize": 134
+    },
+    "xetHash": "cd5a79caff2cf9a0cebc3feddb9d5f67f632bf88a702cf450604e35078775051",
+    "path": "data/Taipei_101.tar.gz"
+  },
+  "Taipei_Confucius_Temple": {
+    "type": "file",
+    "oid": "b3c4e713e06ee8aad00dd1dbb1f10b8297deec5b",
+    "size": 131756192,
+    "lfs": {
+      "oid": "5eaca0441d9aa9358ecd71462535664f40579194931f375b278ececa489f35a0",
+      "size": 131756192,
+      "pointerSize": 134
+    },
+    "xetHash": "65665884b23d61d508747e58e9d04d017051dcf294a165a355aa0c631fde5ca3",
+    "path": "data/Taipei_Confucius_Temple.tar.gz"
+  },
+  "Tajhat_Palace": {
+    "type": "file",
+    "oid": "b64db96bcb52f7fa3006d9c1a1c043ea9a104de1",
+    "size": 240766137,
+    "lfs": {
+      "oid": "8dc0f016e8955a94a5275602cbac9796f3286e36215bb83cc7d1b85e9e6c64bb",
+      "size": 240766137,
+      "pointerSize": 134
+    },
+    "xetHash": "8c9010554c22c2024ca9f1ec4f06e51abb8e5d9eb6c391322bb6d6a0f631ba3c",
+    "path": "data/Tajhat_Palace.tar.gz"
+  },
+  "Taleju_Temple,_Kathmandu": {
+    "type": "file",
+    "oid": "402022ae6418a2ec043570eccc927bc1db162e94",
+    "size": 287014570,
+    "lfs": {
+      "oid": "936805bca244381e7467933b7c43aa1996a7e5fda7b4620578758da07e821ee0",
+      "size": 287014570,
+      "pointerSize": 134
+    },
+    "xetHash": "bb025a999d2124563419a25d6d6da0f64ee591127ac3c8f9870eda833570f92d",
+    "path": "data/Taleju_Temple,_Kathmandu.tar.gz"
+  },
+  "Teatro_Amazonas": {
+    "type": "file",
+    "oid": "d84942e61257341953d9d1ac7a1308467076fcf6",
+    "size": 202474010,
+    "lfs": {
+      "oid": "5223e457185ea31e28f67d4381885e6b0e1decdd0f95178cba6c3328a69e7256",
+      "size": 202474010,
+      "pointerSize": 134
+    },
+    "xetHash": "41d2a77b290c7b9680224696a059e7936fe7329769abd4147ebd06e6fbeee602",
+    "path": "data/Teatro_Amazonas.tar.gz"
+  },
+  "Temple_of_Bacchus_in_Baalbek": {
+    "type": "file",
+    "oid": "6d5f389d7d53ea4cc390878fa6bc4d3bd10e367b",
+    "size": 288940852,
+    "lfs": {
+      "oid": "e03d615b8147d0cdcdfc7674d9d443659bf46bb776fa9574618d7b806ea25cb3",
+      "size": 288940852,
+      "pointerSize": 134
+    },
+    "xetHash": "b34f5149abdb5a3bd620c933cca58f90e047dca512d372ff4fac0cc40c126680",
+    "path": "data/Temple_of_Bacchus_in_Baalbek.tar.gz"
+  },
+  "Templo_de_San_Francisco,_Cochabamba": {
+    "type": "file",
+    "oid": "b75a75c3fc07772205fb06f8fb72897d034fc5c4",
+    "size": 528463457,
+    "lfs": {
+      "oid": "17657c769522c0a4dc5ada732e778e03e78142303278fb9f94856f10f3c6b197",
+      "size": 528463457,
+      "pointerSize": 134
+    },
+    "xetHash": "e44ad18d5087c3a990e6eb82cff9fcac18e56407ec6aab2775b819c11e86fe29",
+    "path": "data/Templo_de_San_Francisco,_Cochabamba.tar.gz"
+  },
+  "Templo_de_Santo_Domingo_de_Guzmán_in_Oaxaca_de_Juárez": {
+    "type": "file",
+    "oid": "8204f8694d0e6c57bf99945e1a2872fa6c9db6cf",
+    "size": 337304965,
+    "lfs": {
+      "oid": "113028e419f1d36dcddf4536d734c07a735c6188120cafb248140f095d462dcd",
+      "size": 337304965,
+      "pointerSize": 134
+    },
+    "xetHash": "d516e902860cb7ba1107ecc8134f274548d5186159991bbe021be3c2635627fd",
+    "path": "data/Templo_de_Santo_Domingo_de_Guzmán_in_Oaxaca_de_Juárez.tar.gz"
+  },
+  "Templo_del_Hospicio,_Cochabamba": {
+    "type": "file",
+    "oid": "e8925b697d323df2ba8bf35025f79b8f4a38dbd7",
+    "size": 484194275,
+    "lfs": {
+      "oid": "f69326b7977782be76ece9748d097986459bd22f8c3822507bceae2fdb4fa03c",
+      "size": 484194275,
+      "pointerSize": 134
+    },
+    "xetHash": "4c4c317854e86d0b25deb69705460794c99832e3c65568bf1b1fb4eb4a651f66",
+    "path": "data/Templo_del_Hospicio,_Cochabamba.tar.gz"
+  },
+  "The_Door_of_No_Return,_Ouidah": {
+    "type": "file",
+    "oid": "270387d28c3efb387e8f48d20e702386e4212297",
+    "size": 111495601,
+    "lfs": {
+      "oid": "36a339baf3811f12f1c4800ff17419432a06a594dbbeed18a0d093a8367ab361",
+      "size": 111495601,
+      "pointerSize": 134
+    },
+    "xetHash": "377fa6b9adf526249915f0373fad544ff05d031564567880903f4c530d87a797",
+    "path": "data/The_Door_of_No_Return,_Ouidah.tar.gz"
+  },
+  "The_Venetian_(Las_Vegas)": {
+    "type": "file",
+    "oid": "8c1b853e7ff7fde4e42aedf08fdaea023678d5a8",
+    "size": 167660396,
+    "lfs": {
+      "oid": "301d80c597471dccabba97407f0d1166d6301b775dd6db971c8cd80825278d44",
+      "size": 167660396,
+      "pointerSize": 134
+    },
+    "xetHash": "73fd88484f5636a611d7fb090a074457c848e9211d3498487f72734b389f9228",
+    "path": "data/The_Venetian_(Las_Vegas).tar.gz"
+  },
+  "Theater_of_Petra": {
+    "type": "file",
+    "oid": "63af60aa8a1b3762c982d4fc6041af28977a2bc1",
+    "size": 221046488,
+    "lfs": {
+      "oid": "a565bc20d7ce5869e6ba12404a2fd266a850287875cff5deef6960646f17aed8",
+      "size": 221046488,
+      "pointerSize": 134
+    },
+    "xetHash": "3098de1d9f17000f4988b676ec4815b598ac0233d1cb6fb964cf8b22231e3189",
+    "path": "data/Theater_of_Petra.tar.gz"
+  },
+  "Theaterplatz,_Dresden": {
+    "type": "file",
+    "oid": "8b3c12b401a2bb7178b1e6a77adb97148fe75439",
+    "size": 255159153,
+    "lfs": {
+      "oid": "8e00e558dd7f8fbeac5e6638d1b23843975a6da5d1ab35ede001e5e981a083c4",
+      "size": 255159153,
+      "pointerSize": 134
+    },
+    "xetHash": "4a6b5648dcf5bab085105728fac01fd54bfd967f834ae186ff3910980bc69201",
+    "path": "data/Theaterplatz,_Dresden.tar.gz"
+  },
+  "Theatre_of_Dougga": {
+    "type": "file",
+    "oid": "e4010b45be4ae24d31c9ee024f33bdfe7a500ca5",
+    "size": 233682259,
+    "lfs": {
+      "oid": "211270daf38ab0d439a2d94e5bcdf66de66f3f76755c38f7750208c9718346f5",
+      "size": 233682259,
+      "pointerSize": 134
+    },
+    "xetHash": "a243275eddfde1c424b8e0113537f2c45bebe3346597cc1feec32992845c6385",
+    "path": "data/Theatre_of_Dougga.tar.gz"
+  },
+  "Tokyo_Metropolitan_Government_Building_No.2_(1991)": {
+    "type": "file",
+    "oid": "499b4eb7235e82d60d32f761fe80e4593fbf6d07",
+    "size": 147385387,
+    "lfs": {
+      "oid": "7e40291f38f8f3973a0b0dd7ac9c4e0575f868ac47f1b89dc16f4b4a309cb03d",
+      "size": 147385387,
+      "pointerSize": 134
+    },
+    "xetHash": "d5e05cbf1ba9644404ab1c01cd9546ff0f03644c41a287832632538734e1eceb",
+    "path": "data/Tokyo_Metropolitan_Government_Building_No.2_(1991).tar.gz"
+  },
+  "Tokyo_Tower": {
+    "type": "file",
+    "oid": "cf5913adc20dfa27fdada407caae5d167ca2856d",
+    "size": 105772290,
+    "lfs": {
+      "oid": "270e823b1f98cfa2e7942048c8b7990fc9a2fd6ced60664e1d24db2d9ac81f3a",
+      "size": 105772290,
+      "pointerSize": 134
+    },
+    "xetHash": "5ae673abb9c2816b7699e08cf7c1fa2fef2c420072d57a090b22a29e9c2c5c19",
+    "path": "data/Tokyo_Tower.tar.gz"
+  },
+  "Tomb_of_Asif_Khan": {
+    "type": "file",
+    "oid": "7d3d7a85522239bc523aad9ae410c03842243fad",
+    "size": 191974807,
+    "lfs": {
+      "oid": "90a3315e039e6f10716382c3b1046d764108c2ce3d2c5b20d278c502df94a02c",
+      "size": 191974807,
+      "pointerSize": 134
+    },
+    "xetHash": "0658a17dd97ee8c58feda5d009b56891b94a46e362c7e8919825e9fc28a0a5f3",
+    "path": "data/Tomb_of_Asif_Khan.tar.gz"
+  },
+  "Tomb_of_Safdarjung": {
+    "type": "file",
+    "oid": "e6d0de216592d1a2bb748f6c614a17ecf317802b",
+    "size": 538994484,
+    "lfs": {
+      "oid": "cec9e0bb5347b0f9eb9bca85a66fba5407cc90c2ba203624b92f2fc6eb1c8fe2",
+      "size": 538994484,
+      "pointerSize": 134
+    },
+    "xetHash": "651282c8a391bc7ce4a4fe03d0cf48d27ebdb623a19c1d4fd11c442928ea80d5",
+    "path": "data/Tomb_of_Safdarjung.tar.gz"
+  },
+  "Tomb_of_Shah_Rukn-e-Alam": {
+    "type": "file",
+    "oid": "fc3969efd5581f91f9299a42302e195f31b41cda",
+    "size": 188343864,
+    "lfs": {
+      "oid": "7d28c2734f4e59466367dc16149973443968a459d2e393a9728dc1c687875b5a",
+      "size": 188343864,
+      "pointerSize": 134
+    },
+    "xetHash": "e2ab8d0640d8a070067778e233f1f596959496e1e873c921ca593ee5bae8fb47",
+    "path": "data/Tomb_of_Shah_Rukn-e-Alam.tar.gz"
+  },
+  "Torre_de_los_Picos,_Alhambra": {
+    "type": "file",
+    "oid": "a1ff29d49d23aace62194b9918fc45d982204e5f",
+    "size": 476851175,
+    "lfs": {
+      "oid": "e7af672fc0bad676438b26cea9a34c5a84a5312cb2356e1b087178d7d0f5a83f",
+      "size": 476851175,
+      "pointerSize": 134
+    },
+    "xetHash": "253a5c3da9894c9331a9e11bd39e9d32d4fba150c8060ca928903a583a75a55e",
+    "path": "data/Torre_de_los_Picos,_Alhambra.tar.gz"
+  },
+  "Trafalgar_Square": {
+    "type": "file",
+    "oid": "4b515c34f493d4f8268d886b771f2d8ae05d060d",
+    "size": 1179228231,
+    "lfs": {
+      "oid": "6200954b50cbf3f1b6e3cf1a018289a6de832c002856afd990bac039504d7ccb",
+      "size": 1179228231,
+      "pointerSize": 135
+    },
+    "xetHash": "b3ab54b9f2c7f4fa90f601ae36b4b0dd04b87f6272dcdd88f739d1bf863ca9b1",
+    "path": "data/Trafalgar_Square.tar.gz"
+  },
+  "Tribune_Tower": {
+    "type": "file",
+    "oid": "74d51a0675308aa9e2c3e39a3b5c2f2a089b9478",
+    "size": 191223946,
+    "lfs": {
+      "oid": "bb34e172625fdfc2e29efdc9a622e4d3e33fe3611281315a18ad65ed9bd9e93b",
+      "size": 191223946,
+      "pointerSize": 134
+    },
+    "xetHash": "9efcd395cc719148bd2d4cdfcc6176e38fba147f7491b86d25a814d04362fca4",
+    "path": "data/Tribune_Tower.tar.gz"
+  },
+  "Triumphal_Arch_in_Volubilis": {
+    "type": "file",
+    "oid": "49306c5f1c70813911726b3b3db5fcb72e261914",
+    "size": 204369715,
+    "lfs": {
+      "oid": "2daefd384929e6dee8cf53a7f3cd923f5cd6f2ec8cc3fff443a15c1afcc79eeb",
+      "size": 204369715,
+      "pointerSize": 134
+    },
+    "xetHash": "b59b81ff22c459cc55f821c6bec91a19876bd5be352bcce7086ac56b36e5e343",
+    "path": "data/Triumphal_Arch_in_Volubilis.tar.gz"
+  },
+  "Trump_International_Hotel_and_Tower_(Chicago)": {
+    "type": "file",
+    "oid": "d25031d1e20cf905c70961e376703ac4efcc2b4a",
+    "size": 221335662,
+    "lfs": {
+      "oid": "9ec64995f60bdd004d503eee71fe2edf0bfd4029adbdfbb7b90ba59dbc0d9599",
+      "size": 221335662,
+      "pointerSize": 134
+    },
+    "xetHash": "7faa138533261441ad1ebf3bf8c407b31e8ff383765de51955abc68ed83add7d",
+    "path": "data/Trump_International_Hotel_and_Tower_(Chicago).tar.gz"
+  },
+  "Tsiranavor": {
+    "type": "file",
+    "oid": "3cdc20c459654f3fc2dc354928cab40e31527882",
+    "size": 531309330,
+    "lfs": {
+      "oid": "573ff647c25028641d1594f75b77b958f0dd8d4484b9c4058ac510e72c03e8ac",
+      "size": 531309330,
+      "pointerSize": 134
+    },
+    "xetHash": "b1f6725d19cd1b493c513d42ce4d0288ab09122e9ffde2763d7d6bff8d420807",
+    "path": "data/Tsiranavor.tar.gz"
+  },
+  "Tuntex_Sky_Tower": {
+    "type": "file",
+    "oid": "12bb5b23b21d1f851b051e1f42ef8fbd909ed08a",
+    "size": 88743100,
+    "lfs": {
+      "oid": "7f2b07078c5280f649c0f8f1696f133c7f22b5c43b5af130ce55c9caf801b777",
+      "size": 88743100,
+      "pointerSize": 133
+    },
+    "xetHash": "837005cfb5afe83a46df68771983e402344a2febb5cb8b2f38b017160c215415",
+    "path": "data/Tuntex_Sky_Tower.tar.gz"
+  },
+  "Unfinished_obelisk_in_Aswan": {
+    "type": "file",
+    "oid": "fc9c4bbfd7cf2f8f6d1cd492c4018b0111ffeb3d",
+    "size": 271086679,
+    "lfs": {
+      "oid": "9a37d1927e072062f423b37e1ff48b96b49d1152f99a76b4ff1760388b688cbc",
+      "size": 271086679,
+      "pointerSize": 134
+    },
+    "xetHash": "1ebaed139a7b81cb17242f09737067c19e6d31ea86d8c15c3f9a2432881b4a59",
+    "path": "data/Unfinished_obelisk_in_Aswan.tar.gz"
+  },
+  "Vank_Cathedral": {
+    "type": "file",
+    "oid": "4d9892445fd12da8a90e81131e003d11d00dfa20",
+    "size": 107993367,
+    "lfs": {
+      "oid": "e11edad6d6960cf02185c5256ce890a799afd2f44d8e3e60acd6d08bd28f066f",
+      "size": 107993367,
+      "pointerSize": 134
+    },
+    "xetHash": "772014ffaffdeb24b3586b5a634d482bf18be45605c73e0a4b0a65bc240e7640",
+    "path": "data/Vank_Cathedral.tar.gz"
+  },
+  "Voortrekker_Monument": {
+    "type": "file",
+    "oid": "dc944c5fa0993e55dbda8bbaa4bc25b6843b325c",
+    "size": 211799578,
+    "lfs": {
+      "oid": "6d44f03718deb7352341fbd2b1bd63baf3122f36a0e528b59a3ca5377bf294e5",
+      "size": 211799578,
+      "pointerSize": 134
+    },
+    "xetHash": "48ada9918fb630f370274f2b9a39747c265d7d1a26bb6c7c0b875806223b75d0",
+    "path": "data/Voortrekker_Monument.tar.gz"
+  },
+  "Washington_Monument": {
+    "type": "file",
+    "oid": "7be6b49014743097ea35dc9fac865adfed5344e7",
+    "size": 172592828,
+    "lfs": {
+      "oid": "eee3b853ac80d2dc02be7bafae7cd28886972c9835470468427ca3b25990937d",
+      "size": 172592828,
+      "pointerSize": 134
+    },
+    "xetHash": "7372de692c0f9fac1f4d9bcb3af3dc578c773fbe2baa856bb1516fae6cb6dee2",
+    "path": "data/Washington_Monument.tar.gz"
+  },
+  "Western_Wall_Plaza": {
+    "type": "file",
+    "oid": "77c095ce3c61fcbec5190e3c8363167e09a6538e",
+    "size": 226731539,
+    "lfs": {
+      "oid": "633c2ecd3f6b435ccdfe231a19ddceafad7ed6d3c26ab8f17886e376f5535a2c",
+      "size": 226731539,
+      "pointerSize": 134
+    },
+    "xetHash": "a884b6485b79e08f3d113054853941b609b5b7de956571bc40fd082f2f29c890",
+    "path": "data/Western_Wall_Plaza.tar.gz"
+  },
+  "Westminster_Cathedral": {
+    "type": "file",
+    "oid": "d1981e1ce0856a7f386a927e5e0dd5452004a8d7",
+    "size": 207537838,
+    "lfs": {
+      "oid": "38702ade11bd76e33360816fd434550d360a5c010b4d8262b12daf3022c69b16",
+      "size": 207537838,
+      "pointerSize": 134
+    },
+    "xetHash": "f520e77ae13cdac42bb6b833e7c746dd090bfa25d07139b54a3821d6aff860ea",
+    "path": "data/Westminster_Cathedral.tar.gz"
+  },
+  "Wrocław_Town_Hall": {
+    "type": "file",
+    "oid": "931009ec2e189cd03b0aeb444140c6ae9a499140",
+    "size": 619018838,
+    "lfs": {
+      "oid": "07bf723225dba543c05a99ef98cb568a3bfdbf9f0b670d3fa99fc479219d3dfb",
+      "size": 619018838,
+      "pointerSize": 134
+    },
+    "xetHash": "8a7ac6e3dbc8dc422f860ff270d4e41ab808ca63937fa91f94b7a68b4fd62989",
+    "path": "data/Wrocław_Town_Hall.tar.gz"
+  },
+  "Yererouk_Basilica": {
+    "type": "file",
+    "oid": "2c7c212efcd3c3c239e826b0277344205cf04cdc",
+    "size": 388223474,
+    "lfs": {
+      "oid": "9e6c36b9a95db8a0720c0b3a30544acb9883e3be2638a8314969a8155b7851a4",
+      "size": 388223474,
+      "pointerSize": 134
+    },
+    "xetHash": "51d4d0d06c93a3cc28278eadcfdafe9074c824fb652b8b2cc45d41bd0e3c49fc",
+    "path": "data/Yererouk_Basilica.tar.gz"
+  },
+  "Zitouna_Mosque": {
+    "type": "file",
+    "oid": "e73b565be09954791c99e5afd594495a018baf5a",
+    "size": 331874796,
+    "lfs": {
+      "oid": "87046a76dbb3efb6b8580adfe7572f00c91311a6ffdf496330d76529f436ef5a",
+      "size": 331874796,
+      "pointerSize": 134
+    },
+    "xetHash": "eb47cb087d15d96e76bd1466b68d4fa3d9a014d2766f13fbdc128cf2d957a174",
+    "path": "data/Zitouna_Mosque.tar.gz"
+  },
+  "Zushih_Temple": {
+    "type": "file",
+    "oid": "e0fec9acac70c9ee6543b9958075f57d341e1982",
+    "size": 130015400,
+    "lfs": {
+      "oid": "384c3194717d24163dc333d9a0ad3f4163f6798ed62023010398c67a07070ec4",
+      "size": 130015400,
+      "pointerSize": 134
+    },
+    "xetHash": "bc107d03f2b8636c542a41416a707191936b95831d8311935df61afbec8c67db",
+    "path": "data/Zushih_Temple.tar.gz"
+  },
+  "Zōjō-ji": {
+    "type": "file",
+    "oid": "29374c4d863e9543c72edd52bb8722494c4da40e",
+    "size": 172305075,
+    "lfs": {
+      "oid": "ebc810dbd246d105fa6cbc3d67ad47b5ae54fc92fdab3cc0246097e1aa54de08",
+      "size": 172305075,
+      "pointerSize": 134
+    },
+    "xetHash": "77ed1fea6301397c3e895004b5b6e535d595c7b254194764a172815877416397",
+    "path": "data/Zōjō-ji.tar.gz"
+  }
+}

@@ -22,7 +22,7 @@ def _default_loss_scale():
     return float(os.environ.get("INTERVENTION_LOSS_SCALE", "1e5"))
 
 class VGGTAttentionIntervention:
-    def __init__(self, model, arch_mask=None, arch_token_mask=None, loss_valid_mask=None, first_intervention_layer=10, last_intervention_layer=23, step_size=1.0, attention_label=None, loss_scale=None, record_grad_norms=False, layer_feature_labels=None, use_sum=False, adaptive_alpha=None, max_steps=1, attn_improve_thresh=0.1, loss_type="arch_attn", group_token_masks=None):
+    def __init__(self, model, arch_mask=None, arch_token_mask=None, loss_valid_mask=None, first_intervention_layer=10, last_intervention_layer=23, step_size=1.0, attention_label=None, loss_scale=None, record_grad_norms=False, layer_feature_labels=None, use_sum=False, adaptive_alpha=None, max_steps=1, attn_improve_thresh=0.1, loss_type="arch_attn", group_token_masks=None, step_controller=None):
         self.model = model
         self.arch_mask = arch_mask
         self.arch_token_mask = arch_token_mask  # (N,) tensor or dict[layer_idx, Tensor] for per-layer features
@@ -36,6 +36,9 @@ class VGGTAttentionIntervention:
         self.first_intervention_layer = first_intervention_layer
         self.last_intervention_layer = last_intervention_layer
         self.step_size = step_size
+        self.step_controller = step_controller
+        if step_controller is not None and (adaptive_alpha is not None or max_steps != 1):
+            raise ValueError("Structured strength requires one step and no legacy adaptive_alpha")
         self.loss_scale = float(loss_scale) if loss_scale is not None else _default_loss_scale()
         self.intervention_hooks = []
         self.record_grad_norms = record_grad_norms  # for suggest_step_size.py: record grad norm per layer
@@ -271,7 +274,10 @@ class VGGTAttentionIntervention:
             del loss
             g_norm = float(g.norm().item()) if g is not None else 0.0
             with torch.no_grad():
-                if self.adaptive_alpha is not None:
+                if self.step_controller is not None:
+                    s = self.step_controller.scales(x_t, g, mask_float, layer_idx)
+                    x_t.sub_(s * g)
+                elif self.adaptive_alpha is not None:
                     mask_bool = mask_float.bool()
                     if mask_bool.any():
                         x_m_norm = x_t.detach()[:, mask_bool, :].norm()
@@ -285,7 +291,7 @@ class VGGTAttentionIntervention:
                     x_t.sub_(s * g)
             del g
             x_t.grad = None
-            return x_t, float(s) if isinstance(s, (int, float)) else float(s.item()), g_norm
+            return x_t, float(s) if isinstance(s, (int, float)) else float(s.mean().item()), g_norm
 
         # --- Multi-step gradient ascent with attention-based early stopping ---
         arch_attn_before_val = _measure_attn(x.detach())
@@ -328,6 +334,8 @@ class VGGTAttentionIntervention:
         arch_attn_after_val = best_attn
 
         delta = arch_attn_after_val - arch_attn_before_val
+        if self.step_controller is not None:
+            self.step_controller.record_acceptance(layer_idx, arch_attn_before_val, arch_attn_after_val)
         # For per-layer: use layer-specific label if arch_token_mask is dict with layer_feature metadata
         label = self.attention_label
         if isinstance(getattr(self, "layer_feature_labels", None), dict):
