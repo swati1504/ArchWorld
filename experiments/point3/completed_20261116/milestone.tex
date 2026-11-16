@@ -21,11 +21,8 @@ ArchAttend steers frozen 3D reconstruction models toward architectural elements,
 \keywords{3D reconstruction, attention intervention, inference-time adaptation, adaptive step size}
 \begin{teaserfigure}
 \centering
-{\small\shortstack[c]{\textbf{Project repository (GitHub):}
-\href{https://github.com/swati1504/ArchWorld}{\textcolor{blue}{\nolinkurl{https://github.com/swati1504/ArchWorld}}}\\
-Structured experiments:
-\href{https://github.com/tasosger/ArchWorld/tree/point3/hypothesis-notebooks}{\textcolor{blue}{notebooks and run instructions}}
-}}\\[0.6em]
+{\small\textbf{Project repository:}
+\href{https://github.com/swati1504/ArchWorld}{\textcolor{blue}{\nolinkurl{https://github.com/swati1504/ArchWorld}}}}\\[0.6em]
 \includegraphics[width=\textwidth]{figures/archworld_photos.png}
 \caption{Landmark photographs and corresponding benchmark reconstructions: Church of San Francisco of Assisi in Ouro Preto (left) and India Gate (right). Reproduced from Kriplani et al.~\cite{archworld}, Figure 2, under \href{https://creativecommons.org/licenses/by/4.0/}{CC BY 4.0}. These illustrate the dataset, not new AdaptiveAttend outputs.}
 \Description{Photographs of a church in Brazil and India Gate show changes in viewpoint, lighting, and surroundings. Each set is paired with a dense reconstruction and scene metadata in the source figure.}
@@ -36,10 +33,7 @@ Structured experiments:
 \section{Problem and research basis}
 VGGT~\cite{vggt} predicts scene geometry from multiple images in a feed-forward model. Our investigation builds on ArchWorld and ArchAttend~\cite{archworld}, which study architectural reconstruction across geographic regions and introduce an inference-time attention intervention. The intervention changes intermediate token representations while keeping model weights frozen. Our research question is: \emph{can we choose intervention strength from a scene's predicted geometry, approaching the best tested strength without accessing that scene's ground-truth reconstruction?}
 
-The strength $\eta$ controls the size of the activation update. A small value may have little effect, while a large value may damage the reconstruction. Choosing the best strength using ground truth provides an oracle comparison, but is unavailable when reconstructing a new scene. The project combines baseline evaluation, scene-level strength selection, and structured intervention rules. The benchmark, pretrained backbone, supplied anchor choices, and reference intervention are inherited components. The shared project repository provides the implementation context~\cite{teamrepo}.
-
-\paragraph{Code and reproducibility.}
-The public team repository is \url{https://github.com/swati1504/ArchWorld}. The structured-intervention code, three hypothesis notebooks, shared mask workflow, and run instructions are available in the \href{https://github.com/tasosger/ArchWorld/tree/point3/hypothesis-notebooks}{experiment branch} (commit \texttt{92d9149})~\cite{point3}.
+The strength $\eta$ controls the size of the activation update. A small value may have little effect, while a large value may damage the reconstruction. Choosing the best strength using ground truth provides an oracle comparison, but is unavailable when reconstructing a new scene. The project combines baseline evaluation, scene-level strength selection, and structured intervention rules. The benchmark, pretrained backbone, supplied anchor choices, and reference intervention are inherited components.
 
 \section{Formal task, data, and evaluation}
 For scene $s$, let $X_s=\{I_{s,v}\}_{v=1}^{V_s}$ be its images, $M_s$ the anchor segmentation masks, and $G_s$ its ground-truth point cloud. A frozen model with intervention strength $\eta$ produces reconstructed points $P_s(\eta)$. An adaptive rule may use images, masks, model activations, or predictions to determine strength. Its parameters may be calibrated on development scenes, but inference for a new scene must not use $G_s$.
@@ -56,7 +50,7 @@ After the pipeline's alignment and validity filtering, we measure symmetric Cham
 \end{aligned}
 \label{eq:cd}
 \end{equation}
-The two terms are reconstruction accuracy and completeness. The repository also reports metric distance $\mathrm{CD}_{m,s}=\mathrm{Scale}_s\,\mathrm{CD}_s$ and extent-normalized distance
+The two terms are reconstruction accuracy and completeness. Metric distance is $\mathrm{CD}_{m,s}=\mathrm{Scale}_s\,\mathrm{CD}_s$. Normalizing by scene extent gives
 \begin{equation}
 \mathrm{CD}_{\mathrm{norm},s}=1000\,\mathrm{CD}_{m,s}/\mathrm{Extent}_s,
 \end{equation}
@@ -77,12 +71,12 @@ Figure~\ref{fig:prior-reconstructions} illustrates the original intervention's q
 \end{equation}
 For one scene, the default masked mean objective can be written as $J_l=c\,(H m^2)^{-1}\sum_{h,i,j}M_iM_j A^l_{hij}$, where $A^l$ is the hook's attention matrix, $H$ is the head count, $M_i$ indicates an anchor token, $m=\sum_iM_i$, and $c=10^5$. The hook retains an update only when its monitored anchor-attention statistic increases; otherwise it restores the previous tokens. We retain the inherited objective scaling and attention conventions, because changing them would change the meaning of $\eta$.
 
-\section{Baseline Implementation and Evaluation}
+\section{Baseline Evaluation}
 \label{sec:eric}
 % ===== BEGIN Eric: baseline =====
-Every reported gain from ArchAttend is a comparison against unmodified VGGT, so the comparison is only meaningful if both arms are scored by the same pipeline. This section reproduces that no-intervention arm on the 39 landmarks of the shared development list (\texttt{scenes\_dev.txt}). This list is separate from the structured-intervention subset in Section~\ref{sec:point3}. Each landmark contributes the benchmark views that have ground-truth depth: 42--50 views for 38 landmarks and 21 for one.
+Every reported gain from ArchAttend is a comparison against unmodified VGGT, so the comparison is only meaningful if both arms are scored by the same pipeline. This section reproduces that no-intervention arm on the 39 landmarks of the shared development cohort. This list is separate from the structured-intervention subset in Section~\ref{sec:point3}. Each landmark contributes the benchmark views that have ground-truth depth: 42--50 views for 38 landmarks and 21 for one.
 
-Let $C_s(\eta)$ denote $\mathrm{CD}_{\mathrm{norm},s}$ of $P_s(\eta)$. The baseline is $C_s(0)$: we run the reference intervention pipeline at $\eta=0$. The update in Equation~\ref{eq:update} is then zero, so the accept/revert rule restores the original tokens and the prediction is exactly that of unmodified VGGT, scored by the same code as the team's $\eta$ sweep. Settings match the sweep: fp32 weights, the built-in pre-intervention pass skipped to fit memory, ICP refinement after RANSAC alignment, and prediction filtering with the dataset's manual filtration masks. All runs use one NVIDIA L4 (24\,GB). Following the reference aggregation, we report the median of $C_s$ over landmarks and the per-landmark change $\Delta_s(\eta)=C_s(\eta)/C_s(0)-1$.
+Let $C_s(\eta)$ denote $\mathrm{CD}_{\mathrm{norm},s}$ of $P_s(\eta)$. The baseline is $C_s(0)$: we run the reference intervention pipeline at $\eta=0$. The update in Equation~\ref{eq:update} is then zero, so the accept/revert rule restores the original tokens and the prediction is exactly that of unmodified VGGT, scored under the same evaluation protocol as the team's $\eta$ sweep. Settings match the sweep: fp32 weights, the built-in pre-intervention pass skipped to fit memory, ICP refinement after RANSAC alignment, and prediction filtering with the dataset's manual filtration masks. All runs use one NVIDIA L4 (24\,GB). Following the reference aggregation, we report the median of $C_s$ over landmarks and the per-landmark change $\Delta_s(\eta)=C_s(\eta)/C_s(0)-1$.
 
 \begin{table}[htb]
 \caption{No-intervention VGGT on the 39 development landmarks (median $\mathrm{CD}_{\mathrm{norm}}$, lower is better). The paper value covers all 396 landmarks.}
@@ -95,15 +89,15 @@ Configuration & Median\\
 $\eta=0$, sweep pipeline (ours) & 3.89\\
 $\eta=1$, team sweep & 3.85\\
 Best $\eta$ per scene (oracle) & 3.63\\
-Benchmark script (no filter/ICP) & 20.13\\
+Benchmark (no filter/ICP) & 20.13\\
 Paper~\cite{archworld}, 396 landmarks & 3.28\\
 \bottomrule
 \end{tabular}
 \end{table}
 
-\paragraph{A first attempt that was not comparable.} We first used the standalone benchmark script. All 39 landmarks completed, but the median was 20.13 (Table~\ref{tab:eric-base}). By default this script neither filters predictions to the landmark nor applies ICP, and our run used bf16 weights. Missing filtering explains most of the gap: on one landmark, enabling it alone reduced $\mathrm{CD}_{\mathrm{norm}}$ from 110.1 to 4.43. We keep this number only as a benchmark-script reference, not as the ``before'' arm.
+\paragraph{A first attempt that was not comparable.} Our initial benchmark evaluation used a different scoring configuration. All 39 landmarks completed, but the median was 20.13 (Table~\ref{tab:eric-base}). That configuration neither filtered predictions to the landmark nor applied ICP, and our run used bf16 weights. Missing filtering explains most of the gap: on one landmark, enabling it alone reduced $\mathrm{CD}_{\mathrm{norm}}$ from 110.1 to 4.43. We keep this number only as an initial evaluation reference, not as the ``before'' arm.
 
-\paragraph{Reproduced baseline.} Through the sweep pipeline, all 39 landmarks completed with a median of 3.89, close to the paper's 3.28, which covers all 396 landmarks rather than this subset. The baseline agrees with the team's $\eta=1$ run, the smallest tested step: their per-landmark ratio has median 0.998, and the two rank landmarks almost identically (Spearman 0.997, compared with 0.63 for the benchmark-script run).
+\paragraph{Reproduced baseline.} Through the sweep pipeline, all 39 landmarks completed with a median of 3.89, close to the paper's 3.28, which covers all 396 landmarks rather than this subset. The baseline agrees with the team's $\eta=1$ run, the smallest tested step: their per-landmark ratio has median 0.998, and the two rank landmarks almost identically (Spearman 0.997, compared with 0.63 for the initial benchmark evaluation).
 
 \paragraph{How much the intervention helps.} Relative to $\eta=0$, choosing the best $\eta$ per landmark gives a median per-landmark relative reduction of 3.0\% (mean 5.6\%). It improves 16 landmarks by more than 5\%; on 4 landmarks every tested $\eta$ is worse than no intervention. Among fixed strengths, only $\eta=1000$ differs significantly from $\eta=0$: median $-1.2\%$, better on 27 of 39 landmarks, $p=0.046$.
 % ===== END Eric: baseline =====
@@ -124,9 +118,9 @@ which is zero when the oracle strength is chosen. With leave-one-landmark-out cr
 \begin{equation}
 S^{\mathrm{eq}}_l(e)=\sum_{i\in P_e}\sum_{j\in P_e}\bar A^l_{ij},
 \end{equation}
-and in the form used by the reference code, which keeps only pairs from different views and averages within each view pair,
+and in a cross-view normalized form, which keeps only pairs from different views and averages within each view pair,
 \begin{equation}
-S^{\mathrm{code}}_l(e)=\sum_{u\neq v}\frac{1}{|P_{e,u}||P_{e,v}|}\sum_{i\in P_{e,u}}\sum_{j\in P_{e,v}}\bar A^l_{ij}.
+S^{\mathrm{cv}}_l(e)=\sum_{u\neq v}\frac{1}{|P_{e,u}||P_{e,v}|}\sum_{i\in P_{e,u}}\sum_{j\in P_{e,v}}\bar A^l_{ij}.
 \end{equation}
 Each form is computed with and without rotary position encoding, and the anchor is $e_s^*=\arg\max_e S_{23}(e)$ over architectural elements. From the same pass we derive per-layer anchor SCVA, attention entropy $H_l=\operatorname{mean}_i\bigl(-\sum_j\bar A^l_{ij}\log\bar A^l_{ij}\bigr)$, and the share of anchor-token attention that lands on non-architectural tokens. Anchor coverage is measured as the patch share $\rho^{\mathrm{patch}}_s=|P_{e^*}|/\sum_v N_v$ and the view share $\rho^{\mathrm{view}}_s$, the fraction of views containing the anchor. In total there are 88 scene-level features.
 
@@ -152,7 +146,7 @@ Oracle & 0 & 39\\
 
 \paragraph{The bar to beat.} The oracle strength varies by landmark (Table~\ref{tab:eric-regret}). Chosen on training folds, the best fixed strength is $\eta=1000$ in every fold, with 4.4\% mean regret. Although $\eta=1000$ is the oracle on only 7 landmarks, it is within 5\% of the oracle on 29. In contrast, $\eta=5000$ is the oracle most often but is up to $6.3\times$ worse than the best strength elsewhere.
 
-\paragraph{Pass~1 is reproduced.} With $S^{\mathrm{code}}$, our recomputed anchors match the supplied anchors on 34 of 39 landmarks; with $S^{\mathrm{eq}}$, they match on only 17. The supplied anchors therefore follow the code's definition, not the paper's equation, which favours large elements. Rotary position encoding never changes the selected anchor. Four of the five mismatches are near-ties, where the supplied anchor reaches 85--99\% of our winner's score.
+\paragraph{Pass~1 is reproduced.} With $S^{\mathrm{cv}}$, our recomputed anchors match the supplied anchors on 34 of 39 landmarks; with $S^{\mathrm{eq}}$, they match on only 17. The supplied anchors therefore agree more closely with the cross-view normalized form than with the paper's equation, which favours large elements. Rotary position encoding never changes the selected anchor. Four of the five mismatches are near-ties, where the supplied anchor reaches 85--99\% of our winner's score.
 
 \paragraph{No selector beats the fixed strength yet.} No metadata rule (all correlations $p\ge0.09$) and no selector built on the 88 features beats $\eta=1000$. The strongest single correlate of $\eta^*_s$ is layer-4 attention entropy (Spearman $\rho=-0.47$, $p=0.003$): landmarks with more diffuse early attention prefer smaller steps. With 88 features tested, however, a correlation of this size can arise by chance.
 
@@ -206,11 +200,11 @@ Oracle & 1.000 & 1.00 & 0 & 1.000 & 1.00 & 0 & 0.0623 \\
 
 \paragraph{Results.} Table~\ref{tab:drift} summarizes both splits. On development scenes the drift rule had the lowest mean regret of the selectors we tried, with 10 wins, 27 ties and 2 losses against fixed $\eta=1000$, but the difference was not significant (Wilcoxon $p=0.064$; paired bootstrap 95\% CI of the mean regret difference $[-0.018, 0.004]$). On the 40 held-out scenes the frozen rule chose $\eta=5000$ for 8 scenes and did not beat fixed $\eta=1000$: 4 wins, 33 ties and 3 losses, a mean change of $+1.5\%$ (Wilcoxon $p=1.0$). Almost all of the gap comes from one scene whose drift fell under the threshold while $\eta=5000$ was 65\% worse. The drift signal does work as a failure detector (Figure~\ref{fig:drift}): $\eta=5000$ is more than 20\% worse than $\eta=1000$ on 6 test scenes, and the rule falls back on 5 of them, including one where $\eta=5000$ is 18.7 times worse.
 
-\paragraph{Interpretation.} The per-scene choice between the two useful strengths has little room to help. Even a perfect choice between $\eta=1000$ and $\eta=5000$ is only 1.4\% better than fixed $\eta=1000$ on the test scenes, and no threshold applied to the test set does better than the fixed setting, so the outcome is not caused by a poorly tuned $\tau$. That margin is smaller than the scoring noise: the alignment step uses unseeded random sampling, and rescoring an unchanged prediction moves a scene's CD by 2--15\%. Depth drift is therefore a reliable label-free signal that a large step has broken the reconstruction, but for selecting $\eta$ a fixed $\eta=1000$ is the practical choice, with the drift check as a safeguard when larger steps are used. Next steps are rescoring the saved predictions with seeded alignment to obtain cleaner labels, and combining drift with Pass-1 anchor statistics. Code and per-scene results are in the \texttt{swati/} folder of the team repository~\cite{teamrepo}.
+\paragraph{Interpretation.} The per-scene choice between the two useful strengths has little room to help. Even a perfect choice between $\eta=1000$ and $\eta=5000$ is only 1.4\% better than fixed $\eta=1000$ on the test scenes, and no threshold applied to the test set does better than the fixed setting, so the outcome is not caused by a poorly tuned $\tau$. That margin is smaller than the scoring noise: the alignment step uses unseeded random sampling, and rescoring an unchanged prediction moves a scene's CD by 2--15\%. Depth drift is therefore a reliable label-free signal that a large step has broken the reconstruction, but for selecting $\eta$ a fixed $\eta=1000$ is the practical choice, with the drift check as a safeguard when larger steps are used. Next steps are rescoring the saved predictions with seeded alignment to obtain cleaner labels, and combining drift with Pass-1 anchor statistics.
 
 \section{Structured Intervention Methodology}
 \label{sec:point3}
-We investigate strengths that vary by layer (H1), view (H2), or anchor (H3). The published implementation and selection audit are available~\cite{point3}. We select 54 of 317 training/development landmarks, excluding the 79 held-out landmarks. This subset reduces the GPU workload for repeated reconstructions, mask preparation, and hypothesis comparisons during development; final evaluation will use the whole dataset.
+We investigate strengths that vary by layer (H1), view (H2), or anchor (H3). We select 54 of 317 training/development landmarks, excluding the 79 held-out landmarks. This subset reduces the GPU workload for repeated reconstructions, mask preparation, and hypothesis comparisons during development; final evaluation will use the whole dataset.
 
 \begin{figure*}[t]
 \centering
@@ -286,7 +280,7 @@ For each anchor type with at least two calibration landmarks, choose $\eta_a\in\
 \subsection{Calibration and matched evaluation}
 A metadata-only search over 512 allocations (seed 1729) freezes 18 calibration and 36 internal confirmation landmarks, favoring type/region coverage and balance. Supported anchors retain at least two calibration examples and one confirmation example. Settings minimize mean calibration $\mathrm{CD}_{\mathrm{norm}}$ and are frozen before confirmation. Controls are no intervention and the calibration-selected global scalar. The primary metric is mean paired normalized-CD difference between each structured rule and that scalar on confirmation; negative is better, with equal landmark weights.
 
-Reconstruction uses seeded uniform sampling of up to 50 distinct registered images with matched depth/validity maps. With fewer available, all are used; at least two are required. Counts are logged without replacing landmarks. SAM 3 masks are reused across hypotheses. Documented manual anchors are bridge for Forth Bridge and obelisk for Washington Monument, whose supplied altar label yielded empty masks. These corrections preserve the split; the selection audit retains supplied labels. Comparisons match images, masks, precision, and evaluation settings. Separate H1/H2/H3 notebooks require a reference-equivalence and memory pilot before bulk execution and record failures explicitly.
+Reconstruction uses seeded uniform sampling of up to 50 distinct registered images with matched depth/validity maps. With fewer available, all are used; at least two are required. Counts are logged without replacing landmarks. SAM 3 masks are reused across hypotheses. Documented manual anchors are bridge for Forth Bridge and obelisk for Washington Monument, whose supplied altar label yielded empty masks. These corrections preserve the split; the selection audit retains supplied labels. Comparisons match images, masks, precision, and evaluation settings. Each hypothesis requires an equivalence check against the scalar reference and a memory pilot before the full run; failures are recorded explicitly.
 
 \section{Structured Intervention Results}
 \label{sec:point3-results}
@@ -323,18 +317,19 @@ Against the scalar, H2's mean paired difference is $+0.00394$ and median $+0.051
 \label{fig:structured-confirmation}
 \end{figure}
 
-These single-seed, two-candidate studies do not establish statistical significance or full-benchmark generalization. The 79-landmark holdout is untouched; H3 is unfinished. Results, frozen selections, and reproduction scripts are archived with the report.
+These single-seed, two-candidate studies do not establish statistical significance or full-benchmark generalization. The 79-landmark holdout is untouched; H3 is unfinished.
 
 \section{Challenges and Next Steps}
-We will finish H3, review masks and intervention traces, and repeat H1/H2 across seeds. Code and run instructions are in the linked experiment branch.
+We will finish H3, review masks and intervention traces, and repeat H1/H2 across seeds.
 
 At the final stage, we will use the whole ArchWorld dataset: all 396 landmarks. Method choices will be frozen on the 317 development landmarks before evaluating the 79 held-out landmarks. We will report held-out scores separately from full-dataset aggregates and provide region/type breakdowns. The per-landmark view protocol still applies; all-landmark coverage does not require every source photo in one reconstruction.
 
+\newpage
 \section{Project Ownership}
 \begin{itemize}
 \item \textbf{Eric Lu} owns the baseline without intervention, comparison of evaluation pipelines, extraction of Pass-1 features, and feature-based strength selection (Sections~\ref{sec:eric}--\ref{sec:eric-pass1}).
 \item \textbf{Swati Parida} owns scene-level adaptive strength selection: the candidate-strength sweep, label-free proxy analysis, depth-drift rule, and development/test evaluation (Section~\ref{sec:swati}).
-\item \textbf{Anastasios Gerasis} owns the study of structured interventions: the 54-landmark subset and representativeness audit, shared mask preparation, layer-, view-, and anchor-dependent methods, and the three hypothesis notebooks with matched evaluation and completed H1/H2 analyses (Sections~\ref{sec:point3}--\ref{sec:point3-results}).
+\item \textbf{Anastasios Gerasis} owns the study of structured interventions: the 54-landmark subset and representativeness audit, shared mask preparation, layer-, view-, and anchor-dependent methods, and the three hypothesis studies with matched evaluation and completed H1/H2 analyses (Sections~\ref{sec:point3}--\ref{sec:point3-results}).
 \end{itemize}
 
 \bibliographystyle{ACM-Reference-Format}
