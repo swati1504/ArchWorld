@@ -595,6 +595,27 @@ and `pass1_signals/denoise_pipeline.sh` (detached; progress in `pass1_out/denois
   second (7.8 vs 9.7) with shared wins. Equal shared wins are broken toward the smaller η. The report
   shows full wins, shared wins and single-best counts side by side.
 
+- **Phase 2 done (11-16 20:11):** 234 / 234 clean labels, none given up. **Phase 3 done (20:13)**,
+  full output in `pass1_out/denoise/analysis.log`, list in `pass1_out/heldout/confirm_list.json`.
+  - Tie bands: median 2.0% (20 of 39 scenes at the 1% noise minimum), range 2.0–24.6%.
+  - **ArchAttend vs η=0 on clean labels:** no fixed η beats η=0 reliably. η=1000 comes closest
+    (median −0.6%, better 3 / tied 34 / worse 2, Wilcoxon p=0.053). η=5000 is a coin flip (better 13 /
+    worse 12, mean +29% from blow-ups). With the per-scene best η: median −2.8%, beyond the tie band on
+    14/39. 8/39 scenes: every η > 0 tied. Swati's best η is outside the clean tied-best set on 2/39.
+  - **E = {0, 100, 1000, 5000}**, best-fixed η = 1000 (shared wins: 5000 12.8, 100 8.0, 1000 7.7, 10 5.4, 1 5.2).
+  - **Strongest Pass-1 signals (BH q < 0.01):** the anchor's self-attention `a_self` (mass an anchor
+    query puts on anchor tokens; L4/L17/L23/mean all ρ≈0.58–0.59) and the anchor size `anchor_tok_frac`
+    (ρ 0.57) predict the best η (bigger/more self-attending anchor → larger best η) and the η=5000 risk
+    (ρ ≈ −0.56 to −0.59). Mean attention entropy `ent_Lmean` predicts how much the best η gains over η=0
+    (ρ 0.55, q 0.010) and the regret of η=100 (ρ −0.53). Nothing predicts the regret of η=1000 (best q 0.11).
+  - **Old noisy findings rechecked:** anchor size vs 5000/1000 survives and strengthens (ρ −0.51,
+    p 0.001); tiny anchors blow up at 5000 in 4/8 vs 1/31 (p 0.004). Entropy at L4 vs best η does not
+    survive (ρ −0.22, p 0.18; noisy −0.47).
+  - **Selectors (LOSO, signals chosen inside folds):** none beats best-fixed η=1000 on mean regret (3.39%;
+    kNN k=10 3.79%, k=5 4.15%, ridge 5.08%); the kNN has the lower median (1.4% vs 1.7%). Chosen selector:
+    best-fixed. The signals are strong correlates but do not yet turn into a better per-scene choice on 39 scenes.
+  - Confirmation list: top 3 signals for each of 7 targets (21 tests); phase 4b runs E on the 40 new scenes.
+
 ### Open questions
 
 - [x] swati's VGGT sweep results: `swati/results_vggt_dev/` (all 39 dev scenes).
