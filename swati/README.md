@@ -37,3 +37,29 @@ the reconstruction.
 ## Locked rule (for the test set)
 pick eta=5000 if median relative depth change(eta=5000 vs eta=1) <= 0.00626, else eta=1000.
 Needs three runs per scene (eta = 1, 1000, 5000).
+
+## Test results (40 held-out scenes, rule frozen before the run)
+Run: `run.py --scenes-file scenes_test.txt --eta 1,1000,5000`, then
+`python swati/pick_eta.py results/vggt_test --scenes scenes_test.txt --csv swati/results_vggt_test/picks.csv`.
+Per-scene drift, pick and CD for eta=1000/5000 are in `results_vggt_test/picks.csv`.
+Regret here is against the better of eta=1000 and eta=5000 (the two values the rule chooses between).
+
+| picker | mean CD | median CD | mean regret | worst regret | >1.2 |
+|---|---|---|---|---|---|
+| **fixed eta=1000** | **0.0632** | 0.0215 | **1.017** | 1.11 | 0 |
+| fixed eta=5000 | 0.0735 | 0.0252 | 1.545 | 18.67 | 6 |
+| guarded-5000 (ours) | 0.0641 | 0.0215 | 1.033 | 1.65 | 1 |
+| oracle (best of 1000/5000) | 0.0623 | | 1.000 | | |
+
+- The rule picked eta=5000 on 8 scenes. Against fixed eta=1000: 4 wins / 33 ties / 3 losses,
+  mean relative change +1.5% (Wilcoxon p = 1.0). Almost all of the gap is one miss:
+  Degutale_Temple,_Patan (drift 0.0049, under the threshold; eta=5000 is 65% worse there).
+- The drift guard does detect failures: eta=5000 is >20% worse than eta=1000 on 6 test scenes and the
+  rule falls back to 1000 on 5 of them (e.g. Gangaikonda_Cholapuram_Temple, drift 0.48, eta=5000 18.7x worse).
+- Headroom is small: a perfect choice between 1000 and 5000 is only 1.4% better than fixed 1000, and no
+  threshold applied on the test set does better than 0.0632. That is below the scoring noise
+  (unseeded RANSAC alignment moves CD by 2-15% per scene; see eric's eta-from-pass1-report.md).
+
+**Conclusion.** Depth drift at a large step is a reliable label-free failure detector, but per-scene
+selection between eta=1000 and eta=5000 does not beat a fixed eta=1000 on held-out scenes. The dev-set
+gain (mean regret 1.037 vs 1.044, p = 0.064) did not hold on test.
