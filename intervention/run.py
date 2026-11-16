@@ -70,7 +70,7 @@ def load_asset(name):
     return json.loads((ASSETS / name).read_text(encoding="utf-8"))
 
 
-def prepare_scene(root, scene, work_dir, views):
+def prepare_scene(root, scene, work_dir, views, num_images=50):
     """Lay out one scene the way the per-model pass expects to find it.
 
     The pass reads its views from `image_list.json` and locates the ground truth
@@ -90,7 +90,7 @@ def prepare_scene(root, scene, work_dir, views):
     # image_folder, so the two have to be expressed the same way.
     work_dir = Path(work_dir).expanduser().resolve()
     work_dir.mkdir(parents=True, exist_ok=True)
-    staged = work_dir / "images_50"
+    staged = work_dir / f"images_{num_images}"
     staged.mkdir(exist_ok=True)
     # The pass keys masks and depth off the original file name, so the staged
     # copies keep it; the numeric prefix only fixes the view order.
@@ -160,9 +160,24 @@ def main():
                     help="skip sky removal for DA3 and pi3; results will not match the paper")
     ap.add_argument("--no-icp", action="store_true", help="skip ICP refinement")
     ap.add_argument("--device", default="cuda")
+    ap.add_argument("--num-images", type=int, default=50,
+                    help="view prefix for feasibility pilots; paper setting is 50")
+    ap.add_argument("--strength-config", type=Path,
+                    help="opt-in structured strengths for the VGGT point-3 pilot")
+    ap.add_argument("--seed", type=int, help="seed the model/evaluation random generators")
     ap.add_argument("--work-dir", type=Path, default=Path(".archattend_work"),
                     help="scratch space for the per-scene anchor files")
     args = ap.parse_args()
+    if not 2 <= args.num_images <= 50:
+        ap.error("--num-images must be between 2 and 50")
+    if args.strength_config and args.model != "vggt":
+        ap.error("--strength-config currently supports the VGGT pilot only")
+    if args.strength_config:
+        from intervention.strength import StrengthConfig
+        StrengthConfig.load(args.strength_config)
+        os.environ["STRUCTURED_STRENGTH_CONFIG"] = str(args.strength_config.resolve())
+    else:
+        os.environ.pop("STRUCTURED_STRENGTH_CONFIG", None)
 
     root = Path(args.root).expanduser()
     if not (root / "archworld").is_dir():
@@ -189,7 +204,7 @@ def main():
     # published runs were. Everything below is a published setting.
     os.environ.update({
         "DEVICE": args.device,
-        "NUM_IMAGES": "50",
+        "NUM_IMAGES": str(args.num_images),
         "USE_ICP": "0" if args.no_icp else "1",
         "ICP_THRESHOLD": "0.1",
         "USE_VALIDITY_MASKS": "1",
@@ -228,13 +243,22 @@ def main():
                 continue
             print(f"[eta={eta}] [{i}/{len(scenes)}] {scene}")
             try:
+                if args.seed is not None:
+                    import random
+                    import numpy as np
+                    import torch
+                    random.seed(args.seed)
+                    np.random.seed(args.seed)
+                    torch.manual_seed(args.seed)
+                    if torch.cuda.is_available():
+                        torch.cuda.manual_seed_all(args.seed)
                 views = views_by_scene.get(scene)
                 if not views:
                     raise KeyError(f"{scene} is not one of the benchmark's evaluation scenes")
                 stage_anchor(scene, stats_dir)
                 # The pass reads its inputs from, and writes its results to, the
                 # same directory, so stage the scene where the results will land.
-                prepare_scene(root, scene, out_dir / scene, views)
+                prepare_scene(root, scene, out_dir / scene, views[:args.num_images], args.num_images)
                 os.environ["SCENE_NAME"] = scene
                 model = run_pass.main(scene_name=scene, work_dir=out_dir / scene, model=model)
             except Exception as exc:

@@ -1,0 +1,19 @@
+{
+  "source_zip": "point3_shared54_source_83796943ffaf.zip",
+  "source_sha256": "83796943ffafa29f96a5fee1f4e58887a8b66b3da04515ebbd1375769ac4b446",
+  "budget": {
+    "hypothesis": "all",
+    "calibration_jobs": 126,
+    "confirmation_jobs_upper_bound": 180,
+    "total_upper_bound": 306,
+    "reference_checks_extra": true,
+    "independent_full54_notebooks": 702,
+    "shared_full54_sweep": 378
+  },
+  "notebooks": [
+    "Point3_Shared54_Run.ipynb",
+    "Point3_H1_Report.ipynb",
+    "Point3_H2_Report.ipynb",
+    "Point3_H3_Report.ipynb"
+  ]
+}
