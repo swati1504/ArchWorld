@@ -25,7 +25,7 @@ ArchAttend steers frozen 3D reconstruction models toward architectural elements,
 \href{https://github.com/swati1504/ArchWorld}{\textcolor{blue}{\nolinkurl{https://github.com/swati1504/ArchWorld}}}\\
 Structured experiments:
 \href{https://github.com/tasosger/ArchWorld/tree/point3/hypothesis-notebooks}{\textcolor{blue}{notebooks and run instructions}}
-\quad\href{https://github.com/swati1504/ArchWorld/pull/4}{\textcolor{blue}{PR \#4 (pending merge)}}}}\\[0.6em]
+}}\\[0.6em]
 \includegraphics[width=\textwidth]{figures/archworld_photos.png}
 \caption{Landmark photographs and corresponding benchmark reconstructions: Church of San Francisco of Assisi in Ouro Preto (left) and India Gate (right). Reproduced from Kriplani et al.~\cite{archworld}, Figure 2, under \href{https://creativecommons.org/licenses/by/4.0/}{CC BY 4.0}. These illustrate the dataset, not new AdaptiveAttend outputs.}
 \Description{Photographs of a church in Brazil and India Gate show changes in viewpoint, lighting, and surroundings. Each set is paired with a dense reconstruction and scene metadata in the source figure.}
@@ -39,7 +39,7 @@ VGGT~\cite{vggt} predicts scene geometry from multiple images in a feed-forward 
 The strength $\eta$ controls the size of the activation update. A small value may have little effect, while a large value may damage the reconstruction. Choosing the best strength using ground truth provides an oracle comparison, but is unavailable when reconstructing a new scene. The project combines baseline evaluation, scene-level strength selection, and structured intervention rules. The benchmark, pretrained backbone, supplied anchor choices, and reference intervention are inherited components. The shared project repository provides the implementation context~\cite{teamrepo}.
 
 \paragraph{Code and reproducibility.}
-The public team repository is \url{https://github.com/swati1504/ArchWorld}. The structured-intervention code, three hypothesis notebooks, shared mask workflow, and run instructions are available in the \href{https://github.com/tasosger/ArchWorld/tree/point3/hypothesis-notebooks}{experiment branch} (commit \texttt{92d9149})~\cite{point3}. \href{https://github.com/swati1504/ArchWorld/pull/4}{Pull request \#4} proposes merging this branch into the team repository; it is pending as of November 16, 2026.
+The public team repository is \url{https://github.com/swati1504/ArchWorld}. The structured-intervention code, three hypothesis notebooks, shared mask workflow, and run instructions are available in the \href{https://github.com/tasosger/ArchWorld/tree/point3/hypothesis-notebooks}{experiment branch} (commit \texttt{92d9149})~\cite{point3}.
 
 \section{Formal task, data, and evaluation}
 For scene $s$, let $X_s=\{I_{s,v}\}_{v=1}^{V_s}$ be its images, $M_s$ the anchor segmentation masks, and $G_s$ its ground-truth point cloud. A frozen model with intervention strength $\eta$ produces reconstructed points $P_s(\eta)$. An adaptive rule may use images, masks, model activations, or predictions to determine strength. Its parameters may be calibrated on development scenes, but inference for a new scene must not use $G_s$.
@@ -326,7 +326,7 @@ Against the scalar, H2's mean paired difference is $+0.00394$ and median $+0.051
 These single-seed, two-candidate studies do not establish statistical significance or full-benchmark generalization. The 79-landmark holdout is untouched; H3 is unfinished. Results, frozen selections, and reproduction scripts are archived with the report.
 
 \section{Challenges and Next Steps}
-We will finish H3, review masks and intervention traces, and repeat H1/H2 across seeds. Code and run instructions are in the linked experiment branch (PR \#4).
+We will finish H3, review masks and intervention traces, and repeat H1/H2 across seeds. Code and run instructions are in the linked experiment branch.
 
 At the final stage, we will use the whole ArchWorld dataset: all 396 landmarks. Method choices will be frozen on the 317 development landmarks before evaluating the 79 held-out landmarks. We will report held-out scores separately from full-dataset aggregates and provide region/type breakdowns. The per-landmark view protocol still applies; all-landmark coverage does not require every source photo in one reconstruction.
 
