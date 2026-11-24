@@ -63,3 +63,31 @@ Regret here is against the better of eta=1000 and eta=5000 (the two values the r
 **Conclusion.** Depth drift at a large step is a reliable label-free failure detector, but per-scene
 selection between eta=1000 and eta=5000 does not beat a fixed eta=1000 on held-out scenes. The dev-set
 gain (mean regret 1.037 vs 1.044, p = 0.064) did not hold on test.
+
+## Post-hoc robustness: other ways to summarize drift
+`drift_variants.py` re-runs the guarded-5000 rule with seven summaries of the same per-pixel relative
+depth change (eta=5000 vs eta=1), each with the same protocol (tau tuned leave-one-out on dev, frozen,
+applied once to test). Regret here is against the better of eta=1000 and eta=5000 on both splits.
+Per-scene values: `results_drift_variants.csv`.
+
+| summary | dev LOO regret | test mean CD | vs fixed 1000 (W/T/L) | test failures caught | Degutale |
+|---|---|---|---|---|---|
+| median (locked rule) | 1.0259 | 0.0641 | 4/33/3 | 5/6 | missed |
+| p75 | 1.0230 | 0.0640 | 8/25/7 | 5/6 | missed |
+| p90 | 1.0264 | 0.0632 | 6/29/5 | 6/6 | caught |
+| largest per-view median | 1.0258 | 0.0641 | 4/31/5 | 5/6 | missed |
+| 75th pct of per-view medians | 1.0262 | 0.0641 | 5/29/6 | 5/6 | missed |
+| share of pixels moved > 5% | 1.0280 | 0.0632 | 6/28/6 | 6/6 | caught |
+| share of pixels moved > 10% | 1.0364 | 0.0632 | 5/31/4 | 6/6 | caught |
+| fixed eta=1000 (reference) | 1.0324 | 0.0632 | | 0 failures | |
+
+- On dev every summary flags all 7 eta=5000 failures, so dev cannot tell them apart, and none beats
+  the median there. We therefore keep the median as the locked rule and report this as post-hoc.
+- On test, the summaries that count strongly moved pixels (p90, share > 5%, share > 10%) catch all 6
+  failures, including Degutale_Temple,_Patan, which the median missed. Its change is concentrated in
+  part of the image (see `figures/drift_demo.png`), so the median stays low. Degutale clears the p90
+  threshold only narrowly (0.0378 vs 0.0336).
+- No summary beats fixed eta=1000 on test (best: a tie at 0.0632), consistent with the 1.4% headroom.
+
+`make_demo_figure.py` draws `figures/drift_demo.png`: input photo, depth at eta=1 and eta=5000, and the
+per-pixel change for a caught failure, a safe scene, and the missed scene.
