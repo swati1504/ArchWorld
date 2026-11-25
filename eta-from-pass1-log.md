@@ -616,6 +616,20 @@ and `pass1_signals/denoise_pipeline.sh` (detached; progress in `pass1_out/denois
     best-fixed. The signals are strong correlates but do not yet turn into a better per-scene choice on 39 scenes.
   - Confirmation list: top 3 signals for each of 7 targets (21 tests); phase 4b runs E on the 40 new scenes.
 
+- **Phases 4b–6 done (11-25 14:37).** 4b: 160 new-scene predictions (11-16 20:15 → 11-17 00:02, every
+  intervention mask non-empty, min 482 tokens). Phase 5 was interrupted by two VM stops and relaunched
+  each time from disk (11-25 06:06 and 13:33); no label lost. 160 labels, 0 errors.
+  - **Phase 6: 2 of 21 listed pairs confirmed** (Holm, one-sided): anchor self-attention at L23 and L17
+    vs how much η matters (ρ_new −0.49, −0.46; dev −0.35, −0.39). The best-η, slope and η=5000-regret
+    signals (a_self, ρ_dev ≈ ±0.58) were near zero on the new scenes (−0.22 to +0.05); entropy vs gain
+    +0.28 (raw p 0.04, not significant after correction).
+  - Best-fixed η=1000 on new scenes: mean regret 5.5%, median 0.7%; one bad scene (Palacio de Bellas
+    Artes, where η=5000 halves the error; both draws agree).
+  - Descriptive (not pre-registered): η=1000 vs η=0 median +0.1% on new scenes; the per-scene best beats
+    η=0 beyond noise on 9/40; η=5000's worst failure is 2.2× (dev 6×); tiny anchors 0/4 blew up (dev 4/8);
+    anchor size vs η=5000's failure ρ −0.27 (p 0.10; dev −0.51).
+  - Write-up: `denoise-report.md`.
+
 ### Open questions
 
 - [x] swati's VGGT sweep results: `swati/results_vggt_dev/` (all 39 dev scenes).
