@@ -502,6 +502,134 @@ blow-ups of 3–6x) are real.
 - Wrote [`eta-from-pass1-report.md`](eta-from-pass1-report.md): the storyline version of this log for
   collaborators. New scenes (40 × η ∈ {1000, 5000}, ~14 GPU-hours) postponed by Eric.
 
+### 2026-11-15: plan for held-out GPU runs (branch `eric/anchor-size-heldout`; written before running)
+
+**Hypothesis under test** (found on dev, so it needs new scenes): *if the anchor is tiny, η=5000 is risky.*
+On dev, with the outcome measured as r = Score(η=5000) / Score(η=1000): Spearman(`anchor_tok_frac`,
+log r) = −0.47 (p = 0.003); tiny anchors (< 2% of patches) blow up (r > 1.5) in 4/8 scenes, others 1/31
+(Fisher one-sided p = 0.004). The 2% and 1.5 cut-offs were chosen after looking at dev; they are fixed now.
+
+**Scenes.** The 313 extracted scenes in neither `scenes_dev.txt` nor `scenes_test.txt` (test stays
+untouched for a final evaluation). Screening order: random permutation, numpy seed 0.
+
+**Design: screen cheaply, then run Pass 2 on a stratified set.**
+1. *Screen* (Pass 1, anchor only): SAM 3 masks for the shipped anchor with the repo's
+   `intervention/make_masks.py` (exactly the masks Pass 2 needs), then anchor coverage
+   (`anchor_tok_frac`, same definition as `features.py`) by a CPU script. Stop when 24 tiny scenes are
+   found or 120 scenes are screened.
+2. *Select:* every tiny scene found (up to 24) + the same number of non-tiny scenes, the first ones
+   in the screening order.
+3. *Pass 2:* η = 1000 and 5000 on the selected scenes, via `pass1_signals/seeded_run.py` with seed 0
+   (repeatable scoring; the same seed for both η). Output `pass1_out/heldout_pass2/`.
+
+Power (simulated, Fisher one-sided, α = 0.05) if the effect is weaker than on dev (35% vs 5%):
+8+32 random 55%, 20+20 69%, 24+24 80%. As strong as on dev: ≥ 92% for all.
+
+**Pre-registered tests** on the new scenes:
+- *Primary:* blow-up rate (r > 1.5), tiny vs non-tiny, Fisher exact, one-sided, p < 0.05.
+- *Secondary:* Spearman(`anchor_tok_frac`, log r) < 0, one-sided, over all Pass-2 scenes (sample is
+  stratified, so read the size of ρ with care).
+- Reported regardless: rates with 95% intervals, every scene's r and anchor size.
+
+**Step 0, before the long run (~20 min):** (a) on one dev scene, time anchor-only SAM 3 and check its
+anchor mask equals the full-vocabulary one; (b) check the coverage script reproduces `anchor_tok_frac`
+in `pass1_features.csv` for all 39 dev scenes (CPU).
+
+**Cost estimate:** screening 100–120 scenes at ~1.5 min (to be measured in step 0) ≈ 2.5–3 h; Pass 2
+48 scenes × 2 runs × ~8 min ≈ 13 h. Total ≈ 15–16 h for 24+24 (≈ 13 h for 20+20). GPU alone the whole
+time; check every log for `Intervention token mask: N` with N > 0.
+
+**Noise note:** single seeded run per (scene, η). Scoring noise is up to ~15% per run on hard scenes, so
+a ratio r > 1.5 can occasionally come from luck; the blow-ups on dev were 2–6x.
+
+### 2026-11-15: de-noising and confirmation run started (branch `eric/denoise-labels`)
+
+Plan: `denoise-plan.md` (local, git-ignored). Scripts: `pass1_signals/{seeded_run,rescore,clean_analysis,confirm_analysis}.py`
+and `pass1_signals/denoise_pipeline.sh` (detached; progress in `pass1_out/denoise/STATUS.md`).
+`pass1_out/` and `results/` now live on the data disk (`/mnt/disks/archworld-data`), linked.
+
+- **Phase 0, GPU:** seeded in-run scores at η=0 reproduce the noise probe's seed-0 values exactly
+  (Paul Kruger 0.2283, Shuri Castle 0.4861, Dendera 0.0394). **Trim check passed:** a trimmed run (no
+  GLB export, no in-run GT build) saves an `inter_raw.npz` identical array for array to the untrimmed
+  one, in ~1.6 min per run instead of ~5–7.
+- **First rescoring draw:** Paul Kruger 0.2232 (in the expected 0.180–0.239 range), but 428 s per draw:
+  Chamfer 297 s, ICP 102 s, alignment 28 s.
+- **Fix (exact):** KD-trees built unbalanced (`balanced_tree=False, compact_nodes=False`). On Paul Kruger
+  (16.8M GT points, 1.76M predicted) the nearest-neighbour distances are identical, and the queries
+  take 3.3 s instead of 42.6 s (accuracy) and 7.8 s instead of 66 s (completion). ICP (open3d, ~100 s)
+  is left as is. Pipeline stopped and resumed at 22:24 (11 raw files kept, all checked readable).
+
+- **Bug found and fixed: fp16 raw files.** Shuri Castle's rescored draws came out 0.88–0.91 against 0.486
+  in-run (accuracy 0.037 vs 0.183, completion 1.79 vs 0.79): the rescored cloud was missing many points.
+  Cause: the pass's `inter_raw.npz` stores depth confidence as fp16, which rounds every confidence in
+  (1, ~1.0005] to exactly 1.0, and the scoring keeps a pixel only if its confidence exceeds ~1.00001.
+  So low-confidence pixels vanish on rescoring (Shuri has many; Paul Kruger few, so its draws had
+  looked plausible). Fix: `seeded_run.py` saves `inter_raw32.npz` (fp32 depth, confidence and cameras)
+  from the exact tensors the pass hands to its GLB export; the rescorer and the driver use only that
+  file. All raw files, draws and the trim check were deleted and Phase 0 restarted at 22:44.
+
+- **Phase 0 redo (fp32), validated exactly.** Seeded rescoring reproduces the in-run scores to the last
+  digit (Paul Kruger 0.22828, Shuri Castle 0.48608, Dendera 0.03937), the alignment uses the same number of
+  correspondences (247,321 / 113,973 / 216,451), and Shuri's seeds 1–3 reproduce the noise probe's full
+  runs (0.6598, 0.6707, 0.5371). Trim check passed again on the fp32 copies.
+- **Gate: pass. Scheme A** (2–3 draws): only 1 failed draw among 24 (Shuri seed 4, 0.896), too few for
+  scheme F. Eight draws per scene: Paul Kruger 0.194–0.240 (label noise 4.9%), Shuri Castle 0.486–0.896
+  (12.3%), Dendera 0.0378–0.0394 (1.0%). Noise floor used = the largest, 12.3% → tie band 24.6%.
+  Median draw 122 s. Phase 2 started 23:58.
+- **Open issue (rule as written, flagged before any clean label exists):** a 24.6% tie band taken from
+  the noisiest scene applies to every scene, so on quiet scenes (Dendera's own noise is 1%) most η would
+  count as tied, and the E rule ("best on ≥ 5 scenes, ties count") could stop discriminating. Left to
+  Eric; the plan as written applies if no change is made before phase 3.
+
+- **Amendment 1 (2026-11-16, accepted by Eric; no clean label existed yet): per-scene tie bands.** Each
+  scene's tie band = 2 × its own label noise (0.7 × pooled within-label draw spread, clipped to
+  [1%, 12.3%]), instead of 2 × 12.3% for every scene. Implemented in `clean_analysis.py` and
+  `confirm_analysis.py` (new scenes get their own bands with the same settings). Dry run on synthetic
+  draws: bands 2.0–23.4%, median 9.7%.
+
+- **Amendment 2 (2026-11-16, accepted by Eric; no clean label existed yet): shared wins for E.** Each
+  scene gives one win, split equally among its tied best η, instead of a full win to every tied η.
+  Reason: with full wins, values that tie often (rarely clearly worse) collect wins from every
+  "η doesn't matter" scene, and η=5000 (often clearly best or clearly worst) is dropped from E even
+  where it clearly wins; in a dry run on synthetic draws it came last (25 vs 33) with full wins and
+  second (7.8 vs 9.7) with shared wins. Equal shared wins are broken toward the smaller η. The report
+  shows full wins, shared wins and single-best counts side by side.
+
+- **Phase 2 done (11-16 20:11):** 234 / 234 clean labels, none given up. **Phase 3 done (20:13)**,
+  full output in `pass1_out/denoise/analysis.log`, list in `pass1_out/heldout/confirm_list.json`.
+  - Tie bands: median 2.0% (20 of 39 scenes at the 1% noise minimum), range 2.0–24.6%.
+  - **ArchAttend vs η=0 on clean labels:** no fixed η beats η=0 reliably. η=1000 comes closest
+    (median −0.6%, better 3 / tied 34 / worse 2, Wilcoxon p=0.053). η=5000 is a coin flip (better 13 /
+    worse 12, mean +29% from blow-ups). With the per-scene best η: median −2.8%, beyond the tie band on
+    14/39. 8/39 scenes: every η > 0 tied. Swati's best η is outside the clean tied-best set on 2/39.
+  - **E = {0, 100, 1000, 5000}**, best-fixed η = 1000 (shared wins: 5000 12.8, 100 8.0, 1000 7.7, 10 5.4, 1 5.2).
+  - **Strongest Pass-1 signals (BH q < 0.01):** the anchor's self-attention `a_self` (mass an anchor
+    query puts on anchor tokens; L4/L17/L23/mean all ρ≈0.58–0.59) and the anchor size `anchor_tok_frac`
+    (ρ 0.57) predict the best η (bigger/more self-attending anchor → larger best η) and the η=5000 risk
+    (ρ ≈ −0.56 to −0.59). Mean attention entropy `ent_Lmean` predicts how much the best η gains over η=0
+    (ρ 0.55, q 0.010) and the regret of η=100 (ρ −0.53). Nothing predicts the regret of η=1000 (best q 0.11).
+  - **Old noisy findings rechecked:** anchor size vs 5000/1000 survives and strengthens (ρ −0.51,
+    p 0.001); tiny anchors blow up at 5000 in 4/8 vs 1/31 (p 0.004). Entropy at L4 vs best η does not
+    survive (ρ −0.22, p 0.18; noisy −0.47).
+  - **Selectors (LOSO, signals chosen inside folds):** none beats best-fixed η=1000 on mean regret (3.39%;
+    kNN k=10 3.79%, k=5 4.15%, ridge 5.08%); the kNN has the lower median (1.4% vs 1.7%). Chosen selector:
+    best-fixed. The signals are strong correlates but do not yet turn into a better per-scene choice on 39 scenes.
+  - Confirmation list: top 3 signals for each of 7 targets (21 tests); phase 4b runs E on the 40 new scenes.
+
+- **Phases 4b–6 done (11-25 14:37).** 4b: 160 new-scene predictions (11-16 20:15 → 11-17 00:02, every
+  intervention mask non-empty, min 482 tokens). Phase 5 was interrupted by two VM stops and relaunched
+  each time from disk (11-25 06:06 and 13:33); no label lost. 160 labels, 0 errors.
+  - **Phase 6: 2 of 21 listed pairs confirmed** (Holm, one-sided): anchor self-attention at L23 and L17
+    vs how much η matters (ρ_new −0.49, −0.46; dev −0.35, −0.39). The best-η, slope and η=5000-regret
+    signals (a_self, ρ_dev ≈ ±0.58) were near zero on the new scenes (−0.22 to +0.05); entropy vs gain
+    +0.28 (raw p 0.04, not significant after correction).
+  - Best-fixed η=1000 on new scenes: mean regret 5.5%, median 0.7%; one bad scene (Palacio de Bellas
+    Artes, where η=5000 halves the error; both draws agree).
+  - Descriptive (not pre-registered): η=1000 vs η=0 median +0.1% on new scenes; the per-scene best beats
+    η=0 beyond noise on 9/40; η=5000's worst failure is 2.2× (dev 6×); tiny anchors 0/4 blew up (dev 4/8);
+    anchor size vs η=5000's failure ρ −0.27 (p 0.10; dev −0.51).
+  - Write-up: `denoise-report.md`.
+
 ### Open questions
 
 - [x] swati's VGGT sweep results: `swati/results_vggt_dev/` (all 39 dev scenes).
