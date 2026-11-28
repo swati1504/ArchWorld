@@ -1,0 +1,10 @@
+reference,method_a,method_b,both_win,only_a,only_b,neither_win,win_jaccard
+baseline,H1,H2,15,6,5,10,0.5769230769230769
+baseline,H1,H3,18,3,4,11,0.72
+baseline,H2,H3,16,4,6,10,0.6153846153846154
+scalar,H1,H2,12,11,1,12,0.5
+scalar,H1,H3,1,22,1,12,0.041666666666666664
+scalar,H2,H3,1,12,1,22,0.07142857142857142
+both,H1,H2,4,10,4,18,0.2222222222222222
+both,H1,H3,0,14,2,20,0.0
+both,H2,H3,1,7,1,27,0.1111111111111111

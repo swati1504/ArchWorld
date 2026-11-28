@@ -1,3 +1,5 @@
+> Historical snapshot from November 16. H3 has since completed. See the [completed Point 3 package](../completed_20261128/README.md) for all three hypotheses, later analyses, and the final-report template. The 79-ID partition is unused by Point 3, but 15 IDs overlap earlier team lists, so the historical team-wide untouched-holdout wording below must not be used as a final claim.
+
 # Completed layer- and view-dependent intervention experiments
 
 H1 (layer-dependent strength) and H2 (view-dependent strength) completed on

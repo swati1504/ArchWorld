@@ -1,0 +1,143 @@
+{
+  "status": "descriptive audit of saved outputs; no new model runs",
+  "n_confirmation_landmarks": 36,
+  "confirmation_means": {
+    "baseline": 13.924255003986703,
+    "scalar": 14.763027090109869,
+    "H1": 14.14062002859762,
+    "H2": 14.76697094296075,
+    "H3": 14.407692354622402
+  },
+  "observed_candidate_oracle_diagnostics": {
+    "oracle_interventions_only": {
+      "mean_error": 13.32010511080817,
+      "percent_reduction_vs_original": 4.338831003924859
+    },
+    "oracle_all_including_original": {
+      "mean_error": 12.899609066774378,
+      "percent_reduction_vs_original": 7.358712813855783
+    },
+    "oracle_H1_or_original": {
+      "mean_error": 13.16152685080506,
+      "percent_reduction_vs_original": 5.477694519119791
+    },
+    "H1_abstention_fraction_of_all_oracle_gain": 0.7443821572715528,
+    "landmarks_with_any_intervention_better_than_original": 28,
+    "landmarks_with_original_best": 8
+  },
+  "benefit_harm_decomposition": [
+    {
+      "method": "scalar",
+      "improved": 20,
+      "worsened": 16,
+      "gross_error_reductions_sum": 10.062011389388308,
+      "gross_error_increases_sum": 40.25780648982232,
+      "mean_gain_contribution": 0.27950031637189743,
+      "mean_harm_contribution": 1.1182724024950645,
+      "net_mean_difference": 0.838772086123167,
+      "largest_regression_share_of_gross_harm": 0.3957090621605225,
+      "top_three_regression_share_of_gross_harm": 0.6654930688434728,
+      "top_three_landmarks": "Palácio_Nereu_Ramos | Itmad-Ud-Daulah's_Tomb | Place_Jacques-Cartier"
+    },
+    {
+      "method": "H1",
+      "improved": 21,
+      "worsened": 15,
+      "gross_error_reductions_sum": 27.458213514539096,
+      "gross_error_increases_sum": 35.24735440053212,
+      "mean_gain_contribution": 0.7627281531816416,
+      "mean_harm_contribution": 0.9790931777925588,
+      "net_mean_difference": 0.21636502461091725,
+      "largest_regression_share_of_gross_harm": 0.40804031203382807,
+      "top_three_regression_share_of_gross_harm": 0.7423858963095488,
+      "top_three_landmarks": "Palácio_Nereu_Ramos | Heian-jingū | Palacio_Legislativo,_Uruguay"
+    },
+    {
+      "method": "H2",
+      "improved": 20,
+      "worsened": 16,
+      "gross_error_reductions_sum": 11.008312777826063,
+      "gross_error_increases_sum": 41.34608658089175,
+      "mean_gain_contribution": 0.30578646605072396,
+      "mean_harm_contribution": 1.1485024050247707,
+      "net_mean_difference": 0.8427159389740468,
+      "largest_regression_share_of_gross_harm": 0.4752512450564149,
+      "top_three_regression_share_of_gross_harm": 0.7431772855074239,
+      "top_three_landmarks": "Palácio_Nereu_Ramos | Palacio_Legislativo,_Uruguay | Saint_Demetrius_Church_(Vladimir)"
+    },
+    {
+      "method": "H3",
+      "improved": 22,
+      "worsened": 14,
+      "gross_error_reductions_sum": 13.591757762554305,
+      "gross_error_increases_sum": 30.995502385439437,
+      "mean_gain_contribution": 0.3775488267376196,
+      "mean_harm_contribution": 0.8609861773733177,
+      "net_mean_difference": 0.4834373506356981,
+      "largest_regression_share_of_gross_harm": 0.513957755955293,
+      "top_three_regression_share_of_gross_harm": 0.8643606047309661,
+      "top_three_landmarks": "Palácio_Nereu_Ramos | Itmad-Ud-Daulah's_Tomb | Place_Jacques-Cartier"
+    }
+  ],
+  "attention_acceptance": [
+    {
+      "method": "H1",
+      "n": 36,
+      "all_24_layers_accepted": 36,
+      "all_layers_accepted_but_error_worse_than_original": 15,
+      "fraction_harmful_despite_all_layers_accepted": 0.4166666666666667
+    },
+    {
+      "method": "H2",
+      "n": 36,
+      "all_24_layers_accepted": 36,
+      "all_layers_accepted_but_error_worse_than_original": 16,
+      "fraction_harmful_despite_all_layers_accepted": 0.4444444444444444
+    },
+    {
+      "method": "H3",
+      "n": 36,
+      "all_24_layers_accepted": 36,
+      "all_layers_accepted_but_error_worse_than_original": 14,
+      "fraction_harmful_despite_all_layers_accepted": 0.3888888888888889
+    }
+  ],
+  "available_H2_matched_strength": {
+    "calibration": {
+      "n": 18,
+      "scalar_eta100_mean": 10.849762145186306,
+      "view_eta100_mean": 9.965512623995235,
+      "mean_difference": -0.8842495211910713,
+      "percent_change_of_means": -8.149943836173268,
+      "view_wins": 8,
+      "view_losses": 10
+    },
+    "confirmation": {
+      "n": 3,
+      "scalar_eta100_mean": 16.696124889920537,
+      "view_eta100_mean": 19.613383607589093,
+      "mean_difference": 2.917258717668556,
+      "percent_change_of_means": 17.4726694781117,
+      "view_wins": 0,
+      "view_losses": 3
+    }
+  },
+  "limitations": [
+    "Oracle scores select using ground-truth errors and are unattainable hindsight references, not achieved selector performance.",
+    "The candidate oracle covers only the measured conditions, not a complete strength sweep or all possible interventions.",
+    "Worst-three shares are post-hoc descriptions; the corresponding landmarks remain in every headline mean.",
+    "Acceptance failure counts show a monitored-attention increase is insufficient to guarantee geometry improvement, not that attention causes the regression.",
+    "H3 often duplicates scalar predictions; method-scene observations are not independent landmarks.",
+    "The H2 matched-strength confirmation subset consists only of two statues and one column that received eta100 under H3; it is not representative.",
+    "Calibration matched-strength results are in-sample and must not be pooled with confirmation.",
+    "No additional hypothesis tests or claims of statistically significant superiority are made."
+  ],
+  "sources": {
+    "output\\analysis_20261126\\groups\\confirmation_with_groups.csv": "8540a7b9ed1640c1f4975ca2af43eabcc83dd2f336ef10a9dcc324f554ffbf61",
+    "output\\analysis_20261126\\correlations\\joined_confirmation_features.csv": "5275b620b20eac9b69afcca144722595098650340d5823d7aca077d84753eb96",
+    "output\\final_report\\combined\\evidence\\h2_run_calibration_scores.json": "13948f84456c2ff587ea04e46ad00aeb9187b3d89b08a491ff7705ea028d927a",
+    "output\\final_report\\combined\\evidence\\h3_calibration.json": "5689c9be9778a4efcb4220e3e423665a2848e21b1bbeb8c310e21ec5273a8b7e",
+    "output\\final_report\\combined\\evidence\\h3_study.json": "613d73cce8a197d92fb0bfbefa54df451672942118870138b3ee85e89b7b70a3",
+    "output\\final_report\\combined\\evidence\\h3_selection.json": "9816b7ebffd293b8b12b8c9cda17b36ff21be63054ec8e8ceba725d5e3f28f09"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "hypothesis": "H3",
+  "scene": "Marine_Corps_War_Memorial",
+  "title": "Marine Corps War Memorial",
+  "anchor": "statue",
+  "scene_key": "96648c830819d0a6",
+  "condition": "scalar_eta100",
+  "scalar": "scalar_eta1000",
+  "output_folder": "marine_corps_h3_v1",
+  "split": "confirmation",
+  "num_views": 50,
+  "scores": {
+    "baseline": 31.611619659752535,
+    "scalar": 36.43411142590585,
+    "H3": 28.020652420493786
+  },
+  "improvement_vs_original_percent": 11.359643314419344,
+  "improvement_vs_scalar_percent": 23.092257986096556,
+  "original_inference_seconds": 424.6993400320007,
+  "selection_reason": "Largest relative improvement versus original among confirmation scenes beating both controls; selected after observing results"
+}

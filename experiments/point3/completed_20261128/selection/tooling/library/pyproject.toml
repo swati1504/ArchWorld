@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "archworld-landmark-selection"
+version = "0.4.0"
+description = "CPU representative whole-landmark selection with training-only coverage audits"
+requires-python = ">=3.10"
+dependencies = ["numpy>=1.26,<3", "scipy>=1.11,<2", "matplotlib>=3.7,<4"]
+
+[project.scripts]
+archworld-select-landmarks = "archworld_landmark_selection.select_landmarks:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+archworld_landmark_selection = ["inputs/*.json", "seeds/*.json"]

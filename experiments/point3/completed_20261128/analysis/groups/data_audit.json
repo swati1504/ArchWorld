@@ -1,0 +1,82 @@
+{
+  "n_confirmation": 36,
+  "n_calibration": 18,
+  "calibration_excluded": true,
+  "one_row_per_landmark": true,
+  "three_study_plans_agree": true,
+  "confirmation_plan_matches_paired_table": true,
+  "executed_plan_anchor_matches_paired_table": true,
+  "prior_anchor_summary_reproduced": false,
+  "supplied_anchor_exceptions": [
+    {
+      "scene": "Forth_Bridge",
+      "supplied_anchor": "__MISSING__",
+      "executed_anchor": "bridge"
+    },
+    {
+      "scene": "Washington_Monument",
+      "supplied_anchor": "altar",
+      "executed_anchor": "obelisk"
+    }
+  ],
+  "h3_fallback_flag_matches_selection": true,
+  "composition": {
+    "anchor": {
+      "arch": 8,
+      "belfry": 1,
+      "bell tower": 1,
+      "bridge": 2,
+      "column": 1,
+      "dome": 1,
+      "door": 1,
+      "facade": 3,
+      "minaret": 1,
+      "obelisk": 1,
+      "pagoda": 1,
+      "pediment": 1,
+      "pillar": 2,
+      "pyramid": 1,
+      "railing": 1,
+      "relief": 1,
+      "roof": 1,
+      "solomonic column": 1,
+      "statue": 2,
+      "stone": 1,
+      "tower": 1,
+      "walkway": 1,
+      "window": 2
+    },
+    "region": {
+      "Africa": 4,
+      "East Asia": 4,
+      "Europe": 5,
+      "Latin America": 5,
+      "North America": 4,
+      "SE Asia": 4,
+      "South Asia": 5,
+      "West/Central Asia": 5
+    },
+    "building_type": {
+      "Church/Cathedral": 9,
+      "Misc": 7,
+      "Monument": 4,
+      "Mosque": 2,
+      "Public Building": 3,
+      "Temple/Shrine": 5,
+      "Tomb": 3,
+      "Tower": 3
+    }
+  },
+  "h3_rule_counts": {
+    "unsupported_anchor_fallback": 19,
+    "supported_anchor_same_scalar": 14,
+    "supported_anchor_different_setting": 3
+  },
+  "source_sha256": {
+    "paired_hypotheses.csv": "98baa33fb018caa5bb54d8fa664bbf49963923672dd1b5e400b2fd7fd7f456f3",
+    "h1_run_study.json": "31e43e62145cd6914b3285c2cde8b1e38b68d5ace8cc1bc0fef2d8bd092009bd",
+    "h2_run_study.json": "aaf6d2e4b4267c9f1cf175db8f4630c2ed3338f09d2209c92db33e69b9eb56cd",
+    "h3_study.json": "613d73cce8a197d92fb0bfbefa54df451672942118870138b3ee85e89b7b70a3",
+    "h3_selection.json": "9816b7ebffd293b8b12b8c9cda17b36ff21be63054ec8e8ceba725d5e3f28f09"
+  }
+}

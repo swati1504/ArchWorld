@@ -1,0 +1,5 @@
+\section{Introduction}
+\label{sec:introduction}
+VGGT predicts scene geometry from multiple images using a frozen pretrained model~\cite{vggt}. ArchAttend introduces an inference-time attention intervention that redirects intermediate representations toward architectural elements~\cite{archworld}. The intervention strength $\eta$ controls the size of this change. A small step may have little effect, while a large step may damage the reconstruction.
+
+AdaptiveAttend investigates how to choose intervention strength without accessing the new scene's ground-truth reconstruction. The project considers matched baseline evaluation, scene-level selection from Pass-1 statistics and predicted geometry, and structured strengths that vary by layer, view, or architectural anchor. Ground-truth reconstruction may be used for development and calibration, but cannot be used by a selector at inference time. The benchmark, pretrained backbone, supplied architectural anchors, and reference intervention are inherited components.

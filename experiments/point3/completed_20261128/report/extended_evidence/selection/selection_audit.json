@@ -1,0 +1,208 @@
+{
+  "status": "exploratory retrospective audit, not prospective validation",
+  "n_calibration": 18,
+  "n_confirmation": 36,
+  "candidate_methods": [
+    "scalar",
+    "H1",
+    "H2",
+    "H3"
+  ],
+  "minimum_group_support": 2,
+  "tie_tolerance": 1e-10,
+  "tie_order": [
+    "scalar",
+    "H1",
+    "H2",
+    "H3"
+  ],
+  "global_calibration_choice": "H3",
+  "global_calibration_means": {
+    "scalar": 9.689405855142855,
+    "H1": 10.262456147253678,
+    "H2": 9.965512623995235,
+    "H3": 9.267794349328499
+  },
+  "confirmation_fixed_means": {
+    "baseline": 13.924255003986703,
+    "scalar": 14.763027090109869,
+    "H1": 14.14062002859762,
+    "H2": 14.76697094296075,
+    "H3": 14.407692354622402
+  },
+  "policies": {
+    "anchor": {
+      "mean_error": 14.23959889673162,
+      "method_counts": {
+        "H3": 22,
+        "H1": 14
+      },
+      "group_supported_confirmation": 17,
+      "effects": {
+        "baseline": {
+          "mean_error": 14.23959889673162,
+          "mean_difference": 0.31534389274491736,
+          "pct_change_of_means": 2.264709262036857,
+          "wins": 21,
+          "ties": 0,
+          "losses": 15
+        },
+        "scalar": {
+          "mean_error": 14.23959889673162,
+          "mean_difference": -0.5234281933782495,
+          "pct_change_of_means": -3.5455343283147367,
+          "wins": 10,
+          "ties": 19,
+          "losses": 7
+        },
+        "H1": {
+          "mean_error": 14.23959889673162,
+          "mean_difference": 0.09897886813400011,
+          "pct_change_of_means": 0.6999613025017837,
+          "wins": 8,
+          "ties": 14,
+          "losses": 14
+        },
+        "H2": {
+          "mean_error": 14.23959889673162,
+          "mean_difference": -0.5273720462291294,
+          "pct_change_of_means": -3.5712946701538906,
+          "wins": 22,
+          "ties": 0,
+          "losses": 14
+        },
+        "H3": {
+          "mean_error": 14.23959889673162,
+          "mean_difference": -0.16809345789078076,
+          "pct_change_of_means": -1.1666924428522574,
+          "wins": 8,
+          "ties": 22,
+          "losses": 6
+        }
+      }
+    },
+    "building_type": {
+      "mean_error": 14.157398400380492,
+      "method_counts": {
+        "H3": 17,
+        "H2": 9,
+        "H1": 10
+      },
+      "group_supported_confirmation": 24,
+      "effects": {
+        "baseline": {
+          "mean_error": 14.157398400380492,
+          "mean_difference": 0.23314339639378942,
+          "pct_change_of_means": 1.6743689075432444,
+          "wins": 19,
+          "ties": 0,
+          "losses": 17
+        },
+        "scalar": {
+          "mean_error": 14.157398400380492,
+          "mean_difference": -0.6056286897293776,
+          "pct_change_of_means": -4.102334067618852,
+          "wins": 12,
+          "ties": 15,
+          "losses": 9
+        },
+        "H1": {
+          "mean_error": 14.157398400380492,
+          "mean_difference": 0.016778371782872156,
+          "pct_change_of_means": 0.11865372062143109,
+          "wins": 9,
+          "ties": 10,
+          "losses": 17
+        },
+        "H2": {
+          "mean_error": 14.157398400380492,
+          "mean_difference": -0.6095725425802574,
+          "pct_change_of_means": -4.127945703521785,
+          "wins": 18,
+          "ties": 9,
+          "losses": 9
+        },
+        "H3": {
+          "mean_error": 14.157398400380492,
+          "mean_difference": -0.2502939542419087,
+          "pct_change_of_means": -1.737224449837782,
+          "wins": 11,
+          "ties": 17,
+          "losses": 8
+        }
+      }
+    },
+    "region": {
+      "mean_error": 14.527416909223122,
+      "method_counts": {
+        "H3": 9,
+        "H1": 18,
+        "H2": 5,
+        "scalar": 4
+      },
+      "group_supported_confirmation": 36,
+      "effects": {
+        "baseline": {
+          "mean_error": 14.527416909223122,
+          "mean_difference": 0.6031619052364192,
+          "pct_change_of_means": 4.331735558302596,
+          "wins": 19,
+          "ties": 0,
+          "losses": 17
+        },
+        "scalar": {
+          "mean_error": 14.527416909223122,
+          "mean_difference": -0.23561018088674776,
+          "pct_change_of_means": -1.5959476294979402,
+          "wins": 12,
+          "ties": 13,
+          "losses": 11
+        },
+        "H1": {
+          "mean_error": 14.527416909223122,
+          "mean_difference": 0.38679688062550194,
+          "pct_change_of_means": 2.7353601174718856,
+          "wins": 5,
+          "ties": 18,
+          "losses": 13
+        },
+        "H2": {
+          "mean_error": 14.527416909223122,
+          "mean_difference": -0.23955403373762757,
+          "pct_change_of_means": -1.6222286524632201,
+          "wins": 18,
+          "ties": 5,
+          "losses": 13
+        },
+        "H3": {
+          "mean_error": 14.527416909223122,
+          "mean_difference": 0.11972455460072107,
+          "pct_change_of_means": 0.8309766175865763,
+          "wins": 12,
+          "ties": 12,
+          "losses": 12
+        }
+      }
+    }
+  },
+  "limitations": [
+    "The audit was initiated after inspecting confirmation outcomes and promising subgroups.",
+    "Rule fitting uses calibration errors only; this does not erase post-hoc analysis selection.",
+    "Only existing anchor, building-type, and region categories are used; no outcome-driven merges or cutoffs.",
+    "Original-model calibration errors are absent from these calibration-score files, so no-steering cannot be a learned candidate in this audit.",
+    "Fixed H1/H2 hyperparameters and H3 lookup were themselves fitted on these calibration landmarks.",
+    "Calibration omission checks retain those frozen candidates; they are not nested cross-validation.",
+    "Subgroup estimates use small, overlapping, deliberately selected cohorts.",
+    "No new p-values, multiple-testing discoveries, model runs, or final-evaluation outcomes are introduced."
+  ],
+  "evidence_sha256": {
+    "output\\final_report\\combined\\evidence\\h1_run_study.json": "31e43e62145cd6914b3285c2cde8b1e38b68d5ace8cc1bc0fef2d8bd092009bd",
+    "output\\final_report\\combined\\evidence\\h1_run_calibration_scores.json": "cf285bb9d3abcc4853157044f39c50675b4f351f4df5b140b4259a3292e1fa70",
+    "output\\final_report\\combined\\evidence\\h2_run_calibration_scores.json": "13948f84456c2ff587ea04e46ad00aeb9187b3d89b08a491ff7705ea028d927a",
+    "output\\final_report\\combined\\evidence\\h3_calibration.json": "5689c9be9778a4efcb4220e3e423665a2848e21b1bbeb8c310e21ec5273a8b7e",
+    "output\\final_report\\combined\\evidence\\h1_run_selection.json": "168d0b84240f6803819f3dcaa03785ce9d72029bc175186f867f6b731186a783",
+    "output\\final_report\\combined\\evidence\\h2_run_selection.json": "3cacf0dc75e1bf02c35699b16e8a5088ccaa3656c396607d2351707441b2747d",
+    "output\\final_report\\combined\\evidence\\h3_selection.json": "9816b7ebffd293b8b12b8c9cda17b36ff21be63054ec8e8ceba725d5e3f28f09",
+    "output\\analysis_20261126\\groups\\confirmation_with_groups.csv": "8540a7b9ed1640c1f4975ca2af43eabcc83dd2f336ef10a9dcc324f554ffbf61"
+  }
+}

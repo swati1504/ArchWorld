@@ -1,0 +1,115 @@
+{
+  "protocol": {
+    "status": "retrospective exploratory coverage extension; no prospective validation",
+    "representation": "saved appearance_distance from image-derived VGGT descriptors",
+    "neighbors": 3,
+    "neighbor_weights": "uniform",
+    "selection_objective": "minimum mean calibration CD_norm among the 3 nearest calibration scenes",
+    "candidate_methods": [
+      "scalar",
+      "H1",
+      "H2",
+      "H3"
+    ],
+    "method_tie_order": [
+      "scalar",
+      "H1",
+      "H2",
+      "H3"
+    ],
+    "distance_tie_order": "lexicographic calibration scene name",
+    "parameter_search": false,
+    "composite_distance_used": false,
+    "confirmation_errors_used_to_choose_neighbors_or_method": false,
+    "limitations": [
+      "This analysis was motivated after inspecting confirmation outcomes.",
+      "Original-VGGT calibration errors are absent from these calibration tables; no steering is an evaluation comparator but not a selectable action.",
+      "H1/H2 settings and H3 lookup were already selected on the calibration landmarks.",
+      "Saved appearance descriptors are inherited from dataset selection; matched reconstruction-view and compute-budget equivalence is not established.",
+      "Coverage means every landmark receives a choice, not that similarity predicts intervention response.",
+      "No significance claim or new model inference is introduced."
+    ],
+    "source_sha256": {
+      "output\\milestone\\source\\evidence\\selection_representation_distances.npz": "c54e8c335d4d3fd75aa473a37430b142bd13a0749b7da27c1c58076bdc80786f",
+      "output\\analysis_20261126\\groups\\confirmation_with_groups.csv": "8540a7b9ed1640c1f4975ca2af43eabcc83dd2f336ef10a9dcc324f554ffbf61",
+      "output\\selection_audit_20261127\\calibration_candidates.csv": "5ccd6142e0363bc42c43773562faad708935bd04c718c757161cfa90cdcf7259",
+      "output\\final_report\\combined\\evidence\\h1_run_study.json": "31e43e62145cd6914b3285c2cde8b1e38b68d5ace8cc1bc0fef2d8bd092009bd"
+    }
+  },
+  "coverage": {
+    "previously_highlighted_groups": [
+      "column",
+      "facade",
+      "statue",
+      "window"
+    ],
+    "highlighted_calibration": 9,
+    "highlighted_confirmation": 8,
+    "highlighted_all54": 17,
+    "categorical_selectors": {
+      "anchor": {
+        "direct_group_support": 17,
+        "fallback": 19,
+        "evaluated_confirmation": 36
+      },
+      "building_type": {
+        "direct_group_support": 24,
+        "fallback": 12,
+        "evaluated_confirmation": 36
+      },
+      "region": {
+        "direct_group_support": 36,
+        "fallback": 0,
+        "evaluated_confirmation": 36
+      }
+    },
+    "similarity_selector": {
+      "assigned": 36,
+      "omitted": 0,
+      "neighbors_per_scene": 3
+    }
+  },
+  "mean_error": 14.405448867546609,
+  "method_counts": {
+    "H3": 7,
+    "H2": 1,
+    "H1": 28
+  },
+  "effects": {
+    "baseline": {
+      "mean_difference": 0.48119386355990623,
+      "percent_change_of_means": 3.455796115642329,
+      "wins": 19,
+      "ties": 0,
+      "losses": 17
+    },
+    "scalar": {
+      "mean_difference": -0.3575782225632607,
+      "percent_change_of_means": -2.4221199377383207,
+      "wins": 16,
+      "ties": 7,
+      "losses": 13
+    },
+    "H1": {
+      "mean_difference": 0.26482883894898895,
+      "percent_change_of_means": 1.8728233869052868,
+      "wins": 1,
+      "ties": 28,
+      "losses": 7
+    },
+    "H2": {
+      "mean_difference": -0.36152207541414055,
+      "percent_change_of_means": -2.448180312743653,
+      "wins": 19,
+      "ties": 1,
+      "losses": 16
+    },
+    "H3": {
+      "mean_difference": -0.00224348707579192,
+      "percent_change_of_means": -0.01557145322493847,
+      "wins": 15,
+      "ties": 7,
+      "losses": 14
+    }
+  }
+}

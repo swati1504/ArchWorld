@@ -1,0 +1,676 @@
+{
+  "plan": {
+    "schema": "point3-shared54-v1",
+    "dataset_revision": "5d4404323a21aa3de948f8bc57a053b29fa3d921",
+    "num_views": 50,
+    "seed": 1729,
+    "view_rule": "seeded_uniform_registered_rgb_depth_validity_up_to50_v2",
+    "view_count_policy": "up_to_available",
+    "min_views": 2,
+    "view_count_decision": "User authorized keeping the exact 54 landmarks with all eligible distinct views up to 50 on 2026-11-15",
+    "calibration_size": 18,
+    "rows": [
+      {
+        "scene": "Aguada_Lighthouse",
+        "building_type": "Misc",
+        "region": "South Asia",
+        "anchor": "tower",
+        "extent_m": 88.88678339100593,
+        "supplied_anchor": "tower",
+        "split": "calibration"
+      },
+      {
+        "scene": "Al-Qibli_Chapel",
+        "building_type": "Mosque",
+        "region": "West/Central Asia",
+        "anchor": "arch",
+        "extent_m": 194.73069019786223,
+        "supplied_anchor": "arch",
+        "split": "calibration"
+      },
+      {
+        "scene": "Arch_of_Trajan_(Timgad)",
+        "building_type": "Arch/Gate",
+        "region": "Africa",
+        "anchor": "arch",
+        "extent_m": 26.37582196338112,
+        "supplied_anchor": "arch",
+        "split": "calibration"
+      },
+      {
+        "scene": "Badami_Cave_Temples",
+        "building_type": "Temple/Shrine",
+        "region": "South Asia",
+        "anchor": "relief",
+        "extent_m": 114.8947689817938,
+        "supplied_anchor": "relief",
+        "split": "confirmation"
+      },
+      {
+        "scene": "Basílica_de_Ocotlán",
+        "building_type": "Church/Cathedral",
+        "region": "Latin America",
+        "anchor": "arch",
+        "extent_m": 60.02157573042341,
+        "supplied_anchor": "arch",
+        "split": "calibration"
+      },
+      {
+        "scene": "Bell_tower_of_Vank_Cathedral",
+        "building_type": "Tower",
+        "region": "West/Central Asia",
+        "anchor": "arch",
+        "extent_m": 60.45862554893431,
+        "supplied_anchor": "arch",
+        "split": "confirmation"
+      },
+      {
+        "scene": "Calamba_Church",
+        "building_type": "Church/Cathedral",
+        "region": "SE Asia",
+        "anchor": "window",
+        "extent_m": 57.02581681915115,
+        "supplied_anchor": "window",
+        "split": "calibration"
+      },
+      {
+        "scene": "Caloocan_Cathedral",
+        "building_type": "Church/Cathedral",
+        "region": "SE Asia",
+        "anchor": "column",
+        "extent_m": 28.43151201298663,
+        "supplied_anchor": "column",
+        "split": "calibration"
+      },
+      {
+        "scene": "Cathedral_of_Lima",
+        "building_type": "Church/Cathedral",
+        "region": "Latin America",
+        "anchor": "bell tower",
+        "extent_m": 190.47782176471563,
+        "supplied_anchor": "bell tower",
+        "split": "confirmation"
+      },
+      {
+        "scene": "Cathedral_of_Saint_Paul_in_Macau",
+        "building_type": "Church/Cathedral",
+        "region": "East Asia",
+        "anchor": "arch",
+        "extent_m": 38.40750522242666,
+        "supplied_anchor": "arch",
+        "split": "calibration"
+      },
+      {
+        "scene": "Chennakesava_Temple,_Belur",
+        "building_type": "Temple/Shrine",
+        "region": "South Asia",
+        "anchor": "column",
+        "extent_m": 172.35867744098104,
+        "supplied_anchor": "column",
+        "split": "calibration"
+      },
+      {
+        "scene": "Chichén_Itzá",
+        "building_type": "Misc",
+        "region": "Latin America",
+        "anchor": "pyramid",
+        "extent_m": 136.25303345438968,
+        "supplied_anchor": "pyramid",
+        "split": "confirmation"
+      },
+      {
+        "scene": "Forth_Bridge",
+        "building_type": "Misc",
+        "region": "Europe",
+        "anchor": "bridge",
+        "extent_m": 1933.769300478761,
+        "supplied_anchor": "__MISSING__",
+        "split": "confirmation"
+      },
+      {
+        "scene": "Gangō-ji",
+        "building_type": "Temple/Shrine",
+        "region": "East Asia",
+        "anchor": "door",
+        "extent_m": 61.714918099219325,
+        "supplied_anchor": "door",
+        "split": "confirmation"
+      },
+      {
+        "scene": "Great_Mosque_of_Sousse",
+        "building_type": "Mosque",
+        "region": "Africa",
+        "anchor": "arch",
+        "extent_m": 104.89897103228932,
+        "supplied_anchor": "arch",
+        "split": "confirmation"
+      },
+      {
+        "scene": "Hassan_Tower",
+        "building_type": "Mosque",
+        "region": "Africa",
+        "anchor": "pillar",
+        "extent_m": 62.30115872572673,
+        "supplied_anchor": "pillar",
+        "split": "confirmation"
+      },
+      {
+        "scene": "Heian-jingū",
+        "building_type": "Temple/Shrine",
+        "region": "East Asia",
+        "anchor": "pagoda",
+        "extent_m": 60.104438592506696,
+        "supplied_anchor": "pagoda",
+        "split": "confirmation"
+      },
+      {
+        "scene": "Heinrichsturm_(Ponts_Couverts,_Strasbourg)",
+        "building_type": "Tower",
+        "region": "Europe",
+        "anchor": "bridge",
+        "extent_m": 103.25862728145871,
+        "supplied_anchor": "bridge",
+        "split": "confirmation"
+      },
+      {
+        "scene": "Hemiciclo_a_Juárez",
+        "building_type": "Misc",
+        "region": "Latin America",
+        "anchor": "column",
+        "extent_m": 37.92683987120781,
+        "supplied_anchor": "column",
+        "split": "calibration"
+      },
+      {
+        "scene": "Herald_Square",
+        "building_type": "Misc",
+        "region": "North America",
+        "anchor": "facade",
+        "extent_m": 353.724869592816,
+        "supplied_anchor": "facade",
+        "split": "confirmation"
+      },
+      {
+        "scene": "Hiroshima_Castle",
+        "building_type": "Misc",
+        "region": "East Asia",
+        "anchor": "wall",
+        "extent_m": 98.5683140899436,
+        "supplied_anchor": "wall",
+        "split": "calibration"
+      },
+      {
+        "scene": "Igreja_de_São_Francisco_de_Assis_(Ouro_Preto)",
+        "building_type": "Church/Cathedral",
+        "region": "Latin America",
+        "anchor": "window",
+        "extent_m": 44.86774712574009,
+        "supplied_anchor": "window",
+        "split": "confirmation"
+      },
+      {
+        "scene": "Iolani_Palace",
+        "building_type": "Misc",
+        "region": "North America",
+        "anchor": "facade",
+        "extent_m": 66.8104025578979,
+        "supplied_anchor": "facade",
+        "split": "calibration"
+      },
+      {
+        "scene": "Isa_Khan_Niyazi's_tomb",
+        "building_type": "Tomb",
+        "region": "South Asia",
+        "anchor": "arch",
+        "extent_m": 63.34583235292103,
+        "supplied_anchor": "arch",
+        "split": "calibration"
+      },
+      {
+        "scene": "Itmad-Ud-Daulah's_Tomb",
+        "building_type": "Tomb",
+        "region": "South Asia",
+        "anchor": "railing",
+        "extent_m": 69.7646487962952,
+        "supplied_anchor": "railing",
+        "split": "confirmation"
+      },
+      {
+        "scene": "Jahangiri_Mahal_(Agra_Fort)",
+        "building_type": "Misc",
+        "region": "South Asia",
+        "anchor": "facade",
+        "extent_m": 94.23310604768648,
+        "supplied_anchor": "facade",
+        "split": "confirmation"
+      },
+      {
+        "scene": "Jesuit_church,_Lviv",
+        "building_type": "Church/Cathedral",
+        "region": "Europe",
+        "anchor": "arch",
+        "extent_m": 87.6094860647781,
+        "supplied_anchor": "arch",
+        "split": "confirmation"
+      },
+      {
+        "scene": "Ka'ba-ye_Zartosht",
+        "building_type": "Tower",
+        "region": "West/Central Asia",
+        "anchor": "window",
+        "extent_m": 43.22534567333851,
+        "supplied_anchor": "window",
+        "split": "confirmation"
+      },
+      {
+        "scene": "Little_Temple_of_Abu_Simbel",
+        "building_type": "Temple/Shrine",
+        "region": "Africa",
+        "anchor": "statue",
+        "extent_m": 74.0235091131343,
+        "supplied_anchor": "statue",
+        "split": "calibration"
+      },
+      {
+        "scene": "Mansudae_Grand_Monument",
+        "building_type": "Monument",
+        "region": "East Asia",
+        "anchor": "statue",
+        "extent_m": 206.0302418737484,
+        "supplied_anchor": "statue",
+        "split": "confirmation"
+      },
+      {
+        "scene": "Marcelo_H._del_Pilar_Shrine",
+        "building_type": "Monument",
+        "region": "SE Asia",
+        "anchor": "statue",
+        "extent_m": 16.218483676328084,
+        "supplied_anchor": "statue",
+        "split": "calibration"
+      },
+      {
+        "scene": "Marine_Corps_War_Memorial",
+        "building_type": "Monument",
+        "region": "North America",
+        "anchor": "statue",
+        "extent_m": 32.35689549270823,
+        "supplied_anchor": "statue",
+        "split": "confirmation"
+      },
+      {
+        "scene": "Olumo_Rock",
+        "building_type": "Misc",
+        "region": "Africa",
+        "anchor": "stone",
+        "extent_m": 135.50463653063028,
+        "supplied_anchor": "stone",
+        "split": "confirmation"
+      },
+      {
+        "scene": "Oshakan_Saint_Mashtots",
+        "building_type": "Church/Cathedral",
+        "region": "West/Central Asia",
+        "anchor": "arch",
+        "extent_m": 52.8389691282155,
+        "supplied_anchor": "arch",
+        "split": "confirmation"
+      },
+      {
+        "scene": "Palace_of_Westminster",
+        "building_type": "Public Building",
+        "region": "Europe",
+        "anchor": "facade",
+        "extent_m": 639.7780983923102,
+        "supplied_anchor": "facade",
+        "split": "calibration"
+      },
+      {
+        "scene": "Palacio_Legislativo,_Uruguay",
+        "building_type": "Public Building",
+        "region": "Latin America",
+        "anchor": "column",
+        "extent_m": 206.91130122744485,
+        "supplied_anchor": "column",
+        "split": "confirmation"
+      },
+      {
+        "scene": "Palácio_Nereu_Ramos",
+        "building_type": "Public Building",
+        "region": "Latin America",
+        "anchor": "dome",
+        "extent_m": 263.82729642545195,
+        "supplied_anchor": "dome",
+        "split": "confirmation"
+      },
+      {
+        "scene": "Paoay_Church",
+        "building_type": "Church/Cathedral",
+        "region": "SE Asia",
+        "anchor": "arch",
+        "extent_m": 91.02423596442878,
+        "supplied_anchor": "arch",
+        "split": "confirmation"
+      },
+      {
+        "scene": "Paris_-_Eiffel_Tower,_Paris_Las_Vegas",
+        "building_type": "Tower",
+        "region": "North America",
+        "anchor": "tower",
+        "extent_m": 199.072634098776,
+        "supplied_anchor": "tower",
+        "split": "calibration"
+      },
+      {
+        "scene": "Patan_Durbar_Square",
+        "building_type": "Misc",
+        "region": "South Asia",
+        "anchor": "facade",
+        "extent_m": 139.86613282170572,
+        "supplied_anchor": "facade",
+        "split": "confirmation"
+      },
+      {
+        "scene": "Pila_Church",
+        "building_type": "Church/Cathedral",
+        "region": "SE Asia",
+        "anchor": "solomonic column",
+        "extent_m": 40.98663031569297,
+        "supplied_anchor": "solomonic column",
+        "split": "confirmation"
+      },
+      {
+        "scene": "Place_Jacques-Cartier",
+        "building_type": "Misc",
+        "region": "North America",
+        "anchor": "minaret",
+        "extent_m": 119.5657148641424,
+        "supplied_anchor": "minaret",
+        "split": "confirmation"
+      },
+      {
+        "scene": "Prambanan",
+        "building_type": "Temple/Shrine",
+        "region": "SE Asia",
+        "anchor": "tower",
+        "extent_m": 178.68683251422192,
+        "supplied_anchor": "tower",
+        "split": "confirmation"
+      },
+      {
+        "scene": "Reichstag_(building)",
+        "building_type": "Public Building",
+        "region": "Europe",
+        "anchor": "pediment",
+        "extent_m": 279.6197958928984,
+        "supplied_anchor": "pediment",
+        "split": "confirmation"
+      },
+      {
+        "scene": "Saint_Demetrius_Church_(Vladimir)",
+        "building_type": "Church/Cathedral",
+        "region": "Europe",
+        "anchor": "arch",
+        "extent_m": 52.53872082644992,
+        "supplied_anchor": "arch",
+        "split": "confirmation"
+      },
+      {
+        "scene": "Saint_Gregory_Church,_Sisian",
+        "building_type": "Church/Cathedral",
+        "region": "West/Central Asia",
+        "anchor": "belfry",
+        "extent_m": 42.06882534381856,
+        "supplied_anchor": "belfry",
+        "split": "confirmation"
+      },
+      {
+        "scene": "Saint_Lawrence_Deacon_&_Martyr_Parish_Church_of_Balagtas",
+        "building_type": "Church/Cathedral",
+        "region": "SE Asia",
+        "anchor": "arch",
+        "extent_m": 44.29047059519868,
+        "supplied_anchor": "arch",
+        "split": "confirmation"
+      },
+      {
+        "scene": "Salim_Chishti_Tomb_(Fatehpur_Sikri)",
+        "building_type": "Tomb",
+        "region": "South Asia",
+        "anchor": "roof",
+        "extent_m": 98.43822644701856,
+        "supplied_anchor": "roof",
+        "split": "confirmation"
+      },
+      {
+        "scene": "Soltaniyeh_Dome",
+        "building_type": "Tomb",
+        "region": "West/Central Asia",
+        "anchor": "arch",
+        "extent_m": 119.0260350282536,
+        "supplied_anchor": "arch",
+        "split": "confirmation"
+      },
+      {
+        "scene": "Stadhuis_(Gouda)",
+        "building_type": "Public Building",
+        "region": "Europe",
+        "anchor": "window",
+        "extent_m": 71.81792946287923,
+        "supplied_anchor": "window",
+        "split": "calibration"
+      },
+      {
+        "scene": "Taipei_Confucius_Temple",
+        "building_type": "Temple/Shrine",
+        "region": "East Asia",
+        "anchor": "pillar",
+        "extent_m": 53.79882176740915,
+        "supplied_anchor": "pillar",
+        "split": "confirmation"
+      },
+      {
+        "scene": "Unfinished_obelisk_in_Aswan",
+        "building_type": "Monument",
+        "region": "Africa",
+        "anchor": "walkway",
+        "extent_m": 63.198033564603485,
+        "supplied_anchor": "walkway",
+        "split": "confirmation"
+      },
+      {
+        "scene": "Washington_Monument",
+        "building_type": "Monument",
+        "region": "North America",
+        "anchor": "obelisk",
+        "extent_m": 187.78514355095515,
+        "supplied_anchor": "altar",
+        "split": "confirmation"
+      },
+      {
+        "scene": "Yererouk_Basilica",
+        "building_type": "Church/Cathedral",
+        "region": "West/Central Asia",
+        "anchor": "arch",
+        "extent_m": 17.168959663791107,
+        "supplied_anchor": "arch",
+        "split": "calibration"
+      }
+    ],
+    "heldout_ids": [
+      "Aguinaldo_Shrine",
+      "Al-Hakim_Mosque",
+      "Al-Nasir_Muhammad_Mosque",
+      "Al_Hirschfeld_Theatre",
+      "Alba_Iulia_Orthodox_Cathedral",
+      "Alexandria_Opera_House",
+      "Amir_Chakhmaq_Square",
+      "Assumption_Cathedral_in_Moscow",
+      "Bagrati_Cathedral",
+      "Bara_Gumbad",
+      "Basilica_of_Zapopan",
+      "Basílica_Colegiata_de_Nuestra_Señora_de_Guanajuato",
+      "Batu_Caves",
+      "Bayombong_Cathedral",
+      "Bhairavnath_Temple,_Bhaktapur",
+      "Bibi_Ka_Maqbara",
+      "Biete_Ghiorgis",
+      "Bonifacio_Monument_(Caloocan)",
+      "Boston_Public_Library,_McKim_Building",
+      "Cathedral_of_Holy_Wisdom,_Harbin",
+      "Cathedral_of_Saint_Paul_(Saint_Paul,_Minnesota)",
+      "Cathedral_of_Yerevan",
+      "Christuskirche_Windhoek",
+      "Chyasilin_Mandap",
+      "Dai_Anga_Tomb,_Lahore",
+      "Dendera",
+      "Diocesan_Shrine_and_Parish_of_the_Immaculate_Conception_of_Naic",
+      "Diocesan_Shrine_of_Our_Lady_of_Aranzazu",
+      "Disney_California_Adventure_Park",
+      "Disneyland",
+      "Eletsky_Monastery",
+      "Five-storied_Pagoda,_Kofuku-ji",
+      "Five-storied_Pagoda,_Toji",
+      "Gangaikonda_Cholapuram_Temple",
+      "Gateway_of_India",
+      "Great_Buddha_Statue,_Bodh_Gaya",
+      "Hall_of_hundred_columns",
+      "Hermesvilla",
+      "Hiroshima_Peace_Memorial_(Genbaku_Dome)",
+      "Humayun's_Tomb,_Delhi",
+      "Jameh_Mosque_of_Isfahan",
+      "Kronstadt_Naval_Cathedral",
+      "Kumano_Hongu_Taisha",
+      "Majestic_Theatre_(Broadway)",
+      "Millennium_of_Russia",
+      "Monumento_a_la_Revolución_(México)",
+      "Mortuary_temple_of_Ramses_III_at_Medinet_Habu",
+      "Mysore_Palace",
+      "New_York-New_York_Hotel_and_Casino",
+      "Notre-Dame_de_Montréal_Basilica",
+      "Nyatapola_Temple,_Bhaktapur",
+      "Obelisk_of_Ramses_II_in_Luxor",
+      "Palace_on_the_Water",
+      "Plaza_de_Francia,_Panama_City",
+      "Presidential_Palace_in_Warsaw",
+      "Qila-i-Kuhna_mosque",
+      "Royal_Mausoleum_of_Mauretania",
+      "Saint_Augustine_Parish_Church_in_Lubao,_Pampanga",
+      "Saint_Bartholomew_Parish_Church_(Magalang,_Pampanga)",
+      "Saint_Basil's_Cathedral",
+      "Saint_John_of_God_Church_(San_Rafael,_Bulacan)",
+      "Santa_Ana_Church_(Manila)",
+      "Shore_Temple",
+      "Solomon_R._Guggenheim_Museum",
+      "St._George's_Parish_Church_(Piran)",
+      "St._Patrick's_Cathedral_(Manhattan)",
+      "Surb_Astvatsatsin_church_in_Harichavank",
+      "Temple_of_Hadrianus_(Ephesus)",
+      "Templo_de_Santo_Domingo,_Cochabamba",
+      "Terminal_Tower",
+      "Theatro_Municipal_(Rio_de_Janeiro)",
+      "Tokyo_Metropolitan_Government_Building_No.1_(1991)",
+      "Tomb_of_the_Unknown_Soldier_(Arlington_National_Cemetery)",
+      "Toronto_City_Hall",
+      "Tour_du_Bourreau_(Ponts_Couverts,_Strasbourg)",
+      "Ugra_Narasimha_Temple_statue",
+      "Umayyad_Mosque",
+      "Yaquina_Head_Lighthouse",
+      "Yuantong_Temple"
+    ],
+    "anchor_overrides": {
+      "Forth_Bridge": {
+        "anchor": "bridge",
+        "provenance": "User explicitly authorized manual bridge anchor on 2026-11-15; requires SAM mask validation"
+      },
+      "Washington_Monument": {
+        "anchor": "obelisk",
+        "preserve_split_anchor": "altar",
+        "provenance": "User explicitly authorized manual obelisk anchor on 2026-11-15 after all 50 supplied-altar masks were empty; preserve the original calibration/confirmation allocation; review every selected-view overlay"
+      }
+    },
+    "calibration_anchor_counts": {
+      "tower": 2,
+      "arch": 6,
+      "window": 2,
+      "column": 3,
+      "wall": 1,
+      "facade": 2,
+      "statue": 2
+    },
+    "supported_anchor_types": [
+      "arch",
+      "column",
+      "facade",
+      "statue",
+      "tower",
+      "window"
+    ],
+    "fallback_anchor_types": [
+      "belfry",
+      "bell tower",
+      "bridge",
+      "dome",
+      "door",
+      "minaret",
+      "obelisk",
+      "pagoda",
+      "pediment",
+      "pillar",
+      "pyramid",
+      "railing",
+      "relief",
+      "roof",
+      "solomonic column",
+      "stone",
+      "walkway",
+      "wall"
+    ],
+    "candidate_definitions": {
+      "no_intervention": {
+        "eta": 0,
+        "strength": {
+          "mode": "fixed"
+        }
+      },
+      "scalar_eta100": {
+        "eta": 100,
+        "strength": {
+          "mode": "fixed"
+        }
+      },
+      "scalar_eta1000": {
+        "eta": 1000,
+        "strength": {
+          "mode": "fixed"
+        }
+      },
+      "view_eta100": {
+        "eta": 100,
+        "strength": {
+          "mode": "view_fixed",
+          "view_exponent": 0.5,
+          "view_min": 0.5,
+          "view_max": 2.0
+        }
+      },
+      "view_eta1000": {
+        "eta": 1000,
+        "strength": {
+          "mode": "view_fixed",
+          "view_exponent": 0.5,
+          "view_min": 0.5,
+          "view_max": 2.0
+        }
+      }
+    },
+    "sam_confidence": 0.5,
+    "sam_revision": "11dec2936de97f2857c1f76b66d982d5a001155d",
+    "vggt_revision": "97bbde571faddde3ace3cfa7724a20448026c4c8",
+    "weights_precision": "float32_weights_autocast_reference",
+    "min_anchor_calibration": 2,
+    "note": "36 confirmation landmarks are internal validation; 79 final holdout IDs stay untouched",
+    "hypothesis": "H2"
+  },
+  "source_sha256": "145b9848b597eff8b9c94a336585d65c8854a3d4897f48c4b833828e75d2aeb0"
+}

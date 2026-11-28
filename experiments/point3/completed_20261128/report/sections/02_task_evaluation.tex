@@ -1,0 +1,18 @@
+\section{Task, Data, and Evaluation}
+\label{sec:task}
+For landmark $s$, let $X_s=\{I_{s,v}\}_{v=1}^{V_s}$ denote its images, $M_s$ its anchor masks, and $G_s$ its ground-truth point cloud. A frozen model with an intervention policy $\pi$ produces reconstructed points $P_s(\pi)$. The policy may use images, masks, activations, or predictions to determine its strength. Calibration can use development-set ground truth. Applying the policy to a new landmark must not use $G_s$.
+
+ArchWorld contains 396 landmarks across eight geographic regions~\cite{archworld}. Experimental cohorts and their split definitions are specified within each study. In particular, the 54-landmark structured-intervention cohort uses 18 calibration and 36 internal confirmation landmarks, as detailed in Section~\ref{sec:point3}.
+
+After matched alignment and validity filtering, symmetric Chamfer distance averages unsquared nearest-neighbor Euclidean distances in both directions as follows.
+\begin{equation}
+ \mathrm{CD}(P,G)=\tfrac12\left[
+ \frac{1}{|P|}\sum_{p\in P}\min_{g\in G}\|p-g\|_2+
+ \frac{1}{|G|}\sum_{g\in G}\min_{p\in P}\|g-p\|_2\right].
+\end{equation}
+For landmark $s$, the reported error is
+\begin{equation}
+ C_s=\mathrm{CD}_{\mathrm{norm},s}
+      =1000\,\frac{\mathrm{Scale}_s\,\mathrm{CD}_s}{\mathrm{Extent}_s},
+\end{equation}
+where scale converts reconstruction coordinates to metres and extent is in metres. Lower values are better. For the structured-intervention study, we report the mean and median across 36 equally weighted confirmation landmarks and the paired difference $\Delta_{s,h}=C_{s,h}-C_{s,\mathrm{scalar}}$. Negative differences favor the structured rule. No-intervention scores provide a second essential reference.

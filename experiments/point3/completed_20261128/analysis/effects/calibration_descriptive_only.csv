@@ -1,0 +1,4 @@
+hypothesis,n_calibration,scalar_mean,selected_method_mean,selected_minus_scalar,percent_change_of_means,warning
+H1,18,9.689405855142855,10.262456147253678,0.5730502921108245,5.914194334285883,Descriptive only: settings were selected on these same calibration landmarks.
+H2,18,9.689405855142855,9.965512623995235,0.27610676885237967,2.8495737817177957,Descriptive only: settings were selected on these same calibration landmarks.
+H3,18,9.689405855142855,9.267794349328499,-0.42161150581435536,-4.3512627308368685,Descriptive only: settings were selected on these same calibration landmarks.

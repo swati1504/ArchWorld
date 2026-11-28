@@ -1,0 +1,5 @@
+method,improved,worsened,gross_error_reductions_sum,gross_error_increases_sum,mean_gain_contribution,mean_harm_contribution,net_mean_difference,largest_regression_share_of_gross_harm,top_three_regression_share_of_gross_harm,top_three_landmarks
+scalar,20,16,10.062011389388308,40.25780648982232,0.27950031637189743,1.1182724024950645,0.838772086123167,0.3957090621605225,0.6654930688434728,Palácio_Nereu_Ramos | Itmad-Ud-Daulah's_Tomb | Place_Jacques-Cartier
+H1,21,15,27.458213514539096,35.24735440053212,0.7627281531816416,0.9790931777925588,0.21636502461091725,0.40804031203382807,0.7423858963095488,"Palácio_Nereu_Ramos | Heian-jingū | Palacio_Legislativo,_Uruguay"
+H2,20,16,11.008312777826063,41.34608658089175,0.30578646605072396,1.1485024050247707,0.8427159389740468,0.4752512450564149,0.7431772855074239,"Palácio_Nereu_Ramos | Palacio_Legislativo,_Uruguay | Saint_Demetrius_Church_(Vladimir)"
+H3,22,14,13.591757762554305,30.995502385439437,0.3775488267376196,0.8609861773733177,0.4834373506356981,0.513957755955293,0.8643606047309661,Palácio_Nereu_Ramos | Itmad-Ud-Daulah's_Tomb | Place_Jacques-Cartier

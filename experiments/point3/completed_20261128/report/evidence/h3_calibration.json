@@ -1,0 +1,74 @@
+{
+  "Aguada_Lighthouse": {
+    "scalar_eta100": 6.4155632050649105,
+    "scalar_eta1000": 6.420935344413515
+  },
+  "Al-Qibli_Chapel": {
+    "scalar_eta100": 8.478394713968868,
+    "scalar_eta1000": 8.4285028113927
+  },
+  "Arch_of_Trajan_(Timgad)": {
+    "scalar_eta100": 7.326123000432862,
+    "scalar_eta1000": 7.412098952780236
+  },
+  "Basílica_de_Ocotlán": {
+    "scalar_eta100": 3.653206731758987,
+    "scalar_eta1000": 3.676398111287837
+  },
+  "Calamba_Church": {
+    "scalar_eta100": 2.212978619412223,
+    "scalar_eta1000": 2.1853195634960123
+  },
+  "Caloocan_Cathedral": {
+    "scalar_eta100": 2.7123610244915897,
+    "scalar_eta1000": 2.9716261987710606
+  },
+  "Cathedral_of_Saint_Paul_in_Macau": {
+    "scalar_eta100": 1.3437656081684755,
+    "scalar_eta1000": 1.4663537377428524
+  },
+  "Chennakesava_Temple,_Belur": {
+    "scalar_eta100": 17.26421984937397,
+    "scalar_eta1000": 23.97127020265741
+  },
+  "Hemiciclo_a_Juárez": {
+    "scalar_eta100": 2.3230896926773115,
+    "scalar_eta1000": 2.3249464696432143
+  },
+  "Hiroshima_Castle": {
+    "scalar_eta100": 6.249056330514066,
+    "scalar_eta1000": 5.995448895374436
+  },
+  "Iolani_Palace": {
+    "scalar_eta100": 13.592333490677513,
+    "scalar_eta1000": 13.556970823529818
+  },
+  "Isa_Khan_Niyazi's_tomb": {
+    "scalar_eta100": 46.68471675033858,
+    "scalar_eta1000": 28.855123436511107
+  },
+  "Little_Temple_of_Abu_Simbel": {
+    "scalar_eta100": 2.67721903215297,
+    "scalar_eta1000": 2.7530393906102772
+  },
+  "Marcelo_H._del_Pilar_Shrine": {
+    "scalar_eta100": 16.04303242284501,
+    "scalar_eta1000": 16.58804686451728
+  },
+  "Palace_of_Westminster": {
+    "scalar_eta100": 17.655178880396033,
+    "scalar_eta1000": 8.033230641638943
+  },
+  "Paris_-_Eiffel_Tower,_Paris_Las_Vegas": {
+    "scalar_eta100": 9.226329552394294,
+    "scalar_eta1000": 8.958159669669568
+  },
+  "Stadhuis_(Gouda)": {
+    "scalar_eta100": 9.706984523113952,
+    "scalar_eta1000": 8.93136320443412
+  },
+  "Yererouk_Basilica": {
+    "scalar_eta100": 21.731165185571896,
+    "scalar_eta1000": 21.88047107410099
+  }
+}

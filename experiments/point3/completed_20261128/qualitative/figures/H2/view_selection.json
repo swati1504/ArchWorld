@@ -1,0 +1,21 @@
+{
+  "camera": 0,
+  "zoom": [
+    -0.8517300645160674,
+    -0.8059550661891699,
+    -0.19658248537182788,
+    0.5246905422329906
+  ],
+  "selection": "Frontal reference view; left tower and adjacent roof edge selected from GT before inspecting steered geometry",
+  "final_zoom_world_bounds": [
+    [
+      -0.65,
+      -0.9
+    ],
+    [
+      0.1,
+      0.45
+    ]
+  ],
+  "final_crop_note": "Common crop inspected and adjusted for fit/legibility after reference-based camera choice."
+}

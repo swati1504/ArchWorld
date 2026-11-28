@@ -1,0 +1,65 @@
+{
+  "H1": {
+    "hypothesis": "H1",
+    "scene": "Herald_Square",
+    "title": "Herald Square",
+    "anchor": "facade",
+    "scene_key": "2d49ba56c4e719a4",
+    "condition": "layer_alpha0.02",
+    "scalar": "scalar_eta1000",
+    "output_folder": "herald_square_v1",
+    "split": "confirmation",
+    "num_views": 50,
+    "scores": {
+      "baseline": 6.9134191214451395,
+      "scalar": 6.58839485247084,
+      "H1": 5.14009893351246
+    },
+    "improvement_vs_original_percent": 25.650407660544015,
+    "improvement_vs_scalar_percent": 21.98253066777299,
+    "original_inference_seconds": 1343.9608545679948,
+    "selection_reason": "Largest relative improvement versus original among confirmation scenes beating both controls; selected after observing results"
+  },
+  "H2": {
+    "hypothesis": "H2",
+    "scene": "Itmad-Ud-Daulah's_Tomb",
+    "title": "Itmad-Ud-Daulah's Tomb",
+    "anchor": "railing",
+    "scene_key": "c7a2aef907ba92c0",
+    "condition": "view_eta100",
+    "scalar": "scalar_eta1000",
+    "output_folder": "itmad_h2_v1",
+    "split": "confirmation",
+    "num_views": 50,
+    "scores": {
+      "baseline": 17.794110977213652,
+      "scalar": 23.626902808901605,
+      "H2": 15.147550330601343
+    },
+    "improvement_vs_original_percent": 14.873238960920144,
+    "improvement_vs_scalar_percent": 35.88854851980686,
+    "original_inference_seconds": 617.9321910180079,
+    "selection_reason": "Largest relative improvement versus original among confirmation scenes beating both controls; selected after observing results"
+  },
+  "H3": {
+    "hypothesis": "H3",
+    "scene": "Marine_Corps_War_Memorial",
+    "title": "Marine Corps War Memorial",
+    "anchor": "statue",
+    "scene_key": "96648c830819d0a6",
+    "condition": "scalar_eta100",
+    "scalar": "scalar_eta1000",
+    "output_folder": "marine_corps_h3_v1",
+    "split": "confirmation",
+    "num_views": 50,
+    "scores": {
+      "baseline": 31.611619659752535,
+      "scalar": 36.43411142590585,
+      "H3": 28.020652420493786
+    },
+    "improvement_vs_original_percent": 11.359643314419344,
+    "improvement_vs_scalar_percent": 23.092257986096556,
+    "original_inference_seconds": 424.6993400320007,
+    "selection_reason": "Largest relative improvement versus original among confirmation scenes beating both controls; selected after observing results"
+  }
+}

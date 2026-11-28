@@ -1,0 +1,23 @@
+{
+  "gpu": "NVIDIA L4",
+  "capability": [
+    8,
+    9
+  ],
+  "torch_version": "2.3.1+cu121",
+  "packages": {
+    "torch": "2.3.1+cu121",
+    "numpy": "2.2.6",
+    "scipy": "1.18.1",
+    "open3d": "0.20.0",
+    "safetensors": "0.8.0",
+    "vggt": "0.0.1"
+  },
+  "total_memory_bytes": 23659151360,
+  "deterministic_algorithms": false,
+  "deterministic_warn_only": false,
+  "intervention_hook_determinism": "strict",
+  "cudnn_benchmark": false,
+  "cudnn_deterministic": false,
+  "cublas_workspace_config": null
+}

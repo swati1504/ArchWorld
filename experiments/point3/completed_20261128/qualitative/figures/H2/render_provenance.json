@@ -1,0 +1,98 @@
+{
+  "scene": "Itmad-Ud-Daulah's_Tomb",
+  "split": "confirmation",
+  "hypothesis": "H2",
+  "condition": "view_eta100",
+  "scalar_condition": "scalar_eta1000",
+  "source_files": {
+    "no_intervention_inter.npz": "14c09eb0e56d78deca2ba5caa5bb98d494bfd492b1b9fa76a0b19456d3dfd3c1",
+    "view_eta100_inter.npz": "1b548e67a0f43cada96ae40d0e84c86c25794521bb23899c2e355758de5b78cd",
+    "scalar_eta1000_inter.npz": "7ee454576fc6d98eef5d0bf4c7b7d534b5ff06c1cc5de5d2ecc78b217de4f263"
+  },
+  "reference_sha256": "d250433213edcc02f2491af4bb46d3da980fbe479721c1aa53861c890269f04a",
+  "framing": "Joint 0.001/0.999 projected quantile bounds of three conditions and reference, with 8% padding",
+  "camera": {
+    "index": 0,
+    "image": "000_p3_2599996e56579d8b70dd.jpg",
+    "cam_to_world": [
+      [
+        0.9999999999999999,
+        5.870804164388101e-18,
+        6.7911502004735e-18,
+        0.0
+      ],
+      [
+        1.140040083922553e-18,
+        -0.9999999999999999,
+        2.7938112212495137e-18,
+        0.0
+      ],
+      [
+        -6.5033488228597975e-18,
+        3.885057871054209e-18,
+        -0.9999999999999999,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ]
+  },
+  "basis": [
+    [
+      0.9999999999999999,
+      -5.870804164388101e-18,
+      6.7911502004735e-18
+    ],
+    [
+      1.140040083922553e-18,
+      0.9999999999999999,
+      2.7938112212495137e-18
+    ],
+    [
+      -6.5033488228597975e-18,
+      -3.885057871054209e-18,
+      -0.9999999999999999
+    ]
+  ],
+  "shared_bounds": [
+    [
+      -3.113242387554475,
+      -1.8947281557440756
+    ],
+    [
+      2.578270661375353,
+      0.7613112670898441
+    ]
+  ],
+  "zoom_world_bounds": [
+    [
+      -0.65,
+      -0.9
+    ],
+    [
+      0.1,
+      0.45
+    ]
+  ],
+  "detail_magnification": 1.8188601809532694,
+  "in_frame_fraction": {
+    "no_intervention": 1.0,
+    "view_eta100": 1.0,
+    "scalar_eta1000": 1.0
+  },
+  "point_splat": "Fixed five-pixel cross with nearest-depth z-buffer",
+  "geometry": "Saved evaluated GT-aligned points; no transformation after evaluation except shared camera projection",
+  "sampling": "Up to 1 million points per saved cloud; private RNG seed 1729; metrics use full clouds",
+  "mean_error": {
+    "no_intervention": 17.794110977213652,
+    "view_eta100": 15.147550330601343,
+    "scalar_eta1000": 23.626902808901605
+  },
+  "gain_vs_original_percent": 14.873238960920144,
+  "hypothesis_change_vs_scalar_percent": -35.88854851980686,
+  "paper_style_reference": "https://arxiv.org/html/2610.22514v1#S5.F7"
+}

@@ -1,0 +1,17 @@
+\section{Reference Intervention}
+\label{sec:reference}
+ArchAttend steers the intermediate activations of a frozen reconstruction model toward an architectural anchor~\cite{archworld}. Our structured-strength experiments use the VGGT backbone~\cite{vggt} and retain the inherited attention conventions.
+
+For a landmark with $V$ views, let $T_l$ be the input token representations at global attention layer $l\in\{0,\ldots,23\}$, $M$ its anchor-token mask, and $J_l$ the inherited attention objective. The reference intervention proposes
+\begin{equation}
+ \widetilde T_l = T_l + \eta\,g_l,
+ \qquad g_l=\nabla_{T_l}J_l(T_l,M).
+ \label{eq:structured-update}
+\end{equation}
+The model weights remain frozen. Under the executed masked-mean configuration, omitting numerical stabilizers,
+\begin{equation}
+ J_l=\frac{10^5}{H m^2}\sum_{h=1}^{H}\sum_{i,j}M_iM_j A^l_{hij},
+ \qquad m=\sum_iM_i,
+ \label{eq:structured-objective}
+\end{equation}
+where $A^l$ is the attention matrix computed by the reference hook and $H$ is the head count. We retain its attention conventions and objective scaling. An update is accepted only if the reference hook's monitored anchor-attention statistic increases. Otherwise the original tokens are restored. This acceptance statistic is an attention check, not a reconstruction-error check. Ground truth does not enter the update or the acceptance decision.

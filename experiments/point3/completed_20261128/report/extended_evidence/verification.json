@@ -1,0 +1,18 @@
+{
+  "numeric_tables": 15,
+  "all_numeric_and_text_values_identical_on_portable_rerun": true,
+  "byte_identical_tables": 14,
+  "one_schema_order_change": "bootstrap_ci_scope moved from last column to script-defined location; reordering exactly recovers original SHA-256",
+  "source_snapshot": "35 original files and SHA-256 manifest",
+  "independent_review": "108 joins,28 primary correlations,18 categorical test statistics independently reproduced",
+  "reporting_issue_resolved": "Sparse H3-versus-scalar bootstrap intervals explicitly labeled conditional on defined correlation",
+  "plots_visually_inspected": [
+    "paired_effects",
+    "landmark_changes",
+    "exploratory_correlations",
+    "h1_regional_pattern"
+  ],
+  "no_model_runs": true,
+  "final_holdout_outcomes_accessed": false,
+  "additional_isolated_correlation_rerun": "All5 CSVs byte-for-byte identical after stable schema ordering"
+}

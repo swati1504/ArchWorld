@@ -1,0 +1,21 @@
+{
+  "camera": 3,
+  "zoom": [
+    -1.4944206366393322,
+    0.11840675239687884,
+    1.512661918347466,
+    2.1974185288800347
+  ],
+  "selection": "Camera chosen from reference before inspecting steered geometry; detail crop covers central facade",
+  "final_zoom_world_bounds": [
+    [
+      -0.7408793591,
+      0.1184067524
+    ],
+    [
+      0.7591206409,
+      2.1974185289
+    ]
+  ],
+  "final_crop_note": "Common crop inspected and adjusted for fit/legibility after reference-based camera choice."
+}

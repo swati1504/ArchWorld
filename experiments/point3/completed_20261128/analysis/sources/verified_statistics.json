@@ -1,0 +1,231 @@
+{
+  "n_calibration": 18,
+  "n_confirmation": 36,
+  "hypotheses": {
+    "H1": {
+      "vs_scalar": {
+        "mean": -0.6224070615122497,
+        "median": -0.04327081474448885,
+        "wins": 23,
+        "ties": 0,
+        "losses": 13,
+        "percent_change_of_means": -4.215985364744168
+      },
+      "vs_baseline": {
+        "mean": 0.21636502461091725,
+        "median": -0.029649546862844267,
+        "wins": 21,
+        "ties": 0,
+        "losses": 15,
+        "percent_change_of_means": 1.5538714606201154
+      },
+      "selection": "layer_alpha0.02"
+    },
+    "H2": {
+      "vs_scalar": {
+        "mean": 0.003943852850879824,
+        "median": 0.0517673207405156,
+        "wins": 13,
+        "ties": 0,
+        "losses": 23,
+        "percent_change_of_means": 0.026714391478166455
+      },
+      "vs_baseline": {
+        "mean": 0.8427159389740467,
+        "median": -0.0058648603568387525,
+        "wins": 20,
+        "ties": 0,
+        "losses": 16,
+        "percent_change_of_means": 6.052143821933487
+      },
+      "selection": "view_eta100"
+    },
+    "H3": {
+      "vs_scalar": {
+        "mean": -0.3553347354874688,
+        "median": 0.0,
+        "wins": 2,
+        "ties": 33,
+        "losses": 1,
+        "percent_change_of_means": -2.406923277445694
+      },
+      "vs_baseline": {
+        "mean": 0.48343735063569815,
+        "median": -0.029721919649275952,
+        "wins": 22,
+        "ties": 0,
+        "losses": 14,
+        "percent_change_of_means": 3.4719081954279307
+      },
+      "selection": {
+        "arch": "scalar_eta1000",
+        "belfry": "scalar_eta1000",
+        "bell tower": "scalar_eta1000",
+        "bridge": "scalar_eta1000",
+        "column": "scalar_eta100",
+        "dome": "scalar_eta1000",
+        "door": "scalar_eta1000",
+        "facade": "scalar_eta1000",
+        "minaret": "scalar_eta1000",
+        "obelisk": "scalar_eta1000",
+        "pagoda": "scalar_eta1000",
+        "pediment": "scalar_eta1000",
+        "pillar": "scalar_eta1000",
+        "pyramid": "scalar_eta1000",
+        "railing": "scalar_eta1000",
+        "relief": "scalar_eta1000",
+        "roof": "scalar_eta1000",
+        "solomonic column": "scalar_eta1000",
+        "statue": "scalar_eta100",
+        "stone": "scalar_eta1000",
+        "tower": "scalar_eta1000",
+        "walkway": "scalar_eta1000",
+        "wall": "scalar_eta1000",
+        "window": "scalar_eta1000"
+      }
+    }
+  },
+  "conditions": {
+    "baseline": {
+      "mean": 13.924255003986703,
+      "median": 7.352335239091023
+    },
+    "scalar": {
+      "mean": 14.763027090109869,
+      "median": 6.848672144790398
+    },
+    "H1": {
+      "mean": 14.14062002859762,
+      "median": 6.577174197450995
+    },
+    "H2": {
+      "mean": 14.76697094296075,
+      "median": 6.99406971180888
+    },
+    "H3": {
+      "mean": 14.407692354622402,
+      "median": 6.848672144790398
+    }
+  },
+  "numeric_conditions_complete": {
+    "H1": 198,
+    "H2": 198,
+    "H3": 129
+  },
+  "calibration_means": {
+    "H1": {
+      "scalar_eta100": 10.849762145186306,
+      "scalar_eta1000": 9.689405855142855,
+      "layer_alpha0.01": 11.527233144427433,
+      "layer_alpha0.02": 10.262456147253678
+    },
+    "H2": {
+      "scalar_eta100": 10.849762145186306,
+      "scalar_eta1000": 9.689405855142855,
+      "view_eta100": 9.965512623995235,
+      "view_eta1000": 10.69762342181258
+    },
+    "H3": {
+      "scalar_eta100": 10.849762145186306,
+      "scalar_eta1000": 9.689405855142855
+    }
+  },
+  "h3_changed_landmarks": [
+    {
+      "scene": "Mansudae_Grand_Monument",
+      "anchor": "statue",
+      "num_views": "50",
+      "baseline": "7.791251356736907",
+      "scalar": "4.9141282646364255",
+      "H1": "6.030638743215204",
+      "H1_minus_scalar": "1.1165104785787783",
+      "H2": "5.7559464357730965",
+      "H2_minus_scalar": "0.841818171136671",
+      "H3": "5.115501472148253",
+      "H3_minus_scalar": "0.20137320751182752",
+      "H3_fallback": "False"
+    },
+    {
+      "scene": "Marine_Corps_War_Memorial",
+      "anchor": "statue",
+      "num_views": "50",
+      "baseline": "31.611619659752535",
+      "scalar": "36.43411142590585",
+      "H1": "34.06400842463077",
+      "H1_minus_scalar": "-2.3701030012750763",
+      "H2": "30.013747724202616",
+      "H2_minus_scalar": "-6.420363701703231",
+      "H3": "28.020652420493786",
+      "H3_minus_scalar": "-8.413459005412061",
+      "H3_fallback": "False"
+    },
+    {
+      "scene": "Palacio_Legislativo,_Uruguay",
+      "anchor": "column",
+      "num_views": "50",
+      "baseline": "17.092373118538646",
+      "scalar": "21.532185456768214",
+      "H1": "22.327880017445146",
+      "H1_minus_scalar": "0.7956945606769317",
+      "H2": "23.07045666279156",
+      "H2_minus_scalar": "1.5382712060233459",
+      "H3": "16.95222077711957",
+      "H3_minus_scalar": "-4.5799646796486435",
+      "H3_fallback": "False"
+    }
+  ],
+  "h3_supported_confirmation": 17,
+  "h3_fallback_confirmation": 19,
+  "confirmation_views": 1776,
+  "all_views": 2622,
+  "subset_audit": {
+    "selected_count": 54,
+    "training_count": 317,
+    "full_count": 396,
+    "scope": "Post-selection metadata comparison; no held-out image descriptors or outcomes used.",
+    "table": {
+      "building_type_tv": {
+        "training317": 0.07822175487790631,
+        "full396": 0.07744107744107745
+      },
+      "region_tv": {
+        "training317": 0.03312302839116719,
+        "full396": 0.023569023569023566
+      },
+      "anchor_tv": {
+        "training317": 0.2016590723215329,
+        "full396": 0.1978114478114478
+      },
+      "extent_m_ks": {
+        "training317": 0.044397710012851976,
+        "full396": 0.05387205387205385
+      },
+      "image_count_ks": {
+        "training317": 0.09825914242318035,
+        "full396": null
+      },
+      "duplicate_fraction_ks": {
+        "training317": 0.061222105386143255,
+        "full396": null
+      },
+      "median_megapixels_ks": {
+        "training317": 0.0720878607313939,
+        "full396": null
+      }
+    },
+    "anchor_categories": {
+      "selected": 25,
+      "training": 25,
+      "full": 27,
+      "absent_from_subset": [
+        "gate",
+        "spire"
+      ]
+    },
+    "coverage_training_unselected": {
+      "unselected_count": 263,
+      "coverage_mean": 0.5017510534526352,
+      "coverage_p95": 0.6902829693620005
+    }
+  }
+}

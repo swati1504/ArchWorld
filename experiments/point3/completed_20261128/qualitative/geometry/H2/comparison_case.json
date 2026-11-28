@@ -1,0 +1,21 @@
+{
+  "hypothesis": "H2",
+  "scene": "Itmad-Ud-Daulah's_Tomb",
+  "title": "Itmad-Ud-Daulah's Tomb",
+  "anchor": "railing",
+  "scene_key": "c7a2aef907ba92c0",
+  "condition": "view_eta100",
+  "scalar": "scalar_eta1000",
+  "output_folder": "itmad_h2_v1",
+  "split": "confirmation",
+  "num_views": 50,
+  "scores": {
+    "baseline": 17.794110977213652,
+    "scalar": 23.626902808901605,
+    "H2": 15.147550330601343
+  },
+  "improvement_vs_original_percent": 14.873238960920144,
+  "improvement_vs_scalar_percent": 35.88854851980686,
+  "original_inference_seconds": 617.9321910180079,
+  "selection_reason": "Largest relative improvement versus original among confirmation scenes beating both controls; selected after observing results"
+}

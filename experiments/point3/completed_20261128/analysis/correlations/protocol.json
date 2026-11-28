@@ -1,0 +1,196 @@
+{
+  "seed": 20261126,
+  "permutations_per_test": 49999,
+  "bootstrap_replicates": 4000,
+  "unit": "landmark",
+  "split": "confirmation only",
+  "n": 36,
+  "primary_outcomes": [
+    "hypothesis error minus baseline error",
+    "hypothesis error minus scalar error"
+  ],
+  "positive_delta": "worse than comparator; positive rho means larger feature associated with worse paired effect",
+  "feature_sets": {
+    "H1": [
+      "extent_m",
+      "coefficient_min",
+      "coefficient_max",
+      "coefficient_max_to_min",
+      "scalar_mean_applied_relative_update"
+    ],
+    "H2": [
+      "extent_m",
+      "coefficient_min",
+      "coefficient_max",
+      "coefficient_max_to_min",
+      "mean_applied_relative_update",
+      "scalar_mean_applied_relative_update"
+    ],
+    "H3": [
+      "extent_m",
+      "mean_applied_relative_update",
+      "scalar_mean_applied_relative_update"
+    ]
+  },
+  "primary_test_count": 28,
+  "primary_multiplicity": "BH across all 28 primary feature-outcome tests, pooled across H1/H2/H3 and both comparators",
+  "sensitivity_outcomes": "log(hypothesis_error / comparator_error), identical 28 feature-outcome tests",
+  "sensitivity_multiplicity": "Separate BH across 28 sensitivity tests plus joint BH across all 56 primary+sensitivity tests",
+  "permutation": "Two-sided Spearman rho; average ranks for ties, permutation of outcome ranks, (exceedances+1)/(B+1)",
+  "bootstrap": "Paired resampling of 36 landmarks; pointwise unadjusted percentile interval; ties reranked each replicate. H3-versus-scalar intervals are conditional on nonconstant resamples and must not be read as unconditional 95% intervals; undefined replicates are discarded and counted.",
+  "rank_adjustment": "Descriptive residual correlation after separately regressing feature and outcome ranks on intercept+baseline-error ranks; no p value; does not establish causal/confounding control",
+  "scope_limit": "Exploratory associations within nonrandom selected confirmation scenes; not random-sample population confidence or causal evidence",
+  "excluded_features": [
+    {
+      "hypothesis": "H1",
+      "feature": "accepted_layers",
+      "reason": "Constant 24 in all 36 selected runs"
+    },
+    {
+      "hypothesis": "H1",
+      "feature": "clipped_view_steps",
+      "reason": "Constant zero in all 36 selected runs"
+    },
+    {
+      "hypothesis": "H1",
+      "feature": "num_views",
+      "reason": "35 scenes have 50, one has 26; singleton contrast, not a useful continuous correlation"
+    },
+    {
+      "hypothesis": "H1",
+      "feature": "image_count/duplicate_fraction/median_megapixels",
+      "reason": "Not present in assigned source metadata; num_views is not substituted for these features"
+    },
+    {
+      "hypothesis": "H2",
+      "feature": "accepted_layers",
+      "reason": "Constant 24 in all 36 selected runs"
+    },
+    {
+      "hypothesis": "H2",
+      "feature": "clipped_view_steps",
+      "reason": "Constant zero in all 36 selected runs"
+    },
+    {
+      "hypothesis": "H2",
+      "feature": "num_views",
+      "reason": "35 scenes have 50, one has 26; singleton contrast, not a useful continuous correlation"
+    },
+    {
+      "hypothesis": "H2",
+      "feature": "image_count/duplicate_fraction/median_megapixels",
+      "reason": "Not present in assigned source metadata; num_views is not substituted for these features"
+    },
+    {
+      "hypothesis": "H3",
+      "feature": "accepted_layers",
+      "reason": "Constant 24 in all 36 selected runs"
+    },
+    {
+      "hypothesis": "H3",
+      "feature": "clipped_view_steps",
+      "reason": "Constant zero in all 36 selected runs"
+    },
+    {
+      "hypothesis": "H3",
+      "feature": "num_views",
+      "reason": "35 scenes have 50, one has 26; singleton contrast, not a useful continuous correlation"
+    },
+    {
+      "hypothesis": "H3",
+      "feature": "image_count/duplicate_fraction/median_megapixels",
+      "reason": "Not present in assigned source metadata; num_views is not substituted for these features"
+    },
+    {
+      "hypothesis": "H1",
+      "feature": "mean_applied_relative_update",
+      "reason": "Fixed target 0.02; variation under 1.2e-9 is floating-point noise"
+    },
+    {
+      "hypothesis": "H3",
+      "feature": "coefficient_min/coefficient_max",
+      "reason": "Binary policy 100 for 3 scenes vs 1000 for 33; analyzed as policy/category distinction elsewhere"
+    },
+    {
+      "hypothesis": "H3",
+      "feature": "coefficient_max_to_min",
+      "reason": "Constant 1"
+    },
+    {
+      "hypothesis": "all",
+      "feature": "Model_Diagonal/Scale",
+      "reason": "Arbitrary reconstruction units or linked metric scale; use physically interpretable extent_m rather than expanding a redundant/coupled test family"
+    },
+    {
+      "hypothesis": "all",
+      "feature": "baseline_error",
+      "reason": "Mathematically coupled to H-baseline; separate descriptive diagnostic with no inferential p value"
+    }
+  ],
+  "source_sha256": {
+    "paired_hypotheses.csv": "98baa33fb018caa5bb54d8fa664bbf49963923672dd1b5e400b2fd7fd7f456f3",
+    "training_metadata.json": "a4a5392f3f0fa6c7a6a41a4aaaca3e8ad13394c7cfd963f18c1d18de306d52aa",
+    "ArchWorld_metadata.csv": "9d92f75b5a6808cb4ee38cade93f9b517b4eefda8fc921f48248de4315f4ec87",
+    "h1_run_strength_diagnostics.csv": "0bb755057611f5ca45c9c98282b5f706f91e841c6f294fe3a491ba725ce03a06",
+    "h2_run_strength_diagnostics.csv": "f925df72bae9d6d82ced56a668a12dab7b4602a5006afce461fd6d36b7438460",
+    "h3_strength_diagnostics.csv": "ef3f18e74524c942c7c38577e7c4206f7c036f4df02e94c44ab7e6f5ce7546c0",
+    "h1_run_selection.json": "168d0b84240f6803819f3dcaa03785ce9d72029bc175186f867f6b731186a783",
+    "h2_run_selection.json": "3cacf0dc75e1bf02c35699b16e8a5088ccaa3656c396607d2351707441b2747d",
+    "h3_selection.json": "9816b7ebffd293b8b12b8c9cda17b36ff21be63054ec8e8ceba725d5e3f28f09",
+    "h1_run_study.json": "31e43e62145cd6914b3285c2cde8b1e38b68d5ace8cc1bc0fef2d8bd092009bd",
+    "h2_run_study.json": "aaf6d2e4b4267c9f1cf175db8f4630c2ed3338f09d2209c92db33e69b9eb56cd",
+    "h3_study.json": "613d73cce8a197d92fb0bfbefa54df451672942118870138b3ee85e89b7b70a3"
+  },
+  "join_audit": {
+    "H1": {
+      "diagnostic_rows": 198,
+      "unique_scene_condition_rows": 198,
+      "confirmation_joined": 36,
+      "missing_confirmation_rows": 0,
+      "calibration_scenes_excluded": 18,
+      "frozen_setting": "layer_alpha0.02"
+    },
+    "H2": {
+      "diagnostic_rows": 198,
+      "unique_scene_condition_rows": 198,
+      "confirmation_joined": 36,
+      "missing_confirmation_rows": 0,
+      "calibration_scenes_excluded": 18,
+      "frozen_setting": "view_eta100"
+    },
+    "H3": {
+      "diagnostic_rows": 129,
+      "unique_scene_condition_rows": 129,
+      "confirmation_joined": 36,
+      "missing_confirmation_rows": 0,
+      "calibration_scenes_excluded": 18,
+      "frozen_setting": {
+        "arch": "scalar_eta1000",
+        "belfry": "scalar_eta1000",
+        "bell tower": "scalar_eta1000",
+        "bridge": "scalar_eta1000",
+        "column": "scalar_eta100",
+        "dome": "scalar_eta1000",
+        "door": "scalar_eta1000",
+        "facade": "scalar_eta1000",
+        "minaret": "scalar_eta1000",
+        "obelisk": "scalar_eta1000",
+        "pagoda": "scalar_eta1000",
+        "pediment": "scalar_eta1000",
+        "pillar": "scalar_eta1000",
+        "pyramid": "scalar_eta1000",
+        "railing": "scalar_eta1000",
+        "relief": "scalar_eta1000",
+        "roof": "scalar_eta1000",
+        "solomonic column": "scalar_eta1000",
+        "statue": "scalar_eta100",
+        "stone": "scalar_eta1000",
+        "tower": "scalar_eta1000",
+        "walkway": "scalar_eta1000",
+        "wall": "scalar_eta1000",
+        "window": "scalar_eta1000"
+      }
+    }
+  },
+  "protocol_written_before_outcome_correlation_calculation": true
+}

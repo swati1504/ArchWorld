@@ -1,0 +1,7 @@
+{
+  "independent_numpy_oracles": true,
+  "gross_harm_and_concentration": true,
+  "acceptance_failure_counts": true,
+  "matched_strength_rows": 21,
+  "new_model_runs": 0
+}

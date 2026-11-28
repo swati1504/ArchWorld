@@ -1,0 +1,98 @@
+{
+  "scene": "Herald_Square",
+  "split": "confirmation",
+  "hypothesis": "H1",
+  "condition": "layer_alpha0.02",
+  "scalar_condition": "scalar_eta1000",
+  "source_files": {
+    "no_intervention_inter.npz": "42fee7a23d8e94077ce0e84ad92b57ad816b87ff3a9313f6ec8574ae68993645",
+    "layer_alpha0.02_inter.npz": "bcd274672b8757e21fadc9447fe13c71d817a06b04797b43883f6f8e037a5ef6",
+    "scalar_eta1000_inter.npz": "3b4823c576ad23862c0b931dcb74804eb4cb6debc941b3284a5ad49e6db38139"
+  },
+  "reference_sha256": "ac1efc6c0775b4767842889478134cad4824564c62dce2ae460d06e8e3f9e769",
+  "framing": "Joint 0.001/0.999 projected quantile bounds of three conditions and reference, with 8% padding",
+  "camera": {
+    "index": 3,
+    "image": "003_p3_b574bd687d47ea4a5463.jpg",
+    "cam_to_world": [
+      [
+        0.7662325782496429,
+        -0.014571377632142503,
+        -0.6423980938505393,
+        -0.15375601907028824
+      ],
+      [
+        -0.17742553961662536,
+        -0.9656734223125806,
+        -0.1897235339404622,
+        -0.06717470653027946
+      ],
+      [
+        -0.6175822325169775,
+        0.25935018101595747,
+        -0.7425157706650654,
+        -0.2700194791744923
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ]
+  },
+  "basis": [
+    [
+      0.7662325782496429,
+      0.014571377632142503,
+      -0.6423980938505393
+    ],
+    [
+      -0.17742553961662536,
+      0.9656734223125806,
+      -0.1897235339404622
+    ],
+    [
+      -0.6175822325169775,
+      -0.25935018101595747,
+      -0.7425157706650654
+    ]
+  ],
+  "shared_bounds": [
+    [
+      -5.48774932964862,
+      -1.1504604163554473
+    ],
+    [
+      4.744752321522421,
+      3.6247070208577052
+    ]
+  ],
+  "zoom_world_bounds": [
+    [
+      -0.7408793591,
+      0.1184067524
+    ],
+    [
+      0.7591206409,
+      2.1974185289
+    ]
+  ],
+  "detail_magnification": 1.8964479229379894,
+  "in_frame_fraction": {
+    "no_intervention": 0.999928,
+    "layer_alpha0.02": 0.999885,
+    "scalar_eta1000": 0.999949
+  },
+  "point_splat": "Fixed five-pixel cross with nearest-depth z-buffer",
+  "geometry": "Saved evaluated GT-aligned points; no transformation after evaluation except shared camera projection",
+  "sampling": "Up to 1 million points per saved cloud; private RNG seed 1729; metrics use full clouds",
+  "mean_error": {
+    "no_intervention": 6.9134191214451395,
+    "layer_alpha0.02": 5.14009893351246,
+    "scalar_eta1000": 6.58839485247084
+  },
+  "gain_vs_original_percent": 25.650407660544015,
+  "hypothesis_change_vs_scalar_percent": -21.98253066777299,
+  "paper_style_reference": "https://arxiv.org/html/2610.22514v1#S5.F7"
+}

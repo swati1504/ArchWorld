@@ -1,0 +1,110 @@
+{
+  "Aguada_Lighthouse": {
+    "scalar_eta100": 6.4155632050649105,
+    "scalar_eta1000": 6.420935344413515,
+    "layer_alpha0.01": 6.335683263772844,
+    "layer_alpha0.02": 6.230786518590037
+  },
+  "Al-Qibli_Chapel": {
+    "scalar_eta100": 8.478394713968868,
+    "scalar_eta1000": 8.4285028113927,
+    "layer_alpha0.01": 8.324330504816146,
+    "layer_alpha0.02": 8.28448223673475
+  },
+  "Arch_of_Trajan_(Timgad)": {
+    "scalar_eta100": 7.326123000432862,
+    "scalar_eta1000": 7.412098952780236,
+    "layer_alpha0.01": 7.4604546573899215,
+    "layer_alpha0.02": 7.274244104993552
+  },
+  "Basílica_de_Ocotlán": {
+    "scalar_eta100": 3.653206731758987,
+    "scalar_eta1000": 3.676398111287837,
+    "layer_alpha0.01": 3.643252657778012,
+    "layer_alpha0.02": 3.7158486774484154
+  },
+  "Calamba_Church": {
+    "scalar_eta100": 2.212978619412223,
+    "scalar_eta1000": 2.1853195634960123,
+    "layer_alpha0.01": 2.2037616568164817,
+    "layer_alpha0.02": 2.160603594817194
+  },
+  "Caloocan_Cathedral": {
+    "scalar_eta100": 2.7123610244915897,
+    "scalar_eta1000": 2.9716261987710606,
+    "layer_alpha0.01": 2.967034543286218,
+    "layer_alpha0.02": 3.1876028354433514
+  },
+  "Cathedral_of_Saint_Paul_in_Macau": {
+    "scalar_eta100": 1.3437656081684755,
+    "scalar_eta1000": 1.4663537377428524,
+    "layer_alpha0.01": 1.4349854499873038,
+    "layer_alpha0.02": 1.4286789952642154
+  },
+  "Chennakesava_Temple,_Belur": {
+    "scalar_eta100": 17.26421984937397,
+    "scalar_eta1000": 23.97127020265741,
+    "layer_alpha0.01": 36.62340493022129,
+    "layer_alpha0.02": 49.99727062169751
+  },
+  "Hemiciclo_a_Juárez": {
+    "scalar_eta100": 2.3230896926773115,
+    "scalar_eta1000": 2.3249464696432143,
+    "layer_alpha0.01": 2.335715938740633,
+    "layer_alpha0.02": 2.367296925800129
+  },
+  "Hiroshima_Castle": {
+    "scalar_eta100": 6.249056330514066,
+    "scalar_eta1000": 5.995448895374436,
+    "layer_alpha0.01": 6.392654300927552,
+    "layer_alpha0.02": 6.217774758396485
+  },
+  "Iolani_Palace": {
+    "scalar_eta100": 13.592333490677513,
+    "scalar_eta1000": 13.556970823529818,
+    "layer_alpha0.01": 12.638782731117182,
+    "layer_alpha0.02": 11.840209700967568
+  },
+  "Isa_Khan_Niyazi's_tomb": {
+    "scalar_eta100": 46.68471675033858,
+    "scalar_eta1000": 28.855123436511107,
+    "layer_alpha0.01": 45.51606198253926,
+    "layer_alpha0.02": 16.00831586855436
+  },
+  "Little_Temple_of_Abu_Simbel": {
+    "scalar_eta100": 2.67721903215297,
+    "scalar_eta1000": 2.7530393906102772,
+    "layer_alpha0.01": 2.7666293845852996,
+    "layer_alpha0.02": 2.6916685876813364
+  },
+  "Marcelo_H._del_Pilar_Shrine": {
+    "scalar_eta100": 16.04303242284501,
+    "scalar_eta1000": 16.58804686451728,
+    "layer_alpha0.01": 16.4645053840162,
+    "layer_alpha0.02": 16.30932699673312
+  },
+  "Palace_of_Westminster": {
+    "scalar_eta100": 17.655178880396033,
+    "scalar_eta1000": 8.033230641638943,
+    "layer_alpha0.01": 11.715914741800404,
+    "layer_alpha0.02": 8.147143318007151
+  },
+  "Paris_-_Eiffel_Tower,_Paris_Las_Vegas": {
+    "scalar_eta100": 9.226329552394294,
+    "scalar_eta1000": 8.958159669669568,
+    "layer_alpha0.01": 9.129367429214396,
+    "layer_alpha0.02": 8.941135115892493
+  },
+  "Stadhuis_(Gouda)": {
+    "scalar_eta100": 9.706984523113952,
+    "scalar_eta1000": 8.93136320443412,
+    "layer_alpha0.01": 8.849472757621744,
+    "layer_alpha0.02": 8.667170796371718
+  },
+  "Yererouk_Basilica": {
+    "scalar_eta100": 21.731165185571896,
+    "scalar_eta1000": 21.88047107410099,
+    "layer_alpha0.01": 22.688184285062885,
+    "layer_alpha0.02": 21.254650997172835
+  }
+}

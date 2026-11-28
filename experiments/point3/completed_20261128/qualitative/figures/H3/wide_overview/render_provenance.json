@@ -1,0 +1,98 @@
+{
+  "scene": "Marine_Corps_War_Memorial",
+  "split": "confirmation",
+  "hypothesis": "H3",
+  "condition": "scalar_eta100",
+  "scalar_condition": "scalar_eta1000",
+  "source_files": {
+    "no_intervention_inter.npz": "04486e71d750416c4084c1525f1acc693bacd899fd1617b975a0f1a4296129c8",
+    "scalar_eta100_inter.npz": "2194c687728e60dadb968d53a86a78199686c8fc346ad837925901889d3439e1",
+    "scalar_eta1000_inter.npz": "6d0abe6e0af6b32ca719df1a25c35aa42f824787defbaf3f0a4c92737d91849d"
+  },
+  "reference_sha256": "3e3ce6a9e80fce764f9dd7054e895c486e3f744702b4645929d5e5b1f68fe609",
+  "framing": "Joint 0.001/0.999 projected quantile bounds of three conditions and reference, with 8% padding",
+  "camera": {
+    "index": 4,
+    "image": "004_p3_7d8e12ce7daf08f2989e.jpg",
+    "cam_to_world": [
+      [
+        0.9266234163717986,
+        0.029651333696745538,
+        0.3748197468670244,
+        -3.131348633692636
+      ],
+      [
+        0.06040805641661929,
+        -0.995675762357181,
+        -0.07057367054654784,
+        0.8961635833007862
+      ],
+      [
+        0.3711063337527703,
+        0.08803734812254611,
+        -0.9244076559527874,
+        2.52609200187272
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ]
+  },
+  "basis": [
+    [
+      0.9266234163717986,
+      -0.029651333696745538,
+      0.3748197468670244
+    ],
+    [
+      0.06040805641661929,
+      0.995675762357181,
+      -0.07057367054654784
+    ],
+    [
+      0.3711063337527703,
+      -0.08803734812254611,
+      -0.9244076559527874
+    ]
+  ],
+  "shared_bounds": [
+    [
+      -5.637139150304155,
+      -6.201147280400953
+    ],
+    [
+      10.731604891189786,
+      1.4375999389628853
+    ]
+  ],
+  "zoom_world_bounds": [
+    [
+      -2.317586872404182,
+      0.164225513450892
+    ],
+    [
+      -1.3577918406580611,
+      1.06929907684896
+    ]
+  ],
+  "detail_magnification": 4.741119807344973,
+  "in_frame_fraction": {
+    "no_intervention": 0.999149,
+    "scalar_eta100": 1.0,
+    "scalar_eta1000": 0.999657
+  },
+  "point_splat": "Fixed five-pixel cross with nearest-depth z-buffer",
+  "geometry": "Saved evaluated GT-aligned points; no transformation after evaluation except shared camera projection",
+  "sampling": "Up to 1 million points per saved cloud; private RNG seed 1729; metrics use full clouds",
+  "mean_error": {
+    "no_intervention": 31.611619659752535,
+    "scalar_eta100": 28.020652420493786,
+    "scalar_eta1000": 36.43411142590585
+  },
+  "gain_vs_original_percent": 11.359643314419344,
+  "hypothesis_change_vs_scalar_percent": -23.092257986096556,
+  "paper_style_reference": "https://arxiv.org/html/2610.22514v1#S5.F7"
+}
