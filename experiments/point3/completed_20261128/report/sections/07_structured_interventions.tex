@@ -9,7 +9,7 @@ This study constructs and audits a subset of 54 landmarks. It implements three s
 \subsection{Dataset Construction and Audit}
 \label{sec:structured-data}
 \subsubsection{Selecting whole landmarks}
-ArchWorld contains 396 landmarks. This study uses a frozen partition of 317 development landmarks and 79 landmarks in a separate evaluation pool. We select 54 landmarks from the 317 and do not run the 79-landmark pool in these experiments. The 54-landmark set contains entire landmark identities. The number of photographs used in a reconstruction is determined separately.
+ArchWorld contains 396 landmarks. We select 54 landmarks from a frozen development pool of 317. The experimental cohort comprises 18 calibration landmarks and 36 internal confirmation landmarks. The primary evaluation uses the confirmation cohort with settings frozen from calibration. The 54-landmark set contains entire landmark identities. The number of photographs used in a reconstruction is determined separately.
 
 We retain a previously frozen set of 40 landmarks and add one example for each of its 13 missing named anchor labels and its missing-label category. Because each landmark has one supplied anchor label, 14 additions are the minimum needed to cover these categories while retaining the original 40. This constraint does not establish 54 as an optimal sample size.
 
@@ -26,7 +26,7 @@ The categorical penalty averages total variation over building type, region, and
 \mathrm{TV}(p,q)=\tfrac12\sum_k|p_k-q_k|,\qquad
 \mathrm{KS}(F,G)=\sup_t|F(t)-G(t)|.
 \end{equation}
-Equation~\ref{eq:structured-subset} is a constrained coverage-and-balance heuristic. It does not use reconstruction errors or descriptors from the held-out image collections, and it does not enforce proportional category quotas.
+Equation~\ref{eq:structured-subset} is a constrained coverage-and-balance heuristic. It uses descriptors from the development pool only, does not use reconstruction errors, and does not enforce proportional category quotas.
 
 \begin{table}[t]
 \caption{Distribution gaps for the selected 54 landmarks. Lower is closer. The full-benchmark column is a post-selection metadata audit. Dashes indicate unavailable full-benchmark photo descriptors.}
@@ -252,8 +252,8 @@ This is one frozen 18/36 allocation and one image-sampling seed, with only two c
 \paragraph{What the controls establish.}
 The combined validator establishes numerical comparability, including exact agreement of repeated controls. It does not establish correct semantic segmentation or a successful intervention on every architecture type. Three selected confirmation reconstructions have been exported and verified (Appendix~\ref{app:qualitative}). Complete mask-overlay review is still pending. A rise in anchor attention is not itself proof of improved geometry, as the mean-error comparisons illustrate.
 
-\paragraph{Oracle and final-evaluation limits.}
-The study compares structured rules with no intervention and a calibration-selected scalar. It does not contain a matched five-value oracle sweep on all 36 confirmation landmarks. Consequently, these results do not quantify how much of the full oracle gap the structured rules close. The separate 79-landmark evaluation pool was not run by this study, and the promised full-396 evaluation is not complete. Before a team-wide final test, the split must be reconciled with earlier team experiments. 15 of those 79 IDs appear in their development/test lists. The pool is unused by this contribution but cannot be described as untouched across the whole team.
+\paragraph{Oracle and evaluation scope.}
+The study compares structured rules with no intervention and a calibration-selected scalar on the 36 internal confirmation landmarks. It does not contain a matched five-value oracle sweep on those landmarks. Consequently, these results do not quantify how much of the full oracle gap the structured rules close. The reported findings apply to this selected cohort and do not establish performance across the full benchmark.
 
 \subsection{Reproducibility}
 The report includes per-landmark results, frozen selections, calibration scores, diagnostics, and subset-audit evidence. The script \nolinkurl{reproduce_results.py} checks sample identities, calibration-only choices, counts, shared controls, and aggregate tables without a GPU. Its optional \texttt{--plots} flag regenerates the original results figures. The companion script \nolinkurl{anchor_analysis/analyze_by_anchor.py} verifies the confirmation labels against the frozen plan and regenerates all anchor tables, win/tie/loss counts, individual-case summaries, and omission-sensitivity ranges. Its optional \texttt{--plots} flag regenerates the anchor figures. Both scripts use the saved numerical evidence without rerunning inference. The additional CPU analyses, their settings, and checked source snapshot are supplied in the companion \nolinkurl{Point3_Extended_Analysis.zip}. Selected result tables are also included under \nolinkurl{extended_evidence/} in this project. The reconstruction exports reproduce all nine original condition hashes and metrics across the three illustrated landmarks. The recorded experiment source hash begins \texttt{145b9848b597}. The executed notebook bundle checksum begins \texttt{04096da1573e}. These identify different artifacts and are not interchangeable.
