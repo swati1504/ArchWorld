@@ -1,0 +1,215 @@
+AdaptiveAttend: exploratory anchor subgroup analysis
+36 confirmation landmarks; 23 executed anchor labels.
+Six labels have at least two landmarks; seventeen labels have one.
+Negative percentages indicate lower mean whole-reconstruction error.
+Percentages are ratios of group means, not means of landmark percentages.
+W/T/L counts improved / tied / worsened landmarks against the named reference.
+All group definitions and model selections are unchanged; no confirmation tuning.
+Small post-hoc subgroups do not establish a reliable anchor-specific policy.
+
+ARCH (n=8)
+  H1 vs scalar: +0.63% mean error; delta +0.05843; W/T/L 3/0/5
+  H1 vs baseline: +1.90% mean error; delta +0.17373; W/T/L 3/0/5
+  H2 vs scalar: +7.37% mean error; delta +0.68126; W/T/L 1/0/7
+  H2 vs baseline: +8.73% mean error; delta +0.79656; W/T/L 2/0/6
+  H3 vs scalar: +0.00% mean error; delta +0.00000; W/T/L 0/8/0
+  H3 vs baseline: +1.26% mean error; delta +0.11530; W/T/L 4/0/4
+  Landmarks: Bell_tower_of_Vank_Cathedral; Great_Mosque_of_Sousse; Jesuit_church,_Lviv; Oshakan_Saint_Mashtots; Paoay_Church; Saint_Demetrius_Church_(Vladimir); Saint_Lawrence_Deacon_&_Martyr_Parish_Church_of_Balagtas; Soltaniyeh_Dome
+
+FACADE (n=3)
+  H1 vs scalar: -12.83% mean error; delta -1.09407; W/T/L 3/0/0
+  H1 vs baseline: -16.80% mean error; delta -1.50008; W/T/L 3/0/0
+  H2 vs scalar: +3.60% mean error; delta +0.30673; W/T/L 0/0/3
+  H2 vs baseline: -1.11% mean error; delta -0.09928; W/T/L 3/0/0
+  H3 vs scalar: +0.00% mean error; delta +0.00000; W/T/L 0/3/0
+  H3 vs baseline: -4.55% mean error; delta -0.40601; W/T/L 3/0/0
+  Landmarks: Herald_Square; Jahangiri_Mahal_(Agra_Fort); Patan_Durbar_Square
+
+BRIDGE (n=2)
+  H1 vs scalar: +1.54% mean error; delta +0.12686; W/T/L 1/0/1
+  H1 vs baseline: +2.86% mean error; delta +0.23233; W/T/L 1/0/1
+  H2 vs scalar: +6.05% mean error; delta +0.49725; W/T/L 0/0/2
+  H2 vs baseline: +7.43% mean error; delta +0.60272; W/T/L 1/0/1
+  H3 vs scalar: +0.00% mean error; delta +0.00000; W/T/L 0/2/0
+  H3 vs baseline: +1.30% mean error; delta +0.10547; W/T/L 1/0/1
+  Landmarks: Forth_Bridge; Heinrichsturm_(Ponts_Couverts,_Strasbourg)
+
+PILLAR (n=2)
+  H1 vs scalar: +1.63% mean error; delta +0.22984; W/T/L 1/0/1
+  H1 vs baseline: +1.14% mean error; delta +0.16201; W/T/L 1/0/1
+  H2 vs scalar: -1.66% mean error; delta -0.23476; W/T/L 2/0/0
+  H2 vs baseline: -2.14% mean error; delta -0.30259; W/T/L 2/0/0
+  H3 vs scalar: +0.00% mean error; delta +0.00000; W/T/L 0/2/0
+  H3 vs baseline: -0.48% mean error; delta -0.06783; W/T/L 1/0/1
+  Landmarks: Hassan_Tower; Taipei_Confucius_Temple
+
+STATUE (n=2)
+  H1 vs scalar: -3.03% mean error; delta -0.62680; W/T/L 1/0/1
+  H1 vs baseline: +1.76% mean error; delta +0.34589; W/T/L 1/0/1
+  H2 vs scalar: -13.49% mean error; delta -2.78927; W/T/L 1/0/1
+  H2 vs baseline: -9.22% mean error; delta -1.81659; W/T/L 2/0/0
+  H3 vs scalar: -19.86% mean error; delta -4.10604; W/T/L 1/0/1
+  H3 vs baseline: -15.90% mean error; delta -3.13336; W/T/L 2/0/0
+  Landmarks: Mansudae_Grand_Monument; Marine_Corps_War_Memorial
+
+WINDOW (n=2)
+  H1 vs scalar: -0.20% mean error; delta -0.00695; W/T/L 1/0/1
+  H1 vs baseline: -3.01% mean error; delta -0.10921; W/T/L 2/0/0
+  H2 vs scalar: +1.05% mean error; delta +0.03705; W/T/L 0/0/2
+  H2 vs baseline: -1.80% mean error; delta -0.06521; W/T/L 2/0/0
+  H3 vs scalar: +0.00% mean error; delta +0.00000; W/T/L 0/2/0
+  H3 vs baseline: -2.82% mean error; delta -0.10226; W/T/L 2/0/0
+  Landmarks: Igreja_de_São_Francisco_de_Assis_(Ouro_Preto); Ka'ba-ye_Zartosht
+
+BELFRY (n=1)
+  H1 vs scalar: -1.20% mean error; delta -0.11070; W/T/L 1/0/0
+  H1 vs baseline: +1.14% mean error; delta +0.10342; W/T/L 0/0/1
+  H2 vs scalar: -0.58% mean error; delta -0.05372; W/T/L 1/0/0
+  H2 vs baseline: +1.77% mean error; delta +0.16040; W/T/L 0/0/1
+  H3 vs scalar: +0.00% mean error; delta +0.00000; W/T/L 0/1/0
+  H3 vs baseline: +2.37% mean error; delta +0.21412; W/T/L 0/0/1
+  Landmarks: Saint_Gregory_Church,_Sisian
+
+BELL TOWER (n=1)
+  H1 vs scalar: +2.26% mean error; delta +0.11081; W/T/L 0/0/1
+  H1 vs baseline: -1.47% mean error; delta -0.07487; W/T/L 1/0/0
+  H2 vs scalar: +14.17% mean error; delta +0.69565; W/T/L 0/0/1
+  H2 vs baseline: +10.01% mean error; delta +0.50998; W/T/L 0/0/1
+  H3 vs scalar: +0.00% mean error; delta +0.00000; W/T/L 0/1/0
+  H3 vs baseline: -3.64% mean error; delta -0.18568; W/T/L 1/0/0
+  Landmarks: Cathedral_of_Lima
+
+COLUMN (n=1)
+  H1 vs scalar: +3.70% mean error; delta +0.79569; W/T/L 0/0/1
+  H1 vs baseline: +30.63% mean error; delta +5.23551; W/T/L 0/0/1
+  H2 vs scalar: +7.14% mean error; delta +1.53827; W/T/L 0/0/1
+  H2 vs baseline: +34.98% mean error; delta +5.97808; W/T/L 0/0/1
+  H3 vs scalar: -21.27% mean error; delta -4.57996; W/T/L 1/0/0
+  H3 vs baseline: -0.82% mean error; delta -0.14015; W/T/L 1/0/0
+  Landmarks: Palacio_Legislativo,_Uruguay
+
+DOME (n=1)
+  H1 vs scalar: -2.94% mean error; delta -1.54804; W/T/L 1/0/0
+  H1 vs baseline: +39.11% mean error; delta +14.38234; W/T/L 0/0/1
+  H2 vs scalar: +7.06% mean error; delta +3.71940; W/T/L 0/0/1
+  H2 vs baseline: +53.44% mean error; delta +19.64978; W/T/L 0/0/1
+  H3 vs scalar: +0.00% mean error; delta +0.00000; W/T/L 0/1/0
+  H3 vs baseline: +43.32% mean error; delta +15.93038; W/T/L 0/0/1
+  Landmarks: Palácio_Nereu_Ramos
+
+DOOR (n=1)
+  H1 vs scalar: -0.48% mean error; delta -0.00780; W/T/L 1/0/0
+  H1 vs baseline: -2.13% mean error; delta -0.03498; W/T/L 1/0/0
+  H2 vs scalar: +0.47% mean error; delta +0.00762; W/T/L 0/0/1
+  H2 vs baseline: -1.19% mean error; delta -0.01956; W/T/L 1/0/0
+  H3 vs scalar: +0.00% mean error; delta +0.00000; W/T/L 0/1/0
+  H3 vs baseline: -1.66% mean error; delta -0.02717; W/T/L 1/0/0
+  Landmarks: Gangō-ji
+
+MINARET (n=1)
+  H1 vs scalar: -19.33% mean error; delta -11.66459; W/T/L 1/0/0
+  H1 vs baseline: -11.99% mean error; delta -6.63647; W/T/L 1/0/0
+  H2 vs scalar: -2.47% mean error; delta -1.49021; W/T/L 1/0/0
+  H2 vs baseline: +6.39% mean error; delta +3.53791; W/T/L 0/0/1
+  H3 vs scalar: +0.00% mean error; delta +0.00000; W/T/L 0/1/0
+  H3 vs baseline: +9.09% mean error; delta +5.02812; W/T/L 0/0/1
+  Landmarks: Place_Jacques-Cartier
+
+OBELISK (n=1)
+  H1 vs scalar: -5.70% mean error; delta -1.12258; W/T/L 1/0/0
+  H1 vs baseline: -15.84% mean error; delta -3.49683; W/T/L 1/0/0
+  H2 vs scalar: +8.68% mean error; delta +1.70990; W/T/L 0/0/1
+  H2 vs baseline: -3.01% mean error; delta -0.66435; W/T/L 1/0/0
+  H3 vs scalar: +0.00% mean error; delta +0.00000; W/T/L 0/1/0
+  H3 vs baseline: -10.76% mean error; delta -2.37426; W/T/L 1/0/0
+  Landmarks: Washington_Monument
+
+PAGODA (n=1)
+  H1 vs scalar: +44.72% mean error; delta +7.60658; W/T/L 0/0/1
+  H1 vs baseline: +36.25% mean error; delta +6.54929; W/T/L 0/0/1
+  H2 vs scalar: +18.77% mean error; delta +3.19239; W/T/L 0/0/1
+  H2 vs baseline: +11.82% mean error; delta +2.13510; W/T/L 0/0/1
+  H3 vs scalar: +0.00% mean error; delta +0.00000; W/T/L 0/1/0
+  H3 vs baseline: -5.85% mean error; delta -1.05729; W/T/L 1/0/0
+  Landmarks: Heian-jingū
+
+PEDIMENT (n=1)
+  H1 vs scalar: -0.88% mean error; delta -0.01015; W/T/L 1/0/0
+  H1 vs baseline: -1.27% mean error; delta -0.01464; W/T/L 1/0/0
+  H2 vs scalar: -1.27% mean error; delta -0.01460; W/T/L 1/0/0
+  H2 vs baseline: -1.65% mean error; delta -0.01910; W/T/L 1/0/0
+  H3 vs scalar: +0.00% mean error; delta +0.00000; W/T/L 0/1/0
+  H3 vs baseline: -0.39% mean error; delta -0.00449; W/T/L 1/0/0
+  Landmarks: Reichstag_(building)
+
+PYRAMID (n=1)
+  H1 vs scalar: -6.77% mean error; delta -3.27536; W/T/L 1/0/0
+  H1 vs baseline: -8.97% mean error; delta -4.44529; W/T/L 1/0/0
+  H2 vs scalar: +2.56% mean error; delta +1.23881; W/T/L 0/0/1
+  H2 vs baseline: +0.14% mean error; delta +0.06888; W/T/L 0/0/1
+  H3 vs scalar: +0.00% mean error; delta +0.00000; W/T/L 0/1/0
+  H3 vs baseline: -2.36% mean error; delta -1.16993; W/T/L 1/0/0
+  Landmarks: Chichén_Itzá
+
+RAILING (n=1)
+  H1 vs scalar: -9.25% mean error; delta -2.18562; W/T/L 1/0/0
+  H1 vs baseline: +20.50% mean error; delta +3.64717; W/T/L 0/0/1
+  H2 vs scalar: -35.89% mean error; delta -8.47935; W/T/L 1/0/0
+  H2 vs baseline: -14.87% mean error; delta -2.64656; W/T/L 1/0/0
+  H3 vs scalar: +0.00% mean error; delta +0.00000; W/T/L 0/1/0
+  H3 vs baseline: +32.78% mean error; delta +5.83279; W/T/L 0/0/1
+  Landmarks: Itmad-Ud-Daulah's_Tomb
+
+RELIEF (n=1)
+  H1 vs scalar: -10.91% mean error; delta -4.28437; W/T/L 1/0/0
+  H1 vs baseline: -6.07% mean error; delta -2.26204; W/T/L 1/0/0
+  H2 vs scalar: -1.05% mean error; delta -0.41369; W/T/L 1/0/0
+  H2 vs baseline: +4.32% mean error; delta +1.60865; W/T/L 0/0/1
+  H3 vs scalar: +0.00% mean error; delta +0.00000; W/T/L 0/1/0
+  H3 vs baseline: +5.43% mean error; delta +2.02233; W/T/L 0/0/1
+  Landmarks: Badami_Cave_Temples
+
+ROOF (n=1)
+  H1 vs scalar: -2.51% mean error; delta -0.04640; W/T/L 1/0/0
+  H1 vs baseline: +0.11% mean error; delta +0.00193; W/T/L 0/0/1
+  H2 vs scalar: -3.70% mean error; delta -0.06851; W/T/L 1/0/0
+  H2 vs baseline: -1.12% mean error; delta -0.02018; W/T/L 1/0/0
+  H3 vs scalar: +0.00% mean error; delta +0.00000; W/T/L 0/1/0
+  H3 vs baseline: +2.68% mean error; delta +0.04832; W/T/L 0/0/1
+  Landmarks: Salim_Chishti_Tomb_(Fatehpur_Sikri)
+
+SOLOMONIC COLUMN (n=1)
+  H1 vs scalar: +3.40% mean error; delta +0.10169; W/T/L 0/0/1
+  H1 vs baseline: -5.76% mean error; delta -0.18934; W/T/L 1/0/0
+  H2 vs scalar: +4.18% mean error; delta +0.12522; W/T/L 0/0/1
+  H2 vs baseline: -5.05% mean error; delta -0.16580; W/T/L 1/0/0
+  H3 vs scalar: +0.00% mean error; delta +0.00000; W/T/L 0/1/0
+  H3 vs baseline: -8.86% mean error; delta -0.29103; W/T/L 1/0/0
+  Landmarks: Pila_Church
+
+STONE (n=1)
+  H1 vs scalar: -0.87% mean error; delta -0.06173; W/T/L 1/0/0
+  H1 vs baseline: +2.39% mean error; delta +0.16472; W/T/L 0/0/1
+  H2 vs scalar: -2.95% mean error; delta -0.20960; W/T/L 1/0/0
+  H2 vs baseline: +0.24% mean error; delta +0.01685; W/T/L 0/0/1
+  H3 vs scalar: +0.00% mean error; delta +0.00000; W/T/L 0/1/0
+  H3 vs baseline: +3.29% mean error; delta +0.22645; W/T/L 0/0/1
+  Landmarks: Olumo_Rock
+
+TOWER (n=1)
+  H1 vs scalar: -13.40% mean error; delta -3.22266; W/T/L 1/0/0
+  H1 vs baseline: -13.49% mean error; delta -3.24698; W/T/L 1/0/0
+  H2 vs scalar: -11.11% mean error; delta -2.67126; W/T/L 1/0/0
+  H2 vs baseline: -11.20% mean error; delta -2.69558; W/T/L 1/0/0
+  H3 vs scalar: +0.00% mean error; delta +0.00000; W/T/L 0/1/0
+  H3 vs baseline: -0.10% mean error; delta -0.02432; W/T/L 1/0/0
+  Landmarks: Prambanan
+
+WALKWAY (n=1)
+  H1 vs scalar: -3.30% mean error; delta -0.11253; W/T/L 1/0/0
+  H1 vs baseline: -1.36% mean error; delta -0.04538; W/T/L 1/0/0
+  H2 vs scalar: -2.20% mean error; delta -0.07514; W/T/L 1/0/0
+  H2 vs baseline: -0.24% mean error; delta -0.00799; W/T/L 1/0/0
+  H3 vs scalar: +0.00% mean error; delta +0.00000; W/T/L 0/1/0
+  H3 vs baseline: +2.01% mean error; delta +0.06715; W/T/L 0/0/1
+  Landmarks: Unfinished_obelisk_in_Aswan

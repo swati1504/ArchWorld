@@ -1,0 +1,36 @@
+{
+  "evaluation_pool_count": 79,
+  "source": "ArchWorld-team working-tree scene lists; audit date 2026-11-24",
+  "splits": {
+    "dev": {
+      "file": "ArchWorld-team\\scenes_dev.txt",
+      "sha256": "ad8357dd63135f2f6f31f5f6a0a473d780599245ad9bac315b5c59920f2db890",
+      "overlap_ids": [
+        "Aguinaldo_Shrine",
+        "Assumption_Cathedral_in_Moscow",
+        "Basílica_Colegiata_de_Nuestra_Señora_de_Guanajuato",
+        "Cathedral_of_Holy_Wisdom,_Harbin",
+        "Dendera",
+        "Disney_California_Adventure_Park",
+        "Hermesvilla",
+        "Kumano_Hongu_Taisha",
+        "Mysore_Palace",
+        "Qila-i-Kuhna_mosque"
+      ],
+      "overlap_count": 10
+    },
+    "test": {
+      "file": "ArchWorld-team\\scenes_test.txt",
+      "sha256": "b795f8240ccdfa35f9b1fb812d3326a0f3ff083b61d6676825f394cfc66c2aae",
+      "overlap_ids": [
+        "Alba_Iulia_Orthodox_Cathedral",
+        "Cathedral_of_Saint_Paul_(Saint_Paul,_Minnesota)",
+        "Gangaikonda_Cholapuram_Temple",
+        "Jameh_Mosque_of_Isfahan",
+        "Monumento_a_la_Revolución_(México)"
+      ],
+      "overlap_count": 5
+    }
+  },
+  "unique_overlap_count": 15
+}

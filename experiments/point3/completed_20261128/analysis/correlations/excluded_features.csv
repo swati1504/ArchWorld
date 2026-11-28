@@ -1,0 +1,18 @@
+hypothesis,feature,reason
+H1,accepted_layers,Constant 24 in all 36 selected runs
+H1,clipped_view_steps,Constant zero in all 36 selected runs
+H1,num_views,"35 scenes have 50, one has 26; singleton contrast, not a useful continuous correlation"
+H1,image_count/duplicate_fraction/median_megapixels,Not present in assigned source metadata; num_views is not substituted for these features
+H2,accepted_layers,Constant 24 in all 36 selected runs
+H2,clipped_view_steps,Constant zero in all 36 selected runs
+H2,num_views,"35 scenes have 50, one has 26; singleton contrast, not a useful continuous correlation"
+H2,image_count/duplicate_fraction/median_megapixels,Not present in assigned source metadata; num_views is not substituted for these features
+H3,accepted_layers,Constant 24 in all 36 selected runs
+H3,clipped_view_steps,Constant zero in all 36 selected runs
+H3,num_views,"35 scenes have 50, one has 26; singleton contrast, not a useful continuous correlation"
+H3,image_count/duplicate_fraction/median_megapixels,Not present in assigned source metadata; num_views is not substituted for these features
+H1,mean_applied_relative_update,Fixed target 0.02; variation under 1.2e-9 is floating-point noise
+H3,coefficient_min/coefficient_max,Binary policy 100 for 3 scenes vs 1000 for 33; analyzed as policy/category distinction elsewhere
+H3,coefficient_max_to_min,Constant 1
+all,Model_Diagonal/Scale,Arbitrary reconstruction units or linked metric scale; use physically interpretable extent_m rather than expanding a redundant/coupled test family
+all,baseline_error,Mathematically coupled to H-baseline; separate descriptive diagnostic with no inferential p value

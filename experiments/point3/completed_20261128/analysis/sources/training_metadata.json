@@ -1,0 +1,1904 @@
+{
+  "1621_execution_memorial_at_the_Old_Town_Square": {
+    "building_type": "Misc",
+    "region": "Europe",
+    "anchor": "facade",
+    "extent_m": 246.637355932866
+  },
+  "35_East_Wacker": {
+    "building_type": "Tower",
+    "region": "North America",
+    "anchor": "tower",
+    "extent_m": 191.61543165742265
+  },
+  "7_West_54th_Street": {
+    "building_type": "Misc",
+    "region": "North America",
+    "anchor": "facade",
+    "extent_m": 26.07496000299717
+  },
+  "Abucay_Church": {
+    "building_type": "Church/Cathedral",
+    "region": "SE Asia",
+    "anchor": "arch",
+    "extent_m": 75.67744435767612
+  },
+  "Aguada_Lighthouse": {
+    "building_type": "Misc",
+    "region": "South Asia",
+    "anchor": "tower",
+    "extent_m": 88.88678339100593
+  },
+  "Airavatesvara_Temple": {
+    "building_type": "Temple/Shrine",
+    "region": "South Asia",
+    "anchor": "statue",
+    "extent_m": 111.73195056467256
+  },
+  "Akdamar_Church": {
+    "building_type": "Church/Cathedral",
+    "region": "West/Central Asia",
+    "anchor": "arch",
+    "extent_m": 50.87957049409111
+  },
+  "Al-Azhar_Mosque": {
+    "building_type": "Mosque",
+    "region": "Africa",
+    "anchor": "dome",
+    "extent_m": 118.19278660420018
+  },
+  "Al-Qibli_Chapel": {
+    "building_type": "Mosque",
+    "region": "West/Central Asia",
+    "anchor": "arch",
+    "extent_m": 194.73069019786223
+  },
+  "Al-Rifa'i_Mosque": {
+    "building_type": "Mosque",
+    "region": "Africa",
+    "anchor": "minaret",
+    "extent_m": 147.63704623795616
+  },
+  "Ali_Qapu": {
+    "building_type": "Misc",
+    "region": "West/Central Asia",
+    "anchor": "facade",
+    "extent_m": 205.8273599409655
+  },
+  "Angkor_Wat": {
+    "building_type": "Temple/Shrine",
+    "region": "SE Asia",
+    "anchor": "tower",
+    "extent_m": 219.65084204733407
+  },
+  "Antigua_Basílica_de_Nuestra_Señora_de_Guadalupe": {
+    "building_type": "Misc",
+    "region": "Latin America",
+    "anchor": "minaret",
+    "extent_m": 189.38795795537592
+  },
+  "Anıtkabir": {
+    "building_type": "Tomb",
+    "region": "West/Central Asia",
+    "anchor": "column",
+    "extent_m": 88.43282691266175
+  },
+  "Apadana_of_Persepolis": {
+    "building_type": "Misc",
+    "region": "West/Central Asia",
+    "anchor": "statue",
+    "extent_m": 53.365649213843305
+  },
+  "Arch_of_Trajan_(Timgad)": {
+    "building_type": "Arch/Gate",
+    "region": "Africa",
+    "anchor": "arch",
+    "extent_m": 26.37582196338112
+  },
+  "Arch_of_Triumph_(Pyongyang)": {
+    "building_type": "Arch/Gate",
+    "region": "East Asia",
+    "anchor": "arch",
+    "extent_m": 145.50843792824887
+  },
+  "Archiepiscopal_Palace_of_Lima": {
+    "building_type": "Public Building",
+    "region": "Latin America",
+    "anchor": "facade",
+    "extent_m": 102.9886137032664
+  },
+  "Atlante-Tollan-Xicocotitlan": {
+    "building_type": "Monument",
+    "region": "Latin America",
+    "anchor": "statue",
+    "extent_m": 18.34421634743052
+  },
+  "Azadi_Tower": {
+    "building_type": "Tower",
+    "region": "West/Central Asia",
+    "anchor": "tower",
+    "extent_m": 93.36195751687268
+  },
+  "Baclayon_Church": {
+    "building_type": "Church/Cathedral",
+    "region": "SE Asia",
+    "anchor": "window",
+    "extent_m": 40.40831749964356
+  },
+  "Badami_Cave_Temples": {
+    "building_type": "Temple/Shrine",
+    "region": "South Asia",
+    "anchor": "relief",
+    "extent_m": 114.8947689817938
+  },
+  "Badshahi_Mosque": {
+    "building_type": "Mosque",
+    "region": "South Asia",
+    "anchor": "arch",
+    "extent_m": 224.58106800028847
+  },
+  "Baguio_Cathedral": {
+    "building_type": "Church/Cathedral",
+    "region": "SE Asia",
+    "anchor": "bell tower",
+    "extent_m": 34.54742068539
+  },
+  "Balboa_Park,_San_Diego,_California": {
+    "building_type": "Misc",
+    "region": "North America",
+    "anchor": "arch",
+    "extent_m": 115.9715366888886
+  },
+  "Bangka_Lungshan_Temple": {
+    "building_type": "Temple/Shrine",
+    "region": "East Asia",
+    "anchor": "pillar",
+    "extent_m": 61.15282015030895
+  },
+  "Basilica_Minore_of_the_Infant_Jesus_and_Immaculate_Conception_of_Batangas_City": {
+    "building_type": "Church/Cathedral",
+    "region": "SE Asia",
+    "anchor": "arch",
+    "extent_m": 125.38125975617814
+  },
+  "Basilica_of_Our_Lady_of_Aparecida": {
+    "building_type": "Church/Cathedral",
+    "region": "Latin America",
+    "anchor": "arch",
+    "extent_m": 272.2241802005215
+  },
+  "Basilique_de_l'Immaculée_Conception_(Ouidah)": {
+    "building_type": "Church/Cathedral",
+    "region": "Africa",
+    "anchor": "arch",
+    "extent_m": 72.06202574234169
+  },
+  "Basílica_de_Ocotlán": {
+    "building_type": "Church/Cathedral",
+    "region": "Latin America",
+    "anchor": "arch",
+    "extent_m": 60.02157573042341
+  },
+  "Basílica_de_San_Francisco,_La_Paz": {
+    "building_type": "Church/Cathedral",
+    "region": "Latin America",
+    "anchor": "arch",
+    "extent_m": 113.24440310594656
+  },
+  "Basílica_de_San_Juan_de_los_Lagos": {
+    "building_type": "Church/Cathedral",
+    "region": "Latin America",
+    "anchor": "bell tower",
+    "extent_m": 80.73937919783594
+  },
+  "Basílica_del_Voto_Nacional": {
+    "building_type": "Church/Cathedral",
+    "region": "Latin America",
+    "anchor": "window",
+    "extent_m": 230.72676620382043
+  },
+  "Bell_Tower_(Tower_of_London)": {
+    "building_type": "Tower",
+    "region": "Europe",
+    "anchor": "window",
+    "extent_m": 221.50749217596973
+  },
+  "Bell_tower_of_Vank_Cathedral": {
+    "building_type": "Tower",
+    "region": "West/Central Asia",
+    "anchor": "arch",
+    "extent_m": 60.45862554893431
+  },
+  "Bellagio_Hotel_&_Casino": {
+    "building_type": "Tower",
+    "region": "North America",
+    "anchor": "arch",
+    "extent_m": 291.41972860354883
+  },
+  "Binondo_Church": {
+    "building_type": "Church/Cathedral",
+    "region": "SE Asia",
+    "anchor": "column",
+    "extent_m": 82.35712821191592
+  },
+  "Bridge_of_San_Martín,_Toledo": {
+    "building_type": "Misc",
+    "region": "Europe",
+    "anchor": "__MISSING__",
+    "extent_m": 215.47942426076384
+  },
+  "British_Columbia_Parliament_Buildings": {
+    "building_type": "Public Building",
+    "region": "North America",
+    "anchor": "facade",
+    "extent_m": 126.29757193636236
+  },
+  "Calamba_Church": {
+    "building_type": "Church/Cathedral",
+    "region": "SE Asia",
+    "anchor": "window",
+    "extent_m": 57.02581681915115
+  },
+  "Caloocan_Cathedral": {
+    "building_type": "Church/Cathedral",
+    "region": "SE Asia",
+    "anchor": "column",
+    "extent_m": 28.43151201298663
+  },
+  "Capernaum_byzantine_synagogue": {
+    "building_type": "Temple/Shrine",
+    "region": "West/Central Asia",
+    "anchor": "column",
+    "extent_m": 44.48208293549563
+  },
+  "Capitoline_temple_in_Dougga": {
+    "building_type": "Temple/Shrine",
+    "region": "Africa",
+    "anchor": "column",
+    "extent_m": 57.88093302625032
+  },
+  "Carriedo_Fountain": {
+    "building_type": "Monument",
+    "region": "SE Asia",
+    "anchor": "statue",
+    "extent_m": 17.852185716217324
+  },
+  "Catedral_San_Sebastián,_Cochabamba": {
+    "building_type": "Church/Cathedral",
+    "region": "Latin America",
+    "anchor": "arch",
+    "extent_m": 167.07553199491173
+  },
+  "Catedral_de_Havana": {
+    "building_type": "Church/Cathedral",
+    "region": "Latin America",
+    "anchor": "window",
+    "extent_m": 60.854931476963685
+  },
+  "Catedral_de_Panamá_Viejo": {
+    "building_type": "Misc",
+    "region": "Latin America",
+    "anchor": "tower",
+    "extent_m": 66.59106628383145
+  },
+  "Cathedral-Basilica_of_Mary,_Queen_of_the_World": {
+    "building_type": "Church/Cathedral",
+    "region": "North America",
+    "anchor": "statue",
+    "extent_m": 165.69383735881803
+  },
+  "Cathedral_of_Guadalajara,_Mexico": {
+    "building_type": "Church/Cathedral",
+    "region": "Latin America",
+    "anchor": "arch",
+    "extent_m": 187.55587629210385
+  },
+  "Cathedral_of_Lima": {
+    "building_type": "Church/Cathedral",
+    "region": "Latin America",
+    "anchor": "bell tower",
+    "extent_m": 190.47782176471563
+  },
+  "Cathedral_of_Palma_de_Mallorca": {
+    "building_type": "Church/Cathedral",
+    "region": "Europe",
+    "anchor": "arch",
+    "extent_m": 190.95384232112343
+  },
+  "Cathedral_of_Saint_Paul_in_Macau": {
+    "building_type": "Church/Cathedral",
+    "region": "East Asia",
+    "anchor": "arch",
+    "extent_m": 38.40750522242666
+  },
+  "Cathedral_of_Saint_Wenceslaus_(Olomouc)": {
+    "building_type": "Church/Cathedral",
+    "region": "Europe",
+    "anchor": "window",
+    "extent_m": 127.60438688735684
+  },
+  "Cavinti_Church": {
+    "building_type": "Church/Cathedral",
+    "region": "SE Asia",
+    "anchor": "arch",
+    "extent_m": 40.19423506003775
+  },
+  "Centre_Block": {
+    "building_type": "Public Building",
+    "region": "North America",
+    "anchor": "facade",
+    "extent_m": 194.98065718842807
+  },
+  "Charminar": {
+    "building_type": "Monument",
+    "region": "South Asia",
+    "anchor": "window",
+    "extent_m": 72.76692018597161
+  },
+  "Chennakesava_Temple,_Belur": {
+    "building_type": "Temple/Shrine",
+    "region": "South Asia",
+    "anchor": "column",
+    "extent_m": 172.35867744098104
+  },
+  "Chicago_Board_of_Trade_Building": {
+    "building_type": "Tower",
+    "region": "North America",
+    "anchor": "window",
+    "extent_m": 219.38952658195487
+  },
+  "Chicago_Theatre": {
+    "building_type": "Public Building",
+    "region": "North America",
+    "anchor": "arch",
+    "extent_m": 89.12067605958616
+  },
+  "Chichén_Itzá": {
+    "building_type": "Misc",
+    "region": "Latin America",
+    "anchor": "pyramid",
+    "extent_m": 136.25303345438968
+  },
+  "Choto_Sona_Mosque": {
+    "building_type": "Mosque",
+    "region": "South Asia",
+    "anchor": "arch",
+    "extent_m": 54.94379258877174
+  },
+  "Church_of_Nagcarlang_historical_marker": {
+    "building_type": "Monument",
+    "region": "SE Asia",
+    "anchor": "window",
+    "extent_m": 65.93002874885683
+  },
+  "Church_of_Pila_historical_marker": {
+    "building_type": "Monument",
+    "region": "SE Asia",
+    "anchor": "column",
+    "extent_m": 37.72575731525687
+  },
+  "Church_of_St._Anne_in_Vilnius": {
+    "building_type": "Church/Cathedral",
+    "region": "Europe",
+    "anchor": "arch",
+    "extent_m": 117.63592518719564
+  },
+  "Church_of_the_Holy_Mother_of_God,_Bjni": {
+    "building_type": "Church/Cathedral",
+    "region": "West/Central Asia",
+    "anchor": "arch",
+    "extent_m": 64.36729091594056
+  },
+  "Church_of_the_Nativity_(Bethlehem)": {
+    "building_type": "Church/Cathedral",
+    "region": "West/Central Asia",
+    "anchor": "bell tower",
+    "extent_m": 88.59978227643447
+  },
+  "Château_Frontenac": {
+    "building_type": "Misc",
+    "region": "North America",
+    "anchor": "facade",
+    "extent_m": 379.9602776276996
+  },
+  "Clock_Tower,_Hong_Kong": {
+    "building_type": "Tower",
+    "region": "East Asia",
+    "anchor": "tower",
+    "extent_m": 58.0886719939272
+  },
+  "Colossi_of_Memnon": {
+    "building_type": "Monument",
+    "region": "Africa",
+    "anchor": "statue",
+    "extent_m": 42.3808025274142
+  },
+  "Compañía_de_Jesus_(Cusco)": {
+    "building_type": "Church/Cathedral",
+    "region": "Latin America",
+    "anchor": "bell tower",
+    "extent_m": 137.59905666748594
+  },
+  "Concepcion_Church_(Malabon)": {
+    "building_type": "Church/Cathedral",
+    "region": "SE Asia",
+    "anchor": "arch",
+    "extent_m": 47.29388045751147
+  },
+  "Convento_e_Igreja_de_Santo_Antônio_e_Capela_da_Ordem_Terceira_(São_Francisco_do_Conde)": {
+    "building_type": "Church/Cathedral",
+    "region": "Latin America",
+    "anchor": "arch",
+    "extent_m": 43.77888347719644
+  },
+  "Coventry_Cathedral_Ruins": {
+    "building_type": "Church/Cathedral",
+    "region": "Europe",
+    "anchor": "window",
+    "extent_m": 138.896135110258
+  },
+  "Cristo_Redentor_(Rio_de_Janeiro)": {
+    "building_type": "Monument",
+    "region": "Latin America",
+    "anchor": "statue",
+    "extent_m": 64.45947057998258
+  },
+  "Degutale_Temple,_Patan": {
+    "building_type": "Temple/Shrine",
+    "region": "South Asia",
+    "anchor": "window",
+    "extent_m": 69.06010794665305
+  },
+  "Descent_of_the_Ganges": {
+    "building_type": "Monument",
+    "region": "South Asia",
+    "anchor": "statue",
+    "extent_m": 31.91309997034093
+  },
+  "Dolmabahçe_Palace": {
+    "building_type": "Misc",
+    "region": "West/Central Asia",
+    "anchor": "window",
+    "extent_m": 141.19340130524645
+  },
+  "Dome_of_the_Rock": {
+    "building_type": "Misc",
+    "region": "West/Central Asia",
+    "anchor": "facade",
+    "extent_m": 202.5174844549578
+  },
+  "Dormition_Cathedral,_Kharkiv": {
+    "building_type": "Church/Cathedral",
+    "region": "Europe",
+    "anchor": "pediment",
+    "extent_m": 136.71265994483588
+  },
+  "Dragon_and_Tiger_Pagodas": {
+    "building_type": "Tower",
+    "region": "East Asia",
+    "anchor": "arch",
+    "extent_m": 58.00109525467789
+  },
+  "Edifício_Altino_Arantes": {
+    "building_type": "Tower",
+    "region": "Latin America",
+    "anchor": "tower",
+    "extent_m": 192.94274719996275
+  },
+  "Egyptian_Museum_(Cairo)": {
+    "building_type": "Public Building",
+    "region": "Africa",
+    "anchor": "arch",
+    "extent_m": 69.26468212554612
+  },
+  "Elizabeth_Tower": {
+    "building_type": "Misc",
+    "region": "Europe",
+    "anchor": "tower",
+    "extent_m": 76.37946822416421
+  },
+  "Ferdowsi_Mausoleum": {
+    "building_type": "Tomb",
+    "region": "West/Central Asia",
+    "anchor": "column",
+    "extent_m": 33.92845576944895
+  },
+  "Flagler_Memorial_Presbyterian_Church": {
+    "building_type": "Church/Cathedral",
+    "region": "North America",
+    "anchor": "arch",
+    "extent_m": 116.1983607382039
+  },
+  "Forth_Bridge": {
+    "building_type": "Misc",
+    "region": "Europe",
+    "anchor": "__MISSING__",
+    "extent_m": 1933.769300478761
+  },
+  "Gaddi_Baithak,_Kathmandu": {
+    "building_type": "Misc",
+    "region": "South Asia",
+    "anchor": "column",
+    "extent_m": 70.5095040280982
+  },
+  "Gangneung_Fire_Station": {
+    "building_type": "Misc",
+    "region": "East Asia",
+    "anchor": "window",
+    "extent_m": 75.40495503544886
+  },
+  "Gangō-ji": {
+    "building_type": "Temple/Shrine",
+    "region": "East Asia",
+    "anchor": "door",
+    "extent_m": 61.714918099219325
+  },
+  "Gargar_Saint_Hovhannes_church": {
+    "building_type": "Misc",
+    "region": "West/Central Asia",
+    "anchor": "stone",
+    "extent_m": 45.11198297090903
+  },
+  "Giant_Wild_Goose_Pagoda": {
+    "building_type": "Tower",
+    "region": "East Asia",
+    "anchor": "tower",
+    "extent_m": 38.08403376208432
+  },
+  "Glendalough_round_tower": {
+    "building_type": "Tower",
+    "region": "Europe",
+    "anchor": "tower",
+    "extent_m": 56.51416914354745
+  },
+  "Gol_Gumbaz": {
+    "building_type": "Tomb",
+    "region": "South Asia",
+    "anchor": "arch",
+    "extent_m": 116.84636585629872
+  },
+  "Golestan_Palace": {
+    "building_type": "Misc",
+    "region": "West/Central Asia",
+    "anchor": "facade",
+    "extent_m": 119.7061256385863
+  },
+  "Government_Palace,_Lima": {
+    "building_type": "Misc",
+    "region": "Latin America",
+    "anchor": "arch",
+    "extent_m": 82.50970118230654
+  },
+  "Grand_Palace,_Bangkok": {
+    "building_type": "Misc",
+    "region": "SE Asia",
+    "anchor": "arch",
+    "extent_m": 100.49245519515232
+  },
+  "Graslei": {
+    "building_type": "Misc",
+    "region": "Europe",
+    "anchor": "facade",
+    "extent_m": 181.82237740282025
+  },
+  "Gravensteen_(Ghent)": {
+    "building_type": "Misc",
+    "region": "Europe",
+    "anchor": "facade",
+    "extent_m": 130.36894242011655
+  },
+  "Great_Mosque_of_Kairouan": {
+    "building_type": "Mosque",
+    "region": "Africa",
+    "anchor": "arch",
+    "extent_m": 128.34446297719634
+  },
+  "Great_Mosque_of_Sfax": {
+    "building_type": "Mosque",
+    "region": "Africa",
+    "anchor": "dome",
+    "extent_m": 52.47648942005347
+  },
+  "Great_Mosque_of_Sousse": {
+    "building_type": "Mosque",
+    "region": "Africa",
+    "anchor": "arch",
+    "extent_m": 104.89897103228932
+  },
+  "Great_Mosque_of_Testour": {
+    "building_type": "Mosque",
+    "region": "Africa",
+    "anchor": "minaret",
+    "extent_m": 27.7723314153463
+  },
+  "Great_Sphinx_of_Giza": {
+    "building_type": "Monument",
+    "region": "Africa",
+    "anchor": "pyramid",
+    "extent_m": 115.45170163778911
+  },
+  "Guanyin_of_the_South_Sea_of_Sanya": {
+    "building_type": "Monument",
+    "region": "East Asia",
+    "anchor": "statue",
+    "extent_m": 217.52327385686652
+  },
+  "Hai_Bà_Trưng_Temple_(Mê_Linh)": {
+    "building_type": "Temple/Shrine",
+    "region": "SE Asia",
+    "anchor": "arch",
+    "extent_m": 26.966936392271226
+  },
+  "Hassan_Tower": {
+    "building_type": "Mosque",
+    "region": "Africa",
+    "anchor": "pillar",
+    "extent_m": 62.30115872572673
+  },
+  "Hawa_Mahal": {
+    "building_type": "Misc",
+    "region": "South Asia",
+    "anchor": "dome",
+    "extent_m": 51.74993672441143
+  },
+  "Heian-jingū": {
+    "building_type": "Temple/Shrine",
+    "region": "East Asia",
+    "anchor": "pagoda",
+    "extent_m": 60.104438592506696
+  },
+  "Heinrichsturm_(Ponts_Couverts,_Strasbourg)": {
+    "building_type": "Tower",
+    "region": "Europe",
+    "anchor": "bridge",
+    "extent_m": 103.25862728145871
+  },
+  "Hemiciclo_a_Juárez": {
+    "building_type": "Misc",
+    "region": "Latin America",
+    "anchor": "column",
+    "extent_m": 37.92683987120781
+  },
+  "Herald_Square": {
+    "building_type": "Misc",
+    "region": "North America",
+    "anchor": "facade",
+    "extent_m": 353.724869592816
+  },
+  "Hiroshima_Castle": {
+    "building_type": "Misc",
+    "region": "East Asia",
+    "anchor": "wall",
+    "extent_m": 98.5683140899436
+  },
+  "Ho_Chi_Minh_Mausoleum": {
+    "building_type": "Tomb",
+    "region": "SE Asia",
+    "anchor": "column",
+    "extent_m": 44.8245325319016
+  },
+  "Hundertwasserhaus_Wien": {
+    "building_type": "Misc",
+    "region": "Europe",
+    "anchor": "window",
+    "extent_m": 63.29239629335148
+  },
+  "Hurva_Synagogue": {
+    "building_type": "Temple/Shrine",
+    "region": "West/Central Asia",
+    "anchor": "arch",
+    "extent_m": 57.17233001709426
+  },
+  "Ibrahim_Rouza": {
+    "building_type": "Tomb",
+    "region": "South Asia",
+    "anchor": "dome",
+    "extent_m": 193.65732975321444
+  },
+  "Iglesia_de_la_Compañía_de_Jesús,_Cochabamba": {
+    "building_type": "Misc",
+    "region": "Latin America",
+    "anchor": "window",
+    "extent_m": 45.482882504462296
+  },
+  "Iglesia_de_la_Recoleta,_Cochabamba": {
+    "building_type": "Church/Cathedral",
+    "region": "Latin America",
+    "anchor": "arch",
+    "extent_m": 43.085763283767534
+  },
+  "Iglesia_y_Convento_de_Santa_Teresa,_Cochabamba": {
+    "building_type": "Church/Cathedral",
+    "region": "Latin America",
+    "anchor": "arch",
+    "extent_m": 63.16451644477273
+  },
+  "Igreja_da_Ordem_Terceira_do_Carmo,_Salvador_(Bahia)": {
+    "building_type": "Misc",
+    "region": "Latin America",
+    "anchor": "facade",
+    "extent_m": 47.62774257938252
+  },
+  "Igreja_de_Santa_Rita_(Paraty)": {
+    "building_type": "Church/Cathedral",
+    "region": "Latin America",
+    "anchor": "window",
+    "extent_m": 37.74420577669886
+  },
+  "Igreja_de_São_Francisco_de_Assis_(Belo_Horizonte)": {
+    "building_type": "Church/Cathedral",
+    "region": "Latin America",
+    "anchor": "arch",
+    "extent_m": 27.745117112893308
+  },
+  "Igreja_de_São_Francisco_de_Assis_(Ouro_Preto)": {
+    "building_type": "Church/Cathedral",
+    "region": "Latin America",
+    "anchor": "window",
+    "extent_m": 44.86774712574009
+  },
+  "Imamzadeh_Hilal_ibn_Ali": {
+    "building_type": "Misc",
+    "region": "West/Central Asia",
+    "anchor": "minaret",
+    "extent_m": 77.09753479824394
+  },
+  "Immaculate_Conception_Parish_Church_of_Bauan": {
+    "building_type": "Church/Cathedral",
+    "region": "SE Asia",
+    "anchor": "arch",
+    "extent_m": 55.81633118638312
+  },
+  "Immaculate_Conception_Parish_Church_of_Los_Baños": {
+    "building_type": "Church/Cathedral",
+    "region": "SE Asia",
+    "anchor": "window",
+    "extent_m": 44.561332760662864
+  },
+  "India_Gate": {
+    "building_type": "Arch/Gate",
+    "region": "South Asia",
+    "anchor": "arch",
+    "extent_m": 74.59154413581614
+  },
+  "International_Commerce_Centre": {
+    "building_type": "Tower",
+    "region": "East Asia",
+    "anchor": "tower",
+    "extent_m": 658.1902833261762
+  },
+  "Iolani_Palace": {
+    "building_type": "Misc",
+    "region": "North America",
+    "anchor": "facade",
+    "extent_m": 66.8104025578979
+  },
+  "Iron_pillar": {
+    "building_type": "Monument",
+    "region": "South Asia",
+    "anchor": "arch",
+    "extent_m": 14.95850768727086
+  },
+  "Isa_Khan_Niyazi's_tomb": {
+    "building_type": "Tomb",
+    "region": "South Asia",
+    "anchor": "arch",
+    "extent_m": 63.34583235292103
+  },
+  "Itmad-Ud-Daulah's_Tomb": {
+    "building_type": "Tomb",
+    "region": "South Asia",
+    "anchor": "railing",
+    "extent_m": 69.7646487962952
+  },
+  "Jahangiri_Mahal_(Agra_Fort)": {
+    "building_type": "Misc",
+    "region": "South Asia",
+    "anchor": "facade",
+    "extent_m": 94.23310604768648
+  },
+  "Jal_Mahal": {
+    "building_type": "Misc",
+    "region": "South Asia",
+    "anchor": "facade",
+    "extent_m": 148.0347363016714
+  },
+  "Jama_Masjid,_Delhi": {
+    "building_type": "Mosque",
+    "region": "South Asia",
+    "anchor": "dome",
+    "extent_m": 126.05843836565091
+  },
+  "Jama_Masjid_(Ahmedabad)": {
+    "building_type": "Mosque",
+    "region": "South Asia",
+    "anchor": "arch",
+    "extent_m": 74.32709959879357
+  },
+  "Jesuit_church,_Lviv": {
+    "building_type": "Church/Cathedral",
+    "region": "Europe",
+    "anchor": "arch",
+    "extent_m": 87.6094860647781
+  },
+  "Junghwajeon": {
+    "building_type": "Misc",
+    "region": "East Asia",
+    "anchor": "facade",
+    "extent_m": 41.23502518652716
+  },
+  "Ka'ba-ye_Zartosht": {
+    "building_type": "Tower",
+    "region": "West/Central Asia",
+    "anchor": "window",
+    "extent_m": 43.22534567333851
+  },
+  "Kamakura_Daibutsu": {
+    "building_type": "Misc",
+    "region": "East Asia",
+    "anchor": "statue",
+    "extent_m": 25.60990442130725
+  },
+  "Kaminarimon": {
+    "building_type": "Arch/Gate",
+    "region": "East Asia",
+    "anchor": "statue",
+    "extent_m": 23.244854337316934
+  },
+  "Kanda-Myojin": {
+    "building_type": "Temple/Shrine",
+    "region": "East Asia",
+    "anchor": "pillar",
+    "extent_m": 38.64325353947476
+  },
+  "Kanteibyou_(Yokohama)": {
+    "building_type": "Temple/Shrine",
+    "region": "East Asia",
+    "anchor": "pillar",
+    "extent_m": 50.249223729881066
+  },
+  "Karim_Khan_Citadel": {
+    "building_type": "Misc",
+    "region": "West/Central Asia",
+    "anchor": "facade",
+    "extent_m": 129.46077343366244
+  },
+  "Katoghike_Church,_Yerevan": {
+    "building_type": "Church/Cathedral",
+    "region": "West/Central Asia",
+    "anchor": "arch",
+    "extent_m": 78.19339370667034
+  },
+  "Khan_Mohammad_Mridha_Mosque": {
+    "building_type": "Mosque",
+    "region": "South Asia",
+    "anchor": "arch",
+    "extent_m": 53.37755739800973
+  },
+  "Khaplu_Palace,_Ghangche": {
+    "building_type": "Misc",
+    "region": "South Asia",
+    "anchor": "window",
+    "extent_m": 35.95154512929346
+  },
+  "Kim_Il-sung_Square": {
+    "building_type": "Misc",
+    "region": "East Asia",
+    "anchor": "facade",
+    "extent_m": 326.0184065621765
+  },
+  "Kinkaku-ji": {
+    "building_type": "Misc",
+    "region": "East Asia",
+    "anchor": "facade",
+    "extent_m": 36.6648127314776
+  },
+  "Kiosk_of_Trajan_in_Philae": {
+    "building_type": "Monument",
+    "region": "Africa",
+    "anchor": "pillar",
+    "extent_m": 41.30981993460607
+  },
+  "Koutoubia_Mosque": {
+    "building_type": "Mosque",
+    "region": "Africa",
+    "anchor": "minaret",
+    "extent_m": 153.10033950300374
+  },
+  "Kōtoku-in": {
+    "building_type": "Temple/Shrine",
+    "region": "East Asia",
+    "anchor": "statue",
+    "extent_m": 29.49604515083492
+  },
+  "Liberty_Square_(Taipei)": {
+    "building_type": "Misc",
+    "region": "East Asia",
+    "anchor": "arch",
+    "extent_m": 158.20162232945052
+  },
+  "Libyco-Punic_Mausoleum": {
+    "building_type": "Tomb",
+    "region": "Africa",
+    "anchor": "column",
+    "extent_m": 29.256464443575684
+  },
+  "Lipa_Cathedral": {
+    "building_type": "Church/Cathedral",
+    "region": "SE Asia",
+    "anchor": "arch",
+    "extent_m": 54.926597940634885
+  },
+  "Little_Temple_of_Abu_Simbel": {
+    "building_type": "Temple/Shrine",
+    "region": "Africa",
+    "anchor": "statue",
+    "extent_m": 74.0235091131343
+  },
+  "Lotus_Mahal_(Hampi)": {
+    "building_type": "Misc",
+    "region": "South Asia",
+    "anchor": "facade",
+    "extent_m": 39.357357793771534
+  },
+  "Macy's_Herald_Square": {
+    "building_type": "Misc",
+    "region": "North America",
+    "anchor": "window",
+    "extent_m": 340.0530203954799
+  },
+  "Mahabodhi_Temple": {
+    "building_type": "Temple/Shrine",
+    "region": "South Asia",
+    "anchor": "tower",
+    "extent_m": 70.54249513804197
+  },
+  "Malate_Church": {
+    "building_type": "Church/Cathedral",
+    "region": "SE Asia",
+    "anchor": "solomonic column",
+    "extent_m": 34.26786489192064
+  },
+  "Malolos_Cathedral": {
+    "building_type": "Church/Cathedral",
+    "region": "SE Asia",
+    "anchor": "arch",
+    "extent_m": 69.99315895640393
+  },
+  "Manaoag_Church": {
+    "building_type": "Church/Cathedral",
+    "region": "SE Asia",
+    "anchor": "statue",
+    "extent_m": 80.34198510478242
+  },
+  "Manhattan_Municipal_Building": {
+    "building_type": "Tower",
+    "region": "North America",
+    "anchor": "column",
+    "extent_m": 227.14748571293163
+  },
+  "Manila_Cathedral": {
+    "building_type": "Church/Cathedral",
+    "region": "SE Asia",
+    "anchor": "arch",
+    "extent_m": 75.45853452622237
+  },
+  "Manila_Central_Post_Office": {
+    "building_type": "Public Building",
+    "region": "SE Asia",
+    "anchor": "facade",
+    "extent_m": 146.1680960574031
+  },
+  "Manila_Metropolitan_Theater": {
+    "building_type": "Public Building",
+    "region": "SE Asia",
+    "anchor": "facade",
+    "extent_m": 41.57301670755743
+  },
+  "Mansudae_Grand_Monument": {
+    "building_type": "Monument",
+    "region": "East Asia",
+    "anchor": "statue",
+    "extent_m": 206.0302418737484
+  },
+  "Mao_Zedong_youth_art_sculpture": {
+    "building_type": "Monument",
+    "region": "East Asia",
+    "anchor": "statue",
+    "extent_m": 76.37088478654626
+  },
+  "Marcelo_H._del_Pilar_Shrine": {
+    "building_type": "Monument",
+    "region": "SE Asia",
+    "anchor": "statue",
+    "extent_m": 16.218483676328084
+  },
+  "Marine_Corps_War_Memorial": {
+    "building_type": "Monument",
+    "region": "North America",
+    "anchor": "statue",
+    "extent_m": 32.35689549270823
+  },
+  "Matenadaran": {
+    "building_type": "Public Building",
+    "region": "West/Central Asia",
+    "anchor": "statue",
+    "extent_m": 23.62168760083655
+  },
+  "Matsumoto_Castle": {
+    "building_type": "Misc",
+    "region": "East Asia",
+    "anchor": "facade",
+    "extent_m": 110.92907395413624
+  },
+  "Maya_Devi_Temple,_Lumbini": {
+    "building_type": "Temple/Shrine",
+    "region": "South Asia",
+    "anchor": "window",
+    "extent_m": 44.19607926026039
+  },
+  "Mecca_Masjid,_Hyderabad,_India": {
+    "building_type": "Mosque",
+    "region": "South Asia",
+    "anchor": "arch",
+    "extent_m": 129.44968919695106
+  },
+  "Medinet_Habu": {
+    "building_type": "Misc",
+    "region": "Africa",
+    "anchor": "facade",
+    "extent_m": 74.30975377096406
+  },
+  "Merchandise_Mart": {
+    "building_type": "Tower",
+    "region": "North America",
+    "anchor": "arch",
+    "extent_m": 300.8805908716441
+  },
+  "Metropolitan_Cathedral_of_Mexico_City": {
+    "building_type": "Church/Cathedral",
+    "region": "Latin America",
+    "anchor": "bell tower",
+    "extent_m": 199.45807208712264
+  },
+  "Montreal_City_Hall": {
+    "building_type": "Public Building",
+    "region": "North America",
+    "anchor": "facade",
+    "extent_m": 121.91115861819983
+  },
+  "Monument_to_Nicholas_I_of_Russia,_Saint_Petersburg": {
+    "building_type": "Monument",
+    "region": "Europe",
+    "anchor": "statue",
+    "extent_m": 37.75373677655222
+  },
+  "Monumento_a_la_Independencia_(México)": {
+    "building_type": "Monument",
+    "region": "Latin America",
+    "anchor": "statue",
+    "extent_m": 82.06091430607772
+  },
+  "Mortuary_Temple_of_Hatshepsut": {
+    "building_type": "Temple/Shrine",
+    "region": "Africa",
+    "anchor": "column",
+    "extent_m": 188.43457102555288
+  },
+  "Mosque_of_Ibn_Tulun": {
+    "building_type": "Mosque",
+    "region": "Africa",
+    "anchor": "minaret",
+    "extent_m": 143.32437794809914
+  },
+  "Most_Legií": {
+    "building_type": "Misc",
+    "region": "Europe",
+    "anchor": "arch",
+    "extent_m": 123.49812603391572
+  },
+  "Mother_Armenia_Monument": {
+    "building_type": "Misc",
+    "region": "West/Central Asia",
+    "anchor": "statue",
+    "extent_m": 70.35753350982178
+  },
+  "Mount_Rushmore": {
+    "building_type": "Misc",
+    "region": "North America",
+    "anchor": "statue",
+    "extent_m": 128.88135611796625
+  },
+  "Muhammad_Ali_Mosque": {
+    "building_type": "Mosque",
+    "region": "Africa",
+    "anchor": "dome",
+    "extent_m": 106.27252159598356
+  },
+  "Municipal_Theater_of_Tunis": {
+    "building_type": "Public Building",
+    "region": "Africa",
+    "anchor": "arch",
+    "extent_m": 42.19386864990688
+  },
+  "Murdeshwar_Shiva_Statue": {
+    "building_type": "Monument",
+    "region": "South Asia",
+    "anchor": "statue",
+    "extent_m": 72.52308135493915
+  },
+  "Museo_del_Templo_Mayor": {
+    "building_type": "Public Building",
+    "region": "Latin America",
+    "anchor": "facade",
+    "extent_m": 174.95838333652566
+  },
+  "Museu_da_Inconfidência": {
+    "building_type": "Public Building",
+    "region": "Latin America",
+    "anchor": "pediment",
+    "extent_m": 58.165538597699005
+  },
+  "Nagcarlan_Church": {
+    "building_type": "Church/Cathedral",
+    "region": "SE Asia",
+    "anchor": "window",
+    "extent_m": 37.89996902822746
+  },
+  "Nasir-ol-Molk_Mosque": {
+    "building_type": "Mosque",
+    "region": "West/Central Asia",
+    "anchor": "arch",
+    "extent_m": 43.540175509568414
+  },
+  "National_Palace_(Mexico)": {
+    "building_type": "Misc",
+    "region": "Latin America",
+    "anchor": "facade",
+    "extent_m": 209.00714077744144
+  },
+  "National_Shrine_of_St._Anne_(Hagonoy,_Bulacan)": {
+    "building_type": "Church/Cathedral",
+    "region": "SE Asia",
+    "anchor": "arch",
+    "extent_m": 38.456249814761954
+  },
+  "New_Mosque_(Istanbul)": {
+    "building_type": "Mosque",
+    "region": "West/Central Asia",
+    "anchor": "minaret",
+    "extent_m": 172.43295174825786
+  },
+  "New_York_Public_Library_Main_Branch": {
+    "building_type": "Public Building",
+    "region": "North America",
+    "anchor": "column",
+    "extent_m": 116.88343963783598
+  },
+  "Nishi_Hongwanji": {
+    "building_type": "Temple/Shrine",
+    "region": "East Asia",
+    "anchor": "column",
+    "extent_m": 130.86144769102714
+  },
+  "Notre-Dame-de-Bon-Secours_Chapel": {
+    "building_type": "Church/Cathedral",
+    "region": "North America",
+    "anchor": "window",
+    "extent_m": 77.27749473918132
+  },
+  "Nuestra_Señora_de_la_Merced_Parish_Church_(Bahay_Pare,_Candaba,_Pampanga)": {
+    "building_type": "Church/Cathedral",
+    "region": "SE Asia",
+    "anchor": "window",
+    "extent_m": 43.22040857013655
+  },
+  "Odesa_City_Hall": {
+    "building_type": "Public Building",
+    "region": "Europe",
+    "anchor": "statue",
+    "extent_m": 69.32547817702384
+  },
+  "Odzun_Church": {
+    "building_type": "Church/Cathedral",
+    "region": "West/Central Asia",
+    "anchor": "arch",
+    "extent_m": 134.37107821921242
+  },
+  "Old_Legislative_Building_historical_marker": {
+    "building_type": "Monument",
+    "region": "SE Asia",
+    "anchor": "column",
+    "extent_m": 128.79283198940098
+  },
+  "Old_State_House,_Boston": {
+    "building_type": "Public Building",
+    "region": "North America",
+    "anchor": "statue",
+    "extent_m": 60.383504268874574
+  },
+  "Olumo_Rock": {
+    "building_type": "Misc",
+    "region": "Africa",
+    "anchor": "stone",
+    "extent_m": 135.50463653063028
+  },
+  "Opera_house_of_Yerevan": {
+    "building_type": "Public Building",
+    "region": "West/Central Asia",
+    "anchor": "arch",
+    "extent_m": 122.96522146338448
+  },
+  "Osaka_Castle_Keep_Tower": {
+    "building_type": "Public Building",
+    "region": "East Asia",
+    "anchor": "pediment",
+    "extent_m": 97.9456574061413
+  },
+  "Oshakan_Saint_Mashtots": {
+    "building_type": "Church/Cathedral",
+    "region": "West/Central Asia",
+    "anchor": "arch",
+    "extent_m": 52.8389691282155
+  },
+  "Padmanabhaswamy_Temple": {
+    "building_type": "Temple/Shrine",
+    "region": "South Asia",
+    "anchor": "window",
+    "extent_m": 79.4022705258424
+  },
+  "Palace_of_Westminster": {
+    "building_type": "Public Building",
+    "region": "Europe",
+    "anchor": "facade",
+    "extent_m": 639.7780983923102
+  },
+  "Palacio_Legislativo,_Uruguay": {
+    "building_type": "Public Building",
+    "region": "Latin America",
+    "anchor": "column",
+    "extent_m": 206.91130122744485
+  },
+  "Palacio_de_Bellas_Artes": {
+    "building_type": "Public Building",
+    "region": "Latin America",
+    "anchor": "window",
+    "extent_m": 271.3823703437686
+  },
+  "Palacio_de_Comunicaciones": {
+    "building_type": "Public Building",
+    "region": "Europe",
+    "anchor": "facade",
+    "extent_m": 198.76953837729187
+  },
+  "Palácio_Nereu_Ramos": {
+    "building_type": "Public Building",
+    "region": "Latin America",
+    "anchor": "dome",
+    "extent_m": 263.82729642545195
+  },
+  "Pancha_Rathas": {
+    "building_type": "Temple/Shrine",
+    "region": "South Asia",
+    "anchor": "column",
+    "extent_m": 93.35241847382522
+  },
+  "Paoay_Church": {
+    "building_type": "Church/Cathedral",
+    "region": "SE Asia",
+    "anchor": "arch",
+    "extent_m": 91.02423596442878
+  },
+  "Paris_-_Eiffel_Tower,_Paris_Las_Vegas": {
+    "building_type": "Tower",
+    "region": "North America",
+    "anchor": "tower",
+    "extent_m": 199.072634098776
+  },
+  "Patan_Durbar_Square": {
+    "building_type": "Misc",
+    "region": "South Asia",
+    "anchor": "facade",
+    "extent_m": 139.86613282170572
+  },
+  "Paul_Kruger_Church": {
+    "building_type": "Church/Cathedral",
+    "region": "Africa",
+    "anchor": "window",
+    "extent_m": 48.3611218836836
+  },
+  "Petronas_Towers": {
+    "building_type": "Tower",
+    "region": "SE Asia",
+    "anchor": "tower",
+    "extent_m": 530.6032318936699
+  },
+  "Pila_Church": {
+    "building_type": "Church/Cathedral",
+    "region": "SE Asia",
+    "anchor": "solomonic column",
+    "extent_m": 40.98663031569297
+  },
+  "Place_Jacques-Cartier": {
+    "building_type": "Misc",
+    "region": "North America",
+    "anchor": "minaret",
+    "extent_m": 119.5657148641424
+  },
+  "Plaza_Mayor,_Segovia": {
+    "building_type": "Misc",
+    "region": "Europe",
+    "anchor": "arch",
+    "extent_m": 118.6931510569486
+  },
+  "Ponte_dell'Accademia_(Venice)": {
+    "building_type": "Misc",
+    "region": "Europe",
+    "anchor": "__MISSING__",
+    "extent_m": 99.78945519616796
+  },
+  "Portland_Head_Lighthouse": {
+    "building_type": "Misc",
+    "region": "North America",
+    "anchor": "facade",
+    "extent_m": 62.94483013033542
+  },
+  "Prambanan": {
+    "building_type": "Temple/Shrine",
+    "region": "SE Asia",
+    "anchor": "tower",
+    "extent_m": 178.68683251422192
+  },
+  "Praça_da_Figueira": {
+    "building_type": "Misc",
+    "region": "Europe",
+    "anchor": "statue",
+    "extent_m": 260.85570566131395
+  },
+  "Primate_Cathedral_of_Bogota": {
+    "building_type": "Church/Cathedral",
+    "region": "Latin America",
+    "anchor": "bell tower",
+    "extent_m": 109.18143496555744
+  },
+  "Pyatnytska_Church_(Chernihiv)": {
+    "building_type": "Church/Cathedral",
+    "region": "Europe",
+    "anchor": "arch",
+    "extent_m": 44.322485120834514
+  },
+  "Quiapo_Church": {
+    "building_type": "Church/Cathedral",
+    "region": "SE Asia",
+    "anchor": "arch",
+    "extent_m": 56.80924142147609
+  },
+  "Rasmancha,_Bishnupur": {
+    "building_type": "Temple/Shrine",
+    "region": "South Asia",
+    "anchor": "arch",
+    "extent_m": 53.07899230446908
+  },
+  "Red_House_Theater": {
+    "building_type": "Public Building",
+    "region": "East Asia",
+    "anchor": "window",
+    "extent_m": 25.65364143571926
+  },
+  "Reichstag_(building)": {
+    "building_type": "Public Building",
+    "region": "Europe",
+    "anchor": "pediment",
+    "extent_m": 279.6197958928984
+  },
+  "Rostov_Kremlin._Bell_Tower": {
+    "building_type": "Misc",
+    "region": "Europe",
+    "anchor": "minaret",
+    "extent_m": 202.0283243232909
+  },
+  "Royal_Palace,_Stockholm": {
+    "building_type": "Misc",
+    "region": "Europe",
+    "anchor": "facade",
+    "extent_m": 305.7717624022232
+  },
+  "Saint-Martin,_Colmar": {
+    "building_type": "Church/Cathedral",
+    "region": "Europe",
+    "anchor": "arch",
+    "extent_m": 108.11721977225103
+  },
+  "Saint_Andrew_church_in_Kraków": {
+    "building_type": "Church/Cathedral",
+    "region": "Europe",
+    "anchor": "arch",
+    "extent_m": 55.88893107245972
+  },
+  "Saint_Astvatsatsin_Kamsarakan_Church,_Talin": {
+    "building_type": "Church/Cathedral",
+    "region": "West/Central Asia",
+    "anchor": "arch",
+    "extent_m": 51.66611138274644
+  },
+  "Saint_Demetrius_Church_(Vladimir)": {
+    "building_type": "Church/Cathedral",
+    "region": "Europe",
+    "anchor": "arch",
+    "extent_m": 52.53872082644992
+  },
+  "Saint_George_Church_in_Coptic_Cairo": {
+    "building_type": "Church/Cathedral",
+    "region": "Africa",
+    "anchor": "window",
+    "extent_m": 88.93107492957556
+  },
+  "Saint_George_church_(Sopotnica)": {
+    "building_type": "Church/Cathedral",
+    "region": "Europe",
+    "anchor": "arch",
+    "extent_m": 39.177337718970826
+  },
+  "Saint_Gregory_Church,_Sisian": {
+    "building_type": "Church/Cathedral",
+    "region": "West/Central Asia",
+    "anchor": "belfry",
+    "extent_m": 42.06882534381856
+  },
+  "Saint_Holy_Mother_church_of_Yeghvard": {
+    "building_type": "Church/Cathedral",
+    "region": "West/Central Asia",
+    "anchor": "belfry",
+    "extent_m": 52.97833876044737
+  },
+  "Saint_Karapet_of_Janjrlu": {
+    "building_type": "Church/Cathedral",
+    "region": "West/Central Asia",
+    "anchor": "arch",
+    "extent_m": 41.28968410781974
+  },
+  "Saint_Lawrence_Deacon_&_Martyr_Parish_Church_of_Balagtas": {
+    "building_type": "Church/Cathedral",
+    "region": "SE Asia",
+    "anchor": "arch",
+    "extent_m": 44.29047059519868
+  },
+  "Saint_Lawrence_church,_Zhovkva": {
+    "building_type": "Church/Cathedral",
+    "region": "Europe",
+    "anchor": "window",
+    "extent_m": 123.78694804624698
+  },
+  "Saint_Louis_Cathedral,_New_Orleans": {
+    "building_type": "Church/Cathedral",
+    "region": "North America",
+    "anchor": "window",
+    "extent_m": 64.9869335153833
+  },
+  "Saint_Michael_the_Archangel_Parish_Church_in_San_Miguel,_Bulacan": {
+    "building_type": "Church/Cathedral",
+    "region": "SE Asia",
+    "anchor": "pillar",
+    "extent_m": 61.64968400192367
+  },
+  "Saint_Nicholas_of_Tolentino_Temple_and_Convent_of_Actopan": {
+    "building_type": "Church/Cathedral",
+    "region": "Latin America",
+    "anchor": "arch",
+    "extent_m": 140.26228076064356
+  },
+  "Saint_Sophia_Cathedral_in_Novgorod": {
+    "building_type": "Church/Cathedral",
+    "region": "Europe",
+    "anchor": "arch",
+    "extent_m": 99.13575048489749
+  },
+  "Salim_Chishti_Tomb_(Fatehpur_Sikri)": {
+    "building_type": "Tomb",
+    "region": "South Asia",
+    "anchor": "roof",
+    "extent_m": 98.43822644701856
+  },
+  "San_Francisco_Church,_Mexico_City": {
+    "building_type": "Church/Cathedral",
+    "region": "Latin America",
+    "anchor": "window",
+    "extent_m": 43.78824345726515
+  },
+  "San_Francisco_City_Hall": {
+    "building_type": "Public Building",
+    "region": "North America",
+    "anchor": "pediment",
+    "extent_m": 168.19203490191433
+  },
+  "San_Lorenzo_(Genoa)": {
+    "building_type": "Church/Cathedral",
+    "region": "Europe",
+    "anchor": "arch",
+    "extent_m": 98.67370584015968
+  },
+  "Sanahin_Monastery_(bell_tower)": {
+    "building_type": "Misc",
+    "region": "West/Central Asia",
+    "anchor": "facade",
+    "extent_m": 31.651238752685515
+  },
+  "Santa_Catalina_de_Alexandria_Parish_Church_(Porac,_Pampanga)": {
+    "building_type": "Church/Cathedral",
+    "region": "SE Asia",
+    "anchor": "arch",
+    "extent_m": 90.65294550047994
+  },
+  "Santa_Prisca_Church_(Taxco_de_Alarcón)": {
+    "building_type": "Church/Cathedral",
+    "region": "Latin America",
+    "anchor": "window",
+    "extent_m": 43.84757576264762
+  },
+  "Santo_Niño_Church_in_Bustos,_Bulacan": {
+    "building_type": "Church/Cathedral",
+    "region": "SE Asia",
+    "anchor": "arch",
+    "extent_m": 43.56385156388122
+  },
+  "Santuario_del_Santo_Cristo": {
+    "building_type": "Church/Cathedral",
+    "region": "SE Asia",
+    "anchor": "arch",
+    "extent_m": 117.79743500004686
+  },
+  "Santuário_do_Bom_Jesus_de_Matosinhos": {
+    "building_type": "Church/Cathedral",
+    "region": "Latin America",
+    "anchor": "window",
+    "extent_m": 75.89096398319948
+  },
+  "Sat_Gambuj_Mosque": {
+    "building_type": "Mosque",
+    "region": "South Asia",
+    "anchor": "arch",
+    "extent_m": 56.07061601463744
+  },
+  "Schlosskapelle_Hubertusburg": {
+    "building_type": "Church/Cathedral",
+    "region": "Europe",
+    "anchor": "pediment",
+    "extent_m": 151.91315396677595
+  },
+  "Seitenkyū": {
+    "building_type": "Temple/Shrine",
+    "region": "East Asia",
+    "anchor": "pillar",
+    "extent_m": 46.52876946269525
+  },
+  "Shish_Gumbad": {
+    "building_type": "Tomb",
+    "region": "South Asia",
+    "anchor": "arch",
+    "extent_m": 50.2892411107934
+  },
+  "Shuri_Castle": {
+    "building_type": "Misc",
+    "region": "East Asia",
+    "anchor": "facade",
+    "extent_m": 52.9376013728165
+  },
+  "Sixty_Dome_Mosque": {
+    "building_type": "Mosque",
+    "region": "South Asia",
+    "anchor": "arch",
+    "extent_m": 85.17676508053637
+  },
+  "Sleeping_Beauty_Castle_at_Disneyland": {
+    "building_type": "Misc",
+    "region": "North America",
+    "anchor": "facade",
+    "extent_m": 62.92035157695565
+  },
+  "Slovak_National_Theatre_(old_building)": {
+    "building_type": "Public Building",
+    "region": "Europe",
+    "anchor": "column",
+    "extent_m": 66.10286095305881
+  },
+  "Soltaniyeh_Dome": {
+    "building_type": "Tomb",
+    "region": "West/Central Asia",
+    "anchor": "arch",
+    "extent_m": 119.0260350282536
+  },
+  "St._Hripsime_church,_Vagharshapat": {
+    "building_type": "Church/Cathedral",
+    "region": "West/Central Asia",
+    "anchor": "bell tower",
+    "extent_m": 52.776330298618426
+  },
+  "St._James_United_Church_(Montreal)": {
+    "building_type": "Church/Cathedral",
+    "region": "North America",
+    "anchor": "arch",
+    "extent_m": 79.07567362064106
+  },
+  "St._John_of_Mastara": {
+    "building_type": "Church/Cathedral",
+    "region": "West/Central Asia",
+    "anchor": "arch",
+    "extent_m": 40.7019993461229
+  },
+  "St._Theodosius_Russian_Orthodox_Cathedral": {
+    "building_type": "Church/Cathedral",
+    "region": "North America",
+    "anchor": "window",
+    "extent_m": 61.37894869258526
+  },
+  "Stadhuis_(Gouda)": {
+    "building_type": "Public Building",
+    "region": "Europe",
+    "anchor": "window",
+    "extent_m": 71.81792946287923
+  },
+  "Statue_of_John_of_Nepomuk_on_Charles_Bridge": {
+    "building_type": "Monument",
+    "region": "Europe",
+    "anchor": "statue",
+    "extent_m": 21.647534057602524
+  },
+  "Statue_of_Saint_Wenceslaus_on_the_Cloak_Bridge_in_Český_Krumlov": {
+    "building_type": "Monument",
+    "region": "Europe",
+    "anchor": "arch",
+    "extent_m": 47.73658309333842
+  },
+  "Surb_Karapet_Church,_Noravank_monastery": {
+    "building_type": "Misc",
+    "region": "West/Central Asia",
+    "anchor": "minaret",
+    "extent_m": 54.50775199420913
+  },
+  "Surb_Zoravor_Astvatsatsin_Church": {
+    "building_type": "Misc",
+    "region": "West/Central Asia",
+    "anchor": "facade",
+    "extent_m": 41.44121986256771
+  },
+  "Svetitskhoveli": {
+    "building_type": "Church/Cathedral",
+    "region": "West/Central Asia",
+    "anchor": "arch",
+    "extent_m": 93.63510931135738
+  },
+  "Sé_Cathedral_(Goa)": {
+    "building_type": "Church/Cathedral",
+    "region": "South Asia",
+    "anchor": "bell tower",
+    "extent_m": 213.22180115782524
+  },
+  "Taal_Basilica": {
+    "building_type": "Church/Cathedral",
+    "region": "SE Asia",
+    "anchor": "window",
+    "extent_m": 69.29957558043245
+  },
+  "Taipei_101": {
+    "building_type": "Tower",
+    "region": "East Asia",
+    "anchor": "tower",
+    "extent_m": 757.8363634806689
+  },
+  "Taipei_Confucius_Temple": {
+    "building_type": "Temple/Shrine",
+    "region": "East Asia",
+    "anchor": "pillar",
+    "extent_m": 53.79882176740915
+  },
+  "Tajhat_Palace": {
+    "building_type": "Misc",
+    "region": "South Asia",
+    "anchor": "arch",
+    "extent_m": 70.71794675975475
+  },
+  "Taleju_Temple,_Kathmandu": {
+    "building_type": "Temple/Shrine",
+    "region": "South Asia",
+    "anchor": "arch",
+    "extent_m": 67.84180967675294
+  },
+  "Teatro_Amazonas": {
+    "building_type": "Public Building",
+    "region": "Latin America",
+    "anchor": "column",
+    "extent_m": 140.71022315215984
+  },
+  "Temple_of_Bacchus_in_Baalbek": {
+    "building_type": "Temple/Shrine",
+    "region": "West/Central Asia",
+    "anchor": "column",
+    "extent_m": 107.43128918650014
+  },
+  "Templo_de_San_Francisco,_Cochabamba": {
+    "building_type": "Church/Cathedral",
+    "region": "Latin America",
+    "anchor": "window",
+    "extent_m": 40.61672655839704
+  },
+  "Templo_de_Santo_Domingo_de_Guzmán_in_Oaxaca_de_Juárez": {
+    "building_type": "Church/Cathedral",
+    "region": "Latin America",
+    "anchor": "window",
+    "extent_m": 86.1368931117437
+  },
+  "Templo_del_Hospicio,_Cochabamba": {
+    "building_type": "Church/Cathedral",
+    "region": "Latin America",
+    "anchor": "statue",
+    "extent_m": 59.23520156979733
+  },
+  "The_Door_of_No_Return,_Ouidah": {
+    "building_type": "Monument",
+    "region": "Africa",
+    "anchor": "column",
+    "extent_m": 30.78451262037864
+  },
+  "The_Venetian_(Las_Vegas)": {
+    "building_type": "Tower",
+    "region": "North America",
+    "anchor": "column",
+    "extent_m": 275.72331555821023
+  },
+  "Theater_of_Petra": {
+    "building_type": "Public Building",
+    "region": "West/Central Asia",
+    "anchor": "arch",
+    "extent_m": 240.10435890259956
+  },
+  "Theaterplatz,_Dresden": {
+    "building_type": "Misc",
+    "region": "Europe",
+    "anchor": "window",
+    "extent_m": 145.42236175267945
+  },
+  "Theatre_of_Dougga": {
+    "building_type": "Public Building",
+    "region": "Africa",
+    "anchor": "column",
+    "extent_m": 77.2801187614143
+  },
+  "Tokyo_Metropolitan_Government_Building_No.2_(1991)": {
+    "building_type": "Tower",
+    "region": "East Asia",
+    "anchor": "tower",
+    "extent_m": 338.5330677731868
+  },
+  "Tokyo_Tower": {
+    "building_type": "Tower",
+    "region": "East Asia",
+    "anchor": "tower",
+    "extent_m": 255.56224875440117
+  },
+  "Tomb_of_Asif_Khan": {
+    "building_type": "Tomb",
+    "region": "South Asia",
+    "anchor": "arch",
+    "extent_m": 57.24044421785117
+  },
+  "Tomb_of_Safdarjung": {
+    "building_type": "Tomb",
+    "region": "South Asia",
+    "anchor": "arch",
+    "extent_m": 94.65986066041512
+  },
+  "Tomb_of_Shah_Rukn-e-Alam": {
+    "building_type": "Tomb",
+    "region": "South Asia",
+    "anchor": "arch",
+    "extent_m": 63.36461896672805
+  },
+  "Torre_de_los_Picos,_Alhambra": {
+    "building_type": "Tower",
+    "region": "Europe",
+    "anchor": "tower",
+    "extent_m": 317.84182817591864
+  },
+  "Trafalgar_Square": {
+    "building_type": "Misc",
+    "region": "Europe",
+    "anchor": "facade",
+    "extent_m": 385.4373873188678
+  },
+  "Tribune_Tower": {
+    "building_type": "Tower",
+    "region": "North America",
+    "anchor": "tower",
+    "extent_m": 258.0177248561246
+  },
+  "Triumphal_Arch_in_Volubilis": {
+    "building_type": "Arch/Gate",
+    "region": "Africa",
+    "anchor": "arch",
+    "extent_m": 24.454694940674287
+  },
+  "Trump_International_Hotel_and_Tower_(Chicago)": {
+    "building_type": "Tower",
+    "region": "North America",
+    "anchor": "tower",
+    "extent_m": 411.23280104494535
+  },
+  "Tsiranavor": {
+    "building_type": "Church/Cathedral",
+    "region": "West/Central Asia",
+    "anchor": "window",
+    "extent_m": 43.54850315824668
+  },
+  "Tuntex_Sky_Tower": {
+    "building_type": "Tower",
+    "region": "East Asia",
+    "anchor": "tower",
+    "extent_m": 177.06773118579
+  },
+  "Unfinished_obelisk_in_Aswan": {
+    "building_type": "Monument",
+    "region": "Africa",
+    "anchor": "walkway",
+    "extent_m": 63.198033564603485
+  },
+  "Vank_Cathedral": {
+    "building_type": "Church/Cathedral",
+    "region": "West/Central Asia",
+    "anchor": "arch",
+    "extent_m": 59.52448320064993
+  },
+  "Voortrekker_Monument": {
+    "building_type": "Monument",
+    "region": "Africa",
+    "anchor": "arch",
+    "extent_m": 77.32909308315976
+  },
+  "Washington_Monument": {
+    "building_type": "Monument",
+    "region": "North America",
+    "anchor": "altar",
+    "extent_m": 187.78514355095515
+  },
+  "Western_Wall_Plaza": {
+    "building_type": "Misc",
+    "region": "West/Central Asia",
+    "anchor": "wall",
+    "extent_m": 318.9364209801992
+  },
+  "Westminster_Cathedral": {
+    "building_type": "Church/Cathedral",
+    "region": "Europe",
+    "anchor": "arch",
+    "extent_m": 106.30514496151784
+  },
+  "Wrocław_Town_Hall": {
+    "building_type": "Public Building",
+    "region": "Europe",
+    "anchor": "window",
+    "extent_m": 207.5541807376454
+  },
+  "Yererouk_Basilica": {
+    "building_type": "Church/Cathedral",
+    "region": "West/Central Asia",
+    "anchor": "arch",
+    "extent_m": 17.168959663791107
+  },
+  "Zitouna_Mosque": {
+    "building_type": "Mosque",
+    "region": "Africa",
+    "anchor": "arch",
+    "extent_m": 82.82628057750144
+  },
+  "Zushih_Temple": {
+    "building_type": "Temple/Shrine",
+    "region": "East Asia",
+    "anchor": "pillar",
+    "extent_m": 49.09808812470363
+  },
+  "Zōjō-ji": {
+    "building_type": "Temple/Shrine",
+    "region": "East Asia",
+    "anchor": "tower",
+    "extent_m": 95.24077015233512
+  }
+}

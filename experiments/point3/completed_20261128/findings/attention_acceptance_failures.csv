@@ -1,0 +1,4 @@
+method,n,all_24_layers_accepted,all_layers_accepted_but_error_worse_than_original,fraction_harmful_despite_all_layers_accepted
+H1,36,36,15,0.4166666666666667
+H2,36,36,16,0.4444444444444444
+H3,36,36,14,0.3888888888888889

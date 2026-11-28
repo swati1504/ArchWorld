@@ -1,0 +1,70 @@
+% Main file: main.tex | Compiler: pdfLaTeX
+% Team editing instructions: README.txt
+\documentclass[sigconf,nonacm]{acmart}
+\usepackage{xurl}
+\usepackage{placeins}
+\emergencystretch=1em
+\setcopyright{none}
+\settopmatter{printacmref=false,printfolios=true}
+\renewcommand\footnotetextcopyrightpermission[1]{}
+\acmConference{}{}{}
+\acmDOI{}
+\acmISBN{}
+\citestyle{acmnumeric}
+\title[AdaptiveAttend]{AdaptiveAttend --- Scene-Adaptive Intervention Strength for 3D Foundation Models}
+\subtitle{Final Project Report}
+\author{Eric Lu (NetID yl4386)}
+\author{Swati Parida (NetID sp2735)}
+\author{Anastasios Gerasis (NetID ag2766)}
+\renewcommand{\shortauthors}{AdaptiveAttend team}
+\captionsetup{labelsep=space}
+\begin{document}
+\raggedbottom
+\begin{abstract}
+% Intentionally empty: complete once all three contributions are integrated.
+\mbox{}\par\vspace{0.8cm}
+\end{abstract}
+\keywords{3D reconstruction, attention intervention, inference-time adaptation, adaptive step size}
+\maketitle
+
+\input{sections/01_introduction}
+\input{sections/02_task_evaluation}
+\input{sections/03_reference_intervention}
+
+\section{Baseline Evaluation}
+\label{sec:eric}
+\input{sections/04_baseline_evaluation}
+\vspace{0.7cm}
+
+\section{Predicting \texorpdfstring{$\eta$}{eta} from Pass-1 Signals}
+\label{sec:eric-pass1}
+\input{sections/05_pass1_signals}
+\vspace{0.7cm}
+
+\section{Adaptive Strength Selection and Analysis}
+\label{sec:swati}
+\input{sections/06_adaptive_selection}
+\vspace{0.7cm}
+
+\input{sections/07_structured_interventions}
+\FloatBarrier
+
+\section{Discussion}
+\input{sections/08_discussion}
+\vspace{0.9cm}
+
+\section{Conclusion}
+\input{sections/09_conclusion}
+\vspace{0.9cm}
+
+\section{Author Contributions}
+\input{sections/10_contributions}
+
+\bibliographystyle{ACM-Reference-Format-no-colons}
+\bibliography{references}
+\clearpage
+\onecolumn
+\appendix
+\input{appendices/qualitative}
+\input{appendices/exploratory}
+\end{document}

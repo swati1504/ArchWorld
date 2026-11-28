@@ -1,0 +1,18 @@
+\subsection{Main Findings and Interpretation}
+\label{sec:point3-findings}
+The benefit of structured steering depends strongly on the landmark. H1 and H3 improve the calibrated scalar's mean error, but none of the tested rules beats original VGGT in mean across 36 confirmation landmarks. Improving an intervention does not necessarily improve on leaving the model unchanged.
+
+\paragraph{H1 is the strongest candidate for improving the scalar rule.}
+H1 reduces the scalar mean by 4.22\%, wins on 23 of 36 landmarks, and retains its mean advantage after every single-landmark omission. Its normalization targets a similar relative change in anchor activations across layers. The result is consistent with that motivation, without establishing the mechanism causing the gains. H1 remains 1.55\% worse than original VGGT in mean. Its scalar-relative bootstrap interval includes zero.
+
+\paragraph{H2 shows that visible anchor area is not an established guide to useful steering.}
+H2's mean is almost unchanged from the scalar (+0.03\%), with 13 scalar-relative wins. A possible explanation is that larger anchor masks indicate visibility without identifying where stronger updates help geometry. This interpretation is untested. H2 and the scalar also use different calibrated base strengths, preventing attribution of their difference to view weighting alone.
+
+\paragraph{H3's benefit comes from three decisions.}
+Only two statues and one column receive a different coefficient. The other 33 predictions duplicate the scalar. Two gains and one regression produce the entire 2.41\% mean reduction. Reducing strength helps particular cases, but this does not establish a successful anchor-dependent policy across all 23 confirmation labels.
+
+\paragraph{Local successes coexist with costly failures.}
+H1, H2, and H3 beat original VGGT on 21, 20, and 22 landmarks respectively, yet large regressions outweigh these wins in the mean. Pal\'acio Nereu Ramos is the largest regression for all three. Conversely, H1 improves all three facade-labeled landmarks against both controls, reducing their group mean by 16.80\% versus original VGGT. These are whole-landmark gains, not separately measured improvements within the anchor. Appendix~\ref{app:qualitative} shows selected successes for all three rules.
+
+\paragraph{The evidence identifies leads, not a reliable selector.}
+All six paired mean-effect intervals include zero, and none of 46 primary exploratory associations survives global correction. This matched evaluation identifies gains, failures, and their concentration. H1 offers the strongest observed improvement over the scalar. A rule predicting when to steer still requires independent evaluation. Choosing the winning method from confirmation outcomes would not demonstrate an inference-time selector.

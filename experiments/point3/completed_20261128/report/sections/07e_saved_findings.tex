@@ -1,0 +1,37 @@
+\subsection{Findings Established by the Saved Runs}
+\label{sec:saved-findings}
+The absence of an established population-level improvement does not make every result inconclusive. The following descriptive findings use the same frozen outputs, retain all 36 confirmation landmarks, and require no additional model runs. They distinguish observed behavior from causal explanations and hypothetical selection performance.
+
+\paragraph{Attention-based acceptance did not screen out harmful reconstructions.}
+All 24 layers accepted their updates on all 36 selected runs for each hypothesis. Nevertheless, whole-landmark error exceeded original VGGT on 15 H1, 16 H2, and 14 H3 landmarks. Thus a rise in the monitored attention statistic is demonstrably insufficient to guarantee improved geometry in this cohort. This is an observed limitation of the acceptance criterion, not proof that attention itself caused the errors. The three method-specific counts are not independent samples, especially where H3 duplicates scalar predictions.
+
+\paragraph{A few regressions account for most of the error increases.}
+For each method, we separate paired changes from original into gross gains and gross harms. H1's improvements contribute a mean error reduction of 0.7627, while its regressions contribute an increase of 0.9791, leaving the reported net increase of 0.2164. The three largest regressions account for 74.24\% of H1's gross harm, 74.32\% of H2's, and 86.44\% of H3's. These percentages divide the sum of the three largest positive differences by the sum of all positive differences. They are not percentages of total reconstruction error. The worst cases are identified post hoc and remain in every headline mean.
+
+\paragraph{The tested predictions contain gains that our selectors do not recover.}
+For diagnosis only, define an observed-candidate oracle that chooses the smallest recorded error for each landmark after seeing ground truth. Selecting among scalar, H1, H2, and H3 gives mean error 13.3201, 4.34\% below original VGGT. Adding original VGGT as an option gives 12.8996, a 7.36\% reduction. At least one intervention beats original on 28 landmarks. Original is best on the other eight. These numbers quantify available gains within the measured candidate set. They are hindsight references, not achieved selector performance, and are not a full strength-sweep oracle.
+
+An ideal choice restricted to H1 or original gives mean error 13.1615, 5.48\% below original. Its gain is 74.44\% of the full observed-candidate oracle gain. This motivates studying when to abstain from H1, as well as which structured method to use. It does not demonstrate that a practical abstention rule can recover that gain. Table~\ref{tab:saved-oracle} separates implemented methods from these hypothetical choices.
+
+\begin{center}
+\begin{minipage}{\columnwidth}
+\captionof{table}{Confirmation means and hindsight diagnostics. Lower is better. Oracle choices use ground-truth errors and cannot be reported as achieved inference-time policies.}
+\label{tab:saved-oracle}
+\centering
+\small
+\input{generated/saved_oracle_table}
+\end{minipage}
+\end{center}
+
+\paragraph{An available matched-strength H2 comparison exposes counterexamples.}
+The saved H3 runs provide scalar $\eta=100$ predictions for three confirmation landmarks, allowing comparison with H2 at base $\eta=100$ under the matched study inputs. H2 is worse on Mansudae Grand Monument (5.7559 versus 5.1155), Marine Corps War Memorial (30.0137 versus 28.0207), and Palacio Legislativo, Uruguay (23.0705 versus 16.9522). Their mean rises from 16.6961 to 19.6134, or 17.47\%. These cases show that view weighting can hurt even when base strength is matched. They are two statues and one column selected by H3's lookup, so they do not estimate the full-cohort effect of view weighting. The separate 18-landmark calibration comparison has an 8.15\% lower H2 mean, but is in-sample and is not pooled with confirmation.
+
+\subsection{Exploratory Selection with Complete Cohort Coverage}
+\label{sec:complete-selection}
+To assess whether group-specific preferences justify selection, we also examine three simple rules over the existing anchor, building-type, and region categories. Each chooses the lowest mean calibration error among the frozen scalar/H1/H2/H3 candidates when a category has at least two calibration landmarks. Otherwise it uses the best global calibration candidate, H3. Exact-anchor selection has direct support on 17 confirmation landmarks and falls back on 19. Building-type selection has support on 24 and falls back on 12. Region has support on all 36. No landmark is omitted from their aggregate scores.
+
+An additional fixed rule chooses the best mean-error method among each scene's three nearest calibration landmarks in the saved image-derived appearance distance. It uses neither the two-dimensional visualization coordinates nor the composite distance containing physical extent, and performs no neighbor-count search. Every confirmation landmark receives a choice, including rare anchors. The descriptor extraction belongs to the prior dataset-selection procedure. Equivalence to the reconstruction's sampled views and compute budget has not been established.
+
+The confirmation means are 14.2396 for anchor selection, 14.1574 for building-type selection, 14.5274 for region selection, and 14.4054 for appearance-neighbor selection. All improve the scalar mean of 14.7630. None improves H1's 14.1406 or original VGGT's 13.9243. Appearance selection chooses H1 on 28 landmarks, H2 on one, and H3 on seven. Its eight departures from H1 yield one improvement and seven regressions. Providing a choice for every scene therefore does not establish useful selection.
+
+These audits were initiated after inspecting confirmation outcomes. Although fitting uses calibration errors only, this remains retrospective exploration rather than a new blinded evaluation. Original-VGGT calibration errors are absent from the score tables used by these audits, so the rules cannot learn when to choose no intervention. Their candidates were themselves calibrated on the same 18 landmarks. No new significance claim is made, and the earlier correction over 46 associations does not cover a further search over selection rules. Complete per-landmark decisions, coverage counts, and source hashes accompany the report under \nolinkurl{extended_evidence/selection/} and \nolinkurl{extended_evidence/saved_findings/}.

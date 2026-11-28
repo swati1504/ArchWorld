@@ -1,0 +1,315 @@
+{
+  "files": 50,
+  "nonempty_views": 50,
+  "numeric_checks": "passed",
+  "visual_review": "required before interpreting architectural effects",
+  "input_key": "4c0680a9ccb878c6d4918148fc3baaa373e0d4b48bd480a8772f0ccf3703688f",
+  "anchor": "facade",
+  "manual_override": null,
+  "preview_views": 6,
+  "coverage_by_view": [
+    {
+      "view": 0,
+      "alias": "p3_5a740eec5f746f848d2d.jpg",
+      "fraction": 0.42290533333333336
+    },
+    {
+      "view": 1,
+      "alias": "p3_70cb02f9f509d3216a63.jpg",
+      "fraction": 0.3905909090909091
+    },
+    {
+      "view": 2,
+      "alias": "p3_ca848406786b6664cdc4.jpg",
+      "fraction": 0.5306453333333333
+    },
+    {
+      "view": 3,
+      "alias": "p3_b574bd687d47ea4a5463.jpg",
+      "fraction": 0.4436570247933884
+    },
+    {
+      "view": 4,
+      "alias": "p3_0de10c53bb35f55fe1b0.jpg",
+      "fraction": 0.4928108108108108
+    },
+    {
+      "view": 5,
+      "alias": "p3_202eed339b083daa7948.jpg",
+      "fraction": 0.575728
+    },
+    {
+      "view": 6,
+      "alias": "p3_d564aed31f7736afa293.jpg",
+      "fraction": 0.4690213089802131
+    },
+    {
+      "view": 7,
+      "alias": "p3_47c818964e6b96c46a7e.jpg",
+      "fraction": 0.44401328903654486
+    },
+    {
+      "view": 8,
+      "alias": "p3_34ef163335f83b1419b5.jpg",
+      "fraction": 0.2665
+    },
+    {
+      "view": 9,
+      "alias": "p3_30d66bc7c816c5538561.jpg",
+      "fraction": 0.5837977369165488
+    },
+    {
+      "view": 10,
+      "alias": "p3_e6cdbbc4fed8fd6da1ff.jpg",
+      "fraction": 0.5349946666666666
+    },
+    {
+      "view": 11,
+      "alias": "p3_a6c1e96f5579718baaef.jpg",
+      "fraction": 0.7626093333333334
+    },
+    {
+      "view": 12,
+      "alias": "p3_f267b43c542a7c2e36a8.jpg",
+      "fraction": 0.7899693333333333
+    },
+    {
+      "view": 13,
+      "alias": "p3_f83651727dba7f0c858d.jpg",
+      "fraction": 0.750268
+    },
+    {
+      "view": 14,
+      "alias": "p3_55387dcdb2727a5067a6.jpg",
+      "fraction": 0.879136
+    },
+    {
+      "view": 15,
+      "alias": "p3_a6328300ba12a7192699.jpg",
+      "fraction": 0.5138293333333334
+    },
+    {
+      "view": 16,
+      "alias": "p3_a0155db52d6dfe43d3c8.jpg",
+      "fraction": 0.877652
+    },
+    {
+      "view": 17,
+      "alias": "p3_06914d50bde3304f3228.jpg",
+      "fraction": 0.836664
+    },
+    {
+      "view": 18,
+      "alias": "p3_73cab7208aad375c81ba.jpg",
+      "fraction": 0.2859712121212121
+    },
+    {
+      "view": 19,
+      "alias": "p3_3803549790e9271ef5be.jpg",
+      "fraction": 0.791264
+    },
+    {
+      "view": 20,
+      "alias": "p3_aa652380bedaee1732b6.jpg",
+      "fraction": 0.8997706666666667
+    },
+    {
+      "view": 21,
+      "alias": "p3_6d85bc7b1bfae6ade571.jpg",
+      "fraction": 0.45668590604026843
+    },
+    {
+      "view": 22,
+      "alias": "p3_738b720d1e8115ef516c.jpg",
+      "fraction": 0.5299009009009009
+    },
+    {
+      "view": 23,
+      "alias": "p3_b8e327c096b2c58bb8c2.jpg",
+      "fraction": 0.507688
+    },
+    {
+      "view": 24,
+      "alias": "p3_f5bbf5d23fde47514f2b.jpg",
+      "fraction": 0.7843192419825072
+    },
+    {
+      "view": 25,
+      "alias": "p3_b373514be1c9ae63f292.jpg",
+      "fraction": 0.8200973333333333
+    },
+    {
+      "view": 26,
+      "alias": "p3_533c44278404970f2215.jpg",
+      "fraction": 0.848512
+    },
+    {
+      "view": 27,
+      "alias": "p3_7a9fe2066b4cdb1a3ece.jpg",
+      "fraction": 0.878532
+    },
+    {
+      "view": 28,
+      "alias": "p3_26055a13a26448afad47.jpg",
+      "fraction": 0.511708
+    },
+    {
+      "view": 29,
+      "alias": "p3_6e5007d7f95330ed13b3.jpg",
+      "fraction": 0.878092
+    },
+    {
+      "view": 30,
+      "alias": "p3_4608e8c80fdf92df3226.jpg",
+      "fraction": 0.697612
+    },
+    {
+      "view": 31,
+      "alias": "p3_4ea6945bf777cc6f6141.jpg",
+      "fraction": 0.5259397590361445
+    },
+    {
+      "view": 32,
+      "alias": "p3_b64c8196eee15b2365e8.jpg",
+      "fraction": 0.6233785822021116
+    },
+    {
+      "view": 33,
+      "alias": "p3_48ec2183b6fddd8ce9a3.jpg",
+      "fraction": 0.4115251141552511
+    },
+    {
+      "view": 34,
+      "alias": "p3_e68478463d36f366890c.jpg",
+      "fraction": 0.5880885860306644
+    },
+    {
+      "view": 35,
+      "alias": "p3_77167e066e01787b4e69.jpg",
+      "fraction": 0.46407085020242916
+    },
+    {
+      "view": 36,
+      "alias": "p3_21a312dcdee15c6b5cd2.jpg",
+      "fraction": 0.37166015037593986
+    },
+    {
+      "view": 37,
+      "alias": "p3_693ff654e895f5d9f8f9.jpg",
+      "fraction": 0.4108659638554217
+    },
+    {
+      "view": 38,
+      "alias": "p3_b09ad81a38f16496334f.jpg",
+      "fraction": 0.5277771084337349
+    },
+    {
+      "view": 39,
+      "alias": "p3_b2e965aafb8d43a91f3f.jpg",
+      "fraction": 0.425569696969697
+    },
+    {
+      "view": 40,
+      "alias": "p3_937b66ae721a5f018045.jpg",
+      "fraction": 0.2381969465648855
+    },
+    {
+      "view": 41,
+      "alias": "p3_2de82defbdb60ff2b174.jpg",
+      "fraction": 0.43485714285714283
+    },
+    {
+      "view": 42,
+      "alias": "p3_ff252718e5e024319893.jpg",
+      "fraction": 0.3729620637329287
+    },
+    {
+      "view": 43,
+      "alias": "p3_769eb39905c555f104af.jpg",
+      "fraction": 0.3203348484848485
+    },
+    {
+      "view": 44,
+      "alias": "p3_ec61c0ef5fabe390c6c2.jpg",
+      "fraction": 0.13987387387387387
+    },
+    {
+      "view": 45,
+      "alias": "p3_4f4f49b8c858438f4433.jpg",
+      "fraction": 0.18343543543543545
+    },
+    {
+      "view": 46,
+      "alias": "p3_c69370bdd45b9268eae6.jpg",
+      "fraction": 0.422896
+    },
+    {
+      "view": 47,
+      "alias": "p3_6aa04023681b186a9ac4.jpeg",
+      "fraction": 0.5279894419306184
+    },
+    {
+      "view": 48,
+      "alias": "p3_226b3ff6e23586acea24.jpg",
+      "fraction": 0.4662383808095952
+    },
+    {
+      "view": 49,
+      "alias": "p3_fb9d08df05068c3cc060.jpg",
+      "fraction": 0.2616475
+    }
+  ],
+  "mask_archive_sha256": "554d159114374450a523d184b1ef3a39059ba50ce1550756c1f9ad3cedc57bfd",
+  "mask_sha256_by_file": {
+    "Herald_Square/mask/p3_5a740eec5f746f848d2d_facade.npy": "2e8513d242d07743cd8dbe7631deb0cecf747c0055fbaef07647c98085729254",
+    "Herald_Square/mask/p3_70cb02f9f509d3216a63_facade.npy": "a1a38dc41448d91a307268ce50af3869114c721cf669f0544cec8790ca1b0d95",
+    "Herald_Square/mask/p3_ca848406786b6664cdc4_facade.npy": "885f888a1bc0b7571ca90ccce138dea99f401a2033fd63a02160d546becaadcb",
+    "Herald_Square/mask/p3_b574bd687d47ea4a5463_facade.npy": "c4ef8849579a83b9a70f044521c7710f69331c0d3a56059da14616764df56b29",
+    "Herald_Square/mask/p3_0de10c53bb35f55fe1b0_facade.npy": "5e2b24227d44a0a04531c56b32a3fe20e2e3b62bd46d9f58bf7d1ba5db7e2df5",
+    "Herald_Square/mask/p3_202eed339b083daa7948_facade.npy": "e19edf3ed63fbb424234f6c42b6f87b00e6ff823c1ae3b01a18b24647400119d",
+    "Herald_Square/mask/p3_d564aed31f7736afa293_facade.npy": "83fc3d6ce69c9f7fd2c206967fcdbf187a3fbf777562593d1fedab07b9fe1155",
+    "Herald_Square/mask/p3_47c818964e6b96c46a7e_facade.npy": "8571e6127a82791048b1ec5a36a786906e1679c5049606fd4679876c982b1cd3",
+    "Herald_Square/mask/p3_34ef163335f83b1419b5_facade.npy": "75eaf2a51c8c042e35bcc8fb8c4e06776529121dd4535134148cdc147a3ae2dd",
+    "Herald_Square/mask/p3_30d66bc7c816c5538561_facade.npy": "074f98a6b35f6bf2ac5fbfbb209e99ea64294f152a684cbe020cde5bb0e23acb",
+    "Herald_Square/mask/p3_e6cdbbc4fed8fd6da1ff_facade.npy": "072f7282ba7de44d0de9eda7a8cebeac701c198e431f5ed6b174e5f2c18b33fd",
+    "Herald_Square/mask/p3_a6c1e96f5579718baaef_facade.npy": "1b5b4d59ffaed457851b6ed1fd1d3f48dd3aa57afdabcef892699b028de9f739",
+    "Herald_Square/mask/p3_f267b43c542a7c2e36a8_facade.npy": "23764ce728212c2492f429135f51e51c8835cc61187693ef343894990f6dccab",
+    "Herald_Square/mask/p3_f83651727dba7f0c858d_facade.npy": "2de9246d0c8b4a328ed93d7580ebd190ca9559404c35a2581dd6526ffee79080",
+    "Herald_Square/mask/p3_55387dcdb2727a5067a6_facade.npy": "71a0220578c7bff6fcf473100605c87c84717091c306990e81375c458f88548d",
+    "Herald_Square/mask/p3_a6328300ba12a7192699_facade.npy": "187ca28ef6ee88fc856efa6c2565bc25a0434a2e9fda9203526c4f2290e86acc",
+    "Herald_Square/mask/p3_a0155db52d6dfe43d3c8_facade.npy": "ad16361d7281d3cca930ecc9bcf05c41813edf0f118247684b673ea09d71188b",
+    "Herald_Square/mask/p3_06914d50bde3304f3228_facade.npy": "de349062d7da1180156b0900bed53f4b676d8c9269a7d7af3c7e54781b894ef4",
+    "Herald_Square/mask/p3_73cab7208aad375c81ba_facade.npy": "93345a101bf2c712ac19ad50890930b3e0d3830daa274d6ce1947c43d84a3b5f",
+    "Herald_Square/mask/p3_3803549790e9271ef5be_facade.npy": "ba9a3fcb9c0af6b428d8121769d652764ceb8de8fb26c5af05f618e49482a4d8",
+    "Herald_Square/mask/p3_aa652380bedaee1732b6_facade.npy": "31893a898d0e8ef8821b219d707d3a40304272dfc881a52312524ce83f290358",
+    "Herald_Square/mask/p3_6d85bc7b1bfae6ade571_facade.npy": "381711e41c604ac9434137571325aa6f97776d17e81d4caba71f94e604428474",
+    "Herald_Square/mask/p3_738b720d1e8115ef516c_facade.npy": "ea6c11ac6c972a26722dc3d8fbb574fd04658f1d17d22385ac9d378918e15594",
+    "Herald_Square/mask/p3_b8e327c096b2c58bb8c2_facade.npy": "a4ecd5df52ad2b13c78e66d6c9f5ee278874f79efc090b576da4b6042058872b",
+    "Herald_Square/mask/p3_f5bbf5d23fde47514f2b_facade.npy": "0ac8a771efe86435bc2adcdff339e878d7088dd1a7ccc4ef36c63a5071336578",
+    "Herald_Square/mask/p3_b373514be1c9ae63f292_facade.npy": "5c8ec7c33c7d534aee5e3f28eb897db745d278bf37bbdc79e4d12a3c74bc1412",
+    "Herald_Square/mask/p3_533c44278404970f2215_facade.npy": "d6b7822b36456f5e12604463c2fa61fa02811dd0db320d56a8bc66ea29d87c4c",
+    "Herald_Square/mask/p3_7a9fe2066b4cdb1a3ece_facade.npy": "fa8efb8a775e47a22fb3fd4e8b41534c073c231b51bff0dfb333e74bb88e40ff",
+    "Herald_Square/mask/p3_26055a13a26448afad47_facade.npy": "ed8e8766f8103891b331f01e48debb6a9608659206a628ee0c8673faf186a8b9",
+    "Herald_Square/mask/p3_6e5007d7f95330ed13b3_facade.npy": "b2f98aba66853c7449ae1edf8ac22437cd29ad4fde3003e211fee64e57ecf601",
+    "Herald_Square/mask/p3_4608e8c80fdf92df3226_facade.npy": "4c183c0ff13329ce963b0c29c77026b58612b98c008cfe00e6e78d0f33662394",
+    "Herald_Square/mask/p3_4ea6945bf777cc6f6141_facade.npy": "e6bf6013faec2cefda5fc553a7adf1411c0295f8200bb8e2cd7152bc24ceda9c",
+    "Herald_Square/mask/p3_b64c8196eee15b2365e8_facade.npy": "0fa72c8b17e24d079f68f685ab669ed76592039b7e189ce36cd95946b06b0c1e",
+    "Herald_Square/mask/p3_48ec2183b6fddd8ce9a3_facade.npy": "1bb5c61880d75e4d8b1ab3e07c1e0184cff3cd4fcf61d4a66e344730902be3eb",
+    "Herald_Square/mask/p3_e68478463d36f366890c_facade.npy": "29d80f1593f369bc7e6077930a0f265fb3c0e2854c1f47f6ba7ec5090dd1c2b3",
+    "Herald_Square/mask/p3_77167e066e01787b4e69_facade.npy": "5afe5e794b15f5b23c999b1d9f2da898c1b07640408c79b469b313af18f7f26c",
+    "Herald_Square/mask/p3_21a312dcdee15c6b5cd2_facade.npy": "e0632b409a0db6affdc88311dc71d17525cdb50e092409d6fd1434c5ec225721",
+    "Herald_Square/mask/p3_693ff654e895f5d9f8f9_facade.npy": "70045b1593143013ff8e1b2888ec0fa65542ec9a57ff5c3dd1511ec4c3064b81",
+    "Herald_Square/mask/p3_b09ad81a38f16496334f_facade.npy": "9f3c112af2085b5262f788f3c56f6abc1328b72a57d0c1ee003e571267b49cff",
+    "Herald_Square/mask/p3_b2e965aafb8d43a91f3f_facade.npy": "1a8d68c025237ef9b6c713482164e41443bc325e26bcab928938ce975c94032a",
+    "Herald_Square/mask/p3_937b66ae721a5f018045_facade.npy": "1ba3d28d4ae49d41d9f725890a5eb07bcc4843267921428b1ab04f43d92557b7",
+    "Herald_Square/mask/p3_2de82defbdb60ff2b174_facade.npy": "63d4e966fd5d707d16d611f31b33675cccb924add37397dd2a26b1ea50297684",
+    "Herald_Square/mask/p3_ff252718e5e024319893_facade.npy": "1f916d54188329c64554c0b821742816e24a2e7b4e7944e23b2aabf4cb5cd1ba",
+    "Herald_Square/mask/p3_769eb39905c555f104af_facade.npy": "93a3ca8eeb600a9a5627a83e4b349201ecaca57f497fe85260a12785689cf445",
+    "Herald_Square/mask/p3_ec61c0ef5fabe390c6c2_facade.npy": "c292aede2bd735bedfef46bc328b3533a128d767558e3ba7843672d4bce9ed02",
+    "Herald_Square/mask/p3_4f4f49b8c858438f4433_facade.npy": "8f95eb951cef9443a12a35bffa293377931dd925d38bcc7267a3d3066062c2ba",
+    "Herald_Square/mask/p3_c69370bdd45b9268eae6_facade.npy": "7499915a47f51c01cc6bc9d4a5bc355fa59fa48e7b49afc7f095cc707ce0e158",
+    "Herald_Square/mask/p3_6aa04023681b186a9ac4_facade.npy": "9c8e91429de87ed59e8f58c55bb5e02e70f1c009f9b22e4f1bc7012b92085c6f",
+    "Herald_Square/mask/p3_226b3ff6e23586acea24_facade.npy": "4eb8433d4a60586e920386e4de156a4a240f55e8057050f87a7f7390ccdbff8a",
+    "Herald_Square/mask/p3_fb9d08df05068c3cc060_facade.npy": "1fd248318851b76baff233a4e7742b82984db8b3c5cfd7cc89ddeb17ed653025"
+  }
+}

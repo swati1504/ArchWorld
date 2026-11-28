@@ -1,0 +1,7 @@
+hypothesis,comparator,rho_baseline_error_vs_delta,rho_baseline_error_vs_log_ratio,warning
+H1,baseline,0.014414414414414392,0.08545688545688548,Diagnostic only. Baseline/comparator and change share terms; cannot infer hard scenes improve.
+H1,scalar,-0.3768339768339769,-0.2931788931788932,Diagnostic only. Baseline/comparator and change share terms; cannot infer hard scenes improve.
+H2,baseline,0.1848133848133848,0.2481338481338481,Diagnostic only. Baseline/comparator and change share terms; cannot infer hard scenes improve.
+H2,scalar,0.05225225225225226,0.04427284427284427,Diagnostic only. Baseline/comparator and change share terms; cannot infer hard scenes improve.
+H3,baseline,0.08725868725868727,0.17348777348777347,Diagnostic only. Baseline/comparator and change share terms; cannot infer hard scenes improve.
+H3,scalar,-0.16697026944995538,-0.16697026944995538,Diagnostic only. Baseline/comparator and change share terms; cannot infer hard scenes improve.

@@ -1,0 +1,425 @@
+{
+  "identity": {
+    "protocol": "point3-paired-eval-v1",
+    "source_sha256": "145b9848b597eff8b9c94a336585d65c8854a3d4897f48c4b833828e75d2aeb0",
+    "revision": "5d4404323a21aa3de948f8bc57a053b29fa3d921",
+    "num_views": 50,
+    "seed": 1729,
+    "scene": "Marine_Corps_War_Memorial",
+    "anchor": "statue",
+    "views": [
+      "p3_9641fb8cbff663506ae8.jpg",
+      "p3_23d393a221c45108ad84.jpg",
+      "p3_d3bc6ad113f62ede84eb.jpg",
+      "p3_77c536bbad15112c01ac.jpg",
+      "p3_7d8e12ce7daf08f2989e.jpg",
+      "p3_724eede2a144b6d19a2c.jpg",
+      "p3_74220c559f98f8a75810.jpg",
+      "p3_f1140d8cc71c969b0722.jpg",
+      "p3_9e4633e8987924d5e66c.jpg",
+      "p3_bf6d13eb87a18f44debf.jpg",
+      "p3_f0d072b9368bd4c54556.jpg",
+      "p3_55543b778237f5feea81.jpg",
+      "p3_6b6474ad42161eb920f0.jpg",
+      "p3_28a4421f8ccfa81b8b3c.jpg",
+      "p3_6066383be8fc973e2fb2.jpg",
+      "p3_25c3e6456e0629a5db28.jpg",
+      "p3_b9f09e9b9e2ead52b6f5.jpg",
+      "p3_cc2d4ab4e4990f76c18a.jpg",
+      "p3_123acd43925bb8cbca3a.jpg",
+      "p3_cb16fb399c8ec6a66f04.jpg",
+      "p3_9ae6361797fab2040888.jpg",
+      "p3_9ceab2db4e878c6e89e5.jpg",
+      "p3_a18dbbc5195f68a0fa15.jpg",
+      "p3_1e09eb70df37715d9626.jpg",
+      "p3_75b7e02cbabc17a09407.jpg",
+      "p3_3c7251a06bb99a68911d.jpg",
+      "p3_6a04f59aba909b5da873.jpg",
+      "p3_907c84e399816c4913c0.jpg",
+      "p3_0aab70678b06ed2af523.jpg",
+      "p3_0644b3b78f943b3ae305.jpg",
+      "p3_8ee0b092e239e199fb68.jpg",
+      "p3_867e17cca9690e7e4f38.jpg",
+      "p3_9448b83265b5d4d25da7.jpg",
+      "p3_c814f89b54584da10df7.jpg",
+      "p3_fd158dea42eb4fd2ce89.jpg",
+      "p3_052f76128365136b7d3f.jpg",
+      "p3_be26e7c399753e0970e1.jpg",
+      "p3_6fa7f0966f4af17052c7.jpg",
+      "p3_fa3197d3a7ef09c6b822.jpg",
+      "p3_272ec2c8cc555bbeae6e.jpg",
+      "p3_e27f5fb8ab4a76fd731c.jpg",
+      "p3_e1742f64ca309ea72497.jpg",
+      "p3_ed78f65d2b5f71775207.jpg",
+      "p3_132099678ec2d2c649ab.jpg",
+      "p3_3ebd79c702a1301aba6f.jpg",
+      "p3_bf274777858cc473cc35.jpg",
+      "p3_aaa6005062d50130b5aa.jpg",
+      "p3_c38b7706cb43c75d394b.jpg",
+      "p3_4958852c5b8424da64e7.jpg",
+      "p3_9bb7d6e42fef9e3e8319.jpg"
+    ],
+    "gpu": "NVIDIA L4",
+    "torch_version": "2.3.1+cu121",
+    "hardware": {
+      "gpu": "NVIDIA L4",
+      "capability": [
+        8,
+        9
+      ],
+      "torch_version": "2.3.1+cu121",
+      "packages": {
+        "torch": "2.3.1+cu121",
+        "numpy": "2.2.6",
+        "scipy": "1.18.1",
+        "open3d": "0.20.0",
+        "safetensors": "0.8.0",
+        "vggt": "0.0.1"
+      },
+      "total_memory_bytes": 23659151360,
+      "deterministic_algorithms": false,
+      "deterministic_warn_only": false,
+      "intervention_hook_determinism": "strict",
+      "cudnn_benchmark": false,
+      "cudnn_deterministic": true,
+      "cublas_workspace_config": ":4096:8"
+    },
+    "input_key": "dabc86a08a43843fd57df1c861e36e0e4da33c73d456ddae9af6962922637641",
+    "plan_sha256": "0655655f879d22c076e3921d9f6d07807cf9875b7b02e2c831b2dcad24584670"
+  },
+  "conditions": {
+    "no_intervention": {
+      "CD_norm_base": 31.611619659752535,
+      "CD_norm": 31.611619659752535,
+      "seconds": 192.9905354729999
+    },
+    "scalar_eta100": {
+      "CD_norm_base": 31.611619659752535,
+      "CD_norm": 28.020652420493786,
+      "seconds": 125.53146865600047
+    },
+    "scalar_eta1000": {
+      "CD_norm_base": 31.611619659752535,
+      "CD_norm": 36.43411142590585,
+      "seconds": 125.98735477199989
+    }
+  },
+  "status": "complete",
+  "model_loads_this_attempt": 1,
+  "split": "confirmation",
+  "mask_validation": {
+    "files": 50,
+    "nonempty_views": 23,
+    "numeric_checks": "passed",
+    "visual_review": "required before interpreting architectural effects",
+    "input_key": "dabc86a08a43843fd57df1c861e36e0e4da33c73d456ddae9af6962922637641",
+    "anchor": "statue",
+    "manual_override": null,
+    "preview_views": 6,
+    "coverage_by_view": [
+      {
+        "view": 0,
+        "alias": "p3_9641fb8cbff663506ae8.jpg",
+        "fraction": 0.009542168674698795
+      },
+      {
+        "view": 1,
+        "alias": "p3_23d393a221c45108ad84.jpg",
+        "fraction": 0.07572183098591549
+      },
+      {
+        "view": 2,
+        "alias": "p3_d3bc6ad113f62ede84eb.jpg",
+        "fraction": 0.039739602169981916
+      },
+      {
+        "view": 3,
+        "alias": "p3_77c536bbad15112c01ac.jpg",
+        "fraction": 0.03905967450271248
+      },
+      {
+        "view": 4,
+        "alias": "p3_7d8e12ce7daf08f2989e.jpg",
+        "fraction": 0.02825278810408922
+      },
+      {
+        "view": 5,
+        "alias": "p3_724eede2a144b6d19a2c.jpg",
+        "fraction": 0.0
+      },
+      {
+        "view": 6,
+        "alias": "p3_74220c559f98f8a75810.jpg",
+        "fraction": 0.0
+      },
+      {
+        "view": 7,
+        "alias": "p3_f1140d8cc71c969b0722.jpg",
+        "fraction": 0.0
+      },
+      {
+        "view": 8,
+        "alias": "p3_9e4633e8987924d5e66c.jpg",
+        "fraction": 0.0
+      },
+      {
+        "view": 9,
+        "alias": "p3_bf6d13eb87a18f44debf.jpg",
+        "fraction": 0.0
+      },
+      {
+        "view": 10,
+        "alias": "p3_f0d072b9368bd4c54556.jpg",
+        "fraction": 0.0
+      },
+      {
+        "view": 11,
+        "alias": "p3_55543b778237f5feea81.jpg",
+        "fraction": 0.0
+      },
+      {
+        "view": 12,
+        "alias": "p3_6b6474ad42161eb920f0.jpg",
+        "fraction": 0.0
+      },
+      {
+        "view": 13,
+        "alias": "p3_28a4421f8ccfa81b8b3c.jpg",
+        "fraction": 0.0
+      },
+      {
+        "view": 14,
+        "alias": "p3_6066383be8fc973e2fb2.jpg",
+        "fraction": 0.0
+      },
+      {
+        "view": 15,
+        "alias": "p3_25c3e6456e0629a5db28.jpg",
+        "fraction": 0.0
+      },
+      {
+        "view": 16,
+        "alias": "p3_b9f09e9b9e2ead52b6f5.jpg",
+        "fraction": 0.005515789473684211
+      },
+      {
+        "view": 17,
+        "alias": "p3_cc2d4ab4e4990f76c18a.jpg",
+        "fraction": 0.004924812030075188
+      },
+      {
+        "view": 18,
+        "alias": "p3_123acd43925bb8cbca3a.jpg",
+        "fraction": 0.005511278195488722
+      },
+      {
+        "view": 19,
+        "alias": "p3_cb16fb399c8ec6a66f04.jpg",
+        "fraction": 0.00557593984962406
+      },
+      {
+        "view": 20,
+        "alias": "p3_9ae6361797fab2040888.jpg",
+        "fraction": 0.0
+      },
+      {
+        "view": 21,
+        "alias": "p3_9ceab2db4e878c6e89e5.jpg",
+        "fraction": 0.20197605928177845
+      },
+      {
+        "view": 22,
+        "alias": "p3_a18dbbc5195f68a0fa15.jpg",
+        "fraction": 0.04502857142857143
+      },
+      {
+        "view": 23,
+        "alias": "p3_1e09eb70df37715d9626.jpg",
+        "fraction": 0.1121461126005362
+      },
+      {
+        "view": 24,
+        "alias": "p3_75b7e02cbabc17a09407.jpg",
+        "fraction": 0.0
+      },
+      {
+        "view": 25,
+        "alias": "p3_3c7251a06bb99a68911d.jpg",
+        "fraction": 0.0
+      },
+      {
+        "view": 26,
+        "alias": "p3_6a04f59aba909b5da873.jpg",
+        "fraction": 0.027709969788519636
+      },
+      {
+        "view": 27,
+        "alias": "p3_907c84e399816c4913c0.jpg",
+        "fraction": 0.024836581709145426
+      },
+      {
+        "view": 28,
+        "alias": "p3_0aab70678b06ed2af523.jpg",
+        "fraction": 0.00622275641025641
+      },
+      {
+        "view": 29,
+        "alias": "p3_0644b3b78f943b3ae305.jpg",
+        "fraction": 0.0
+      },
+      {
+        "view": 30,
+        "alias": "p3_8ee0b092e239e199fb68.jpg",
+        "fraction": 0.02154204204204204
+      },
+      {
+        "view": 31,
+        "alias": "p3_867e17cca9690e7e4f38.jpg",
+        "fraction": 0.008596096096096096
+      },
+      {
+        "view": 32,
+        "alias": "p3_9448b83265b5d4d25da7.jpg",
+        "fraction": 0.0
+      },
+      {
+        "view": 33,
+        "alias": "p3_c814f89b54584da10df7.jpg",
+        "fraction": 0.0
+      },
+      {
+        "view": 34,
+        "alias": "p3_fd158dea42eb4fd2ce89.jpg",
+        "fraction": 0.009691507798960138
+      },
+      {
+        "view": 35,
+        "alias": "p3_052f76128365136b7d3f.jpg",
+        "fraction": 0.0
+      },
+      {
+        "view": 36,
+        "alias": "p3_be26e7c399753e0970e1.jpg",
+        "fraction": 0.0
+      },
+      {
+        "view": 37,
+        "alias": "p3_6fa7f0966f4af17052c7.jpg",
+        "fraction": 0.0
+      },
+      {
+        "view": 38,
+        "alias": "p3_fa3197d3a7ef09c6b822.jpg",
+        "fraction": 0.0
+      },
+      {
+        "view": 39,
+        "alias": "p3_272ec2c8cc555bbeae6e.jpg",
+        "fraction": 0.08149389416553596
+      },
+      {
+        "view": 40,
+        "alias": "p3_e27f5fb8ab4a76fd731c.jpg",
+        "fraction": 0.007889039242219216
+      },
+      {
+        "view": 41,
+        "alias": "p3_e1742f64ca309ea72497.jpg",
+        "fraction": 0.0
+      },
+      {
+        "view": 42,
+        "alias": "p3_ed78f65d2b5f71775207.jpg",
+        "fraction": 0.0
+      },
+      {
+        "view": 43,
+        "alias": "p3_132099678ec2d2c649ab.jpg",
+        "fraction": 0.0
+      },
+      {
+        "view": 44,
+        "alias": "p3_3ebd79c702a1301aba6f.jpg",
+        "fraction": 0.0558391502276176
+      },
+      {
+        "view": 45,
+        "alias": "p3_bf274777858cc473cc35.jpg",
+        "fraction": 0.06542307692307692
+      },
+      {
+        "view": 46,
+        "alias": "p3_aaa6005062d50130b5aa.jpg",
+        "fraction": 0.0
+      },
+      {
+        "view": 47,
+        "alias": "p3_c38b7706cb43c75d394b.jpg",
+        "fraction": 0.0
+      },
+      {
+        "view": 48,
+        "alias": "p3_4958852c5b8424da64e7.jpg",
+        "fraction": 0.031996934896012415
+      },
+      {
+        "view": 49,
+        "alias": "p3_9bb7d6e42fef9e3e8319.jpg",
+        "fraction": 0.0
+      }
+    ],
+    "mask_archive_sha256": "99dc23fa0e8e927a8a952fcc4fc581ff22f07931f1c232904d56b70a1ae93a29",
+    "mask_sha256_by_file": {
+      "Marine_Corps_War_Memorial/mask/p3_9641fb8cbff663506ae8_statue.npy": "27c2dcfd068b022ef2372b7d008118b3cc93edd444d3aabfc50d8c044687f063",
+      "Marine_Corps_War_Memorial/mask/p3_23d393a221c45108ad84_statue.npy": "d17e75e13fa533ba8aed27a614e1b1eba9f0fecc2efb68eb95fe3b282cae5e26",
+      "Marine_Corps_War_Memorial/mask/p3_d3bc6ad113f62ede84eb_statue.npy": "e67523fb84178d6908f3a7dd826ed7b8636d577b0410f408c40ecd79c465ee90",
+      "Marine_Corps_War_Memorial/mask/p3_77c536bbad15112c01ac_statue.npy": "d47eb7d560ef7caa7ee492675011ae1e451ea59c7c6f4aea9e3ffcb79a3df1c6",
+      "Marine_Corps_War_Memorial/mask/p3_7d8e12ce7daf08f2989e_statue.npy": "6624aa6326abeeaf11e02477fd914c5ddceec7f9f2ce67f460513cdbabdc6211",
+      "Marine_Corps_War_Memorial/mask/p3_724eede2a144b6d19a2c_statue.npy": "4ca930d4c39dd441d095d27d2ac61750ccb0f54238f1eed588061be710bf4bb6",
+      "Marine_Corps_War_Memorial/mask/p3_74220c559f98f8a75810_statue.npy": "4ca930d4c39dd441d095d27d2ac61750ccb0f54238f1eed588061be710bf4bb6",
+      "Marine_Corps_War_Memorial/mask/p3_f1140d8cc71c969b0722_statue.npy": "4ca930d4c39dd441d095d27d2ac61750ccb0f54238f1eed588061be710bf4bb6",
+      "Marine_Corps_War_Memorial/mask/p3_9e4633e8987924d5e66c_statue.npy": "4ca930d4c39dd441d095d27d2ac61750ccb0f54238f1eed588061be710bf4bb6",
+      "Marine_Corps_War_Memorial/mask/p3_bf6d13eb87a18f44debf_statue.npy": "4ca930d4c39dd441d095d27d2ac61750ccb0f54238f1eed588061be710bf4bb6",
+      "Marine_Corps_War_Memorial/mask/p3_f0d072b9368bd4c54556_statue.npy": "4ca930d4c39dd441d095d27d2ac61750ccb0f54238f1eed588061be710bf4bb6",
+      "Marine_Corps_War_Memorial/mask/p3_55543b778237f5feea81_statue.npy": "4ca930d4c39dd441d095d27d2ac61750ccb0f54238f1eed588061be710bf4bb6",
+      "Marine_Corps_War_Memorial/mask/p3_6b6474ad42161eb920f0_statue.npy": "4ca930d4c39dd441d095d27d2ac61750ccb0f54238f1eed588061be710bf4bb6",
+      "Marine_Corps_War_Memorial/mask/p3_28a4421f8ccfa81b8b3c_statue.npy": "4ca930d4c39dd441d095d27d2ac61750ccb0f54238f1eed588061be710bf4bb6",
+      "Marine_Corps_War_Memorial/mask/p3_6066383be8fc973e2fb2_statue.npy": "4ca930d4c39dd441d095d27d2ac61750ccb0f54238f1eed588061be710bf4bb6",
+      "Marine_Corps_War_Memorial/mask/p3_25c3e6456e0629a5db28_statue.npy": "4ca930d4c39dd441d095d27d2ac61750ccb0f54238f1eed588061be710bf4bb6",
+      "Marine_Corps_War_Memorial/mask/p3_b9f09e9b9e2ead52b6f5_statue.npy": "40c07050e83ff434064659499984cb27fbf12fbb335986f968be34f8d341ae36",
+      "Marine_Corps_War_Memorial/mask/p3_cc2d4ab4e4990f76c18a_statue.npy": "b2573d8d552c876448c63ffb00d38728822cba9c1844be9d0cb4445c0807d7e2",
+      "Marine_Corps_War_Memorial/mask/p3_123acd43925bb8cbca3a_statue.npy": "c867296ebb93f7ffe499ff3c7279bda3b974293d1213397c0872d58ef4869f06",
+      "Marine_Corps_War_Memorial/mask/p3_cb16fb399c8ec6a66f04_statue.npy": "893b02311dd0078beff9bfa20042c21865b1713e45a19d97e362a0827c97b8e6",
+      "Marine_Corps_War_Memorial/mask/p3_9ae6361797fab2040888_statue.npy": "4ca930d4c39dd441d095d27d2ac61750ccb0f54238f1eed588061be710bf4bb6",
+      "Marine_Corps_War_Memorial/mask/p3_9ceab2db4e878c6e89e5_statue.npy": "cf890b288d2ebb6ac876f8e11c4d69be4b43b5480312e55369f987a256160a59",
+      "Marine_Corps_War_Memorial/mask/p3_a18dbbc5195f68a0fa15_statue.npy": "2a186acf57525f50435004540e9c130196e4366ff9fbc556c285fc75c34e7038",
+      "Marine_Corps_War_Memorial/mask/p3_1e09eb70df37715d9626_statue.npy": "051a007486cf547dbc6c9ba64de3b85f3663ed50bad1dacf80f8f3c7ea82fd29",
+      "Marine_Corps_War_Memorial/mask/p3_75b7e02cbabc17a09407_statue.npy": "4ca930d4c39dd441d095d27d2ac61750ccb0f54238f1eed588061be710bf4bb6",
+      "Marine_Corps_War_Memorial/mask/p3_3c7251a06bb99a68911d_statue.npy": "4ca930d4c39dd441d095d27d2ac61750ccb0f54238f1eed588061be710bf4bb6",
+      "Marine_Corps_War_Memorial/mask/p3_6a04f59aba909b5da873_statue.npy": "ce81d7e1e7e4e99f6f09800329ca1b1cf4ae7f0dbf63bf7b1357859ad04370ed",
+      "Marine_Corps_War_Memorial/mask/p3_907c84e399816c4913c0_statue.npy": "069c314afda27c0e7ddc59dc726760f55ce452d24288f9e90b62bfe146a90f87",
+      "Marine_Corps_War_Memorial/mask/p3_0aab70678b06ed2af523_statue.npy": "ee06513e99d69db8e3cfcb082d6cc81bed03d7ceebb76271fa4ceee523d637d9",
+      "Marine_Corps_War_Memorial/mask/p3_0644b3b78f943b3ae305_statue.npy": "4ca930d4c39dd441d095d27d2ac61750ccb0f54238f1eed588061be710bf4bb6",
+      "Marine_Corps_War_Memorial/mask/p3_8ee0b092e239e199fb68_statue.npy": "782931706b535c74075aecee09dcbdafc1e559b9e504b437592658f0f4954ab0",
+      "Marine_Corps_War_Memorial/mask/p3_867e17cca9690e7e4f38_statue.npy": "0b435af2f174183421595000aa0610a58675847d248c377978f5c3a7c93057d5",
+      "Marine_Corps_War_Memorial/mask/p3_9448b83265b5d4d25da7_statue.npy": "4ca930d4c39dd441d095d27d2ac61750ccb0f54238f1eed588061be710bf4bb6",
+      "Marine_Corps_War_Memorial/mask/p3_c814f89b54584da10df7_statue.npy": "4ca930d4c39dd441d095d27d2ac61750ccb0f54238f1eed588061be710bf4bb6",
+      "Marine_Corps_War_Memorial/mask/p3_fd158dea42eb4fd2ce89_statue.npy": "42c65a818efda8edc8ab2835682cc7c6856f3a183e653f5faa988127751d1b21",
+      "Marine_Corps_War_Memorial/mask/p3_052f76128365136b7d3f_statue.npy": "4ca930d4c39dd441d095d27d2ac61750ccb0f54238f1eed588061be710bf4bb6",
+      "Marine_Corps_War_Memorial/mask/p3_be26e7c399753e0970e1_statue.npy": "4ca930d4c39dd441d095d27d2ac61750ccb0f54238f1eed588061be710bf4bb6",
+      "Marine_Corps_War_Memorial/mask/p3_6fa7f0966f4af17052c7_statue.npy": "4ca930d4c39dd441d095d27d2ac61750ccb0f54238f1eed588061be710bf4bb6",
+      "Marine_Corps_War_Memorial/mask/p3_fa3197d3a7ef09c6b822_statue.npy": "4ca930d4c39dd441d095d27d2ac61750ccb0f54238f1eed588061be710bf4bb6",
+      "Marine_Corps_War_Memorial/mask/p3_272ec2c8cc555bbeae6e_statue.npy": "7463c327b9c5e1616e70722d77f1bfab994342dfdda0f92bec43cb10a09460d4",
+      "Marine_Corps_War_Memorial/mask/p3_e27f5fb8ab4a76fd731c_statue.npy": "feb92a8160b9d5233874e869bd5544572391d51a2c86b4a85cddc01facd36e17",
+      "Marine_Corps_War_Memorial/mask/p3_e1742f64ca309ea72497_statue.npy": "4ca930d4c39dd441d095d27d2ac61750ccb0f54238f1eed588061be710bf4bb6",
+      "Marine_Corps_War_Memorial/mask/p3_ed78f65d2b5f71775207_statue.npy": "4ca930d4c39dd441d095d27d2ac61750ccb0f54238f1eed588061be710bf4bb6",
+      "Marine_Corps_War_Memorial/mask/p3_132099678ec2d2c649ab_statue.npy": "4ca930d4c39dd441d095d27d2ac61750ccb0f54238f1eed588061be710bf4bb6",
+      "Marine_Corps_War_Memorial/mask/p3_3ebd79c702a1301aba6f_statue.npy": "592711d5746562f92becbf479733768354d6af7d74b88fdac5f02aeb7b250213",
+      "Marine_Corps_War_Memorial/mask/p3_bf274777858cc473cc35_statue.npy": "2ca5f342810c0bb7b9764cd73ecfd8a4772266119fe78d74ed957700c154b367",
+      "Marine_Corps_War_Memorial/mask/p3_aaa6005062d50130b5aa_statue.npy": "4ca930d4c39dd441d095d27d2ac61750ccb0f54238f1eed588061be710bf4bb6",
+      "Marine_Corps_War_Memorial/mask/p3_c38b7706cb43c75d394b_statue.npy": "4ca930d4c39dd441d095d27d2ac61750ccb0f54238f1eed588061be710bf4bb6",
+      "Marine_Corps_War_Memorial/mask/p3_4958852c5b8424da64e7_statue.npy": "858573d4408ccdd3ded7834574e29cf43642b5d29937788e869cf8e5c7e19258",
+      "Marine_Corps_War_Memorial/mask/p3_9bb7d6e42fef9e3e8319_statue.npy": "4ca930d4c39dd441d095d27d2ac61750ccb0f54238f1eed588061be710bf4bb6"
+    }
+  }
+}

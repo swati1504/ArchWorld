@@ -1,0 +1,68 @@
+[
+  {
+    "file": "paired_hypotheses.csv",
+    "url": "https://drive.google.com/file/d/1pQqbLRnfh4l71KaevZskxRD3cWqnTsR6/view",
+    "modified": "2026-11-24T15:55:02.889Z",
+    "id": "1pQqbLRnfh4l71KaevZskxRD3cWqnTsR6"
+  },
+  {
+    "file": "comparison_summary.json",
+    "url": "https://drive.google.com/file/d/1-OMbH7dnwnC6guYls0GTy6nCICrib30f/view",
+    "modified": "2026-11-24T15:55:02.898Z",
+    "id": "1-OMbH7dnwnC6guYls0GTy6nCICrib30f"
+  },
+  {
+    "file": "h3_selection.json",
+    "url": "https://drive.google.com/file/d/1i-WgSL3-xIStwk8SNiD2kbWSiuU_Qr-h/view",
+    "modified": "2026-11-24T14:03:51.995Z",
+    "id": "1i-WgSL3-xIStwk8SNiD2kbWSiuU_Qr-h"
+  },
+  {
+    "file": "h3_report_summary.json",
+    "url": "https://drive.google.com/file/d/1E71XCjJIUyYJ2GICewok8vz7DWAPAsA2/view",
+    "modified": "2026-11-24T15:36:19.009Z",
+    "id": "1E71XCjJIUyYJ2GICewok8vz7DWAPAsA2"
+  },
+  {
+    "file": "h3_paired_results.csv",
+    "url": "https://drive.google.com/file/d/16VsIrRxMYxpGBz9oI84QVJrndrABXvWI/view",
+    "modified": "2026-11-24T15:36:17.101Z",
+    "id": "16VsIrRxMYxpGBz9oI84QVJrndrABXvWI"
+  },
+  {
+    "file": "h3_calibration.json",
+    "url": "https://drive.google.com/file/d/1vCqRYgYL09egZQpFbw1L3vxeOKxBLadP/view",
+    "modified": "2026-11-24T14:03:51.896Z",
+    "id": "1vCqRYgYL09egZQpFbw1L3vxeOKxBLadP"
+  },
+  {
+    "file": "h3_summary.json",
+    "url": "https://drive.google.com/file/d/1oBb2IkI0xVTZakyxkFI_c5BfafwU0_5F/view",
+    "modified": "2026-11-24T15:36:23.022Z",
+    "id": "1oBb2IkI0xVTZakyxkFI_c5BfafwU0_5F"
+  },
+  {
+    "file": "h3_failures.csv",
+    "url": "https://drive.google.com/file/d/11NxLeTyBkQIJycEpz2ywVGNys0FuclC4/view",
+    "modified": "2026-11-24T15:36:15.152Z",
+    "id": "11NxLeTyBkQIJycEpz2ywVGNys0FuclC4"
+  },
+  {
+    "file": "h3_environment.json",
+    "url": "https://drive.google.com/file/d/18Ea1R1TFkwlgaVZt218YkhALh9Bw8BeS/view",
+    "modified": "2026-11-23T13:55:22.350Z",
+    "id": "18Ea1R1TFkwlgaVZt218YkhALh9Bw8BeS"
+  },
+  {
+    "file": "h3_strength_diagnostics.csv",
+    "url": "https://drive.google.com/file/d/1WpS2-cKsyMKc9VJ44NRHZ7ut1XV_nWI6/view",
+    "modified": "2026-11-24T15:36:15.204Z",
+    "id": "1WpS2-cKsyMKc9VJ44NRHZ7ut1XV_nWI6"
+  },
+  {
+    "file": "h3_study.json",
+    "url": "https://drive.google.com/file/d/1JjLt2z0kseQMPmZdYuyN451uFiltxxG9/view",
+    "modified": "2026-11-23T13:55:13.751Z",
+    "id": "1JjLt2z0kseQMPmZdYuyN451uFiltxxG9"
+  }
+]

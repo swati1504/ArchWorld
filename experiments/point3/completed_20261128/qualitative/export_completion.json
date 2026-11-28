@@ -1,0 +1,87 @@
+{
+  "utc": "2026-11-25T16:02:11.339602+00:00",
+  "cases": {
+    "overall": {
+      "status": "complete",
+      "hypotheses": [
+        "H1",
+        "H2",
+        "H3"
+      ],
+      "verified_conditions": [],
+      "archive_exists": false
+    },
+    "H1": {
+      "status": "complete",
+      "scene": "Herald_Square",
+      "conditions": [
+        "no_intervention",
+        "scalar_eta1000",
+        "layer_alpha0.02"
+      ],
+      "views": 50,
+      "geometry_archive": "verified_geometry.zip",
+      "verified_conditions": [
+        "layer_alpha0.02",
+        "no_intervention",
+        "scalar_eta1000"
+      ],
+      "archive_exists": true
+    },
+    "H2": {
+      "status": "complete",
+      "scene": "Itmad-Ud-Daulah's_Tomb",
+      "conditions": [
+        "no_intervention",
+        "scalar_eta1000",
+        "view_eta100"
+      ],
+      "views": 50,
+      "geometry_archive": "verified_geometry.zip",
+      "verified_conditions": [
+        "no_intervention",
+        "scalar_eta1000",
+        "view_eta100"
+      ],
+      "archive_exists": true
+    },
+    "H3": {
+      "status": "complete",
+      "scene": "Marine_Corps_War_Memorial",
+      "conditions": [
+        "no_intervention",
+        "scalar_eta100",
+        "scalar_eta1000"
+      ],
+      "views": 50,
+      "geometry_archive": "verified_geometry.zip",
+      "verified_conditions": [
+        "no_intervention",
+        "scalar_eta100",
+        "scalar_eta1000"
+      ],
+      "archive_exists": true
+    }
+  },
+  "launcher_pid": 6464,
+  "launcher_alive": false,
+  "recent_events": [
+    "VISUAL_SAVED no_intervention/inter: 1039110 real evaluated points",
+    "VISUAL_VERIFIED no_intervention",
+    "SHARED_JOB Marine_Corps_War_Memorial / scalar_eta100",
+    "VISUAL_SAVED scalar_eta100/inter: 1038309 real evaluated points",
+    "VISUAL_VERIFIED scalar_eta100",
+    "SHARED_JOB Marine_Corps_War_Memorial / scalar_eta1000",
+    "VISUAL_SAVED scalar_eta1000/inter: 1040000 real evaluated points",
+    "VISUAL_VERIFIED scalar_eta1000",
+    "VISUAL_EXPORT_COMPLETE /content/drive/MyDrive/Point3_Hypothesis54/qualitative/marine_corps_h3_v1/verified_geometry.zip",
+    "ALL_REQUESTED_EXPORTS_VERIFIED ['H1', 'H2', 'H3']"
+  ],
+  "log_tail": [
+    "VISUAL_VERIFIED scalar_eta1000",
+    "VISUAL_EXPORT_COMPLETE /content/drive/MyDrive/Point3_Hypothesis54/qualitative/marine_corps_h3_v1/verified_geometry.zip",
+    "ALL_REQUESTED_EXPORTS_VERIFIED ['H1', 'H2', 'H3']"
+  ],
+  "gpu": "0 %, 0 MiB",
+  "export_processes": []
+}

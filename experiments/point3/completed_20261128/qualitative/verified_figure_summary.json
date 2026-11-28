@@ -1,0 +1,372 @@
+{
+  "H1": {
+    "scene": "Herald_Square",
+    "condition": "layer_alpha0.02",
+    "prediction_hashes_exact": true,
+    "metrics_match": true,
+    "scores": {
+      "no_intervention": {
+        "CD_norm_base": 6.9134191214451395,
+        "CD_norm": 6.9134191214451395,
+        "seconds": 770.5541666890001
+      },
+      "scalar_eta1000": {
+        "CD_norm_base": 6.9134191214451395,
+        "CD_norm": 6.58839485247084,
+        "seconds": 386.769642621
+      },
+      "layer_alpha0.02": {
+        "CD_norm_base": 6.9134191214451395,
+        "CD_norm": 5.14009893351246,
+        "seconds": 259.80713531699985
+      }
+    },
+    "figure_sha256": "c27f9d4a62d432a3e02c32db2d8895ac3a96f2e7f547271d83178ba2a50fcec3",
+    "render": {
+      "scene": "Herald_Square",
+      "split": "confirmation",
+      "hypothesis": "H1",
+      "condition": "layer_alpha0.02",
+      "scalar_condition": "scalar_eta1000",
+      "source_files": {
+        "no_intervention_inter.npz": "42fee7a23d8e94077ce0e84ad92b57ad816b87ff3a9313f6ec8574ae68993645",
+        "layer_alpha0.02_inter.npz": "bcd274672b8757e21fadc9447fe13c71d817a06b04797b43883f6f8e037a5ef6",
+        "scalar_eta1000_inter.npz": "3b4823c576ad23862c0b931dcb74804eb4cb6debc941b3284a5ad49e6db38139"
+      },
+      "reference_sha256": "ac1efc6c0775b4767842889478134cad4824564c62dce2ae460d06e8e3f9e769",
+      "framing": "Joint 0.001/0.999 projected quantile bounds of three conditions and reference, with 8% padding",
+      "camera": {
+        "index": 3,
+        "image": "003_p3_b574bd687d47ea4a5463.jpg",
+        "cam_to_world": [
+          [
+            0.7662325782496429,
+            -0.014571377632142503,
+            -0.6423980938505393,
+            -0.15375601907028824
+          ],
+          [
+            -0.17742553961662536,
+            -0.9656734223125806,
+            -0.1897235339404622,
+            -0.06717470653027946
+          ],
+          [
+            -0.6175822325169775,
+            0.25935018101595747,
+            -0.7425157706650654,
+            -0.2700194791744923
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ]
+      },
+      "basis": [
+        [
+          0.7662325782496429,
+          0.014571377632142503,
+          -0.6423980938505393
+        ],
+        [
+          -0.17742553961662536,
+          0.9656734223125806,
+          -0.1897235339404622
+        ],
+        [
+          -0.6175822325169775,
+          -0.25935018101595747,
+          -0.7425157706650654
+        ]
+      ],
+      "shared_bounds": [
+        [
+          -5.48774932964862,
+          -1.1504604163554473
+        ],
+        [
+          4.744752321522421,
+          3.6247070208577052
+        ]
+      ],
+      "zoom_world_bounds": [
+        [
+          -0.7408793591,
+          0.1184067524
+        ],
+        [
+          0.7591206409,
+          2.1974185289
+        ]
+      ],
+      "detail_magnification": 1.8964479229379894,
+      "in_frame_fraction": {
+        "no_intervention": 0.999928,
+        "layer_alpha0.02": 0.999885,
+        "scalar_eta1000": 0.999949
+      },
+      "point_splat": "Fixed five-pixel cross with nearest-depth z-buffer",
+      "geometry": "Saved evaluated GT-aligned points; no transformation after evaluation except shared camera projection",
+      "sampling": "Up to 1 million points per saved cloud; private RNG seed 1729; metrics use full clouds",
+      "mean_error": {
+        "no_intervention": 6.9134191214451395,
+        "layer_alpha0.02": 5.14009893351246,
+        "scalar_eta1000": 6.58839485247084
+      },
+      "gain_vs_original_percent": 25.650407660544015,
+      "hypothesis_change_vs_scalar_percent": -21.98253066777299,
+      "paper_style_reference": "https://arxiv.org/html/2610.22514v1#S5.F7"
+    }
+  },
+  "H2": {
+    "scene": "Itmad-Ud-Daulah's_Tomb",
+    "condition": "view_eta100",
+    "prediction_hashes_exact": true,
+    "metrics_match": true,
+    "scores": {
+      "no_intervention": {
+        "CD_norm_base": 17.794110977213652,
+        "CD_norm": 17.794110977213652,
+        "seconds": 279.33407966899995
+      },
+      "scalar_eta1000": {
+        "CD_norm_base": 17.794110977213652,
+        "CD_norm": 23.626902808901605,
+        "seconds": 218.31348538800012
+      },
+      "view_eta100": {
+        "CD_norm_base": 17.794110977213652,
+        "CD_norm": 15.147550330601343,
+        "seconds": 151.96896254400008
+      }
+    },
+    "figure_sha256": "8a7eecb71a5861810680d26c89706a694d01df369efd5debe549bfca381722f0",
+    "render": {
+      "scene": "Itmad-Ud-Daulah's_Tomb",
+      "split": "confirmation",
+      "hypothesis": "H2",
+      "condition": "view_eta100",
+      "scalar_condition": "scalar_eta1000",
+      "source_files": {
+        "no_intervention_inter.npz": "14c09eb0e56d78deca2ba5caa5bb98d494bfd492b1b9fa76a0b19456d3dfd3c1",
+        "view_eta100_inter.npz": "1b548e67a0f43cada96ae40d0e84c86c25794521bb23899c2e355758de5b78cd",
+        "scalar_eta1000_inter.npz": "7ee454576fc6d98eef5d0bf4c7b7d534b5ff06c1cc5de5d2ecc78b217de4f263"
+      },
+      "reference_sha256": "d250433213edcc02f2491af4bb46d3da980fbe479721c1aa53861c890269f04a",
+      "framing": "Joint 0.001/0.999 projected quantile bounds of three conditions and reference, with 8% padding",
+      "camera": {
+        "index": 0,
+        "image": "000_p3_2599996e56579d8b70dd.jpg",
+        "cam_to_world": [
+          [
+            0.9999999999999999,
+            5.870804164388101e-18,
+            6.7911502004735e-18,
+            0.0
+          ],
+          [
+            1.140040083922553e-18,
+            -0.9999999999999999,
+            2.7938112212495137e-18,
+            0.0
+          ],
+          [
+            -6.5033488228597975e-18,
+            3.885057871054209e-18,
+            -0.9999999999999999,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ]
+      },
+      "basis": [
+        [
+          0.9999999999999999,
+          -5.870804164388101e-18,
+          6.7911502004735e-18
+        ],
+        [
+          1.140040083922553e-18,
+          0.9999999999999999,
+          2.7938112212495137e-18
+        ],
+        [
+          -6.5033488228597975e-18,
+          -3.885057871054209e-18,
+          -0.9999999999999999
+        ]
+      ],
+      "shared_bounds": [
+        [
+          -3.113242387554475,
+          -1.8947281557440756
+        ],
+        [
+          2.578270661375353,
+          0.7613112670898441
+        ]
+      ],
+      "zoom_world_bounds": [
+        [
+          -0.65,
+          -0.9
+        ],
+        [
+          0.1,
+          0.45
+        ]
+      ],
+      "detail_magnification": 1.8188601809532694,
+      "in_frame_fraction": {
+        "no_intervention": 1.0,
+        "view_eta100": 1.0,
+        "scalar_eta1000": 1.0
+      },
+      "point_splat": "Fixed five-pixel cross with nearest-depth z-buffer",
+      "geometry": "Saved evaluated GT-aligned points; no transformation after evaluation except shared camera projection",
+      "sampling": "Up to 1 million points per saved cloud; private RNG seed 1729; metrics use full clouds",
+      "mean_error": {
+        "no_intervention": 17.794110977213652,
+        "view_eta100": 15.147550330601343,
+        "scalar_eta1000": 23.626902808901605
+      },
+      "gain_vs_original_percent": 14.873238960920144,
+      "hypothesis_change_vs_scalar_percent": -35.88854851980686,
+      "paper_style_reference": "https://arxiv.org/html/2610.22514v1#S5.F7"
+    }
+  },
+  "H3": {
+    "scene": "Marine_Corps_War_Memorial",
+    "condition": "scalar_eta100",
+    "prediction_hashes_exact": true,
+    "metrics_match": true,
+    "scores": {
+      "no_intervention": {
+        "CD_norm_base": 31.611619659752535,
+        "CD_norm": 31.611619659752535,
+        "seconds": 192.9905354729999
+      },
+      "scalar_eta100": {
+        "CD_norm_base": 31.611619659752535,
+        "CD_norm": 28.020652420493786,
+        "seconds": 125.53146865600047
+      },
+      "scalar_eta1000": {
+        "CD_norm_base": 31.611619659752535,
+        "CD_norm": 36.43411142590585,
+        "seconds": 125.98735477199989
+      }
+    },
+    "figure_sha256": "60c9a04087d3a0fa2412a59a892211a395fc26ed5ae3d86efbf2c463c1b40378",
+    "render": {
+      "scene": "Marine_Corps_War_Memorial",
+      "split": "confirmation",
+      "hypothesis": "H3",
+      "condition": "scalar_eta100",
+      "scalar_condition": "scalar_eta1000",
+      "source_files": {
+        "no_intervention_inter.npz": "04486e71d750416c4084c1525f1acc693bacd899fd1617b975a0f1a4296129c8",
+        "scalar_eta100_inter.npz": "2194c687728e60dadb968d53a86a78199686c8fc346ad837925901889d3439e1",
+        "scalar_eta1000_inter.npz": "6d0abe6e0af6b32ca719df1a25c35aa42f824787defbaf3f0a4c92737d91849d"
+      },
+      "reference_sha256": "3e3ce6a9e80fce764f9dd7054e895c486e3f744702b4645929d5e5b1f68fe609",
+      "framing": "Joint 0.01/0.99 projected quantile bounds of three conditions and reference, with 8% padding",
+      "frame_quantiles": [
+        0.01,
+        0.99
+      ],
+      "camera": {
+        "index": 4,
+        "image": "004_p3_7d8e12ce7daf08f2989e.jpg",
+        "cam_to_world": [
+          [
+            0.9266234163717986,
+            0.029651333696745538,
+            0.3748197468670244,
+            -3.131348633692636
+          ],
+          [
+            0.06040805641661929,
+            -0.995675762357181,
+            -0.07057367054654784,
+            0.8961635833007862
+          ],
+          [
+            0.3711063337527703,
+            0.08803734812254611,
+            -0.9244076559527874,
+            2.52609200187272
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ]
+      },
+      "basis": [
+        [
+          0.9266234163717986,
+          -0.029651333696745538,
+          0.3748197468670244
+        ],
+        [
+          0.06040805641661929,
+          0.995675762357181,
+          -0.07057367054654784
+        ],
+        [
+          0.3711063337527703,
+          -0.08803734812254611,
+          -0.9244076559527874
+        ]
+      ],
+      "shared_bounds": [
+        [
+          -3.894869968427634,
+          -0.5591036080056101
+        ],
+        [
+          -0.3003290110813046,
+          1.11834883875601
+        ]
+      ],
+      "zoom_world_bounds": [
+        [
+          -2.23,
+          0.3
+        ],
+        [
+          -1.63,
+          0.9
+        ]
+      ],
+      "detail_magnification": 1.6622252711010266,
+      "in_frame_fraction": {
+        "no_intervention": 0.991334,
+        "scalar_eta100": 0.992631,
+        "scalar_eta1000": 0.990405
+      },
+      "point_splat": "Fixed five-pixel cross with nearest-depth z-buffer",
+      "geometry": "Saved evaluated GT-aligned points; no transformation after evaluation except shared camera projection",
+      "sampling": "Up to 1 million points per saved cloud; private RNG seed 1729; metrics use full clouds",
+      "mean_error": {
+        "no_intervention": 31.611619659752535,
+        "scalar_eta100": 28.020652420493786,
+        "scalar_eta1000": 36.43411142590585
+      },
+      "gain_vs_original_percent": 11.359643314419344,
+      "hypothesis_change_vs_scalar_percent": -23.092257986096556,
+      "paper_style_reference": "https://arxiv.org/html/2610.22514v1#S5.F7"
+    }
+  }
+}

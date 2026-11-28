@@ -1,0 +1,25 @@
+{
+  "camera": 4,
+  "zoom": [
+    -2.317586872404182,
+    0.16422551345089187,
+    -1.3577918406580611,
+    1.0692990768489623
+  ],
+  "selection": "Camera chosen from reference-only contact sheet; upper statue group chosen before viewing H3 reconstruction.",
+  "final_zoom_world_bounds": [
+    [
+      -2.23,
+      0.3
+    ],
+    [
+      -1.63,
+      0.9
+    ]
+  ],
+  "final_crop_note": "Tighter identical framing and detail crop for legibility; wide overview retained. No changes to geometry or metrics.",
+  "shared_frame_quantiles": [
+    0.01,
+    0.99
+  ]
+}

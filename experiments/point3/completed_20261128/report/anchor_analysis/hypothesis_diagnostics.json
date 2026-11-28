@@ -1,0 +1,329 @@
+{
+  "H1": {
+    "scalar": {
+      "mean_difference": -0.6224070615122497,
+      "median_difference": -0.04327081474448885,
+      "wins": 23,
+      "ties": 0,
+      "losses": 13,
+      "sum_improvements": 34.10790324184342,
+      "sum_regressions": 11.701249027402431,
+      "leave_one_out_mean_min": -0.8575210965540957,
+      "leave_one_out_mean_max": -0.3069161750698217,
+      "largest_improvements": [
+        {
+          "scene": "Place_Jacques-Cartier",
+          "anchor": "minaret",
+          "reference_error": 60.35861054443085,
+          "method_error": 48.694022457433626,
+          "difference": -11.664588086997227
+        },
+        {
+          "scene": "Badami_Cave_Temples",
+          "anchor": "relief",
+          "reference_error": 39.26364402778471,
+          "method_error": 34.979271316353035,
+          "difference": -4.284372711431672
+        },
+        {
+          "scene": "Chichén_Itzá",
+          "anchor": "pyramid",
+          "reference_error": 48.385786123219376,
+          "method_error": 45.110426122130015,
+          "difference": -3.2753600010893607
+        }
+      ],
+      "largest_regressions": [
+        {
+          "scene": "Heian-jingū",
+          "anchor": "pagoda",
+          "reference_error": 17.008349075256397,
+          "method_error": 24.61493324020876,
+          "difference": 7.606584164952363
+        },
+        {
+          "scene": "Mansudae_Grand_Monument",
+          "anchor": "statue",
+          "reference_error": 4.9141282646364255,
+          "method_error": 6.030638743215204,
+          "difference": 1.1165104785787783
+        },
+        {
+          "scene": "Saint_Demetrius_Church_(Vladimir)",
+          "anchor": "arch",
+          "reference_error": 22.715532842892035,
+          "method_error": 23.64192574077653,
+          "difference": 0.9263928978844937
+        }
+      ]
+    },
+    "baseline": {
+      "mean_difference": 0.21636502461091725,
+      "median_difference": -0.029649546862844267,
+      "wins": 21,
+      "ties": 0,
+      "losses": 15,
+      "sum_improvements": 27.458213514539096,
+      "sum_regressions": 35.24735440053212,
+      "leave_one_out_mean_min": -0.18837716005620075,
+      "leave_one_out_mean_max": 0.41216024198820156,
+      "largest_improvements": [
+        {
+          "scene": "Place_Jacques-Cartier",
+          "anchor": "minaret",
+          "reference_error": 55.33049004102766,
+          "method_error": 48.694022457433626,
+          "difference": -6.636467583594033
+        },
+        {
+          "scene": "Chichén_Itzá",
+          "anchor": "pyramid",
+          "reference_error": 49.55571631654925,
+          "method_error": 45.110426122130015,
+          "difference": -4.445290194419236
+        },
+        {
+          "scene": "Washington_Monument",
+          "anchor": "obelisk",
+          "reference_error": 22.06904880190988,
+          "method_error": 18.572214918837073,
+          "difference": -3.4968338830728065
+        }
+      ],
+      "largest_regressions": [
+        {
+          "scene": "Palácio_Nereu_Ramos",
+          "anchor": "dome",
+          "reference_error": 36.77017396117206,
+          "method_error": 51.15251544913211,
+          "difference": 14.382341487960048
+        },
+        {
+          "scene": "Heian-jingū",
+          "anchor": "pagoda",
+          "reference_error": 18.065642837895954,
+          "method_error": 24.61493324020876,
+          "difference": 6.549290402312806
+        },
+        {
+          "scene": "Palacio_Legislativo,_Uruguay",
+          "anchor": "column",
+          "reference_error": 17.092373118538646,
+          "method_error": 22.327880017445146,
+          "difference": 5.2355068989065
+        }
+      ]
+    }
+  },
+  "H2": {
+    "scalar": {
+      "mean_difference": 0.003943852850879824,
+      "median_difference": 0.0517673207405156,
+      "wins": 13,
+      "ties": 0,
+      "losses": 23,
+      "sum_improvements": 20.975463589323887,
+      "sum_regressions": 21.117442291955562,
+      "leave_one_out_mean_min": -0.13968565421873005,
+      "leave_one_out_mean_max": 0.24632374802662674,
+      "largest_improvements": [
+        {
+          "scene": "Itmad-Ud-Daulah's_Tomb",
+          "anchor": "railing",
+          "reference_error": 23.626902808901605,
+          "method_error": 15.147550330601343,
+          "difference": -8.479352478300262
+        },
+        {
+          "scene": "Marine_Corps_War_Memorial",
+          "anchor": "statue",
+          "reference_error": 36.43411142590585,
+          "method_error": 30.013747724202616,
+          "difference": -6.420363701703231
+        },
+        {
+          "scene": "Prambanan",
+          "anchor": "tower",
+          "reference_error": 24.046694987129236,
+          "method_error": 21.37543667057303,
+          "difference": -2.671258316556205
+        }
+      ],
+      "largest_regressions": [
+        {
+          "scene": "Saint_Demetrius_Church_(Vladimir)",
+          "anchor": "arch",
+          "reference_error": 22.715532842892035,
+          "method_error": 27.74650944317926,
+          "difference": 5.030976600287225
+        },
+        {
+          "scene": "Palácio_Nereu_Ramos",
+          "anchor": "dome",
+          "reference_error": 52.70055281189945,
+          "method_error": 56.419953086951196,
+          "difference": 3.719400275051747
+        },
+        {
+          "scene": "Heian-jingū",
+          "anchor": "pagoda",
+          "reference_error": 17.008349075256397,
+          "method_error": 20.200741534286216,
+          "difference": 3.1923924590298185
+        }
+      ]
+    },
+    "baseline": {
+      "mean_difference": 0.8427159389740467,
+      "median_difference": -0.0058648603568387525,
+      "wins": 20,
+      "ties": 0,
+      "losses": 16,
+      "sum_improvements": 11.008312777826063,
+      "sum_regressions": 41.34608658089175,
+      "leave_one_out_mean_min": 0.30537127649390144,
+      "leave_one_out_mean_max": 0.9438100728183644,
+      "largest_improvements": [
+        {
+          "scene": "Prambanan",
+          "anchor": "tower",
+          "reference_error": 24.0710154161501,
+          "method_error": 21.37543667057303,
+          "difference": -2.6955787455770697
+        },
+        {
+          "scene": "Itmad-Ud-Daulah's_Tomb",
+          "anchor": "railing",
+          "reference_error": 17.794110977213652,
+          "method_error": 15.147550330601343,
+          "difference": -2.6465606466123095
+        },
+        {
+          "scene": "Mansudae_Grand_Monument",
+          "anchor": "statue",
+          "reference_error": 7.791251356736907,
+          "method_error": 5.7559464357730965,
+          "difference": -2.03530492096381
+        }
+      ],
+      "largest_regressions": [
+        {
+          "scene": "Palácio_Nereu_Ramos",
+          "anchor": "dome",
+          "reference_error": 36.77017396117206,
+          "method_error": 56.419953086951196,
+          "difference": 19.649779125779133
+        },
+        {
+          "scene": "Palacio_Legislativo,_Uruguay",
+          "anchor": "column",
+          "reference_error": 17.092373118538646,
+          "method_error": 23.07045666279156,
+          "difference": 5.9780835442529145
+        },
+        {
+          "scene": "Saint_Demetrius_Church_(Vladimir)",
+          "anchor": "arch",
+          "reference_error": 22.64689972166925,
+          "method_error": 27.74650944317926,
+          "difference": 5.09960972151001
+        }
+      ]
+    }
+  },
+  "H3": {
+    "scalar": {
+      "mean_difference": -0.3553347354874688,
+      "median_difference": 0.0,
+      "wins": 2,
+      "ties": 33,
+      "losses": 1,
+      "sum_improvements": 12.993423685060705,
+      "sum_regressions": 0.20137320751182752,
+      "leave_one_out_mean_min": -0.3712406767160201,
+      "leave_one_out_mean_max": -0.1251026134896233,
+      "largest_improvements": [
+        {
+          "scene": "Marine_Corps_War_Memorial",
+          "anchor": "statue",
+          "reference_error": 36.43411142590585,
+          "method_error": 28.020652420493786,
+          "difference": -8.413459005412061
+        },
+        {
+          "scene": "Palacio_Legislativo,_Uruguay",
+          "anchor": "column",
+          "reference_error": 21.532185456768214,
+          "method_error": 16.95222077711957,
+          "difference": -4.5799646796486435
+        }
+      ],
+      "largest_regressions": [
+        {
+          "scene": "Mansudae_Grand_Monument",
+          "anchor": "statue",
+          "reference_error": 4.9141282646364255,
+          "method_error": 5.115501472148253,
+          "difference": 0.20137320751182752
+        }
+      ]
+    },
+    "baseline": {
+      "mean_difference": 0.48343735063569815,
+      "median_difference": -0.029721919649275952,
+      "wins": 22,
+      "ties": 0,
+      "losses": 14,
+      "sum_improvements": 13.591757762554305,
+      "sum_regressions": 30.995502385439437,
+      "leave_one_out_mean_min": 0.04209616491879272,
+      "leave_one_out_mean_max": 0.599848910346968,
+      "largest_improvements": [
+        {
+          "scene": "Marine_Corps_War_Memorial",
+          "anchor": "statue",
+          "reference_error": 31.611619659752535,
+          "method_error": 28.020652420493786,
+          "difference": -3.590967239258749
+        },
+        {
+          "scene": "Mansudae_Grand_Monument",
+          "anchor": "statue",
+          "reference_error": 7.791251356736907,
+          "method_error": 5.115501472148253,
+          "difference": -2.6757498845886536
+        },
+        {
+          "scene": "Washington_Monument",
+          "anchor": "obelisk",
+          "reference_error": 22.06904880190988,
+          "method_error": 19.694791016700634,
+          "difference": -2.3742577852092452
+        }
+      ],
+      "largest_regressions": [
+        {
+          "scene": "Palácio_Nereu_Ramos",
+          "anchor": "dome",
+          "reference_error": 36.77017396117206,
+          "method_error": 52.70055281189945,
+          "difference": 15.930378850727386
+        },
+        {
+          "scene": "Itmad-Ud-Daulah's_Tomb",
+          "anchor": "railing",
+          "reference_error": 17.794110977213652,
+          "method_error": 23.626902808901605,
+          "difference": 5.832791831687953
+        },
+        {
+          "scene": "Place_Jacques-Cartier",
+          "anchor": "minaret",
+          "reference_error": 55.33049004102766,
+          "method_error": 60.35861054443085,
+          "difference": 5.028120503403194
+        }
+      ]
+    }
+  }
+}

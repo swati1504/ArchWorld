@@ -1,0 +1,425 @@
+{
+  "identity": {
+    "protocol": "point3-paired-eval-v1",
+    "source_sha256": "145b9848b597eff8b9c94a336585d65c8854a3d4897f48c4b833828e75d2aeb0",
+    "revision": "5d4404323a21aa3de948f8bc57a053b29fa3d921",
+    "num_views": 50,
+    "seed": 1729,
+    "scene": "Itmad-Ud-Daulah's_Tomb",
+    "anchor": "railing",
+    "views": [
+      "p3_2599996e56579d8b70dd.jpg",
+      "p3_688a6cbc82f5b90b0642.jpg",
+      "p3_ff7505874148203337e4.jpg",
+      "p3_65605c44e4f4f747d896.jpg",
+      "p3_36854cf2a9529c291416.jpg",
+      "p3_75850996ed2c55c1ce1b.jpg",
+      "p3_1c8c966b1dc4eef21017.jpg",
+      "p3_8445c1d0e7a16fa3e3b2.jpg",
+      "p3_fff18f9837eaca79a6df.jpg",
+      "p3_8f16d8ac8e060aae1ea0.jpg",
+      "p3_4e0a62020550fe0949f2.jpg",
+      "p3_13c0030d68366d28117e.jpg",
+      "p3_73d70c228de216c3530a.jpg",
+      "p3_ef3a9d1299f6f9014603.jpg",
+      "p3_c1d4bc0a15cb80cfcc86.jpg",
+      "p3_ee1ae05920676c1cf4bc.jpg",
+      "p3_9dae9f46c72ba7d3dab7.jpg",
+      "p3_c9793403d2cae4c1b03b.jpg",
+      "p3_3441a35a14842217e119.jpg",
+      "p3_816318fa90c9a0c9ac4f.jpg",
+      "p3_4a5f33a12b3887866f65.jpg",
+      "p3_f3c8057723178cac828d.jpg",
+      "p3_23296727c1d005464bbd.jpg",
+      "p3_2d45a9a80d97fa1b6cd2.jpg",
+      "p3_90a76865d868f3044339.jpg",
+      "p3_f42717440ac2d21ce597.jpg",
+      "p3_af5a4f7e452eabf620b1.jpg",
+      "p3_8a1e20994c013e100a6a.jpg",
+      "p3_8d249e540ffd3471bbb5.jpg",
+      "p3_9e3cab128a88d2d6bd27.jpg",
+      "p3_0f430ff11d6a855b70c0.jpg",
+      "p3_c1a7c5d259030e923e8e.jpg",
+      "p3_cc57625df27620dba523.jpg",
+      "p3_865ee0639bef4b038865.jpg",
+      "p3_381e333ea78d92d7826f.jpg",
+      "p3_3ab727e25bb098c304fd.jpg",
+      "p3_c0c6b7762944e5b6b646.jpg",
+      "p3_1d11296b7949da25179a.jpg",
+      "p3_7b5a65394c4b9c61797b.jpg",
+      "p3_24cf2abca69c529de524.jpg",
+      "p3_251053b8e79702844be4.jpg",
+      "p3_cdf9a6e3c92315cc0e3f.jpg",
+      "p3_524e5eecfa9b16d92f29.jpg",
+      "p3_1927049612b075aa8644.jpg",
+      "p3_46083c5c6ee07fef2456.jpg",
+      "p3_e1a0e06d41a6163fb6b9.jpg",
+      "p3_07cf173eaa4683b7d684.jpg",
+      "p3_98aaeee265ac6a823d27.jpg",
+      "p3_d415aac4df4016583d45.jpg",
+      "p3_f22f1d1ab84d8ac3003c.jpg"
+    ],
+    "gpu": "NVIDIA L4",
+    "torch_version": "2.3.1+cu121",
+    "hardware": {
+      "gpu": "NVIDIA L4",
+      "capability": [
+        8,
+        9
+      ],
+      "torch_version": "2.3.1+cu121",
+      "packages": {
+        "torch": "2.3.1+cu121",
+        "numpy": "2.2.6",
+        "scipy": "1.18.1",
+        "open3d": "0.20.0",
+        "safetensors": "0.8.0",
+        "vggt": "0.0.1"
+      },
+      "total_memory_bytes": 23659151360,
+      "deterministic_algorithms": false,
+      "deterministic_warn_only": false,
+      "intervention_hook_determinism": "strict",
+      "cudnn_benchmark": false,
+      "cudnn_deterministic": true,
+      "cublas_workspace_config": ":4096:8"
+    },
+    "input_key": "7eae956f4cfb07ef8252a213577cfb9aee8ba9acffe3bfa9b4f41abbdb73013b",
+    "plan_sha256": "a1463ba782c5ae4688bd58106672d0e2dcc70f5d789414c9ce62b8192589b9ec"
+  },
+  "conditions": {
+    "no_intervention": {
+      "CD_norm_base": 17.794110977213652,
+      "CD_norm": 17.794110977213652,
+      "seconds": 279.33407966899995
+    },
+    "scalar_eta1000": {
+      "CD_norm_base": 17.794110977213652,
+      "CD_norm": 23.626902808901605,
+      "seconds": 218.31348538800012
+    },
+    "view_eta100": {
+      "CD_norm_base": 17.794110977213652,
+      "CD_norm": 15.147550330601343,
+      "seconds": 151.96896254400008
+    }
+  },
+  "status": "complete",
+  "model_loads_this_attempt": 1,
+  "split": "confirmation",
+  "mask_validation": {
+    "files": 50,
+    "nonempty_views": 40,
+    "numeric_checks": "passed",
+    "visual_review": "required before interpreting architectural effects",
+    "input_key": "7eae956f4cfb07ef8252a213577cfb9aee8ba9acffe3bfa9b4f41abbdb73013b",
+    "anchor": "railing",
+    "manual_override": null,
+    "preview_views": 6,
+    "coverage_by_view": [
+      {
+        "view": 0,
+        "alias": "p3_2599996e56579d8b70dd.jpg",
+        "fraction": 0.015796
+      },
+      {
+        "view": 1,
+        "alias": "p3_688a6cbc82f5b90b0642.jpg",
+        "fraction": 0.0
+      },
+      {
+        "view": 2,
+        "alias": "p3_ff7505874148203337e4.jpg",
+        "fraction": 0.010504
+      },
+      {
+        "view": 3,
+        "alias": "p3_65605c44e4f4f747d896.jpg",
+        "fraction": 0.008630666666666667
+      },
+      {
+        "view": 4,
+        "alias": "p3_36854cf2a9529c291416.jpg",
+        "fraction": 0.0
+      },
+      {
+        "view": 5,
+        "alias": "p3_75850996ed2c55c1ce1b.jpg",
+        "fraction": 0.03885060975609756
+      },
+      {
+        "view": 6,
+        "alias": "p3_1c8c966b1dc4eef21017.jpg",
+        "fraction": 0.036608108108108106
+      },
+      {
+        "view": 7,
+        "alias": "p3_8445c1d0e7a16fa3e3b2.jpg",
+        "fraction": 0.0
+      },
+      {
+        "view": 8,
+        "alias": "p3_fff18f9837eaca79a6df.jpg",
+        "fraction": 0.0
+      },
+      {
+        "view": 9,
+        "alias": "p3_8f16d8ac8e060aae1ea0.jpg",
+        "fraction": 0.0
+      },
+      {
+        "view": 10,
+        "alias": "p3_4e0a62020550fe0949f2.jpg",
+        "fraction": 0.006228699551569507
+      },
+      {
+        "view": 11,
+        "alias": "p3_13c0030d68366d28117e.jpg",
+        "fraction": 0.19636933333333334
+      },
+      {
+        "view": 12,
+        "alias": "p3_73d70c228de216c3530a.jpg",
+        "fraction": 0.007401526717557252
+      },
+      {
+        "view": 13,
+        "alias": "p3_ef3a9d1299f6f9014603.jpg",
+        "fraction": 0.024479573712255773
+      },
+      {
+        "view": 14,
+        "alias": "p3_c1d4bc0a15cb80cfcc86.jpg",
+        "fraction": 0.025382666666666668
+      },
+      {
+        "view": 15,
+        "alias": "p3_ee1ae05920676c1cf4bc.jpg",
+        "fraction": 0.04490177353342428
+      },
+      {
+        "view": 16,
+        "alias": "p3_9dae9f46c72ba7d3dab7.jpg",
+        "fraction": 0.016016326530612246
+      },
+      {
+        "view": 17,
+        "alias": "p3_c9793403d2cae4c1b03b.jpg",
+        "fraction": 0.03304
+      },
+      {
+        "view": 18,
+        "alias": "p3_3441a35a14842217e119.jpg",
+        "fraction": 0.018174149659863945
+      },
+      {
+        "view": 19,
+        "alias": "p3_816318fa90c9a0c9ac4f.jpg",
+        "fraction": 0.06114430379746835
+      },
+      {
+        "view": 20,
+        "alias": "p3_4a5f33a12b3887866f65.jpg",
+        "fraction": 0.0287046875
+      },
+      {
+        "view": 21,
+        "alias": "p3_f3c8057723178cac828d.jpg",
+        "fraction": 0.086428
+      },
+      {
+        "view": 22,
+        "alias": "p3_23296727c1d005464bbd.jpg",
+        "fraction": 0.005993817619783617
+      },
+      {
+        "view": 23,
+        "alias": "p3_2d45a9a80d97fa1b6cd2.jpg",
+        "fraction": 0.04476
+      },
+      {
+        "view": 24,
+        "alias": "p3_90a76865d868f3044339.jpg",
+        "fraction": 0.026445333333333335
+      },
+      {
+        "view": 25,
+        "alias": "p3_f42717440ac2d21ce597.jpg",
+        "fraction": 0.005166890982503365
+      },
+      {
+        "view": 26,
+        "alias": "p3_af5a4f7e452eabf620b1.jpg",
+        "fraction": 0.0
+      },
+      {
+        "view": 27,
+        "alias": "p3_8a1e20994c013e100a6a.jpg",
+        "fraction": 0.03404384600427766
+      },
+      {
+        "view": 28,
+        "alias": "p3_8d249e540ffd3471bbb5.jpg",
+        "fraction": 0.01775111111111111
+      },
+      {
+        "view": 29,
+        "alias": "p3_9e3cab128a88d2d6bd27.jpg",
+        "fraction": 0.013433333333333334
+      },
+      {
+        "view": 30,
+        "alias": "p3_0f430ff11d6a855b70c0.jpg",
+        "fraction": 0.011586989409984871
+      },
+      {
+        "view": 31,
+        "alias": "p3_c1a7c5d259030e923e8e.jpg",
+        "fraction": 0.0027213333333333334
+      },
+      {
+        "view": 32,
+        "alias": "p3_cc57625df27620dba523.jpg",
+        "fraction": 0.009799185888738127
+      },
+      {
+        "view": 33,
+        "alias": "p3_865ee0639bef4b038865.jpg",
+        "fraction": 0.009539617486338798
+      },
+      {
+        "view": 34,
+        "alias": "p3_381e333ea78d92d7826f.jpg",
+        "fraction": 0.0082
+      },
+      {
+        "view": 35,
+        "alias": "p3_3ab727e25bb098c304fd.jpg",
+        "fraction": 0.015166666666666667
+      },
+      {
+        "view": 36,
+        "alias": "p3_c0c6b7762944e5b6b646.jpg",
+        "fraction": 0.027461333333333334
+      },
+      {
+        "view": 37,
+        "alias": "p3_1d11296b7949da25179a.jpg",
+        "fraction": 0.010258666666666666
+      },
+      {
+        "view": 38,
+        "alias": "p3_7b5a65394c4b9c61797b.jpg",
+        "fraction": 0.009485981308411214
+      },
+      {
+        "view": 39,
+        "alias": "p3_24cf2abca69c529de524.jpg",
+        "fraction": 0.0094
+      },
+      {
+        "view": 40,
+        "alias": "p3_251053b8e79702844be4.jpg",
+        "fraction": 0.005965333333333333
+      },
+      {
+        "view": 41,
+        "alias": "p3_cdf9a6e3c92315cc0e3f.jpg",
+        "fraction": 0.0
+      },
+      {
+        "view": 42,
+        "alias": "p3_524e5eecfa9b16d92f29.jpg",
+        "fraction": 0.0
+      },
+      {
+        "view": 43,
+        "alias": "p3_1927049612b075aa8644.jpg",
+        "fraction": 0.007881203007518796
+      },
+      {
+        "view": 44,
+        "alias": "p3_46083c5c6ee07fef2456.jpg",
+        "fraction": 0.0
+      },
+      {
+        "view": 45,
+        "alias": "p3_e1a0e06d41a6163fb6b9.jpg",
+        "fraction": 0.0
+      },
+      {
+        "view": 46,
+        "alias": "p3_07cf173eaa4683b7d684.jpg",
+        "fraction": 0.001372340425531915
+      },
+      {
+        "view": 47,
+        "alias": "p3_98aaeee265ac6a823d27.jpg",
+        "fraction": 0.005443548387096774
+      },
+      {
+        "view": 48,
+        "alias": "p3_d415aac4df4016583d45.jpg",
+        "fraction": 0.004338666666666667
+      },
+      {
+        "view": 49,
+        "alias": "p3_f22f1d1ab84d8ac3003c.jpg",
+        "fraction": 0.0019106666666666666
+      }
+    ],
+    "mask_archive_sha256": "a6f7339841b35d5c1dd258c230656a17f719b2ad8b0e69d1cb69fc4f97115eb6",
+    "mask_sha256_by_file": {
+      "Itmad-Ud-Daulah's_Tomb/mask/p3_2599996e56579d8b70dd_railing.npy": "0429c8c3ed03fa4888361ae41903384c2ace39f31ea16d1c1a429099080507d0",
+      "Itmad-Ud-Daulah's_Tomb/mask/p3_688a6cbc82f5b90b0642_railing.npy": "4ca930d4c39dd441d095d27d2ac61750ccb0f54238f1eed588061be710bf4bb6",
+      "Itmad-Ud-Daulah's_Tomb/mask/p3_ff7505874148203337e4_railing.npy": "80f0bce241085c84505d4a8814c2fd04cbab065ffb1263496bebfab196f5f345",
+      "Itmad-Ud-Daulah's_Tomb/mask/p3_65605c44e4f4f747d896_railing.npy": "cc41c40c60c1148d9c548e86548149ff3a9f6a80ef430e436fa23e9e861fa35a",
+      "Itmad-Ud-Daulah's_Tomb/mask/p3_36854cf2a9529c291416_railing.npy": "4ca930d4c39dd441d095d27d2ac61750ccb0f54238f1eed588061be710bf4bb6",
+      "Itmad-Ud-Daulah's_Tomb/mask/p3_75850996ed2c55c1ce1b_railing.npy": "8d58787753368d0afc7cc313bf6ffa449639cacc0f43c1f4afb85ea7430a1225",
+      "Itmad-Ud-Daulah's_Tomb/mask/p3_1c8c966b1dc4eef21017_railing.npy": "c2d776e53f8ffbf2d4ed0e277647bb4875db0ea092a999d6a17c69325de5f33d",
+      "Itmad-Ud-Daulah's_Tomb/mask/p3_8445c1d0e7a16fa3e3b2_railing.npy": "4ca930d4c39dd441d095d27d2ac61750ccb0f54238f1eed588061be710bf4bb6",
+      "Itmad-Ud-Daulah's_Tomb/mask/p3_fff18f9837eaca79a6df_railing.npy": "4ca930d4c39dd441d095d27d2ac61750ccb0f54238f1eed588061be710bf4bb6",
+      "Itmad-Ud-Daulah's_Tomb/mask/p3_8f16d8ac8e060aae1ea0_railing.npy": "4ca930d4c39dd441d095d27d2ac61750ccb0f54238f1eed588061be710bf4bb6",
+      "Itmad-Ud-Daulah's_Tomb/mask/p3_4e0a62020550fe0949f2_railing.npy": "bf10bc470ac418ea806a73f998e4a9b2344c648dc17f5dfefac24a92d8f1e4f7",
+      "Itmad-Ud-Daulah's_Tomb/mask/p3_13c0030d68366d28117e_railing.npy": "85cb8144bc57361086d2e81bd812e0e3bfaa638dc3299bb8a77c951c77935b9f",
+      "Itmad-Ud-Daulah's_Tomb/mask/p3_73d70c228de216c3530a_railing.npy": "445017a46c0f426f519472b27c09fb3c9d2709393bb22a62482813cb1237589f",
+      "Itmad-Ud-Daulah's_Tomb/mask/p3_ef3a9d1299f6f9014603_railing.npy": "10c9e0707107a985ae01b97dc8df15a3332d621e50bc6d9c212de9712472262a",
+      "Itmad-Ud-Daulah's_Tomb/mask/p3_c1d4bc0a15cb80cfcc86_railing.npy": "d1ae9e6320b5f14aa2d7df93eb699872378e5f434549fe2e72d0362ecb7bf05d",
+      "Itmad-Ud-Daulah's_Tomb/mask/p3_ee1ae05920676c1cf4bc_railing.npy": "22c003ae06fad5144f396e6af41d641addf11d64e2040482489451970f5e9a5c",
+      "Itmad-Ud-Daulah's_Tomb/mask/p3_9dae9f46c72ba7d3dab7_railing.npy": "5d9731a076156a87ccae511ef53c284f5cb1975a883d413a4d9cf624fe80c7d0",
+      "Itmad-Ud-Daulah's_Tomb/mask/p3_c9793403d2cae4c1b03b_railing.npy": "c11702b0f181ea0349ba14b4ad29aff901b324f904c56f95c247d52d3d53de5f",
+      "Itmad-Ud-Daulah's_Tomb/mask/p3_3441a35a14842217e119_railing.npy": "a0e939e1ef2542c7cdfecabbd59bb8d2567d607fecba1a5e641e188b1f93ee0e",
+      "Itmad-Ud-Daulah's_Tomb/mask/p3_816318fa90c9a0c9ac4f_railing.npy": "8c13e8ad103cd4e246bf1ff1c386c016df7c1b4ec42d3eb67062089ebde3635e",
+      "Itmad-Ud-Daulah's_Tomb/mask/p3_4a5f33a12b3887866f65_railing.npy": "80d509d71f7e280f311487ab048443083af6a317f51aa4fd6d02c9a136c04908",
+      "Itmad-Ud-Daulah's_Tomb/mask/p3_f3c8057723178cac828d_railing.npy": "e417d83b688415856df86af6144a7cd4294c964b7bfae739a56ce8d606d48355",
+      "Itmad-Ud-Daulah's_Tomb/mask/p3_23296727c1d005464bbd_railing.npy": "f900f2225748ceecdf2244d426f8b26bed270a618a7e89aef51ca0076e5a2a50",
+      "Itmad-Ud-Daulah's_Tomb/mask/p3_2d45a9a80d97fa1b6cd2_railing.npy": "61d031468e08217bf7bcd22d1e32881c1b3dbd495007edcc32ce26002ad7b1cf",
+      "Itmad-Ud-Daulah's_Tomb/mask/p3_90a76865d868f3044339_railing.npy": "50bbf2e2171aa4c285323bc754a7cb8e667c9322ba46dbd4558f5dddbf479452",
+      "Itmad-Ud-Daulah's_Tomb/mask/p3_f42717440ac2d21ce597_railing.npy": "9a13e99e502e535fb05968efe549098bed7b99f6211781ed8f766a098a0d2771",
+      "Itmad-Ud-Daulah's_Tomb/mask/p3_af5a4f7e452eabf620b1_railing.npy": "4ca930d4c39dd441d095d27d2ac61750ccb0f54238f1eed588061be710bf4bb6",
+      "Itmad-Ud-Daulah's_Tomb/mask/p3_8a1e20994c013e100a6a_railing.npy": "27a892a1c16b552053bcc5a917575ad7e3d0dd1e8843fbbe56b5dd85e217191c",
+      "Itmad-Ud-Daulah's_Tomb/mask/p3_8d249e540ffd3471bbb5_railing.npy": "1c63c90b189cdbc6a2fbe6fd85ecdbd1a8c6a48f5f4fdaac7c74585ffd7f7747",
+      "Itmad-Ud-Daulah's_Tomb/mask/p3_9e3cab128a88d2d6bd27_railing.npy": "90329c8e411a6e5e3410496032ee2d415d0da8f477e66d465cac08ec527f5a01",
+      "Itmad-Ud-Daulah's_Tomb/mask/p3_0f430ff11d6a855b70c0_railing.npy": "aec9ad26a96b0d46997a03fe5197605cb82b0d8e5068f2ef01ea3d1a31efa7b7",
+      "Itmad-Ud-Daulah's_Tomb/mask/p3_c1a7c5d259030e923e8e_railing.npy": "f422b7517e111cebecde69f7655e76c1f95bed84ac4de65739fd0b3fae1bb956",
+      "Itmad-Ud-Daulah's_Tomb/mask/p3_cc57625df27620dba523_railing.npy": "4d431b8893064357292c498776e52ac355dddeb321f0d94034c486ba23f6c298",
+      "Itmad-Ud-Daulah's_Tomb/mask/p3_865ee0639bef4b038865_railing.npy": "29b8af6225deb7a73a5743b5ebe358b447ece7ac6c847ff9fe111e64b49e788e",
+      "Itmad-Ud-Daulah's_Tomb/mask/p3_381e333ea78d92d7826f_railing.npy": "3d00413fa8d9a453ae537b0888b16387297a7aaef09742ff23c83c4c83bab11b",
+      "Itmad-Ud-Daulah's_Tomb/mask/p3_3ab727e25bb098c304fd_railing.npy": "30f43b6cce4085c42d573323e5e7b0adb9f88cb1c6b35e1a687cc0ca81e75d53",
+      "Itmad-Ud-Daulah's_Tomb/mask/p3_c0c6b7762944e5b6b646_railing.npy": "d9f1880e5baa8daf1d968db7cfaa202eb685e68f1c3ea2de3c3144f0050abefc",
+      "Itmad-Ud-Daulah's_Tomb/mask/p3_1d11296b7949da25179a_railing.npy": "9147eca80d90a08750d039c92411ffbb426fa11cd598d15df2abc260cb1643b6",
+      "Itmad-Ud-Daulah's_Tomb/mask/p3_7b5a65394c4b9c61797b_railing.npy": "6499570d5f58b4d384d5d5a4a75c32dada66a55a14a80c4d360b2343137a03dd",
+      "Itmad-Ud-Daulah's_Tomb/mask/p3_24cf2abca69c529de524_railing.npy": "5fb3427ca72830aea2e92638825133097df04c40c735708a9b78d61f177a4b81",
+      "Itmad-Ud-Daulah's_Tomb/mask/p3_251053b8e79702844be4_railing.npy": "947e2dfb22444ddd78a9258b62aefa92e300f668fd3310cf56628abdb19c1de4",
+      "Itmad-Ud-Daulah's_Tomb/mask/p3_cdf9a6e3c92315cc0e3f_railing.npy": "4ca930d4c39dd441d095d27d2ac61750ccb0f54238f1eed588061be710bf4bb6",
+      "Itmad-Ud-Daulah's_Tomb/mask/p3_524e5eecfa9b16d92f29_railing.npy": "4ca930d4c39dd441d095d27d2ac61750ccb0f54238f1eed588061be710bf4bb6",
+      "Itmad-Ud-Daulah's_Tomb/mask/p3_1927049612b075aa8644_railing.npy": "1d25211e4ada0a17c05640faf92a578136efa02769634df034c99c9f8958aa94",
+      "Itmad-Ud-Daulah's_Tomb/mask/p3_46083c5c6ee07fef2456_railing.npy": "4ca930d4c39dd441d095d27d2ac61750ccb0f54238f1eed588061be710bf4bb6",
+      "Itmad-Ud-Daulah's_Tomb/mask/p3_e1a0e06d41a6163fb6b9_railing.npy": "4ca930d4c39dd441d095d27d2ac61750ccb0f54238f1eed588061be710bf4bb6",
+      "Itmad-Ud-Daulah's_Tomb/mask/p3_07cf173eaa4683b7d684_railing.npy": "293acf595517178220f5bb24a28ae75d071d1831c36231048c85f3c95e12e0fe",
+      "Itmad-Ud-Daulah's_Tomb/mask/p3_98aaeee265ac6a823d27_railing.npy": "ff35d10d1267b59287ac357875834eb095854114c690ef00e0122347fda41ae3",
+      "Itmad-Ud-Daulah's_Tomb/mask/p3_d415aac4df4016583d45_railing.npy": "07e53a6b78931882dc0dfbc992901d6c4d24efd5a1b5cc36abd40e23cb9ec636",
+      "Itmad-Ud-Daulah's_Tomb/mask/p3_f22f1d1ab84d8ac3003c_railing.npy": "e479c343712d7f531b5f83605c45cc27827535a7dcad2557c67a499d6e18ec91"
+    }
+  }
+}

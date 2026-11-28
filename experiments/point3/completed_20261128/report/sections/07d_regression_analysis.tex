@@ -1,0 +1,31 @@
+\subsection{Possible Causes of Large Regressions}
+\label{sec:regression-analysis}
+The largest failures motivate a distinction between observed diagnostics and possible mechanisms. Table~\ref{tab:regression-diagnostics} reports saved scores and activation-update magnitudes for two informative cases. These observations do not identify a unique cause. The explanations below are hypotheses for targeted investigation, not established causal findings.
+
+\paragraph{Attention-based acceptance does not guarantee better geometry.}
+The inherited hook accepts an update when its monitored anchor-attention statistic rises. It does not check ground-truth geometry, depth consistency, or reconstruction error. All 24 intervened layers accepted their updates in the selected runs, including the largest failures. Therefore, the observed regressions coexist with success under the acceptance criterion. Increasing attention to an anchor can still alter representations in a way that harms the final geometric prediction. The common attention objective and acceptance rule are consequently plausible sources of failure across hypotheses.
+
+\paragraph{The relative perturbation can be excessive for a particular scene.}
+At Heian-jing\={u}, H1's mean applied update on anchor activations is 2.00\%, compared with 0.202\% under the scalar, approximately ten times larger. Error increases from 17.0083 to 24.6149. This makes excessive perturbation a plausible explanation for that H1 regression, but neither the magnitude ratio nor the error change proves causality. The percentages describe activation-norm ratios averaged across layers, not physical displacement or a cumulative percentage change through the network.
+
+\paragraph{Magnitude alone does not explain all failures.}
+At Pal\'acio Nereu Ramos, every selected intervention is worse than original VGGT. H2 produces the largest error, despite a mean relative update of only 0.194\%, compared with 2.00\% for H1 and 1.651\% for the scalar/H3. Thus a smaller recorded update does not guarantee a better outcome. Its direction, its allocation across views, and subsequent nonlinear model responses could matter. H3 uses the scalar fallback for this dome-labeled landmark, so its regression is inherited rather than a distinct category-selection failure.
+
+\begin{table*}[t]
+\caption{Observed failure-case diagnostics. Error is whole-landmark normalized Chamfer distance. Update percentages are the mean applied anchor-masked activation-norm ratios across the 24 layers, not displacement in 3D space. Original VGGT has no steering update. All displayed intervention runs accepted all 24 layers.}
+\label{tab:regression-diagnostics}
+\centering
+\input{generated/regression_diagnostics_table}
+\end{table*}
+
+\paragraph{Anchor choice and mask quality remain possible contributors.}
+The same anchor and masks are reused across hypotheses. A wrong or incomplete mask, inconsistent segmentation across views, or similarly labeled structures that are not corresponding physical points could make the shared objective unhelpful. Even a semantically correct anchor need not be the best guide for geometric reconstruction. The gradient update is not restricted to anchor tokens, so a problem with the anchor objective can affect the wider prediction. We have not established that the masks for these failure cases are incorrect. Complete semantic mask review remains outstanding.
+
+\paragraph{Calibration does not provide a scene-level option to abstain.}
+The rules were selected on 18 calibration landmarks from two positive candidate strengths per rule. They do not include a calibrated decision to choose original VGGT for a new scene. Although individual layer updates can be reverted when attention fails to rise, that mechanism did not reject the updates in these cases. A setting preferred on the calibration set can therefore transfer poorly to a confirmation landmark. H3's fallback can also preserve a harmful scalar choice.
+
+\paragraph{Geometry, outliers, and alignment need separate inspection.}
+The evaluator measures mean nearest-neighbor distances after similarity alignment and ICP refinement. Distorted surfaces, distant points, or a changed alignment may increase that mean substantially. ICP is a local procedure whose convergence depends on initial alignment~\cite{open3d_icp}. This motivates inspecting the failure cases' clouds and alignment outputs. It does not establish an evaluation artifact or invalidate their reported scores. Matched-input and numerical checks passed, but those checks do not identify the geometric reason for a regression.
+
+\paragraph{Targeted diagnostics.}
+The most informative next checks are mask overlays and paired reconstructions for Pal\'acio Nereu Ramos and Heian-jing\={u}, pointwise error distributions and the separate accuracy/completeness terms, and alignment quality before and after ICP. A small strength sweep including zero intervention, with a matched-strength scalar control for H2, could then distinguish magnitude and view-weighting effects. These are proposed diagnostics. No additional runs or confirmation-based retuning enter the reported results.

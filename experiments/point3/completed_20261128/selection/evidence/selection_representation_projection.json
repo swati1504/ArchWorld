@@ -1,0 +1,29 @@
+{
+  "method": "Metric multidimensional scaling (SMACOF), two dimensions",
+  "population": "317 training landmarks; no held-out descriptors",
+  "selection_used_projection": false,
+  "note": "Selection used the full saved distance matrices. 2D proximity is approximate.",
+  "relative_distance_error_definition": "sqrt(sum_ij((D_ij - projected_distance_ij)^2) / sum_ij(D_ij^2))",
+  "panels": {
+    "appearance_distance": {
+      "start": 0,
+      "iterations": 521,
+      "raw_squared_error_all_pairs": 10446.75956583409,
+      "relative_distance_error": 0.31337913288432745,
+      "seed": 1729,
+      "starts": 4,
+      "max_iter": 1500,
+      "tolerance": 1e-08
+    },
+    "composite_distance": {
+      "start": 0,
+      "iterations": 440,
+      "raw_squared_error_all_pairs": 6424.830119411561,
+      "relative_distance_error": 0.2348964274395391,
+      "seed": 1729,
+      "starts": 4,
+      "max_iter": 1500,
+      "tolerance": 1e-08
+    }
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "primary_exploratory_tests": 46,
+  "categorical_tests": 18,
+  "continuous_tests": 28,
+  "global_bh_discoveries_at_0_05": 0,
+  "global_holm_discoveries_at_0_05": 0,
+  "smallest_global_bh_q": 0.09476000000000001,
+  "strongest_test": {
+    "family": "categorical",
+    "test": "region | H1 - scalar",
+    "p": 0.00206,
+    "within_family_q": 0.03708,
+    "bh_q_all_46": 0.09476000000000001,
+    "holm_p_all_46": 0.09476000000000001
+  },
+  "scope": "Global sensitivity across all primary exploratory group/feature tests; six prespecified method/control sign tests remain their own family. Log-ratio sensitivities and explicitly coupled baseline diagnostics are not promoted to discoveries."
+}

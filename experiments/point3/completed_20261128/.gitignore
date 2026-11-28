@@ -1,0 +1,12 @@
+__pycache__/
+*.pyc
+*.aux
+*.log
+*.out
+*.blg
+*.bbl
+*.fls
+*.fdb_latexmk
+analysis/logs/
+/verification.json
+report/AdaptiveAttend_Overleaf.zip

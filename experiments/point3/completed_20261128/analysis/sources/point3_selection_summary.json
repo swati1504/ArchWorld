@@ -1,0 +1,159 @@
+{
+  "validation_scope": "saved real descriptors only; not a Colab run or full manifest export",
+  "selected_count": 54,
+  "base_retained": true,
+  "added_count": 14,
+  "candidate_count": 336,
+  "image_count": 14333,
+  "selected_landmarks": [
+    "Aguada_Lighthouse",
+    "Al-Qibli_Chapel",
+    "Arch_of_Trajan_(Timgad)",
+    "Badami_Cave_Temples",
+    "Basílica_de_Ocotlán",
+    "Bell_tower_of_Vank_Cathedral",
+    "Calamba_Church",
+    "Caloocan_Cathedral",
+    "Cathedral_of_Lima",
+    "Cathedral_of_Saint_Paul_in_Macau",
+    "Chennakesava_Temple,_Belur",
+    "Chichén_Itzá",
+    "Forth_Bridge",
+    "Gangō-ji",
+    "Great_Mosque_of_Sousse",
+    "Hassan_Tower",
+    "Heian-jingū",
+    "Heinrichsturm_(Ponts_Couverts,_Strasbourg)",
+    "Hemiciclo_a_Juárez",
+    "Herald_Square",
+    "Hiroshima_Castle",
+    "Igreja_de_São_Francisco_de_Assis_(Ouro_Preto)",
+    "Iolani_Palace",
+    "Isa_Khan_Niyazi's_tomb",
+    "Itmad-Ud-Daulah's_Tomb",
+    "Jahangiri_Mahal_(Agra_Fort)",
+    "Jesuit_church,_Lviv",
+    "Ka'ba-ye_Zartosht",
+    "Little_Temple_of_Abu_Simbel",
+    "Mansudae_Grand_Monument",
+    "Marcelo_H._del_Pilar_Shrine",
+    "Marine_Corps_War_Memorial",
+    "Olumo_Rock",
+    "Oshakan_Saint_Mashtots",
+    "Palace_of_Westminster",
+    "Palacio_Legislativo,_Uruguay",
+    "Palácio_Nereu_Ramos",
+    "Paoay_Church",
+    "Paris_-_Eiffel_Tower,_Paris_Las_Vegas",
+    "Patan_Durbar_Square",
+    "Pila_Church",
+    "Place_Jacques-Cartier",
+    "Prambanan",
+    "Reichstag_(building)",
+    "Saint_Demetrius_Church_(Vladimir)",
+    "Saint_Gregory_Church,_Sisian",
+    "Saint_Lawrence_Deacon_&_Martyr_Parish_Church_of_Balagtas",
+    "Salim_Chishti_Tomb_(Fatehpur_Sikri)",
+    "Soltaniyeh_Dome",
+    "Stadhuis_(Gouda)",
+    "Taipei_Confucius_Temple",
+    "Unfinished_obelisk_in_Aswan",
+    "Washington_Monument",
+    "Yererouk_Basilica"
+  ],
+  "additions": [
+    {
+      "anchor": "__MISSING__",
+      "scene": "Forth_Bridge",
+      "image_count": 208
+    },
+    {
+      "anchor": "altar",
+      "scene": "Washington_Monument",
+      "image_count": 302
+    },
+    {
+      "anchor": "belfry",
+      "scene": "Saint_Gregory_Church,_Sisian",
+      "image_count": 242
+    },
+    {
+      "anchor": "bridge",
+      "scene": "Heinrichsturm_(Ponts_Couverts,_Strasbourg)",
+      "image_count": 316
+    },
+    {
+      "anchor": "dome",
+      "scene": "Palácio_Nereu_Ramos",
+      "image_count": 302
+    },
+    {
+      "anchor": "door",
+      "scene": "Gangō-ji",
+      "image_count": 90
+    },
+    {
+      "anchor": "pagoda",
+      "scene": "Heian-jingū",
+      "image_count": 54
+    },
+    {
+      "anchor": "pyramid",
+      "scene": "Chichén_Itzá",
+      "image_count": 960
+    },
+    {
+      "anchor": "railing",
+      "scene": "Itmad-Ud-Daulah's_Tomb",
+      "image_count": 654
+    },
+    {
+      "anchor": "relief",
+      "scene": "Badami_Cave_Temples",
+      "image_count": 265
+    },
+    {
+      "anchor": "roof",
+      "scene": "Salim_Chishti_Tomb_(Fatehpur_Sikri)",
+      "image_count": 154
+    },
+    {
+      "anchor": "solomonic column",
+      "scene": "Pila_Church",
+      "image_count": 116
+    },
+    {
+      "anchor": "stone",
+      "scene": "Olumo_Rock",
+      "image_count": 65
+    },
+    {
+      "anchor": "walkway",
+      "scene": "Unfinished_obelisk_in_Aswan",
+      "image_count": 61
+    }
+  ],
+  "metrics": {
+    "size": 54,
+    "unselected_count": 263,
+    "building_type_tv": 0.07822175487790631,
+    "region_tv": 0.03312302839116719,
+    "anchor_tv": 0.2016590723215329,
+    "extent_m_ks": 0.044397710012851976,
+    "image_count_ks": 0.09825914242318035,
+    "duplicate_fraction_ks": 0.061222105386143255,
+    "median_megapixels_ks": 0.0720878607313939,
+    "all_regions_present": true,
+    "all_anchors_present": true,
+    "anchor_bounds_satisfied": true,
+    "coverage_mean": 0.5017510534526352,
+    "coverage_median": 0.49852649618622236,
+    "coverage_p95": 0.6902829693620005,
+    "coverage_worst": 1.1347793110189073,
+    "appearance_mean": 0.6867961015649567,
+    "appearance_p95": 0.9165864138098061,
+    "score": 0.4432108564604116
+  },
+  "all_categories_present": true,
+  "evaluation_overlap": []
+}

@@ -1,0 +1,4 @@
+scene,anchor,region,building_type,baseline,scalar,H3,H3_setting,H3_minus_scalar,H3_minus_baseline
+Mansudae_Grand_Monument,statue,East Asia,Monument,7.791251356736907,4.9141282646364255,5.115501472148253,scalar_eta100,0.20137320751182752,-2.6757498845886536
+Marine_Corps_War_Memorial,statue,North America,Monument,31.611619659752535,36.43411142590585,28.020652420493786,scalar_eta100,-8.413459005412061,-3.590967239258749
+"Palacio_Legislativo,_Uruguay",column,Latin America,Public Building,17.092373118538646,21.532185456768214,16.95222077711957,scalar_eta100,-4.5799646796486435,-0.14015234141907484
